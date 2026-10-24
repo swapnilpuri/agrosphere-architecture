@@ -1,0 +1,14 @@
+@startuml
+!define RELATIVE_INCLUDE
+!pragma layout smetana
+!include includes/C4_Context.puml
+Person(manager, "Plantation manager", "Remote estate exploration and decisions")
+System(agro, "AgroSphere", "Rubber plantation digital twin and intelligence")
+System_Ext(iot, "Field devices", "Weather and soil telemetry")
+System_Ext(terrain, "Terrain / geospatial sources", "Licensed terrain, imagery and assets")
+System_Ext(idp, "OIDC identity", "Keycloak for local POC")
+Rel(manager, agro, "Explore estate, inspect operations, review insights", "Web / immersive")
+Rel(iot, agro, "Publish readings", "MQTT")
+Rel(agro, terrain, "Retrieve licensed georeferenced data", "HTTPS")
+Rel(agro, idp, "Validate identity", "OIDC / JWT")
+@enduml

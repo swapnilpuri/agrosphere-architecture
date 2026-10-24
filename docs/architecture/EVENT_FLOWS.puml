@@ -1,0 +1,27 @@
+@startuml
+actor Manager
+participant "estate-service" as Estate
+database "estate DB" as EstateDB
+participant "estate outbox relay (M1A)" as Relay
+queue "RabbitMQ" as Bus
+participant "spatial consumer (M1B/M1C)" as Spatial
+database "spatial DB" as SpatialDB
+Manager -> Estate : authorized identity command (M1A)
+Estate -> EstateDB : begin: domain mutation + outbox event
+EstateDB --> Estate : commit
+Estate --> Manager : accepted canonical ID
+Relay -> EstateDB : lock unpublished batch
+Relay -> Bus : persistent event with stable eventId
+Bus --> Relay : publisher confirm
+Relay -> EstateDB : mark published after confirmation
+Bus -> Spatial : at-least-once delivery
+Spatial -> SpatialDB : begin; INSERT processed_event ON CONFLICT DO NOTHING
+alt inserted
+  Spatial -> SpatialDB : update service-owned identity projection
+else duplicate
+  Spatial -> SpatialDB : no duplicate effect
+end
+Spatial -> SpatialDB : commit marker and effect together
+Spatial --> Bus : ACK after commit; retry/DLQ on error
+note over Relay,Spatial : M1C verifies the real Estate v2 relay and Spatial projection together; duplicate deliveries are expected.
+@enduml

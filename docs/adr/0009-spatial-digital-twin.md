@@ -1,0 +1,18 @@
+# 0009: Spatial Digital Twin Milestone 1B
+
+Status: Accepted for the requested Milestone 1B implementation
+Date: 2026-10-24
+
+Spatial Service 0.2.0 owns PostGIS geometry, temporal versions, layer/asset metadata and import jobs. It references canonical estate/division/block IDs through a minimal local event projection and never accesses Estate Service tables. Parameterized JDBC SQL is the persistence adapter for advanced spatial operations; the service retains the foundation JPA/Spring transaction stack without sharing persistence models. V1 migration is unchanged; V2 adds spatial tables and extends the service-owned outbox.
+
+The explicit request selects Java 21 for this service, differing from foundation ADR-0005 and the actual Java 25 Estate build. Boot 4.0.9/Maven 3.9.12/JUnit 5.14.4 are retained. Java 21 container builds and full container-based tests verify the exception. ADR-0008 says Java21 although Estate's actual pom/README use 25; this discrepancy is recorded rather than modifying the working Estate Service.
+
+Canonical geometry is finite 2D RFC 7946 WGS84. Polygon/MultiPolygon/Point/LineString are accepted. PostGIS geography calculates spheroidal hectares. Input repair is never automatic. Geometry revisions retain stable feature/reference IDs; old snapshots have SUPERSEDED status and effective validity timestamps. Conditional versions and a per-estate database lock prevent lost writes and concurrent overlap races. Area/overlap limits are configurable, and polygon parents contain existing child features. Point-only EPSG:3857/4326 transformation is explicit; general projection/survey workflows remain future scope.
+
+Contract release 0.3.0 adds the spatial REST contract and events/spatial/v1, preserving existing foundation events/v1 and estate events/v2. Runtime OpenAPI is customized from the same pinned contract snapshot. Estate v2 events are schema/format validated, deduplicated transactionally and applied only for newer snapshot revisions. Division lifecycle events do not exist, so division membership is explicitly inferred from block snapshots; authoritative division status and reconciliation require a future contract release.
+
+Spatial events are transactional outbox records containing IDs/revisions rather than geometry blobs. The relay uses persistent mandatory publication, publisher confirms, bounded exponential retries and retained FAILED records. Consumers own durable queues and DLQ, retry three times, then reject without requeue. Delivery is at least once; downstream consumers must deduplicate eventId. ACK follows projection transaction commit. No service-to-service synchronous call is required on queries or startup.
+
+Trusted RS256 issuer/audience/lifetime and realm roles plus estate_ids enforce estate scope. PLATFORM_ADMIN has global access; ESTATE_ADMIN/MANAGER write assigned estates; AGRONOMIST/VIEWER read assigned estates. Imports use the same write policy. Asset URIs are HTTPS metadata references and are never fetched; tree models require SIMULATED provenance. JSON request size, coordinate count, bbox dimensions, result/page sizes and inline history are bounded.
+
+The service-owned Compose overlay reuses existing infrastructure without modifying it. Health/readiness, independent Docker packaging and CI are included. Tests use disposable PostGIS/RabbitMQ and a local signed OIDC issuer, independent of a deployed Estate Service. Production Keycloak realm provisioning, deployment-specific retention/alerting and shared stack runtime are operator integration tasks. No cloud, client application, push or Milestone 1C work is authorized.

@@ -1,0 +1,72 @@
+@startuml
+!pragma layout smetana
+package "estate-service (identity owner)" {
+class Company
+class Estate {
+estateId: UUID
+}
+class Division
+class PlantationBlock {
+blockId: UUID
+crop: RUBBER
+rubberCloneCode
+plantingDate
+plantedTreeCount
+tappableTreeCount
+status
+version
+}
+note right of Company : Reserved future model; not implemented in M1A
+class RubberClone {
+cloneCode
+status
+}
+PlantationBlock ..> RubberClone : optional cloneCode
+Company "1" -- "*" Estate
+Estate "1" -- "*" Division
+Division "1" -- "*" PlantationBlock
+}
+package "spatial-service" {
+class BlockGeometry {
+blockId: external UUID
+geometry: SRID4326
+assetReferences
+}
+}
+package "operations-service" {
+class TappingActivity
+class LatexCollection {
+wetLatexKg
+drcPercent
+}
+class CropHealthIncident
+}
+package "telemetry-service" {
+class Device
+class SensorReading {
+observedAt
+receivedAt
+metric
+unit
+provenance
+}
+Device "1" -- "*" SensorReading
+}
+package "analytics-service" {
+class KpiProjection
+}
+package "ai-service" {
+class YieldForecast {
+modelVersion
+evidenceIds
+provenance: PREDICTED
+}
+}
+BlockGeometry ..> PlantationBlock : external blockId, no database FK
+TappingActivity ..> PlantationBlock : external blockId
+LatexCollection ..> PlantationBlock : external blockId
+CropHealthIncident ..> PlantationBlock : external blockId
+Device ..> PlantationBlock : external blockId
+KpiProjection ..> PlantationBlock : external blockId
+YieldForecast ..> PlantationBlock : external blockId
+@enduml

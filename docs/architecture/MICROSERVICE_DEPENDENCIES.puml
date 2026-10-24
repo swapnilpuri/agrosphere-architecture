@@ -1,0 +1,22 @@
+@startuml
+!define RELATIVE_INCLUDE
+!pragma layout smetana
+!include includes/C4_Container.puml
+Container(estate, "estate-service", "Java", "Canonical identity")
+Container(spatial, "spatial-service", "Java / PostGIS", "Geometry + identity projection")
+Container(operations, "operations-service", "Java", "Tapping, latex, incidents")
+Container(telemetry, "telemetry-service", "Java", "MQTT observations")
+Container(analytics, "analytics-service", "Java", "KPI projections")
+Container(ai, "ai-service", "Python", "Models / recommendations")
+ContainerQueue(bus, "agrosphere.domain", "RabbitMQ", "Per-consumer queues; no database sharing")
+Rel(estate, bus, "EstateCreated; BlockCreated/Updated")
+Rel(operations, bus, "LatexCollectionRecorded; TappingActivityRecorded; CropHealthIncidentDetected")
+Rel(telemetry, bus, "SensorReadingReceived")
+Rel(ai, bus, "YieldForecastGenerated")
+Rel(bus, spatial, "Estate/block identity events")
+Rel(bus, analytics, "Identity, operations, readings, forecasts")
+Rel(bus, ai, "Identity, operations, readings")
+Rel(operations, estate, "Validate identity when needed", "REST / future contract")
+Rel(telemetry, estate, "Validate device block association", "REST / future contract")
+Rel(ai, analytics, "Query required KPI history", "REST / future contract")
+@enduml

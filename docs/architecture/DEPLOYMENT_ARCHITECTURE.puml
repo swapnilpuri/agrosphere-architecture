@@ -1,0 +1,33 @@
+@startuml
+!define RELATIVE_INCLUDE
+!pragma layout smetana
+!include includes/C4_Deployment.puml
+Deployment_Node(local, "Developer workstation", "Milestone 1C local runtime") {
+  Deployment_Node(compose, "Docker Compose apps profile", "Independent service images; health-gated startup") {
+    Container(gw, "Gateway", "Java 25 / Spring Cloud Gateway MVC")
+    Container(estate, "Estate Service", "Java 25 / Spring Boot")
+    Container(spatial, "Spatial Service", "Java 21 / Spring Boot")
+    ContainerDb(pg, "PostgreSQL / PostGIS", "Separate databases, credentials and service-owned migrations")
+    ContainerQueue(rmq, "RabbitMQ", "Durable v2 Estate and v1 Spatial events")
+    Container(kc, "Keycloak", "OIDC / trusted claims / PKCE")
+    Container(ot, "OpenTelemetry Collector", "OTLP traces")
+    Container(jaeger, "Jaeger", "Local ephemeral trace storage and UI")
+    ContainerQueue(mqtt, "Mosquitto", "Optional iot profile")
+  }
+}
+Rel(gw, estate, "Preserves Estate API paths / JWT", "HTTP")
+Rel(gw, spatial, "Preserves Spatial API paths / JWT", "HTTP")
+Rel(estate, pg, "Only owned Estate database")
+Rel(spatial, pg, "Only owned Spatial / PostGIS database")
+Rel(estate, rmq, "Confirmed transactional outbox v2")
+Rel(rmq, spatial, "Estate snapshots / idempotent projection")
+Rel(spatial, rmq, "Confirmed spatial v1 outbox")
+Rel(gw, kc, "Trusted JWKS; public issuer validation")
+Rel(estate, kc, "Independent JWT validation")
+Rel(spatial, kc, "Independent JWT validation")
+Rel(gw, ot, "OTLP")
+Rel(estate, ot, "OTLP")
+Rel(spatial, ot, "OTLP")
+Rel(ot, jaeger, "Traces", "OTLP gRPC")
+note "Published ports bind loopback; Estate/Spatial and management health ports are internal. Future clients, other services and Azure hosting remain separate milestones." as future
+@enduml

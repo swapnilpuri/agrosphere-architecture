@@ -1,0 +1,16 @@
+# 0008: Estate Management Milestone 1A
+
+Status: Accepted for the requested Milestone 1A implementation
+Date: 2026-10-23
+
+The estate repository preserves the ports/adapters layout, Java21/Boot4.0.9/JUnit5 baseline, independent Maven build and V1 migration. Pure domain records enforce metadata invariants; application transactions coordinate JPA persistence and JDBC outbox inserts through one service-owned datasource. Public DTOs are distinct from JPA entities. No other service or database is accessed.
+
+Codes are normalized uppercase. Divisions/blocks cannot move estates; blocks can change division within an estate. Composite foreign keys enforce that relationship. Active blocks require positive area; inactive blocks permit zero. Tree counts remain valid in all statuses. Parent status changes do not cascade. Future integrations must reject new operations on inactive blocks and compare revisions when projecting snapshots. Catalog clones may remain referenced after inactivation. Future planting dates support planned planting. No operational transactions are implemented.
+
+Issuer-administered JWT realm roles and estate_ids govern access after signature, issuer, lifetime and audience validation. PLATFORM_ADMIN creates estates/clones and accesses all estates. ESTATE_ADMIN and ESTATE_MANAGER write assigned estates; VIEWER reads assigned estates. Database queries apply permitted estate IDs before pagination/counting. Estate scope is never sourced from request headers or editable user attributes. Keycloak realm provisioning remains an operator/infrastructure step; this service does not invent tenancy or edit identity permissions.
+
+V1 events are retained unchanged. Their companyId requirement and restricted update vocabulary are incompatible with the requested M1A model. New estate-service events use events/v2 and agrosphere.<EventType>.v2 routing on agrosphere.domain. V2 envelopes use occurredAt and sourceService plus explicit provenance and full versioned entity snapshots. No company identifier is fabricated, and v1 consumers receive no silent schema change. Consumers must explicitly upgrade bindings/projections before integration. This is an independently versioned 0.2.0 contract release; no source dependency or automatic release/push is introduced.
+
+The relay uses SKIP LOCKED, persistent mandatory messages and correlated publisher confirms; unroutable messages retry. Delivery is at least once. Configurable exponential retries end in retained FAILED rows with operator-controlled replay. No automatic retention/purge exists yet. Confirm/crash ambiguity intentionally permits duplicates, so consumers deduplicate by consumer_name/eventId in the same transaction as effects. Out-of-order snapshots are rejected by payload.version. Domain and outbox writes roll back together. Already-published V1 rows retain published status during V2 migration.
+
+JUnit5 tests explicitly start Spring contexts instead of SpringExtension. Container integration uses real PostgreSQL/RabbitMQ and locally signed JWTs; production Keycloak provisioning is not claimed verified by those tests. Local infrastructure already exposes the correct service-owned database and broker; no central Compose changes are required. Milestone 1B is not authorized by this decision.

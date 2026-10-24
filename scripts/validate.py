@@ -23,9 +23,12 @@ for file in (ROOT / "docs/architecture").glob("*.puml"):
     source = file.read_text()
     assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
 assert len(list((ROOT / "docs/architecture").glob("*.puml"))) == 7
-assert len(list((ROOT / "docs/adr").glob("*.md"))) == 11
+assert len(list((ROOT / "docs/adr").glob("*.md"))) == 12
+assert len(list((ROOT / "diagrams/milestone-3a").glob("*.puml"))) == 7
+for file in (ROOT / "diagrams/milestone-3a").glob("*.puml"):
+    assert file.read_text().startswith("@startuml") and file.read_text().rstrip().endswith("@enduml")
 check_workflow(ROOT / ".github/workflows/ci.yml")
-print("PASS: architecture source layout, eleven ADRs, workflow YAML/structure")
+print("PASS: architecture source layout, twelve ADRs, workflow YAML/structure")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--workspace", type=Path)

@@ -1,0 +1,17 @@
+@startuml
+title Rubber tapping — components
+package Operations {
+[REST DTO controller] --> [TappingService]
+[TappingService] --> [Domain aggregates / Rules]
+[TappingService] --> [Access policy]
+[TappingService] --> [EstateValidation port]
+[Estate HTTP adapter] ..|> [EstateValidation port]
+[TappingService] --> [TappingStore JDBC]
+[TappingService] --> [Events outbox writer]
+[OutboxDispatcher] --> [RabbitTemplate]
+}
+database PostgreSQL
+[TappingStore JDBC] --> PostgreSQL
+[Events outbox writer] --> PostgreSQL
+[OutboxDispatcher] --> PostgreSQL : locked committed batch
+@enduml

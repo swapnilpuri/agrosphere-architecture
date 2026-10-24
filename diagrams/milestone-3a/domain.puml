@@ -1,0 +1,33 @@
+@startuml
+title Rubber tapping — domain
+class TappingSchedule {
+ UUID id
+ UUID estateId
+ UUID blockId
+ String recurrenceRule
+ LocalDate effectiveFrom
+ ScheduleStatus status
+ long version
+}
+class TappingAssignment {
+ UUID id
+ String workerId
+ LocalDate tappingDate
+ int plannedTreeCount
+ AssignmentStatus status
+ long version
+}
+class TappingRecord {
+ int actualTreeCount
+ Instant startedAt
+ Instant completedAt
+ String createdBy
+}
+class TappingMissedReason {
+ MissedReasonCode reasonCode
+ String recordedBy
+}
+TappingSchedule "0..1" -- "0..*" TappingAssignment
+TappingAssignment "1" -- "0..1" TappingRecord
+TappingAssignment "1" -- "0..1" TappingMissedReason
+@enduml

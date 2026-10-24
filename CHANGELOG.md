@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0 — 2026-10-24
+
+Rubber tapping discovery, ADR 0012, seven diagrams, development guide and verified completion report.
+
 ## 0.4.0 — 2026-10-24
 
 ADR-0011 records durable trace context, parent-late reconciliation and PKCE user identity; updated C4/event/deployment/data ownership diagrams and acceptance documentation.

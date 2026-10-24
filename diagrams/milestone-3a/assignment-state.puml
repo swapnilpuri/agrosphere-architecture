@@ -1,0 +1,13 @@
+@startuml
+title Rubber tapping — assignment-state
+[*] --> PLANNED
+PLANNED --> IN_PROGRESS : start / create record
+PLANNED --> MISSED : reason + local date
+PLANNED --> CANCELLED : management
+IN_PROGRESS --> COMPLETED : valid record + actual trees
+IN_PROGRESS --> MISSED : reason
+IN_PROGRESS --> CANCELLED : management
+COMPLETED --> [*]
+MISSED --> [*]
+CANCELLED --> [*]
+@enduml

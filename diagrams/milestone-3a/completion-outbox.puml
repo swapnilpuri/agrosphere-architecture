@@ -1,0 +1,25 @@
+@startuml
+title Rubber tapping — completion-outbox
+actor Worker
+participant API
+participant TappingService
+database PostgreSQL
+participant OutboxDispatcher
+queue RabbitMQ
+Worker -> API : complete(version,actualTreeCount,notes) + JWT
+API -> TappingService : validate DTO / authorize object
+TappingService -> PostgreSQL : load assignment + execution
+TappingService -> TappingService : state + actual-tree invariants
+TappingService -> PostgreSQL : conditional version update
+TappingService -> PostgreSQL : execution completion + outbox insert
+TappingService -> PostgreSQL : commit
+TappingService --> Worker : immutable completed view
+OutboxDispatcher -> PostgreSQL : locked committed due events
+OutboxDispatcher -> RabbitMQ : persistent message / stable eventId
+RabbitMQ --> OutboxDispatcher : confirm + mandatory return check
+alt confirmed and routed
+ OutboxDispatcher -> PostgreSQL : mark PUBLISHED / commit
+else failure
+ OutboxDispatcher -> PostgreSQL : backoff / PENDING or FAILED / commit
+end
+@enduml

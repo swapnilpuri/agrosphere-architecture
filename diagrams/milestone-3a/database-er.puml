@@ -1,0 +1,34 @@
+@startuml
+title Rubber tapping — database-er
+entity tapping_schedule {
+ * id : UUID <<PK>>
+ estate_id : UUID <<external reference>>
+ block_id : UUID <<external reference>>
+ version : bigint
+}
+entity tapping_assignment {
+ * id : UUID <<PK>>
+ schedule_id : UUID <<FK nullable>>
+ worker_id : varchar
+ tapping_date : date
+ version : bigint
+}
+entity tapping_record {
+ * id : UUID <<PK>>
+ assignment_id : UUID <<FK unique>>
+}
+entity tapping_missed_reason {
+ * assignment_id : UUID <<PK FK>>
+}
+entity outbox_event {
+ * event_id : UUID <<PK>>
+ aggregate_id : UUID
+ delivery_status : varchar
+ next_attempt_at : timestamptz
+}
+tapping_schedule |o--o{ tapping_assignment
+tapping_assignment ||--o| tapping_record
+tapping_assignment ||--o| tapping_missed_reason
+' Estate/block IDs have no cross-database foreign keys
+' Outbox deliberately has no aggregate FK: multiple aggregate types
+@enduml

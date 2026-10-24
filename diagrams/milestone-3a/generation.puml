@@ -1,0 +1,24 @@
+@startuml
+title Rubber tapping — generation
+actor Manager
+participant Controller
+participant TappingService
+participant Estate
+database PostgreSQL
+Manager -> Controller : generate(version,from,to,workerId)
+Controller -> TappingService : validated DTO
+TappingService -> TappingService : authorize estate/schedule
+TappingService -> PostgreSQL : lock schedule row / verify ACTIVE + version
+TappingService -> Estate : delegated JWT GET estate + block
+Estate --> TappingService : active RUBBER ownership + timezone
+loop anchored bounded occurrences
+ TappingService -> PostgreSQL : lookup permanent schedule/date occurrence
+ alt absent
+  TappingService -> PostgreSQL : insert assignment + outbox event
+ else exists
+  TappingService -> TappingService : verify worker / return occurrence
+ end
+end
+TappingService -> PostgreSQL : commit
+TappingService --> Manager : dated assignments
+@enduml

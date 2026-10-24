@@ -1,0 +1,16 @@
+@startuml
+title Rubber tapping — containers
+actor Worker
+rectangle "Gateway" as G
+rectangle "Operations" as O
+rectangle "Estate (master data)" as E
+rectangle "Keycloak" as K
+database "Operations PostgreSQL" as D
+queue "RabbitMQ domain exchange" as R
+Worker --> G : JWT /api/v1/tapping
+G --> O : bearer + correlation
+O --> E : authenticated GET estate/block
+O --> K : JWKS / issuer validation
+O --> D : service-owned SQL
+O --> R : confirmed outbox publication
+@enduml

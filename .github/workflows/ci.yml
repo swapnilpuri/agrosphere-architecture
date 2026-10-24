@@ -20,4 +20,4 @@ jobs:
         run: curl -fsSL https://github.com/plantuml/plantuml/releases/download/v1.2026.9/plantuml.jar -o /tmp/plantuml.jar
       - name: Verify validator checksum
         run: python -c "import hashlib; assert hashlib.sha256(open('/tmp/plantuml.jar','rb').read()).hexdigest() == 'aa4a1d06f8911c4b842beff4828dd955be431692b631a312d04c0e9fab9581de'"
-      - run: java -jar /tmp/plantuml.jar -checkonly 'docs/architecture/*.puml'
+      - run: java -jar /tmp/plantuml.jar -checkonly 'docs/architecture/*.puml' 'diagrams/milestone-3a/*.puml'

@@ -2,6 +2,8 @@
 
 ## 0.4.0 — 2026-10-24
 
+ADR-0011 records durable trace context, parent-late reconciliation and PKCE user identity; updated C4/event/deployment/data ownership diagrams and acceptance documentation.
+
 ADR-0010 and milestone runbook record local integration, limiter choice, trusted identity, data isolation, trace boundaries and independent-release acceptance.
 
 ## 0.3.0 — Milestone 1B

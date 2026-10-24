@@ -7,14 +7,14 @@ queue "RabbitMQ" as Bus
 participant "spatial consumer (M1B/M1C)" as Spatial
 database "spatial DB" as SpatialDB
 Manager -> Estate : authorized identity command (M1A)
-Estate -> EstateDB : begin: domain mutation + outbox event
+Estate -> EstateDB : begin: domain mutation + outbox event + W3C transport context
 EstateDB --> Estate : commit
 Estate --> Manager : accepted canonical ID
 Relay -> EstateDB : lock unpublished batch
-Relay -> Bus : persistent event with stable eventId
+Relay -> Bus : restore W3C context; observed persistent event with stable eventId
 Bus --> Relay : publisher confirm
 Relay -> EstateDB : mark published after confirmation
-Bus -> Spatial : at-least-once delivery
+Bus -> Spatial : at-least-once delivery with trace headers; observed consumer
 Spatial -> SpatialDB : begin; INSERT processed_event ON CONFLICT DO NOTHING
 alt inserted
   Spatial -> SpatialDB : update service-owned identity projection

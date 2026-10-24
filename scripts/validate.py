@@ -23,9 +23,9 @@ for file in (ROOT / "docs/architecture").glob("*.puml"):
     source = file.read_text()
     assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
 assert len(list((ROOT / "docs/architecture").glob("*.puml"))) == 7
-assert len(list((ROOT / "docs/adr").glob("*.md"))) == 10
+assert len(list((ROOT / "docs/adr").glob("*.md"))) == 11
 check_workflow(ROOT / ".github/workflows/ci.yml")
-print("PASS: architecture source layout, ten ADRs, workflow YAML/structure")
+print("PASS: architecture source layout, eleven ADRs, workflow YAML/structure")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--workspace", type=Path)
@@ -42,7 +42,7 @@ if args.workspace:
         assert Path(actual).resolve() == project.resolve(), name
         assert not (project / ".gitmodules").exists(), name
         assert not (project / ".git/modules").exists(), name
-        assert not subprocess.check_output(["git", "-C", str(project), "remote"], text=True).strip(), name
+        # Existing remotes are valid for independent repositories; never mutate connections here.
         for required in ("README.md", "AGENTS.md", ".gitignore", ".gitattributes", "LICENSE.md", "VERSION", "CHANGELOG.md", ".github/workflows/ci.yml"):
             assert (project / required).is_file(), (name, required)
         check_workflow(project / ".github/workflows/ci.yml")
@@ -60,5 +60,5 @@ if args.workspace:
             assert subprocess.run(["git", "-C", str(project), "check-ignore", "--quiet", relative]).returncode == 0, (name, relative)
     data = json.loads((workspace / "AgroSphere.code-workspace").read_text())
     assert {x["path"] for x in data["folders"]} == set(REPOS)
-    print("PASS: 12 distinct Git roots, no parent Git, no submodules/remotes, standards, all workflow/YAML syntax, secret-pattern/ignore checks, workspace folders")
-    print("Secret scan is heuristic; no initial commits or remote actions are performed.")
+    print("PASS: 12 distinct Git roots, no parent Git, no submodules; existing remotes preserved, standards, all workflow/YAML syntax, secret-pattern/ignore checks, workspace folders")
+    print("Secret scan is heuristic; this validator performs no commits, pushes or remote mutations.")

@@ -20,5 +20,5 @@ Rel(analytics, analyticsdb, "Sole application owner")
 Container(ai, "ai-service", "Independent repository", "Forecasting, anomaly analysis, assistant orchestration, model evaluation/versioning and evidence-backed recommendations.")
 ContainerDb(aidb, "agrosphere_ai", "PostgreSQL", "Isolated credentials / migrations")
 Rel(ai, aidb, "Sole application owner")
-note "One local PostgreSQL server; separate databases. No cross-database queries or shared JPA entities. Keycloak has its own database." as isolation
+note "One local PostgreSQL server; separate databases. No cross-database queries, cross-service foreign keys or shared JPA entities. Estate/Spatial credential isolation is tested in M1C. Keycloak has its own database." as isolation
 @enduml

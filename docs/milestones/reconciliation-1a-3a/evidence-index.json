@@ -1,0 +1,588 @@
+{
+  "audit_date": "2026-10-25",
+  "timezone": "America/Chicago",
+  "scope": "Read-only application reconciliation; documentation artifacts only",
+  "fresh_application_tests_executed": false,
+  "execution_limit": "exec_command CreateProcessAsUserW access denied; node child process spawn EPERM. No build, test, Git status or repository validator was executed.",
+  "snapshot_observed_at": "2026-10-25T23:54:46.278712+00:00",
+  "source_snapshot_comparison": [
+    {
+      "repository": "agrosphere-ai-service",
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "discovery_head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "head_matches": true,
+      "files_checked": 18,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-analytics-service",
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "discovery_head": "38725317675493237b2769ed38e1840b3991d69e",
+      "head_matches": true,
+      "files_checked": 16,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-api-gateway",
+      "head": "fcf7daf66fa0d9efaf2d1aa72f8cc88c600ab6c0",
+      "discovery_head": "fcf7daf66fa0d9efaf2d1aa72f8cc88c600ab6c0",
+      "head_matches": true,
+      "files_checked": 17,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "head": "ab6289d42dcc0ba4a956c39ed55b34c2f0c49746",
+      "discovery_head": "ab6289d42dcc0ba4a956c39ed55b34c2f0c49746",
+      "head_matches": true,
+      "files_checked": 34,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "discovery_head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "head_matches": true,
+      "files_checked": 60,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-estate-service",
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "discovery_head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "head_matches": true,
+      "files_checked": 65,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-immersive",
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "discovery_head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "head_matches": true,
+      "files_checked": 7,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-infrastructure",
+      "head": "3268651e1d48a38f858351c105ab54b4103c3ded",
+      "discovery_head": "3268651e1d48a38f858351c105ab54b4103c3ded",
+      "head_matches": true,
+      "files_checked": 38,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "discovery_head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "head_matches": true,
+      "files_checked": 51,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-spatial-service",
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "discovery_head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "head_matches": true,
+      "files_checked": 65,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-telemetry-service",
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "discovery_head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "head_matches": true,
+      "files_checked": 16,
+      "mismatches": []
+    },
+    {
+      "repository": "agrosphere-web",
+      "head": "2a56f819cc653425e4c58bd6306872e352ee5c7a",
+      "discovery_head": "2a56f819cc653425e4c58bd6306872e352ee5c7a",
+      "head_matches": true,
+      "files_checked": 65,
+      "mismatches": []
+    }
+  ],
+  "historical_java_suites": [
+    {
+      "path": "agrosphere-api-gateway\\target\\surefire-reports\\TEST-com.agrosphere.gateway.GatewayIntegrationTest.xml",
+      "name": "com.agrosphere.gateway.GatewayIntegrationTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-api-gateway\\target\\surefire-reports\\TEST-com.agrosphere.gateway.SecurityPolicyTest.xml",
+      "name": "com.agrosphere.gateway.SecurityPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\failsafe-reports\\TEST-com.agrosphere.estate.EstateServiceIT.xml",
+      "name": "com.agrosphere.estate.EstateServiceIT",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\surefire-reports\\TEST-com.agrosphere.estate.ApplicationServiceTest.xml",
+      "name": "com.agrosphere.estate.ApplicationServiceTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\surefire-reports\\TEST-com.agrosphere.estate.DomainRulesTest.xml",
+      "name": "com.agrosphere.estate.DomainRulesTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\surefire-reports\\TEST-com.agrosphere.estate.EstateAuthorizationTest.xml",
+      "name": "com.agrosphere.estate.EstateAuthorizationTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\surefire-reports\\TEST-com.agrosphere.estate.OutboxDispatcherTest.xml",
+      "name": "com.agrosphere.estate.OutboxDispatcherTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-estate-service\\target\\surefire-reports\\TEST-com.agrosphere.estate.SecurityPolicyTest.xml",
+      "name": "com.agrosphere.estate.SecurityPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-operations-service\\target\\failsafe-reports\\TEST-com.agrosphere.operations.TappingServiceIT.xml",
+      "name": "com.agrosphere.operations.TappingServiceIT",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-operations-service\\target\\surefire-reports\\TEST-com.agrosphere.operations.AuthorizationTest.xml",
+      "name": "com.agrosphere.operations.AuthorizationTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-operations-service\\target\\surefire-reports\\TEST-com.agrosphere.operations.DomainTest.xml",
+      "name": "com.agrosphere.operations.DomainTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-operations-service\\target\\surefire-reports\\TEST-com.agrosphere.operations.OutboxDispatcherTest.xml",
+      "name": "com.agrosphere.operations.OutboxDispatcherTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-operations-service\\target\\surefire-reports\\TEST-com.agrosphere.operations.SecurityPolicyTest.xml",
+      "name": "com.agrosphere.operations.SecurityPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-spatial-service\\target\\failsafe-reports\\TEST-com.agrosphere.spatial.SpatialServiceIT.xml",
+      "name": "com.agrosphere.spatial.SpatialServiceIT",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-spatial-service\\target\\surefire-reports\\TEST-com.agrosphere.spatial.ApplicationRulesTest.xml",
+      "name": "com.agrosphere.spatial.ApplicationRulesTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-spatial-service\\target\\surefire-reports\\TEST-com.agrosphere.spatial.GeometryValidationTest.xml",
+      "name": "com.agrosphere.spatial.GeometryValidationTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "path": "agrosphere-spatial-service\\target\\surefire-reports\\TEST-com.agrosphere.spatial.SecurityPolicyTest.xml",
+      "name": "com.agrosphere.spatial.SecurityPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "retained_playwright": {
+    "source": "agrosphere-web/playwright-report/index.html",
+    "report": {
+      "metadata": {
+        "actualWorkers": 1
+      },
+      "startTime": 1792866694188,
+      "duration": 8767.554,
+      "files": [
+        {
+          "fileId": "b37044e47a10d94689f2",
+          "fileName": "live.spec.ts",
+          "tests": [
+            {
+              "testId": "b37044e47a10d94689f2-9c108ef942b7bf8ebf45",
+              "title": "real Keycloak and Gateway seeded estate workflow",
+              "projectName": "live",
+              "location": {
+                "file": "live.spec.ts",
+                "line": 3,
+                "column": 5
+              },
+              "duration": 7683,
+              "annotations": [],
+              "tags": [],
+              "outcome": "expected",
+              "path": [],
+              "ok": true,
+              "results": [
+                {
+                  "attachments": [],
+                  "startTime": "2026-10-24T18:31:34.779Z",
+                  "workerIndex": 0
+                }
+              ]
+            }
+          ],
+          "stats": {
+            "total": 1,
+            "expected": 1,
+            "unexpected": 0,
+            "flaky": 0,
+            "skipped": 0,
+            "ok": true
+          }
+        }
+      ],
+      "projectNames": [
+        "live"
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true
+      },
+      "errors": [],
+      "options": {},
+      "machines": []
+    },
+    "tests": [
+      {
+        "file": "live.spec.ts",
+        "title": "real Keycloak and Gateway seeded estate workflow",
+        "project": "live",
+        "outcome": "expected",
+        "ok": true,
+        "duration_ms": 7683
+      }
+    ]
+  },
+  "platform_acceptance_groups": [
+    "Real development users authenticate with Authorization Code + PKCE; admin-only estate creation and assigned manager scope",
+    "Two divisions, ten unique rubber blocks with clone/planting/tree metadata; create/read/update, persisted relationships and domain rejection",
+    "All four Estate lifecycle event types are atomic, confirmed, contract-valid and projected with canonical IDs using bounded polling",
+    "Canonical-UUID GeoJSON import: estate + two divisions + ten nonoverlapping WGS84 polygons, validity/SRID and spheroidal hectares",
+    "Gateway spatial queries retrieve estate boundary, all block geometry, point membership, bbox/centroids, GIS layers and GeoJSON export",
+    "Actual Spatial v1 envelopes validate and confirmed publications reach the durable diagnostic queue",
+    "VIEWER cannot modify boundary; unassigned users cannot read/write/import; database roles cannot connect across ownership boundaries",
+    "Direct backend JWT/estate authorization without gateway, 2 MiB request limits and authenticated runtime OpenAPI contracts",
+    "RabbitMQ duplicates and out-of-order revisions are idempotent; parent-late child snapshots are retained and reconcile when the estate arrives",
+    "Durable W3C HTTP -> transactional outbox -> RabbitMQ publish -> Spatial consume spans are visible together in Jaeger",
+    "Spatial serves existing geometry and layers while Estate is stopped; safe gateway 503 and independent restart recovery",
+    "Broker outage preserves pending atomic outbox; messaging resumes without duplicate projection effects"
+  ],
+  "artifacts": [
+    {
+      "path": "agrosphere-estate-service/src/main/java/com/agrosphere/estate/application/EstateApplicationService.java",
+      "bytes": 7240,
+      "sha256": "22966689f87cd5c370f592ca3f8ddc611e88864c8d4ee5c52582dffd92ae3ca4"
+    },
+    {
+      "path": "agrosphere-estate-service/src/main/java/com/agrosphere/estate/adapter/out/messaging/OutboxDispatcher.java",
+      "bytes": 4531,
+      "sha256": "aaee74b064096d4d5a39a56ce73afc51f94350d3d6f9bcf2e87ee91511ae362a"
+    },
+    {
+      "path": "agrosphere-spatial-service/src/main/java/com/agrosphere/spatial/adapter/out/persistence/JdbcSpatialStore.java",
+      "bytes": 15824,
+      "sha256": "5c528737d999ba5868fae52594acdae269982e9bf1ba23f2dcc41ab9f6165eeb"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingService.java",
+      "bytes": 10639,
+      "sha256": "b86cbbccbb38f189a243a98dabfecaa97af82a35eeed4b7a9fcd15e866c019d0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Access.java",
+      "bytes": 3468,
+      "sha256": "c1dad35b99250d9d20c4b3d661c4b3597cee3130a834b4bb1b02e865f9d3ba54"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql",
+      "bytes": 3084,
+      "sha256": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306"
+    },
+    {
+      "path": "agrosphere-web/src/app/features/digital-twin/cesium-viewer.service.ts",
+      "bytes": 12769,
+      "sha256": "78f371da65c79a1551392cc45fadeadb14b3167c27943712745e471581341c82"
+    },
+    {
+      "path": "agrosphere-web/e2e/graphics.spec.ts",
+      "bytes": 1955,
+      "sha256": "c997bd6ceb3dc1294c0360afc7818b327e198a70e932037199e3673158724de0"
+    },
+    {
+      "path": "agrosphere-web/e2e/live.spec.ts",
+      "bytes": 3455,
+      "sha256": "d48ee02fc3c22c72e2d69d67894d926e362af4935ebbd786c5db674fe658e544"
+    },
+    {
+      "path": "agrosphere-api-gateway/target/surefire-reports/TEST-com.agrosphere.gateway.GatewayIntegrationTest.xml",
+      "bytes": 205386,
+      "sha256": "d43f9952442e2d5ba09c1057d8b6e940a25ace142f83bd0ce51eaf8d8b5da422"
+    },
+    {
+      "path": "agrosphere-api-gateway/target/surefire-reports/TEST-com.agrosphere.gateway.SecurityPolicyTest.xml",
+      "bytes": 50487,
+      "sha256": "8628d782a604d291660a5ddf7e411f66f1c7f9ae10d7778da0e7a9e1ac1733a2"
+    },
+    {
+      "path": "agrosphere-estate-service/target/failsafe-reports/TEST-com.agrosphere.estate.EstateServiceIT.xml",
+      "bytes": 339302,
+      "sha256": "98c555da457e23848f03bf0990d3c313d194371122d0ed1f7326e2e67b121cb6"
+    },
+    {
+      "path": "agrosphere-estate-service/target/surefire-reports/TEST-com.agrosphere.estate.ApplicationServiceTest.xml",
+      "bytes": 52035,
+      "sha256": "725da486a3fba75debeee0ef6a997674fab597b8d2852f16943f6bccb3ceebfd"
+    },
+    {
+      "path": "agrosphere-estate-service/target/surefire-reports/TEST-com.agrosphere.estate.DomainRulesTest.xml",
+      "bytes": 51223,
+      "sha256": "a01609fcbfeb77229eed2e7256dad10f6498344422c8b1624ec0e43461d1f04b"
+    },
+    {
+      "path": "agrosphere-estate-service/target/surefire-reports/TEST-com.agrosphere.estate.EstateAuthorizationTest.xml",
+      "bytes": 51194,
+      "sha256": "ecdf1fe94772ec783e0f2b37204d2b7a1667c661197fa797fc152ee94412d55e"
+    },
+    {
+      "path": "agrosphere-estate-service/target/surefire-reports/TEST-com.agrosphere.estate.OutboxDispatcherTest.xml",
+      "bytes": 51958,
+      "sha256": "88724205fb4acf73dfa55671cc9cb51cf20d983304506c9448d6d275729962d9"
+    },
+    {
+      "path": "agrosphere-estate-service/target/surefire-reports/TEST-com.agrosphere.estate.SecurityPolicyTest.xml",
+      "bytes": 52302,
+      "sha256": "5e56750bbee7473dcbed5ad1136e3dd2cc7964890301b719a7bf313144898371"
+    },
+    {
+      "path": "agrosphere-operations-service/target/failsafe-reports/TEST-com.agrosphere.operations.TappingServiceIT.xml",
+      "bytes": 543619,
+      "sha256": "ed14f92cec4fa0fad03cd257ab4fa9bbd628ad0f56ed8a31ecd2029466ddc62f"
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.AuthorizationTest.xml",
+      "bytes": 46808,
+      "sha256": "6c74baa8fa7a1680b9b11031c96ff607e641c4e80afe2673e25a735a238fb157"
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.DomainTest.xml",
+      "bytes": 47232,
+      "sha256": "1688464186a67ba121e6a3708941ffa990444bb9cb3538714d1cef9b07051e78"
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.OutboxDispatcherTest.xml",
+      "bytes": 48561,
+      "sha256": "b7c0c7999d5da1b871364cce6cb137f8ba1373c7e10ea145651e851fa4b3b254"
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.SecurityPolicyTest.xml",
+      "bytes": 48038,
+      "sha256": "6f14d23d36b32e0afe42ab01ce85ebf74d382149b371528c8e1e5d95b43ed39d"
+    },
+    {
+      "path": "agrosphere-spatial-service/target/failsafe-reports/TEST-com.agrosphere.spatial.SpatialServiceIT.xml",
+      "bytes": 89139,
+      "sha256": "c589073f5da914f97f0b987f0dcf0109762b63b8a889bcdb5eed241903ba77b9"
+    },
+    {
+      "path": "agrosphere-spatial-service/target/surefire-reports/TEST-com.agrosphere.spatial.ApplicationRulesTest.xml",
+      "bytes": 46729,
+      "sha256": "c339cf933813b7622bdfc6cd2d93f26f5ee13262c9aef8314fa945f472c3e3d0"
+    },
+    {
+      "path": "agrosphere-spatial-service/target/surefire-reports/TEST-com.agrosphere.spatial.GeometryValidationTest.xml",
+      "bytes": 45678,
+      "sha256": "cbd03b8bc03225337cb902ab6e110cfd5cc9f39b81041553438f591e48a841e9"
+    },
+    {
+      "path": "agrosphere-spatial-service/target/surefire-reports/TEST-com.agrosphere.spatial.SecurityPolicyTest.xml",
+      "bytes": 46929,
+      "sha256": "90dfc51e63f732c3eae41099e431fd54f267030db6cb17ab425ee70cea89ad5a"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/MILESTONES.md",
+      "bytes": 1720,
+      "sha256": "ef718f842e2b0a8d508d46d3a7479149ecdb5ee4e21e97a11f064c914188ee22"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/MILESTONE_1A.md",
+      "bytes": 1010,
+      "sha256": "8e8de42348aa2a35746b66bcc21588b7d9ce85940eee15690c6adce7ebfe5169"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/MILESTONE_1B.md",
+      "bytes": 956,
+      "sha256": "cfbf5fde319526b589caca27f52b4c2c89f7e28fd67cdc1d125cafe1c203d10c"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/MILESTONE_1C.md",
+      "bytes": 1311,
+      "sha256": "c92a26d0c12c3b6277ba9aab9984f83dbb6795e6fc5654208bd778d8fb09f0f6"
+    },
+    {
+      "path": "agrosphere-architecture/docs/requirements/FUNCTIONAL_REQUIREMENTS.md",
+      "bytes": 1524,
+      "sha256": "920e2b46397a04b2602063217c3d293e94ed17809a99c1e575230f9f91885126"
+    },
+    {
+      "path": "agrosphere-architecture/docs/requirements/NONFUNCTIONAL_REQUIREMENTS.md",
+      "bytes": 1779,
+      "sha256": "274dfc985fc55e545ec66215a12b6b6683eba153984d050596df66906f34c995"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md",
+      "bytes": 2999,
+      "sha256": "7e0b3d6218705394bc64759e1fa3e58bc93a71b88d43607bb72abce47891cc11"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/0008-estate-management.md",
+      "bytes": 3278,
+      "sha256": "604bde442b67758ba8f26764cb237f8c09578bbfd2cde6cf6b1dd7632f0a15d2"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/0009-spatial-digital-twin.md",
+      "bytes": 3611,
+      "sha256": "dc4de257c426aeff90aac7bb039af329e8fbd3f94f9f693920c788e5291586e5"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/0012-rubber-tapping-operations.md",
+      "bytes": 5479,
+      "sha256": "f9eb3c1ce02edfdac35b9bf77bef0fec6393cffac720ece24472128c1b8d1d0c"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/milestone-3a-completion.md",
+      "bytes": 12286,
+      "sha256": "ff43513d59585b92ad082372fda96d83b7dc4901dd94f6d53cd135a70f027737"
+    },
+    {
+      "path": "agrosphere-estate-service/docs/MILESTONE_1A_REPORT.md",
+      "bytes": 18757,
+      "sha256": "de879fb392c8f2d51e27fc97461636bcd1b32a62e9a1cb4747af69ecb58ba826"
+    },
+    {
+      "path": "agrosphere-spatial-service/docs/MILESTONE_1B_REPORT.md",
+      "bytes": 20790,
+      "sha256": "c07f7755312a53851ad3ad792a0c65f183cab43ba5f7b5f3e695b8a4b80c57ef"
+    },
+    {
+      "path": "agrosphere-infrastructure/docs/MILESTONE_1C_REPORT.md",
+      "bytes": 21420,
+      "sha256": "8f30abf9a07feb621354ee568f261a433dabf975385cbf5e8381dfd00700c369"
+    },
+    {
+      "path": "agrosphere-web/docs/MILESTONE_2_REPORT.md",
+      "bytes": 11746,
+      "sha256": "9dbe43b2b4c8402a2fd4f6a166481010575433eb8050c34f3cacf1586709e9a5"
+    },
+    {
+      "path": "agrosphere-web/playwright-report/index.html",
+      "bytes": 521196,
+      "sha256": "ff6241d2af686a145692ba320371822be4ef588ebfc967bff4a53f1dc66641c2"
+    },
+    {
+      "path": "agrosphere-infrastructure/target/platform-smoke.json",
+      "bytes": 2387,
+      "sha256": "251cc7df98ce571064b3695fed7c89bf469fe0dbee70e02a9644ab88fa76908b"
+    },
+    {
+      "path": "agrosphere-infrastructure/milestone-1c-full-smoke.log",
+      "bytes": 1663,
+      "sha256": "c1ee2cc552e0634302c8b76668d6f26849de52fd4170eb3c303fa601e66f5f55"
+    },
+    {
+      "path": "agrosphere-infrastructure/milestone-3a-compose.log",
+      "bytes": 599,
+      "sha256": "89de357f751abc3645a180d90e1366bc8b78aaefdce1cf38203dc5869ca1a710"
+    },
+    {
+      "path": "agrosphere-operations-service/milestone-3a-tests.log",
+      "bytes": 504817,
+      "sha256": "8ab95bde28630d82029e7e59d7cf98416f2eb943f5fec3832305c71bb746e67f"
+    },
+    {
+      "path": "agrosphere-operations-service/requirements-dev.txt",
+      "bytes": 63,
+      "sha256": "9de9cefd31d28dd85062036c7e3e5ce8c183172373966c4d8a60d92d487167e4"
+    },
+    {
+      "path": "agrosphere-spatial-service/src/main/java/com/agrosphere/spatial/adapter/in/messaging/EstateProjection.java",
+      "bytes": 5174,
+      "sha256": "8cc0ce460e0773e691fe69f30341a05d381b5f9847938248fd9a1f4237a3dce8"
+    },
+    {
+      "path": "agrosphere-orchestrator/docs/milestones/AEO-6/evidence/application-summary.json",
+      "bytes": 5254,
+      "sha256": "7b4f9b07adef0c0b57b804925eb41015316198ba7f60bdcd6495524463cd680b"
+    },
+    {
+      "path": "agrosphere-orchestrator/docs/milestones/AEO-6/evidence/application-discovery.json",
+      "bytes": 822572,
+      "sha256": "ca31c79f0bd4b8119df6ec1f52d529c14a3cac008fd953ca8ce0fe16575e34e7"
+    },
+    {
+      "path": "agrosphere-orchestrator/src/agrosphere_orchestrator/recovery_discovery.py",
+      "bytes": 15884,
+      "sha256": "fc26cf7771581cc18a624f34fe193e75ab86ea063d1ea3a22f91263621e611b4"
+    }
+  ]
+}

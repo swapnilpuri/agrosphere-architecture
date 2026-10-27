@@ -1,0 +1,26 @@
+@startuml
+title Milestone 3B - proposed event publication and downstream ownership
+!define RELATIVE_INCLUDE
+!pragma layout smetana
+!include ../../docs/architecture/includes/C4_Container.puml
+Person(recorder, "Authorized recorder", "Trusted signed subject and estate scope")
+System_Boundary(platform, "AgroSphere") {
+ Container(gateway, "API Gateway", "Existing wildcard route", "/api/v1/tapping/**")
+ Container(operations, "Operations", "Java / JDBC", "Owns tapping, collections, evidence and calculation")
+ Container(estate, "Estate", "REST master data", "Owns estate/division/block UUIDs and timezone")
+ Container(spatial, "Spatial", "PostGIS", "Owns geometry; no collection dependency")
+ ContainerDb(db, "Operations database", "PostgreSQL", "Root, revisions, replay receipts and outbox")
+ Container(relay, "Operations outbox relay", "Existing confirmed publisher", "Stable eventId and dynamic event version")
+ ContainerQueue(bus, "agrosphere.domain", "RabbitMQ", "Durable topic exchange; at-least-once")
+ Container(analytics, "Analytics - FUTURE", "Independent consumer", "Own projection, atomic dedup and revision reconciliation")
+ Container(web, "Web - FUTURE", "Authenticated client", "Own UI; no consumer in 3B")
+}
+Rel(recorder, gateway, "Collection / DRC commands", "JWT + key")
+Rel(gateway, operations, "Forward bearer/key/query/correlation")
+Rel(operations, estate, "Authenticated creation reference validation only")
+Rel(operations, db, "One transaction: state/evidence/receipt/outbox")
+Rel(relay, db, "Lock due rows; mark after positive confirm/no return")
+Rel(relay, bus, "Persistent mandatory publish", "agrosphere.EventType.v2")
+Rel(bus, analytics, "Future supported v2 snapshots; commit dedup before ACK")
+Rel(web, gateway, "Future independently scoped UI")
+@enduml

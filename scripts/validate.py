@@ -23,12 +23,17 @@ for file in (ROOT / "docs/architecture").glob("*.puml"):
     source = file.read_text()
     assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
 assert len(list((ROOT / "docs/architecture").glob("*.puml"))) == 7
-assert len(list((ROOT / "docs/adr").glob("*.md"))) == 12
+assert len(list((ROOT / "docs/adr").glob("*.md"))) == 13
 assert len(list((ROOT / "diagrams/milestone-3a").glob("*.puml"))) == 7
 for file in (ROOT / "diagrams/milestone-3a").glob("*.puml"):
     assert file.read_text().startswith("@startuml") and file.read_text().rstrip().endswith("@enduml")
+assert len(list((ROOT / "diagrams/milestone-3b").glob("*.puml"))) == 6
+for file in (ROOT / "diagrams/milestone-3b").glob("*.puml"):
+    source = file.read_text()
+    assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
+assert "Status: ACCEPTED" in (ROOT / "docs/adr/0013-latex-collection-and-drc.md").read_text(encoding="utf-8")
 check_workflow(ROOT / ".github/workflows/ci.yml")
-print("PASS: architecture source layout, twelve ADRs, workflow YAML/structure")
+print("PASS: architecture source layout, thirteen ADRs, workflow YAML/structure")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--workspace", type=Path)
@@ -50,9 +55,15 @@ if args.workspace:
             assert (project / required).is_file(), (name, required)
         check_workflow(project / ".github/workflows/ci.yml")
         tracked = subprocess.check_output(["git", "-C", str(project), "ls-files", "--cached", "--others", "--exclude-standard"], text=True).splitlines()
+        deleted = set(subprocess.check_output(["git", "-C", str(project), "ls-files", "--deleted"], text=True).splitlines())
         assert not subprocess.check_output(["git", "-C", str(project), "ls-files", "--stage"], text=True).startswith("160000"), name
         for relative in tracked:
             file = project / relative
+            # A working-tree rename can leave the old index entry until review/staging.
+            # Validate current files without mutating the user's index.
+            if not file.exists():
+                assert relative in deleted, (name, relative)
+                continue
             assert file.name != ".env" and not (file.suffix in {".pem", ".key", ".p12", ".jks"}), file
             assert ".git" not in Path(relative).parts, file
             text = file.read_text(encoding="utf-8", errors="replace")

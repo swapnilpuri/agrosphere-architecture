@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-27",
+  "timezone": "America/Chicago",
+  "state": "T01 local release/pinning complete; T03 schema/JDBC preparation verified but credential wiring excluded; T04 components verified; 3B incomplete",
+  "repositories": [
+    {
+      "repository": "agrosphere-ai-service",
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "version": "0.1.0",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-analytics-service",
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "version": "0.1.0",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-api-gateway",
+      "head": "fcf7daf66fa0d9efaf2d1aa72f8cc88c600ab6c0",
+      "version": "0.2.1",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "head": "edffdc19868b7d8d9139bc8272405a30ce28bb3d",
+      "version": "0.5.0",
+      "statusShort": "M .github/workflows/ci.yml\n M AGENTS.md\nMM CHANGELOG.md\nMM README.md\nA  diagrams/milestone-3b/correction-reconciliation.puml\nA  diagrams/milestone-3b/domain.puml\nA  diagrams/milestone-3b/event-ownership.puml\nAM diagrams/milestone-3b/persistence.puml\nA  diagrams/milestone-3b/rest-sequence.puml\nA  diagrams/milestone-3b/workflow.puml\nAD docs/adr/proposed/0013-latex-collection-and-drc.md\nAM docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md\nAM docs/milestones/MILESTONE_3B_DESIGN.md\nAM docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md\nAM docs/milestones/MILESTONE_3B_REQUIREMENTS.md\nAM docs/milestones/MILESTONE_3B_VALIDATION.md\n M docs/milestones/milestone-3a-completion.md\n M docs/milestones/milestone-3a-development.md\n M docs/milestones/milestone-3a-discovery.md\n M scripts/validate.py\n?? docs/adr/0013-latex-collection-and-drc.md\n?? docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n?? docs/milestones/COMMAND_EXECUTION_RESTORED_2026-10-27.json\n?? docs/milestones/DEVELOPMENT_CHECKPOINT.md\n?? docs/milestones/DEVELOPMENT_CHECKPOINT_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_APPROVAL.md\n?? docs/milestones/MILESTONE_3B_APPROVAL_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_CREDENTIAL_WIRING_REVIEW.md\n?? docs/milestones/MILESTONE_3B_READINESS_REVIEW.md\n?? docs/milestones/MILESTONE_3B_T00_T02_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_T00_T02_PROGRESS.md\n?? docs/milestones/MILESTONE_3B_T03_T04_PROGRESS.md"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "version": "0.5.0",
+      "statusShort": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M docs/COMPATIBILITY.md\n M openapi/operations-service.yaml\n M scripts/validate.py\n?? docs/milestone-3b/\n?? events/operations/v2/\n?? examples/operations/v2/\n?? scripts/build_collection_contracts.py\n?? scripts/collection_contract_validation.py\n?? scripts/test_collection_contracts.py"
+    },
+    {
+      "repository": "agrosphere-estate-service",
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "version": "0.2.2",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-immersive",
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "version": "0.1.0",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-infrastructure",
+      "head": "3268651e1d48a38f858351c105ab54b4103c3ded",
+      "version": "0.3.0",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "version": "0.2.0",
+      "statusShort": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M src/main/java/com/agrosphere/operations/infrastructure/integration/EstateHttpClient.java\n M src/main/resources/contracts/RELEASE\n M src/main/resources/contracts/operations-service.yaml\n M src/test/java/com/agrosphere/operations/TappingServiceIT.java\n?? scripts/validate_collection_pins.py\n?? src/main/java/com/agrosphere/operations/application/CollectionAccess.java\n?? src/main/java/com/agrosphere/operations/application/CollectionReferenceValidation.java\n?? src/main/java/com/agrosphere/operations/application/CollectionRepository.java\n?? src/main/java/com/agrosphere/operations/application/CollectionScope.java\n?? src/main/java/com/agrosphere/operations/application/CollectionSnapshots.java\n?? src/main/java/com/agrosphere/operations/domain/CollectionAdjustment.java\n?? src/main/java/com/agrosphere/operations/domain/CollectionRevision.java\n?? src/main/java/com/agrosphere/operations/domain/CollectionRules.java\n?? src/main/java/com/agrosphere/operations/domain/DrcMeasurement.java\n?? src/main/java/com/agrosphere/operations/domain/LatexCollection.java\n?? src/main/java/com/agrosphere/operations/infrastructure/persistence/CollectionStore.java\n?? src/main/resources/contracts/COLLECTION_RELEASE.json\n?? src/main/resources/contracts/events/operations/\n?? src/main/resources/db/migration/V3__latex_collection.sql\n?? src/test/java/com/agrosphere/operations/CollectionDomainTest.java\n?? src/test/java/com/agrosphere/operations/CollectionReferenceTest.java\n?? src/test/java/com/agrosphere/operations/CollectionSchemaIT.java\n?? src/test/java/com/agrosphere/operations/CollectionStoreIT.java\n?? src/test/java/com/agrosphere/operations/CollectionTestSupport.java\n?? src/test/java/com/agrosphere/operations/config/"
+    },
+    {
+      "repository": "agrosphere-spatial-service",
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "version": "0.2.1",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-telemetry-service",
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "version": "0.1.0",
+      "statusShort": ""
+    },
+    {
+      "repository": "agrosphere-web",
+      "head": "2a56f819cc653425e4c58bd6306872e352ee5c7a",
+      "version": "0.2.0",
+      "statusShort": ""
+    }
+  ],
+  "acceptedCandidateManifestSha256": "1fa837922afa69e2cff42d33e3a5bff5dade7efc18d91ec52e4126fff442f543",
+  "acceptedCandidateHashesMatch": 26,
+  "runtimePinsMatch": 5,
+  "protectedConfigurationAndV1V2Unchanged": [
+    "src/main/resources/application.yaml",
+    "src/main/resources/db/migration/V1__messaging_foundation.sql",
+    "src/main/resources/db/migration/V2__rubber_tapping.sql",
+    ".env.example"
+  ],
+  "junitReports": [
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.AuthorizationTest.xml",
+      "sha256": "b5d5bd361904f9439c64f714654d1d7980182ecea2ef5093cb445be029b52694",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.AuthorizationTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.CollectionDomainTest.xml",
+      "sha256": "5bead22c9e84b4d75b3924069d2ec21efd05c82873dbdbda679ee48f4323d42f",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.CollectionDomainTest",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.CollectionReferenceTest.xml",
+      "sha256": "1df39f101686f2e4f681087b912e0f54522162e52f39e3d9c5884d628ace8bb3",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.CollectionReferenceTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.config.CollectionAccessTest.xml",
+      "sha256": "2a3ad30cd61bdc95eeff7b0df4017f38843dfa3ff1eab0da378d3e4afcbdb6dc",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.config.CollectionAccessTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.DomainTest.xml",
+      "sha256": "d1608f73371b880a2ae45b349d9e56ef3311025ad82c91c66a128daf687d83d4",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.DomainTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.OutboxDispatcherTest.xml",
+      "sha256": "5221237ec155bf6b76a9746808806b9af2cf5a0e3511e0a2e5f4f4f714c6ca9b",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.OutboxDispatcherTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.SecurityPolicyTest.xml",
+      "sha256": "0e5f6d775ac997e3099f02df161caf4c7328612af55674be88c7d88053e26dcc",
+      "kind": "unit/security",
+      "suite": "com.agrosphere.operations.SecurityPolicyTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/failsafe-reports/TEST-com.agrosphere.operations.CollectionSchemaIT.xml",
+      "sha256": "56f5be219d2e638aefb83d86c159a49af84e969f9c5dfa1a3d17dc2931aaa858",
+      "kind": "integration",
+      "suite": "com.agrosphere.operations.CollectionSchemaIT",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/failsafe-reports/TEST-com.agrosphere.operations.CollectionStoreIT.xml",
+      "sha256": "36d89659d725357a90702f58640d23aff278539cdf8b41fcde8e60ee1f6f2672",
+      "kind": "integration",
+      "suite": "com.agrosphere.operations.CollectionStoreIT",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/failsafe-reports/TEST-com.agrosphere.operations.TappingServiceIT.xml",
+      "sha256": "a0f5d0baa10d318034746b8fdedd6c2fb7297b36ae1b9438a6b73c1b0ad620f7",
+      "kind": "integration",
+      "suite": "com.agrosphere.operations.TappingServiceIT",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "currentTotals": {
+    "unitSecurityTests": 70,
+    "integrationTests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "contractBoundaryTests": 12
+  },
+  "sourceFingerprints": [
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/in/messaging/package-info.java",
+      "sha256": "2b8c016bee170a5c4ad8c884453fdd581f66ed7cbc17cebf1798f4f69d57b93f"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/in/web/package-info.java",
+      "sha256": "91e9b6da0379e1d616655c3a8829488b1af86a29713784931875c92d61b543e0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/out/persistence/package-info.java",
+      "sha256": "c3dc7163ec4a6dc5acf9fbb9a508f08ed7adcf923927807f104bcc01ae24dfc2"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/CorrelationFilter.java",
+      "sha256": "42f1a36bd0fe5a857e864b84a488184fcd3556f11cb8b848bb2fdd2097e81863"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/Problems.java",
+      "sha256": "595dd73da793535ce11040f1999876015042ac51f220177a653c67b4f4cb17bf"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/TappingController.java",
+      "sha256": "4de9e5aa0917c002bfcd5990fcb6cae45d26e0d73ff0b1be2fc56aede155011f"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Access.java",
+      "sha256": "c1dad35b99250d9d20c4b3d661c4b3597cee3130a834b4bb1b02e865f9d3ba54"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionAccess.java",
+      "sha256": "9ab88eb3b3d9b84407522eca12a6c8ae62529915af3a12b055811dfd4080a2fa"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionReferenceValidation.java",
+      "sha256": "313baf0dd77d79f7e3f02d0eb31e6831d15836c42439d52468e2c2d52ed86cdf"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionRepository.java",
+      "sha256": "341727b01747a7c3445f8cdc7f7dab243abda67cdecc71941913edb908964229"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionScope.java",
+      "sha256": "1a1a84031bd5786aef49d8627d2095c4b8bbf0b81df6b96f0af3c5b351fe235d"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionSnapshots.java",
+      "sha256": "e4539b5b59d442b5a28ff495f2d64f2d7976fe73e21334e9c6f1b8d3a747f7f2"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/DomainEvents.java",
+      "sha256": "d3312b4c981d748b6a60b6648ae014ef4fb49a6abc07c5d8ab3bbee5d08503f2"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/EstateValidation.java",
+      "sha256": "44398c2dfb4e977d44fadcd013fef3f7bfa334ed471d78fe3cab030e4d55bbca"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/package-info.java",
+      "sha256": "7c08bf8d79ba880bb4398ceb23aa22ec72800f64104e3dea42ce383fe8aae89c"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/port/out/package-info.java",
+      "sha256": "afc37f3c463cac0b295566867163c09b608e5c18af3f03d77a7eb07e738ac4b4"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Requests.java",
+      "sha256": "06ab35f8daae937e7e2e9ea1ec5dce3b49ab423d98a24f47bff8df8e8fbc36c4"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingRepository.java",
+      "sha256": "d0af3b8420acde75b483934d8dc0be739a39b3c7302f43e17ffac2b565e6b11a"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingService.java",
+      "sha256": "b86cbbccbb38f189a243a98dabfecaa97af82a35eeed4b7a9fcd15e866c019d0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/Application.java",
+      "sha256": "76c2ed9251075256451eff89e680ee57be55ee28b324e8249ce7dd1922be30eb"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/JwtValidationConfiguration.java",
+      "sha256": "23739c96e5f46bbbf352f37cb23f2bc2ddcde1bb57719b4c515f03b69616df41"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/OpenApiConfiguration.java",
+      "sha256": "248b86d7724bb89ab4add866da7d1978b2206b6fcca14698aa3029f60a6672fe"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/RuntimeConfiguration.java",
+      "sha256": "28900d6599e3eab58a0ab0d04dedd151f8dae6b9d818d77bd2e6b604bb602383"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionAdjustment.java",
+      "sha256": "0d7c5a79a100a6266aec1cca8767a4ab5c56a53b3b3bf92aa1a0a61b464cbdba"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionRevision.java",
+      "sha256": "0ac3a5d4e7bec0e79ca3eb6fd0d9131b01b607a0872e108104294242da08a925"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionRules.java",
+      "sha256": "1f707923d2147431c03abbb745e63c29cf427b97aabf49ff55c774cb60fd7fa0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/DrcMeasurement.java",
+      "sha256": "18f1ba246ec0396552a987a916f9804d7b13feaad4e8add1908b1c71223102b3"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/LatexCollection.java",
+      "sha256": "d2117a3fc389a9784ed884599fc4277be6e9760d3f0a56a23c55098e9f102ee6"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/package-info.java",
+      "sha256": "ff48bbc993ea9c14473b1ad6b6693a963527d736206c841bf570811f8439ad47"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/Rules.java",
+      "sha256": "939ab9a112bd125b58b89aae2d994b3a6d31cb17267ca46aceb9fe09bd371abd"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingAssignment.java",
+      "sha256": "a3c674fcaffcfcfe8ca0a08804ecd3ab5699569f5cf8afddf2dd7208288267fd"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingMissedReason.java",
+      "sha256": "beeddd638accc16fd79cff8456a4882dba15401aa957024de1a2c256c4f79c21"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingRecord.java",
+      "sha256": "b8435c0f66c38d09cdd62bf3c4cbc59fd14ad233ee012113bb0bd566396bbb34"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingSchedule.java",
+      "sha256": "cfe4d0c80373ccc31d2ab3d6ca7e57ac4863c25bc4685170a44243f4833fbf76"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/integration/EstateHttpClient.java",
+      "sha256": "da76a72f10be5ce2d8b3f80d4c8a28c2411c535484045a344d28802fcf8a0103"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/Events.java",
+      "sha256": "89fe9ff4d762ed6d367073db44202729d62eb2104d1111ad94bd58480a66a109"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/OutboxDispatcher.java",
+      "sha256": "a3fe6e3357e83118a3933035aa332581bacf15a54263c53982544598cbffae7d"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/OutboxMetrics.java",
+      "sha256": "a2cfd89dcda6168459a50d4f68f17a8b11fa9416dbdf55a1c6110cf787206900"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/persistence/CollectionStore.java",
+      "sha256": "be41ac583cca4f7562f4ebddbb02d5fe3b7ac09d5d82e5e3a25dbcc6c45bd69a"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/persistence/TappingStore.java",
+      "sha256": "84082f19fd1464a43a820eb69e7dcd3eaa3ba0deb0e8e88d83173c6bcf7d2268"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/SecurityConfiguration.java",
+      "sha256": "ef10db3fe59453aedb47a174e065f5900872ec862a58d8d50a93942a71bcc2fa"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/AuthorizationTest.java",
+      "sha256": "1033a53ce9ae302929e5f566c6442c2930dfd6a7b30c4f54bb5fc47b7c53e14f"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionDomainTest.java",
+      "sha256": "e0e72cc4de493e0fd2342e995e7caba5e419518e44f2d1d38554e6f8aee432a0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionReferenceTest.java",
+      "sha256": "9370f77b7a600d4b9fb83c846663f0768bc86bf9dc4a5496473da9983df243df"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionSchemaIT.java",
+      "sha256": "5b4471e96ff587a74fa19d166aa9e1a7c99a9d9c2812cd3652bba3d26bad0c50"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionStoreIT.java",
+      "sha256": "a8b376e713a0709ff681f8c1f1ca35c892b20100d938ac90443a10784290a265"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionTestSupport.java",
+      "sha256": "4642474db50361542b068cb43b17cb5b3563fe3322db1e73306eb746b1ae1e85"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/config/CollectionAccessTest.java",
+      "sha256": "5c92800c9e9da77897a373d82b5ff3b95633614c6d46245854febc137fcfc794"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/DomainTest.java",
+      "sha256": "d6524b4510b3693afe28f99c8009f2ab88c00a8e97df0cf7d6400b4a8d4eb676"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/OutboxDispatcherTest.java",
+      "sha256": "2fe58ca31d61b39edbf031b79d096f326eb676d2a836e6e15a0182db8ad21560"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/SecurityPolicyTest.java",
+      "sha256": "d1b309a2e13427aa23a4e62211a9187adf762ed63096c84cf20b2d474791b53c"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/TappingServiceIT.java",
+      "sha256": "5ed5567d16e0ed755b09dadf3c23eee14898b3b3a532e54957c53bb420df511b"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "sha256": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql",
+      "sha256": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/resources/db/migration/V3__latex_collection.sql",
+      "sha256": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c"
+    }
+  ],
+  "actualSnapshotFingerprints": [
+    {
+      "path": "agrosphere-operations-service/target/collection-snapshots/corrected.json",
+      "sha256": "f91437474a548f47d45eff2bb37aa4c533879e2faac211d169197625e9fd911e"
+    },
+    {
+      "path": "agrosphere-operations-service/target/collection-snapshots/created.json",
+      "sha256": "aa78901a138c9176922de723613acd08f14e82617366aae538bf22f99bac8822"
+    },
+    {
+      "path": "agrosphere-operations-service/target/collection-snapshots/measured.json",
+      "sha256": "fb78144750d01834e973256b001829d6da83f9eced6d73213d40fd9a249f47b1"
+    },
+    {
+      "path": "agrosphere-operations-service/target/collection-snapshots/voided.json",
+      "sha256": "71b4412d32eed937031343c11ffb0edcc6a55dc2f43e83121cb65cf1aa7bbb0f"
+    }
+  ],
+  "ignoredLogFingerprints": [
+    {
+      "path": "agrosphere-operations-service/target/collection-integration.log",
+      "sha256": "a691f00908d3bc0e9408b369a3a772f611359ac28001b21f59c93cea6b074ee0"
+    },
+    {
+      "path": "agrosphere-operations-service/target/collection-runtime-alignment.log",
+      "sha256": "75e75cebea6fab265ab81e8f1bd694c7cec87f4b1027eb1733159eeda2f1e830"
+    },
+    {
+      "path": "agrosphere-operations-service/target/collection-docker-build.log",
+      "sha256": "a2466bd0bdf5ec374a6c98aa9ae27b3c5e5f3baa5b3a1997689411ec9a6406a7"
+    }
+  ],
+  "checks": [
+    {
+      "command": "./mvnw.cmd verify -Pintegration",
+      "environment": {
+        "JAVA_HOME": "C:/myprograms/jdk-25.0.2"
+      },
+      "execution": "Approved tool escalation for Docker named pipe",
+      "result": "PASS: 70 unit/security + 25 disposable integration tests"
+    },
+    {
+      "command": "python scripts/validate_collection_pins.py --snapshots target/collection-snapshots",
+      "result": "PASS: 5 accepted artifacts; 4 actual snapshots match pinned CollectionView"
+    },
+    {
+      "command": "docker build -t agrosphere-operations-service:3b-schema-review .",
+      "execution": "Approved tool escalation",
+      "result": "PASS",
+      "imageId": "sha256:3d654879edd06451628148041dea7ee154909066d44a095c483e453984dc2b37"
+    },
+    {
+      "command": "scripts/validate_contracts.py (existing development venv interpreter)",
+      "result": "FAIL: actual runtime 18 operations; accepted pinned document 27; all 9 collection routes pending T06"
+    },
+    {
+      "command": "Contracts full validator / artifact builder --check / unittest suite",
+      "result": "PASS; 12 contract tests; 47 legacy event/example files preserved"
+    },
+    {
+      "command": "Pinned PlantUML -checkonly all main/3A/3B; persistence PNG render",
+      "result": "PASS; changed persistence diagram visually inspected"
+    }
+  ],
+  "pending": [
+    "Actual separate runtime-login and Flyway credential wiring/provisioning scope approval",
+    "Actual restricted-login connection proof",
+    "Previous-3A-image rollback drill",
+    "T05 command replay/transaction/outbox orchestration",
+    "T06 HTTP/summaries/runtime OpenAPI alignment",
+    "T07 v2 producer events",
+    "T08 isolated collection acceptance",
+    "T09 full closeout"
+  ],
+  "scopeDecisionReview": "docs/milestones/MILESTONE_3B_CREDENTIAL_WIRING_REVIEW.md",
+  "scopeDecisionReviewSha256": "7d5773e51bdef1215df9c91581537ade6355b6d899ce49b5311e9fa5dae7a319",
+  "boundaries": "No remote publication, commit/tag/push, live credential/private environment access or change, active DB/stack provisioning, production operations or AEO access/modification.",
+  "finalRepositoryChecks": {
+    "architectureWorkspaceValidator": "PASS",
+    "affectedGitDiffChecks": "PASS",
+    "localFileLinks": {
+      "checked": 16,
+      "missing": 0,
+      "limit": "existence only"
+    },
+    "currentCheckpointSha256": "cb4d215612c8f8150d6e76faeeaf1e492ed5f1fd9ed5d183d9b6047c52d90305"
+  }
+}

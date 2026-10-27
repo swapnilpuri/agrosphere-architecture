@@ -1,0 +1,56 @@
+@startuml
+title Milestone 3B - proposed domain (Operations ownership)
+!pragma layout smetana
+class TappingAssignment <<existing, unchanged>> {
+ status = COMPLETED
+ workerId
+}
+class TappingRecord <<existing, unchanged>> {
+ UUID id
+ actualTreeCount > 0
+ completedAt
+}
+class LatexCollection <<aggregate root>> {
+ UUID id
+ UUID tappingRecordId
+ String collectionReference
+ LocalDate collectionDate
+ BigDecimal wetLatexKg
+ CollectionStatus status
+ UUID selectedMeasurementId
+ BigDecimal dryRubberKg
+ long version
+}
+class DrcMeasurement <<immutable child>> {
+ BigDecimal percent
+ Instant measuredAt
+ String method
+ String sourceReference
+}
+class CollectionRevision <<immutable evidence>> {
+ long version
+ CollectionView snapshot
+}
+class CollectionAdjustment <<immutable approval>> {
+ long beforeVersion
+ long afterVersion
+ String reason
+ String approvedBy
+}
+class DryRubberCalculation <<domain policy>> {
+ DRC_KG_V1
+ HALF_UP / kg scale 3
+}
+TappingAssignment "1" -- "0..1" TappingRecord
+TappingRecord "1" <-- "0..*" LatexCollection : completed execution reference
+LatexCollection "1" *-- "0..*" DrcMeasurement
+LatexCollection "1" *-- "1..*" CollectionRevision
+LatexCollection "1" *-- "0..*" CollectionAdjustment
+LatexCollection ..> DryRubberCalculation
+note bottom of LatexCollection
+Estate/block/execution worker attribution is fixed.
+Division/timezone are creation snapshots.
+Current measurement belongs to this root.
+All writes serialize on root version.
+end note
+@enduml

@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-27",
+  "timezone": "America/Chicago",
+  "execution": "RESTORED",
+  "shell": "C:/Program Files/PowerShell/7/pwsh.exe",
+  "probeExitCode": 0,
+  "repositoryObservations": [
+    {
+      "repository": "agrosphere-ai-service",
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "statusShort": "",
+      "version": "0.1.0"
+    },
+    {
+      "repository": "agrosphere-analytics-service",
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "statusShort": "",
+      "version": "0.1.0"
+    },
+    {
+      "repository": "agrosphere-api-gateway",
+      "head": "fcf7daf66fa0d9efaf2d1aa72f8cc88c600ab6c0",
+      "statusShort": "",
+      "version": "0.2.1"
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "head": "edffdc19868b7d8d9139bc8272405a30ce28bb3d",
+      "statusShort": "M AGENTS.md\nMM CHANGELOG.md\nMM README.md\nA  diagrams/milestone-3b/correction-reconciliation.puml\nA  diagrams/milestone-3b/domain.puml\nA  diagrams/milestone-3b/event-ownership.puml\nA  diagrams/milestone-3b/persistence.puml\nA  diagrams/milestone-3b/rest-sequence.puml\nA  diagrams/milestone-3b/workflow.puml\nAM docs/adr/proposed/0013-latex-collection-and-drc.md\nAM docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md\nAM docs/milestones/MILESTONE_3B_DESIGN.md\nAM docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md\nAM docs/milestones/MILESTONE_3B_REQUIREMENTS.md\nAM docs/milestones/MILESTONE_3B_VALIDATION.md\n?? docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n?? docs/milestones/DEVELOPMENT_CHECKPOINT.md\n?? docs/milestones/DEVELOPMENT_CHECKPOINT_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_APPROVAL.md\n?? docs/milestones/MILESTONE_3B_APPROVAL_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_READINESS_REVIEW.md",
+      "version": "0.5.0"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "statusShort": "M CHANGELOG.md\n M README.md\n?? docs/milestone-3b/",
+      "version": "0.4.0"
+    },
+    {
+      "repository": "agrosphere-estate-service",
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "statusShort": "",
+      "version": "0.2.2"
+    },
+    {
+      "repository": "agrosphere-immersive",
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "statusShort": "",
+      "version": "0.1.0"
+    },
+    {
+      "repository": "agrosphere-infrastructure",
+      "head": "3268651e1d48a38f858351c105ab54b4103c3ded",
+      "statusShort": "",
+      "version": "0.3.0"
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "statusShort": "",
+      "version": "0.2.0"
+    },
+    {
+      "repository": "agrosphere-spatial-service",
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "statusShort": "",
+      "version": "0.2.1"
+    },
+    {
+      "repository": "agrosphere-telemetry-service",
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "statusShort": "",
+      "version": "0.1.0"
+    },
+    {
+      "repository": "agrosphere-web",
+      "head": "2a56f819cc653425e4c58bd6306872e352ee5c7a",
+      "statusShort": "",
+      "version": "0.2.0"
+    }
+  ],
+  "checks": {
+    "architectureValidator": "PASS",
+    "workspaceValidator": "PASS",
+    "contractsValidatorUsingExistingVenv": "PASS",
+    "plantumlSyntaxMain3a3b": "PASS",
+    "plantumlJarChecksum": "PASS",
+    "defaultPythonContractsAttempt": "FAILED: openapi_spec_validator missing; existing Contracts venv succeeded"
+  },
+  "notRun": [
+    "PlantUML rendering/visual inspection",
+    "Maven unit/integration",
+    "Docker",
+    "database/broker/identity acceptance"
+  ],
+  "scope": "Only checkpoint and this evidence file written; existing changes preserved; no AEO access or modification"
+}

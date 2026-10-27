@@ -1,0 +1,42 @@
+@startuml
+title Milestone 3B - proposed errors, correction and reconciliation
+actor "Estate manager" as M
+participant Operations as O
+database "Operations DB" as D
+participant "Confirmed outbox relay" as R
+queue RabbitMQ as Q
+participant "Future consumer (not implemented)" as C
+M -> O : correction / void; reason + version + Idempotency-Key
+O -> O : current role/estate authorization; receipt check
+alt invalid input / unauthorized / stale
+ O --> M : 400 / 403 / 409 ProblemDetail + correlation
+ note over O,D : No committed mutation, history, command reservation or event.
+else valid new command
+ O -> D : BEGIN; reserve key; conditional root update
+ O -> D : before/after revision + adjustment + full snapshot event + receipt
+ alt persistence / serialization failure
+  O -> D : ROLLBACK all writes
+  O --> M : sanitized failure; retry same key
+ else committed
+  O -> D : COMMIT
+  O --> M : 200 applied manager action
+ end
+end
+R -> D : lock committed due outbox row
+R -> Q : same stable eventId on every attempt
+alt confirm positive and no mandatory return
+ Q --> R : ack
+ R -> D : mark PUBLISHED and commit
+else nack / return / timeout / outage
+ R -> D : capped backoff; finite attempts; retain FAILED
+ note over R,D : Repair cause then operator resets selected IDs, never regenerates.
+end
+Q -> C : duplicate or out-of-order full snapshots
+C -> C : future atomic eventId dedup + highest version
+C -> C : replace prior contribution; VOIDED tombstone contributes zero
+note over D,C
+Reconcile latest root/revision/outbox aggregate version.
+Later date correction reverses consumer's old grouping contribution.
+History retains original observed evidence.
+end note
+@enduml

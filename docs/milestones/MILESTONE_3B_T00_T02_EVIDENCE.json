@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-27",
+  "timezone": "America/Chicago",
+  "status": "T00 complete; T01 candidate validated/review pending; T02 domain unit-verified; 3B acceptance incomplete",
+  "repositories": [
+    {
+      "repository": "agrosphere-architecture",
+      "head": "edffdc19868b7d8d9139bc8272405a30ce28bb3d",
+      "statusShort": "M .github/workflows/ci.yml\n M AGENTS.md\nMM CHANGELOG.md\nMM README.md\nA  diagrams/milestone-3b/correction-reconciliation.puml\nA  diagrams/milestone-3b/domain.puml\nA  diagrams/milestone-3b/event-ownership.puml\nA  diagrams/milestone-3b/persistence.puml\nA  diagrams/milestone-3b/rest-sequence.puml\nA  diagrams/milestone-3b/workflow.puml\nAD docs/adr/proposed/0013-latex-collection-and-drc.md\nAM docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md\nAM docs/milestones/MILESTONE_3B_DESIGN.md\nAM docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md\nAM docs/milestones/MILESTONE_3B_REQUIREMENTS.md\nAM docs/milestones/MILESTONE_3B_VALIDATION.md\n M docs/milestones/milestone-3a-completion.md\n M docs/milestones/milestone-3a-development.md\n M docs/milestones/milestone-3a-discovery.md\n M scripts/validate.py\n?? docs/adr/0013-latex-collection-and-drc.md\n?? docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n?? docs/milestones/COMMAND_EXECUTION_RESTORED_2026-10-27.json\n?? docs/milestones/DEVELOPMENT_CHECKPOINT.md\n?? docs/milestones/DEVELOPMENT_CHECKPOINT_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_APPROVAL.md\n?? docs/milestones/MILESTONE_3B_APPROVAL_EVIDENCE.json\n?? docs/milestones/MILESTONE_3B_READINESS_REVIEW.md\n?? docs/milestones/MILESTONE_3B_T00_T02_PROGRESS.md",
+      "version": "0.5.0"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "statusShort": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M openapi/operations-service.yaml\n M scripts/validate.py\n?? docs/milestone-3b/\n?? events/operations/v2/\n?? examples/operations/v2/\n?? scripts/build_collection_contracts.py\n?? scripts/collection_contract_validation.py\n?? scripts/test_collection_contracts.py",
+      "version": "0.4.0"
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "statusShort": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n?? src/main/java/com/agrosphere/operations/domain/CollectionAdjustment.java\n?? src/main/java/com/agrosphere/operations/domain/CollectionRevision.java\n?? src/main/java/com/agrosphere/operations/domain/CollectionRules.java\n?? src/main/java/com/agrosphere/operations/domain/DrcMeasurement.java\n?? src/main/java/com/agrosphere/operations/domain/LatexCollection.java\n?? src/test/java/com/agrosphere/operations/CollectionDomainTest.java",
+      "version": "0.2.0"
+    }
+  ],
+  "junitReports": [
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.AuthorizationTest.xml",
+      "sha256": "2b325fe06151ce40aa7342ea2c33010bf4247c58c830053b2e0ab022c14c46d0",
+      "suite": "com.agrosphere.operations.AuthorizationTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.CollectionDomainTest.xml",
+      "sha256": "9048655dad051faf8a97ce52aa83b3c01452da3ee2beb4e9e37a5f14c1ab03ae",
+      "suite": "com.agrosphere.operations.CollectionDomainTest",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.DomainTest.xml",
+      "sha256": "f3cb69f13ac45976ab8f742fb55a0f79a606ff2e6aa3aa2f591ef5c9c934bab0",
+      "suite": "com.agrosphere.operations.DomainTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.OutboxDispatcherTest.xml",
+      "sha256": "1dac657bcb72374ed8a1590b597db667a0210ca563432327f923c08bb1ab532c",
+      "suite": "com.agrosphere.operations.OutboxDispatcherTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.SecurityPolicyTest.xml",
+      "sha256": "bc52038fc0426263d71573a7341168ff9771c0022c23cf3d236757c8ae0d1eca",
+      "suite": "com.agrosphere.operations.SecurityPolicyTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "artifactFingerprints": [
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionAdjustment.java",
+      "sha256": "0d7c5a79a100a6266aec1cca8767a4ab5c56a53b3b3bf92aa1a0a61b464cbdba"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionRevision.java",
+      "sha256": "0ac3a5d4e7bec0e79ca3eb6fd0d9131b01b607a0872e108104294242da08a925"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/CollectionRules.java",
+      "sha256": "1f707923d2147431c03abbb745e63c29cf427b97aabf49ff55c774cb60fd7fa0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/LatexCollection.java",
+      "sha256": "d2117a3fc389a9784ed884599fc4277be6e9760d3f0a56a23c55098e9f102ee6"
+    },
+    {
+      "path": "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CollectionDomainTest.java",
+      "sha256": "e0e72cc4de493e0fd2342e995e7caba5e419518e44f2d1d38554e6f8aee432a0"
+    },
+    {
+      "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/DrcMeasurement.java",
+      "sha256": "18f1ba246ec0396552a987a916f9804d7b13feaad4e8add1908b1c71223102b3"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/correction-reconciliation.png",
+      "sha256": "ed5dca879fd7ba36d51b5718b2327fe00e74ab662745f210f7478b13b4ee904f"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/domain.png",
+      "sha256": "dbc7b153ae8d6bcc866ba1b9e49353fe876268def9ce49b1174f9cc59bc412f8"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/event-ownership.png",
+      "sha256": "923a4062957220210aed44ca2a4abe702557ff463b9cbb4d6b0ac692ce57f6aa"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/persistence.png",
+      "sha256": "dcfdc389ef270e55499555fa2497b6cd971fa6f408b1be04a86af2ac3a8a4249"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/rest-sequence.png",
+      "sha256": "36fa3e80c8a0d91f7be2c5f3064f774d7d8daadbc904d7134206544cfcab3120"
+    },
+    {
+      "path": "agrosphere-architecture/target/diagrams-3b/workflow.png",
+      "sha256": "6e85416bb0375d7827aeb72533ebeb20a4e41b7cdab9f13d562a5f8e70ab9524"
+    }
+  ],
+  "contractsCandidateManifest": "agrosphere-contracts/docs/milestone-3b/CANDIDATE_0_5_0.json",
+  "commands": [
+    {
+      "repository": "agrosphere-architecture",
+      "command": "python scripts/validate.py --workspace C:/Projects/agrosphere",
+      "result": "PASS"
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "command": "java -jar target/plantuml.jar -checkonly 'docs/architecture/*.puml' 'diagrams/milestone-3a/*.puml' 'diagrams/milestone-3b/*.puml'",
+      "result": "PASS"
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "command": "java -jar target/plantuml.jar -tpng -o ../../target/diagrams-3b 'diagrams/milestone-3b/*.puml'",
+      "result": "PASS; six PNGs visually inspected"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/validate.py",
+      "result": "PASS"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/build_collection_contracts.py --check",
+      "result": "PASS"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_collection_contracts.py -v",
+      "result": "PASS: 12 tests"
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "command": "./mvnw.cmd verify",
+      "environment": {
+        "JAVA_HOME": "C:/myprograms/jdk-25.0.2"
+      },
+      "result": "PASS: 56 tests, zero failures/errors/skips"
+    },
+    {
+      "command": "docker version --format '{{.Server.Version}}'",
+      "result": "FAILED: dockerDesktopLinuxEngine named pipe absent"
+    }
+  ],
+  "notRun": [
+    "Maven integration profile",
+    "Docker build/Compose acceptance",
+    "live OpenAPI/event exports",
+    "database upgrade/rollback",
+    "hosted CI"
+  ],
+  "boundaries": "No VERSION bump, runtime pin, production/database/credential/config/AEO change, staging, commit, push or deployment."
+}

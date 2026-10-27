@@ -1,0 +1,25 @@
+@startuml
+title Milestone 3B - proposed collection and DRC lifecycle
+[*] --> PENDING_DRC : completed execution + authorized weighed lot
+PENDING_DRC : dry mass = null
+PENDING_DRC --> PENDING_DRC : manager-approved weight/time correction
+PENDING_DRC --> CALCULATED : first DRC by supervisor/management
+PENDING_DRC --> CALCULATED : manager correction supplies measurement
+CALCULATED : measured DRC, derived dry mass
+CALCULATED --> CALCULATED : manager correction / recalculate
+PENDING_DRC --> VOIDED : manager reasoned void
+CALCULATED --> VOIDED : manager reasoned void
+VOIDED : retain evidence; current summary contribution = 0
+VOIDED --> [*]
+note right of CALCULATED
+Zero measured DRC is valid.
+Replacement appends a measurement.
+No in-place observation overwrite.
+end note
+note bottom of PENDING_DRC
+Initial creation does not include DRC.
+Every mutation needs Idempotency-Key.
+Non-create command needs observed version.
+Exact replay returns original receipt without a transition.
+end note
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+title Milestone 3B - proposed create and first DRC REST interaction
+actor Recorder
+participant Gateway
+participant "Operations application" as O
+participant "Estate REST" as E
+database "Operations DB" as D
+Recorder -> Gateway : POST /api/v1/tapping/collections\nJWT + Idempotency-Key + weight
+Gateway -> O : existing wildcard route; bearer/key/correlation
+O -> O : authenticate + authorize execution owner/estate
+O -> D : look up successful command receipt
+alt exact authorized replay
+ D --> O : original status/body/Location
+ O --> Recorder : original receipt
+else new command
+ O -> E : bounded authenticated GET estate and block
+ E --> O : active RUBBER ownership, zone/division/version
+ O -> D : BEGIN; reserve actor/key; recheck eligible execution
+ O -> D : root + revision 0 + v2 outbox + receipt
+ O -> D : COMMIT
+ O --> Recorder : 201 pending collection + Location
+end
+Recorder -> Gateway : POST /collections/{id}/drc-measurements\nmanagement JWT + key + version + measured evidence
+Gateway -> O : forward request
+O -> O : authorize, replay lookup, validate decimal/time/source
+O -> D : BEGIN; reserve; conditional root update by version
+alt version matched
+ O -> D : immutable measurement + revision + outbox + receipt
+ O -> D : COMMIT
+ O --> Recorder : 200 calculated quantity
+else stale
+ O -> D : ROLLBACK
+ O --> Recorder : 409 ProblemDetail
+end
+note over O,D : No broker publication on the HTTP transaction thread.
+@enduml

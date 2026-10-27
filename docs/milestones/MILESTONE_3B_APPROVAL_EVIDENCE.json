@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "timezone": "America/Chicago",
+  "reviewer": "Project owner through explicit user instruction in this Codex conversation",
+  "approvalText": "I approve the proposed Milestone 3B decisions D01–D12, ADR 0013, requirements, technical design, acceptance criteria, and REST/event contract design referenced in the consolidated review.\nI accept clarification R01: timestamps must be exactly representable at microsecond precision; extra trailing zeros are permitted.\nI accept clarification R02: lists may omit both date bounds but must reject a single bound; summaries require both bounds.\nI authorize implementation of T01–T09 in dependency order, subject to required validation and independent contract review/release gates. Production deployment, destructive migrations, secret-handling changes and AEO changes remain unauthorized.",
+  "status": "OWNER DESIGN ACCEPTED; T01–T09 AUTHORIZED SUBJECT TO DEPENDENCIES/VALIDATION/INDEPENDENT CONTRACT REVIEW AND RELEASE",
+  "approvedPreEditPackageFingerprints": [
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/correction-reconciliation.puml",
+      "sha256": "6ec983fefe562a5e9331f965d8bd98c9604c9e3bef59f554ccaec27ea9bef4f1"
+    },
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/domain.puml",
+      "sha256": "813c23509422daf7563068673bb9c095d9635def0609c3a06ccad36f77bb4d4d"
+    },
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/event-ownership.puml",
+      "sha256": "375a4fe4b862f3fc544c36bf97fb9ea2548b03dc2b74b79bb36758c080e959d8"
+    },
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/persistence.puml",
+      "sha256": "1c2c0b3640668cfcc78a5205793ebac674dd43fe0d08efea12010fafe1457a9f"
+    },
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/rest-sequence.puml",
+      "sha256": "70153687bee825df077e36b7ea5286b5f7c083762a70fb16d3c4db57e715ed5a"
+    },
+    {
+      "path": "agrosphere-architecture/diagrams/milestone-3b/workflow.puml",
+      "sha256": "518f72eacabd9650d84691939b55238241c617bab39032e6d3dba03b416156a2"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/proposed/0013-latex-collection-and-drc.md",
+      "sha256": "4e3e189f87d9cceed7e0711eaf979b35dc620577b977fe4ee88ad3139441615c"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md",
+      "sha256": "1b1f41bf049071780918f0afeb0e41c3a8ea6037e2a937b69eb77f423bfc20d8"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_DESIGN.md",
+      "sha256": "833370cde8e7b11fd1132cd9de9bec590faf4a33a554b090e0df0f421dc14b84"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md",
+      "sha256": "295d5a0f13513d60251dcee639ebb9858a91a7fec0a7a72d9a35d08364cacd3e"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_REQUIREMENTS.md",
+      "sha256": "1a487df9479ded2821e7e694b2bfa3765cdb9e1c6c7de30700f252a98b94aa9e"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_VALIDATION.md",
+      "sha256": "6fe25c7ee7b6da0b6dac20ef7f55e3275d5ada443af61c1d24e7f8de7629d65b"
+    },
+    {
+      "path": "agrosphere-contracts/docs/milestone-3b/API_EVENT_DESIGN.md",
+      "sha256": "70d8933315834b26d2c153b614ed467ccc2571af834b397fe879c9de297adafe"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_READINESS_REVIEW.md",
+      "sha256": "33fc358f4730278e8c9f6ece679374afd755a4edf6b44dd44e76258718ea1895"
+    }
+  ],
+  "approvedPackageComparison": {
+    "result": "PASS",
+    "compared": 14,
+    "mismatches": []
+  },
+  "retainedExclusions": [
+    "Production deployment",
+    "Destructive migrations",
+    "Secret-handling changes",
+    "AEO changes"
+  ],
+  "repositoryObservations": [
+    {
+      "repository": "agrosphere-ai-service",
+      "ref": "refs/heads/main",
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "version": "0.1.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-analytics-service",
+      "ref": "refs/heads/main",
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "version": "0.1.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-api-gateway",
+      "ref": "refs/heads/main",
+      "head": "fcf7daf66fa0d9efaf2d1aa72f8cc88c600ab6c0",
+      "version": "0.2.1",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "ref": "refs/heads/main",
+      "head": "edffdc19868b7d8d9139bc8272405a30ce28bb3d",
+      "version": "0.5.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "ref": "refs/heads/main",
+      "head": "7e962552421f15ad5d1492276817db1e1692b104",
+      "version": "0.4.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-estate-service",
+      "ref": "refs/heads/main",
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "version": "0.2.2",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-immersive",
+      "ref": "refs/heads/main",
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "version": "0.1.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-infrastructure",
+      "ref": "refs/heads/main",
+      "head": "3268651e1d48a38f858351c105ab54b4103c3ded",
+      "version": "0.3.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "ref": "refs/heads/main",
+      "head": "fbfda7e87dc0f650f013e6082d1f886df888b6c9",
+      "version": "0.2.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-spatial-service",
+      "ref": "refs/heads/main",
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "version": "0.2.1",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-telemetry-service",
+      "ref": "refs/heads/main",
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "version": "0.1.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    },
+    {
+      "repository": "agrosphere-web",
+      "ref": "refs/heads/main",
+      "head": "2a56f819cc653425e4c58bd6306872e352ee5c7a",
+      "version": "0.2.0",
+      "workingTree": "UNVERIFIED: Git status unavailable"
+    }
+  ],
+  "baselineLimit": "Direct ref/VERSION and listed file hashes only; no Git status/diff, source-to-HEAD or release provenance certification",
+  "protectedBaseline": {
+    "result": "PASS",
+    "compared": 96,
+    "changed": [],
+    "files": [
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingAssignmentCancelled.schema.json",
+        "sha256": "71b18783088fb9b0c31de3f89ee290b9763a50039cd4264d3289088a6400d3f7"
+      },
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingAssignmentCreated.schema.json",
+        "sha256": "13627255d5263816357abdf4ca14b02ee0182df786f89b1cd580a6addbfa3189"
+      },
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingAssignmentStarted.schema.json",
+        "sha256": "b187cc74a92c81d4617357b1fecbf55d2b116e410f5ea9fba283239d041c82a0"
+      },
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingCompleted.schema.json",
+        "sha256": "5b16dd80b6516087468223bff372c8f6cc5a5a5851c2b27771a16cc2b15b993b"
+      },
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingMissed.schema.json",
+        "sha256": "4c4b7695551be1dd685a377447fedec40f3a9d05a903fdc8f10e5793af1244c7"
+      },
+      {
+        "path": "agrosphere-contracts/events/operations/v1/TappingScheduleActivated.schema.json",
+        "sha256": "554f177a23339a491930508b7241220cf6f7ce21ef4f64019ca12a39f435abac"
+      },
+      {
+        "path": "agrosphere-contracts/events/spatial/v1/DigitalTwinAssetRegistered.schema.json",
+        "sha256": "d46b29fb3171339c986e5e2dee526c080965c1314434a81b6983a0b5a9b0c91b"
+      },
+      {
+        "path": "agrosphere-contracts/events/spatial/v1/SpatialBoundaryChanged.schema.json",
+        "sha256": "ee2883c66b3b8606799f73733c14761a0f2c617e22f1e12c2d3c4adfce1b85d7"
+      },
+      {
+        "path": "agrosphere-contracts/events/spatial/v1/SpatialFeatureCreated.schema.json",
+        "sha256": "4edd367673b4f8d0c634100265676b36eaed92eb4f1cbe9345202180d120ff4c"
+      },
+      {
+        "path": "agrosphere-contracts/events/spatial/v1/SpatialFeatureUpdated.schema.json",
+        "sha256": "d5aff1cb168c96453ef79e329d903b2495d88a3c5c5069dcb673ecacf43f701a"
+      },
+      {
+        "path": "agrosphere-contracts/events/spatial/v1/SpatialLayerCreated.schema.json",
+        "sha256": "569fa41811f3728f478ccd7ca4942031b92b03f68303b17ddafcc1bad86dece5"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/CropHealthIncidentDetected.schema.json",
+        "sha256": "af448a69432a22a1fb21485771a4cf704392ee3c3ab178a952062e6c509928d3"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/envelope.schema.json",
+        "sha256": "1385db4529ec56cfbd59956c1f8c109295c5e98b17a726d3c98f05ed3e763c3a"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/EstateCreated.schema.json",
+        "sha256": "09e203d4fa19e37106ec7aebae11ead60494e35a46e2a1ad39b90e5bb731a8de"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/LatexCollectionRecorded.schema.json",
+        "sha256": "593106b29369bde3f70aa6ac60278863b4c5986489fe78ddd27fbffdbaa5636e"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/PlantationBlockCreated.schema.json",
+        "sha256": "3dad1b862f54d38057a3d367726bc9ab803c24dbb017c85bfaebfe25484701a5"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/PlantationBlockUpdated.schema.json",
+        "sha256": "604d290044d9059f0e523ddf6e8356286074a4f980774e7c34d7559bfd9b2733"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/SensorReadingReceived.schema.json",
+        "sha256": "c1e4270ffbbb919d904b7adbce021ab6e465a3db5cc023731d7a5325e7126666"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/TappingActivityRecorded.schema.json",
+        "sha256": "7f919feba565a6e1624d26b66473bfcf78e1c12b2fbd1a122e8f6f0967b366ba"
+      },
+      {
+        "path": "agrosphere-contracts/events/v1/YieldForecastGenerated.schema.json",
+        "sha256": "062c7471b8c1f5f91f645197faa2a0b234e82ec3fdee7b0c001acaeffb8e85bf"
+      },
+      {
+        "path": "agrosphere-contracts/events/v2/EstateCreated.schema.json",
+        "sha256": "9f6d63c477759e2a3a7fcce3a1444febad0cef7e59548c6da7a04c160882d668"
+      },
+      {
+        "path": "agrosphere-contracts/events/v2/EstateUpdated.schema.json",
+        "sha256": "f74b3829d2889a363792df10eb3c05dfdfc2b553a75e51a5ec9b20de2e2a46bc"
+      },
+      {
+        "path": "agrosphere-contracts/events/v2/PlantationBlockCreated.schema.json",
+        "sha256": "d7a6a5bff8a8c1fc3fa930c044098dbbf0877a944d87109cd25e00417c0cadee"
+      },
+      {
+        "path": "agrosphere-contracts/events/v2/PlantationBlockUpdated.schema.json",
+        "sha256": "c99731baf15262ef3ddefac0dc64eacf76bbd1f82c87d12f8cb1077dcbdfcd02"
+      },
+      {
+        "path": "agrosphere-contracts/examples/CropHealthIncidentDetected.json",
+        "sha256": "977ca745f3db62784885f2521e9aceb7c03dd50d142efca3df85250f134215a5"
+      },
+      {
+        "path": "agrosphere-contracts/examples/EstateCreated.json",
+        "sha256": "7c7822cbd9c2dbe3bdcb9042b0d1300d56f55fcec8375c1675ae9da31cb2b983"
+      },
+      {
+        "path": "agrosphere-contracts/examples/LatexCollectionRecorded.json",
+        "sha256": "edce38a9f183934c20120f44f9f3517a9e9bbf294a50df76a76039ea324ce934"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingAssignmentCancelled.json",
+        "sha256": "2ec21f01d511e56d33d8085bb7761d33a0276bd1745aefc2c0ea0e44b55bc485"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingAssignmentCreated.json",
+        "sha256": "2194798a7a8a0b1ef63123f1de5f1babcec3434bb08f838f584c7d1afb0c9d05"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingAssignmentStarted.json",
+        "sha256": "f0fd522b493c6dce03e54c92eaace66fe285cd19128eee6f891e057e7ca3822d"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingCompleted.json",
+        "sha256": "20c7337b0872f9f04b0013d4f327cf9f822ee28c6d1b725f38f535ecefe1a79f"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingMissed.json",
+        "sha256": "9b053d5d7986a95df4b54a50958dfd9bbcd2aa5c6a57643434457498aeef1f9a"
+      },
+      {
+        "path": "agrosphere-contracts/examples/operations/v1/TappingScheduleActivated.json",
+        "sha256": "5383c9ad86d1156d91bb313173653a2a1b7d67b6e92519d9fb257524cdb73221"
+      },
+      {
+        "path": "agrosphere-contracts/examples/PlantationBlockCreated.json",
+        "sha256": "086f116194575c84a58da7577923766fee1b6f5d3be920fee591961326cb4be5"
+      },
+      {
+        "path": "agrosphere-contracts/examples/PlantationBlockUpdated.json",
+        "sha256": "cb5d19efe2a25a3506b7a5a87c72df20d2e4f9b0f3da1d9fed89f4a6d0ffb644"
+      },
+      {
+        "path": "agrosphere-contracts/examples/SensorReadingReceived.json",
+        "sha256": "689c9963bc25303ab99da8f7d6e46f601e3082a819a8eb4f3fd4bbeb2aa01e69"
+      },
+      {
+        "path": "agrosphere-contracts/examples/spatial/v1/DigitalTwinAssetRegistered.json",
+        "sha256": "7ebcada146d0fd961d9ac370740d5fb7d739fd1e55cdb06df1372d913cc67188"
+      },
+      {
+        "path": "agrosphere-contracts/examples/spatial/v1/SpatialBoundaryChanged.json",
+        "sha256": "de3bc447fd3a3d2e43b5b0e64f2e0b238c757748556278e052c4cef5b594239f"
+      },
+      {
+        "path": "agrosphere-contracts/examples/spatial/v1/SpatialFeatureCreated.json",
+        "sha256": "24948f35d1798f06fbc557422fa180ec966294cfc302dc838f83fa347f21eac2"
+      },
+      {
+        "path": "agrosphere-contracts/examples/spatial/v1/SpatialFeatureUpdated.json",
+        "sha256": "e7b89cbf4018a07da6eae59b5e17f634cd7ba1349412fd02fab8d820321c3d68"
+      },
+      {
+        "path": "agrosphere-contracts/examples/spatial/v1/SpatialLayerCreated.json",
+        "sha256": "9f19e976ab8e894671fec787bcb049c31f26948c59eae98ae57cf79510cd8854"
+      },
+      {
+        "path": "agrosphere-contracts/examples/TappingActivityRecorded.json",
+        "sha256": "c454d301a940d0f1a58efc01c2cc8fdc96472ec0cf5ec549cf84ca53a2fe5d07"
+      },
+      {
+        "path": "agrosphere-contracts/examples/v2/EstateCreated.json",
+        "sha256": "454b4e4c17675563907d37f8fc6306bfba5ba51091006956deb2ec47fe79b9e5"
+      },
+      {
+        "path": "agrosphere-contracts/examples/v2/EstateUpdated.json",
+        "sha256": "e0423f2af4d8ad9de5cb889b3aad378fba2b1711302c1344474a7db7620f0851"
+      },
+      {
+        "path": "agrosphere-contracts/examples/v2/PlantationBlockCreated.json",
+        "sha256": "bde3b583db04a6b4ecf8b6c106ee8f19167c5f643e8a90659d03814c685c7d28"
+      },
+      {
+        "path": "agrosphere-contracts/examples/v2/PlantationBlockUpdated.json",
+        "sha256": "88b054cc09fb6cc3a8d9213788fd77c257d41dc9647dff9890b5b53518dad2fc"
+      },
+      {
+        "path": "agrosphere-contracts/examples/YieldForecastGenerated.json",
+        "sha256": "774c617aacbc3aaff5361845e35228c887c67649db441d51edb79a2783a74c85"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/ai-service.yaml",
+        "sha256": "0bc93aa4c50c05c2df65228304f203b7b2c4b738ae6de66fac9560c6e3f66dc9"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/analytics-service.yaml",
+        "sha256": "2efa666c3e48c2fce9338645adb2ad6ef42be1154de49712f14d4360c3bc2514"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/estate-service.yaml",
+        "sha256": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/operations-service.yaml",
+        "sha256": "84d83a3e0f116eb3a32738ce0f528b48df3c27cc4f6c13ef1821f25d8dab40b3"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/spatial-service.yaml",
+        "sha256": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74"
+      },
+      {
+        "path": "agrosphere-contracts/openapi/telemetry-service.yaml",
+        "sha256": "1bfc36028bd17709009e45ab1625da80307fdfb8d89a37b6487f8e7be3a9a829"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/in/messaging/package-info.java",
+        "sha256": "2b8c016bee170a5c4ad8c884453fdd581f66ed7cbc17cebf1798f4f69d57b93f"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/in/web/package-info.java",
+        "sha256": "91e9b6da0379e1d616655c3a8829488b1af86a29713784931875c92d61b543e0"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/adapter/out/persistence/package-info.java",
+        "sha256": "c3dc7163ec4a6dc5acf9fbb9a508f08ed7adcf923927807f104bcc01ae24dfc2"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/CorrelationFilter.java",
+        "sha256": "42f1a36bd0fe5a857e864b84a488184fcd3556f11cb8b848bb2fdd2097e81863"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/Problems.java",
+        "sha256": "595dd73da793535ce11040f1999876015042ac51f220177a653c67b4f4cb17bf"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/api/TappingController.java",
+        "sha256": "4de9e5aa0917c002bfcd5990fcb6cae45d26e0d73ff0b1be2fc56aede155011f"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Access.java",
+        "sha256": "c1dad35b99250d9d20c4b3d661c4b3597cee3130a834b4bb1b02e865f9d3ba54"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/DomainEvents.java",
+        "sha256": "d3312b4c981d748b6a60b6648ae014ef4fb49a6abc07c5d8ab3bbee5d08503f2"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/EstateValidation.java",
+        "sha256": "44398c2dfb4e977d44fadcd013fef3f7bfa334ed471d78fe3cab030e4d55bbca"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/package-info.java",
+        "sha256": "7c08bf8d79ba880bb4398ceb23aa22ec72800f64104e3dea42ce383fe8aae89c"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/port/out/package-info.java",
+        "sha256": "afc37f3c463cac0b295566867163c09b608e5c18af3f03d77a7eb07e738ac4b4"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Requests.java",
+        "sha256": "06ab35f8daae937e7e2e9ea1ec5dce3b49ab423d98a24f47bff8df8e8fbc36c4"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingRepository.java",
+        "sha256": "d0af3b8420acde75b483934d8dc0be739a39b3c7302f43e17ffac2b565e6b11a"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingService.java",
+        "sha256": "b86cbbccbb38f189a243a98dabfecaa97af82a35eeed4b7a9fcd15e866c019d0"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/Application.java",
+        "sha256": "76c2ed9251075256451eff89e680ee57be55ee28b324e8249ce7dd1922be30eb"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/JwtValidationConfiguration.java",
+        "sha256": "23739c96e5f46bbbf352f37cb23f2bc2ddcde1bb57719b4c515f03b69616df41"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/OpenApiConfiguration.java",
+        "sha256": "248b86d7724bb89ab4add866da7d1978b2206b6fcca14698aa3029f60a6672fe"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/config/RuntimeConfiguration.java",
+        "sha256": "28900d6599e3eab58a0ab0d04dedd151f8dae6b9d818d77bd2e6b604bb602383"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/package-info.java",
+        "sha256": "ff48bbc993ea9c14473b1ad6b6693a963527d736206c841bf570811f8439ad47"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/Rules.java",
+        "sha256": "939ab9a112bd125b58b89aae2d994b3a6d31cb17267ca46aceb9fe09bd371abd"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingAssignment.java",
+        "sha256": "a3c674fcaffcfcfe8ca0a08804ecd3ab5699569f5cf8afddf2dd7208288267fd"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingMissedReason.java",
+        "sha256": "beeddd638accc16fd79cff8456a4882dba15401aa957024de1a2c256c4f79c21"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingRecord.java",
+        "sha256": "b8435c0f66c38d09cdd62bf3c4cbc59fd14ad233ee012113bb0bd566396bbb34"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/domain/TappingSchedule.java",
+        "sha256": "cfe4d0c80373ccc31d2ab3d6ca7e57ac4863c25bc4685170a44243f4833fbf76"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/integration/EstateHttpClient.java",
+        "sha256": "e2bc5dee582667ee822bf6289fef99ead409e1bc94df9917c7b701fae52e5966"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/Events.java",
+        "sha256": "89fe9ff4d762ed6d367073db44202729d62eb2104d1111ad94bd58480a66a109"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/OutboxDispatcher.java",
+        "sha256": "a3fe6e3357e83118a3933035aa332581bacf15a54263c53982544598cbffae7d"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/OutboxMetrics.java",
+        "sha256": "a2cfd89dcda6168459a50d4f68f17a8b11fa9416dbdf55a1c6110cf787206900"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/persistence/TappingStore.java",
+        "sha256": "84082f19fd1464a43a820eb69e7dcd3eaa3ba0deb0e8e88d83173c6bcf7d2268"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/java/com/agrosphere/operations/SecurityConfiguration.java",
+        "sha256": "ef10db3fe59453aedb47a174e065f5900872ec862a58d8d50a93942a71bcc2fa"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/application.yaml",
+        "sha256": "2639528728362c7816a4cecb7ddb6ac115cc57172f69f767b989d908257cdf6f"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentCancelled.schema.json",
+        "sha256": "71b18783088fb9b0c31de3f89ee290b9763a50039cd4264d3289088a6400d3f7"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentCreated.schema.json",
+        "sha256": "13627255d5263816357abdf4ca14b02ee0182df786f89b1cd580a6addbfa3189"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentStarted.schema.json",
+        "sha256": "b187cc74a92c81d4617357b1fecbf55d2b116e410f5ea9fba283239d041c82a0"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingCompleted.schema.json",
+        "sha256": "5b16dd80b6516087468223bff372c8f6cc5a5a5851c2b27771a16cc2b15b993b"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingMissed.schema.json",
+        "sha256": "4c4b7695551be1dd685a377447fedec40f3a9d05a903fdc8f10e5793af1244c7"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/events/TappingScheduleActivated.schema.json",
+        "sha256": "554f177a23339a491930508b7241220cf6f7ce21ef4f64019ca12a39f435abac"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/operations-service.yaml",
+        "sha256": "84d83a3e0f116eb3a32738ce0f528b48df3c27cc4f6c13ef1821f25d8dab40b3"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/contracts/RELEASE",
+        "sha256": "5640e3ae977455d2ce51cdecfd2600fa7937ebe55a8d55ddb8d3cacf02f04690"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql",
+        "sha256": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220"
+      },
+      {
+        "path": "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql",
+        "sha256": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306"
+      },
+      {
+        "path": "agrosphere-architecture/scripts/validate.py",
+        "sha256": "6186823ccffb469647e04f4429f33327ec378b1d992e34e08a1404646016f793"
+      },
+      {
+        "path": "agrosphere-architecture/.github/workflows/ci.yml",
+        "sha256": "863f64cf7eb0d7c2a7f34a2101b913a0b6336bb7242d00a699bf49e2a15321db"
+      }
+    ]
+  },
+  "sessionWriteSet": [
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_APPROVAL.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_REQUIREMENTS.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_DESIGN.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md",
+    "agrosphere-architecture/docs/adr/proposed/0013-latex-collection-and-drc.md",
+    "agrosphere-contracts/docs/milestone-3b/API_EVENT_DESIGN.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_READINESS_REVIEW.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_VALIDATION.md",
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md",
+    "agrosphere-architecture/AGENTS.md",
+    "agrosphere-architecture/README.md",
+    "agrosphere-contracts/README.md",
+    "agrosphere-architecture/CHANGELOG.md",
+    "agrosphere-contracts/CHANGELOG.md",
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3B_APPROVAL_EVIDENCE.json"
+  ],
+  "preEditWriteFingerprints": [
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_APPROVAL.md",
+      "sha256": null
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_REQUIREMENTS.md",
+      "sha256": "1a487df9479ded2821e7e694b2bfa3765cdb9e1c6c7de30700f252a98b94aa9e"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_DESIGN.md",
+      "sha256": "833370cde8e7b11fd1132cd9de9bec590faf4a33a554b090e0df0f421dc14b84"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md",
+      "sha256": "1b1f41bf049071780918f0afeb0e41c3a8ea6037e2a937b69eb77f423bfc20d8"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md",
+      "sha256": "295d5a0f13513d60251dcee639ebb9858a91a7fec0a7a72d9a35d08364cacd3e"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/proposed/0013-latex-collection-and-drc.md",
+      "sha256": "4e3e189f87d9cceed7e0711eaf979b35dc620577b977fe4ee88ad3139441615c"
+    },
+    {
+      "path": "agrosphere-contracts/docs/milestone-3b/API_EVENT_DESIGN.md",
+      "sha256": "70d8933315834b26d2c153b614ed467ccc2571af834b397fe879c9de297adafe"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_READINESS_REVIEW.md",
+      "sha256": "33fc358f4730278e8c9f6ece679374afd755a4edf6b44dd44e76258718ea1895"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_VALIDATION.md",
+      "sha256": "6fe25c7ee7b6da0b6dac20ef7f55e3275d5ada443af61c1d24e7f8de7629d65b"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md",
+      "sha256": "03845a8a812dc1ec72c8553d5f09712176c71dfe6708c808fd4491ced96cefab"
+    },
+    {
+      "path": "agrosphere-architecture/AGENTS.md",
+      "sha256": "0b09d955d667d652691ed7d5e986be08ce4db3fa446bb919f4f87d64c6bc92ab"
+    },
+    {
+      "path": "agrosphere-architecture/README.md",
+      "sha256": "c5f6ad12cace4914760e683275523fb3cf325356bac5d9366c4a2da9be5df48e"
+    },
+    {
+      "path": "agrosphere-contracts/README.md",
+      "sha256": "ffdaa8664a1a0fd8c193c94c752b2720e1ed3e98231e68c36d83fd29cf0fa8a1"
+    },
+    {
+      "path": "agrosphere-architecture/CHANGELOG.md",
+      "sha256": "1d45e290f82ecefae90361ceb00562d48782a3d867f9ba4a43beb60cab4d42c9"
+    },
+    {
+      "path": "agrosphere-contracts/CHANGELOG.md",
+      "sha256": "26d6d46819c0dbf4f9052fb8529a2ad255e6eabae668b307aafe666ccfd3470c"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+      "sha256": "089e635c0f658b82fd6662d0a2dbfa7ce726f29dad9201b49f6cd94837d5f5e5"
+    }
+  ],
+  "checks": {
+    "shellProbe": {
+      "result": "BLOCKED",
+      "command": "Write-Output 'codex-exec-probe'",
+      "cwd": "C:/Projects/agrosphere",
+      "login": false,
+      "error": "CreateProcessAsUserW failed: 5 (Access is denied.)",
+      "processStarted": false,
+      "bypassAttempted": false
+    },
+    "requiredValidation": {
+      "result": "NOT RUN",
+      "items": [
+        "Git status/diff/diff --check",
+        "Architecture/Contracts Python validators",
+        "Maven unit/integration tests",
+        "Docker packaging and disposable acceptance",
+        "PostgreSQL/Flyway upgrade/rollback",
+        "RabbitMQ/identity full-stack checks",
+        "PlantUML syntax/render"
+      ]
+    },
+    "localMarkdownLinks": {
+      "result": "PASS",
+      "checked": 79,
+      "missing": [],
+      "limit": "Session-written Markdown file-existence targets only; no external or rendered-anchor validation"
+    }
+  },
+  "outputFingerprintsExcludingThisManifest": [
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_APPROVAL.md",
+      "sha256": "cc69368d9d432bfc9b6535cc1345881205a96bce5dcb2a5eebbb83c78f0d661f"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_REQUIREMENTS.md",
+      "sha256": "762d687573ba005815319c2319d49c76b744a79e809c2f949b3a5216a3c839b8"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_DESIGN.md",
+      "sha256": "247f3a4dbbd38231933171cfbbc1687cb2e01cd871eab4d4880094f9115a2e34"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md",
+      "sha256": "5dc745c44213d0b8a7fd33b0c64afbd38cf25047bf0eae8b5dc286ff6c140103"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md",
+      "sha256": "7ec86ae6f0030c9699a0be38aa7df6e06a2043af2b489e0ee887a3bdc552f220"
+    },
+    {
+      "path": "agrosphere-architecture/docs/adr/proposed/0013-latex-collection-and-drc.md",
+      "sha256": "296a7a677c2c89a2577d849004dd0fd6a771cebc190d016b348390f6ff3311d3"
+    },
+    {
+      "path": "agrosphere-contracts/docs/milestone-3b/API_EVENT_DESIGN.md",
+      "sha256": "f7612e673499c311f3012007e6f4ee07e97efd693a9feb3c390836ef22328d5f"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_READINESS_REVIEW.md",
+      "sha256": "3786ab56247fc805d4403187446ac23fa93ae494090d0675ac4a607d92252201"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/MILESTONE_3B_VALIDATION.md",
+      "sha256": "d9b3b02cfa61a03d621da068c3fcaf045802ff7e68fee6566eedc09291cdce33"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md",
+      "sha256": "0296e74cb9343c39d20ccde62eaa802d8079a4b4176dea67fc47b214c78c9705"
+    },
+    {
+      "path": "agrosphere-architecture/AGENTS.md",
+      "sha256": "508664b2b0f2914f4806bb31ed2830a434ec50eb834c719525c19576299a8148"
+    },
+    {
+      "path": "agrosphere-architecture/README.md",
+      "sha256": "211b15ad25862a2a8b963ab04a8b09ab1c31f433e5c33076116e413bd4ba3c72"
+    },
+    {
+      "path": "agrosphere-contracts/README.md",
+      "sha256": "992a63a1b3cdc6f95aae70bdf5c3615f6e95d3c056147a1ebbdaf25dffcecdc1"
+    },
+    {
+      "path": "agrosphere-architecture/CHANGELOG.md",
+      "sha256": "68a7e1ecf67362821ece03c973c075ce2e7144bf19865fb4453a6c0f46b146af"
+    },
+    {
+      "path": "agrosphere-contracts/CHANGELOG.md",
+      "sha256": "090cbd0225efb746c977b726965db2e205e76abdec89301470a5589612631a4e"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+      "sha256": "e1e0c96f830c8df2c4e084c09f4caf5cc40886ed6f3e4545bdfd47d0495e8881"
+    }
+  ]
+}

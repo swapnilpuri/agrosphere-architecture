@@ -1,0 +1,73 @@
+@startuml
+title Milestone 3B - service-owned V3 schema (application rollout pending)
+!pragma layout smetana
+entity tapping_assignment <<existing>> {
+ * id : uuid <<PK>>
+ status
+}
+entity tapping_record <<existing>> {
+ * id : uuid <<PK>>
+ assignment_id : uuid <<FK>>
+}
+entity latex_collection {
+ * id : uuid <<PK>>
+ tapping_record_id : uuid <<FK>>
+ assignment_id : uuid <<FK>>
+ collection_reference : varchar(64)
+ selected_measurement_id : uuid <<nullable FK>>
+ version : bigint
+ estate_id / block_id / division_id_snapshot : uuid
+ wet_latex_kg : numeric(9,3)
+ dry_rubber_exact_kg : numeric(13,7)
+ dry_rubber_kg : numeric(9,3)
+}
+entity drc_measurement {
+ * id : uuid <<PK>>
+ collection_id : uuid <<FK>>
+ introduced_version : bigint
+ percent : numeric(5,2)
+}
+entity collection_revision {
+ * collection_id : uuid <<PK,FK>>
+ * version : bigint <<PK>>
+ snapshot : jsonb
+}
+entity collection_adjustment {
+ * id : uuid <<PK>>
+ collection_id : uuid <<FK>>
+ before_version / after_version : bigint <<FK>>
+ reason / approved_by / approved_at
+}
+entity collection_command {
+ * actor : varchar(200) <<PK>>
+ * idempotency_key : uuid <<PK>>
+ collection_id : uuid <<FK>>
+ request_hash / response_body
+}
+entity outbox_event <<existing>> {
+ * event_id : uuid <<PK>>
+ aggregate_id : uuid
+ event_version : integer
+ payload : jsonb
+}
+tapping_assignment ||--o| tapping_record
+tapping_record ||--o{ latex_collection
+tapping_assignment ||--o{ latex_collection
+latex_collection ||--o{ drc_measurement
+latex_collection ||--|{ collection_revision
+latex_collection ||--o{ collection_adjustment
+latex_collection ||--|{ collection_command
+collection_revision ||--o{ collection_adjustment : before/after composite FK
+drc_measurement ..> collection_revision : introduced-version deferred FK
+latex_collection ..> outbox_event : same transaction; no new FK
+note bottom of latex_collection
+Permanent UNIQUE(tapping_record_id, collection_reference).
+Selected-measurement composite FK enforces child ownership.
+Current root version has a deferred revision FK.
+Self FK replacement_of_collection_id is optional.
+External estate/block/division IDs have NO cross-service FK.
+Append-only evidence and completed command results are guarded.
+Restricted grants tested via NOLOGIN / SET ROLE;
+actual runtime/migration credential wiring remains pending.
+end note
+@enduml

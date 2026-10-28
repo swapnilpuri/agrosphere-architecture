@@ -1,5 +1,17 @@
 # AgroSphere application development checkpoint
 
+## GitHub Actions contract-byte repair - 2026-10-28
+
+Owner-reported failure emails were inspected through the connected GitHub tools. Operations run 40636359295 / commit 69290f7 passed Maven (75 unit/security + 52 integration) then failed the exact artifact hash for operations-service.yaml. The approved Windows CRLF bytes had been normalized to LF in Git. Operations and source Contracts now mark their exact byte-pinned artifacts as -text; accepted raw hashes are unchanged. Isolated Git checkout regressions and all post-Maven validations passed on Linux, including source Contracts checks. See Operations docs/CI_CONTRACT_BYTE_PRESERVATION.md. Changes remain local and must include the artifact files when eventually committed/pushed; no product Git index, commit, remote notification settings, running application, production or AEO state was changed. Hosted CI has not rerun with this repair.
+
+## Digital Twin map correction - 2026-10-28
+
+The owner reported an empty-looking map and missing-geometry warning. Existing local data includes sparse test estates and complete synthetic estates with 13 boundaries. Web now reapplies selection after an asynchronous geometry load, clearing stale warnings and restoring the selected camera target; genuine missing geometry remains explicit. See Web docs/DIGITAL_TWIN_GEOMETRY_LOADING_FIX.md for implementation and checks: 32 unit/component tests, lint/format/types/API/build, two UI tests, one graphics test, two real local live-browser cases (one-feature and 13-feature estates), and independent Docker packaging all passed. The running development server rebuilt. No business data, backend/private configuration, production or AEO changes; M2 device performance remains open.
+
+## Subsequent local startup authorization - 2026-10-28
+
+The owner explicitly authorized using existing local configuration and necessary local updates to bring up the application. See [local startup record](LOCAL_APPLICATION_START_2026_10_28.md). The existing local stack is now running, including Operations with the restricted runtime role and V1/V2/V3 migrations; all nine backend containers are healthy and the frontend is available at http://localhost:4200. Existing-account PKCE and read-only Gateway requests pass. A local database backup was saved before migration; only the missing private runtime credential was added, without displaying values or changing other passwords. No business records were created. This scoped local-start authorization supersedes the earlier disposable-only/private-environment exclusion below for this action; historical 2026-10-27 evidence remains unchanged. Production/AEO, destructive operations and remote publication remain excluded.
+
 Updated: 2026-10-27 (America/Chicago). Milestone 3B T00-T09 LOCAL IMPLEMENTATION AND VERIFICATION COMPLETE. See [verification report](MILESTONE_3B_LOCAL_VERIFICATION.md) and [exact evidence](MILESTONE_3B_LOCAL_EVIDENCE.json). Final owner product sign-off and production readiness are not asserted.
 
 ## Authority and boundaries

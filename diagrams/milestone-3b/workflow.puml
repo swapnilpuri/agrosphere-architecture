@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - proposed collection and DRC lifecycle
+title Milestone 3B - collection and DRC lifecycle
 [*] --> PENDING_DRC : completed execution + authorized weighed lot
 PENDING_DRC : dry mass = null
 PENDING_DRC --> PENDING_DRC : manager-approved weight/time correction

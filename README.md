@@ -25,18 +25,6 @@ Milestone 1A estate implementation is recorded in docs/adr/0008-estate-managemen
 
 Requested Milestone 1B spatial implementation is recorded in docs/adr/0009-spatial-digital-twin.md and docs/roadmap/MILESTONE_1B.md. Spatial Service targets Java 21 as explicitly requested; Estate retains its existing Java 25 build. Milestone 1C local integration is recorded in ADR-0010/0011 and docs/roadmap/MILESTONE_1C.md.
 
-## Milestone 3B design package (proposed)
+## Milestone 3B
 
-Design-only work, 2026-10-27: [requirements](docs/milestones/MILESTONE_3B_REQUIREMENTS.md), [technical design](docs/milestones/MILESTONE_3B_DESIGN.md), [implementation plan](docs/milestones/MILESTONE_3B_IMPLEMENTATION_PLAN.md), [acceptance criteria](docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md), [validation limitations](docs/milestones/MILESTONE_3B_VALIDATION.md) and [proposed ADR 0013](docs/adr/0013-latex-collection-and-drc.md). Six proposed PlantUML sources live under diagrams/milestone-3b. This package does not implement 3B, approve its business defaults, modify AEO or close Milestone 2 performance acceptance. Existing 3A evidence remains in docs/milestones/milestone-3a-completion.md.
-
-## Continuous application development
-
-Start with the [persistent workflow](docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md) and [current checkpoint](docs/milestones/DEVELOPMENT_CHECKPOINT.md). The [3B readiness review and consolidated decision package](docs/milestones/MILESTONE_3B_READINESS_REVIEW.md) records the outstanding approval gate. These are the resume entry points; the legacy NEXT_CODEX_PROMPT.md is historical. Milestone 3B remains proposed and Milestone 2 performance acceptance remains open.
-
-## Milestone 3B owner disposition
-
-The project owner accepted D01â€“D12, ADR 0013 and the design package with R01/R02 on 2026-10-27: [approval and boundaries](docs/milestones/MILESTONE_3B_APPROVAL.md). Earlier proposed-status descriptions are historical. Implementation is authorized in dependency order but T00 Git/validation baseline remains blocked by command process creation failure. ADR 0013 is accepted at its existing proposed path pending verified canonical inventory promotion. No feature implementation or runtime acceptance is claimed.
-
-## Milestone 3B T00/T01/T02 progress
-
-ADR 0013 now lives in the accepted docs/adr inventory. CI and validation cover thirteen ADRs and all six 3B diagrams. Workspace validation, PlantUML syntax/render and visual inspection passed. Contracts candidate authoring and pure Operations domain/calculation work are implemented and locally checked; collection APIs/persistence are not enabled. See [current checkpoint](docs/milestones/DEVELOPMENT_CHECKPOINT.md) for independent contract review/release and Docker availability gates. Earlier proposed-path and execution-blocked statements in historical records describe prior increments.
+The owner accepted [requirements](docs/milestones/MILESTONE_3B_REQUIREMENTS.md), [design](docs/milestones/MILESTONE_3B_DESIGN.md), [acceptance](docs/milestones/MILESTONE_3B_ACCEPTANCE_CRITERIA.md), ADR 0013 and R01/R02. Contracts 0.5.0 was accepted for local release/pinning; scoped credential wiring permits tracked placeholders and generated disposable tests only. See [approval](docs/milestones/MILESTONE_3B_APPROVAL.md), [workflow](docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md) and [current checkpoint](docs/milestones/DEVELOPMENT_CHECKPOINT.md) for implementation, exact evidence, outstanding checks and safe continuation. Six diagrams are under diagrams/milestone-3b and covered by validation/CI. Earlier design-only reports are historical. Milestone acceptance requires current AC01-AC28 evidence; Milestone 2 performance stays open. No production deployment, private environment access, existing-stack provisioning, remote publication or AEO change is authorized.

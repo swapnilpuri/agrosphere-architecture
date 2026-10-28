@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - proposed create and first DRC REST interaction
+title Milestone 3B - create and first DRC REST interaction
 actor Recorder
 participant Gateway
 participant "Operations application" as O

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased - 2026-10-27 local 3B verification
+
+Recorded owner-scoped credential authorization and local T00-T09 implementation/AC01-AC28 verification, exact test/source evidence, independent runbooks/checkpoint and six current diagrams. Generated-only disposable drills; M2 performance stays open, no production/AEO/private-environment changes. Next incident/inspection planning handoff remains proposed.
+
 ## Unreleased - 2026-10-27 persistence/reference progress
 
 Recorded accepted local Contracts 0.5.0 and exact Operations pins. Added T03/T04 schema/JDBC/access/reference evidence and a concrete request for the explicitly excluded runtime/Flyway credential-wiring portion. Seventy unit/security plus twenty-five disposable integration tests passed; strict runtime API alignment remains failing until T06. No milestone acceptance, production operation, private environment change or AEO mutation.

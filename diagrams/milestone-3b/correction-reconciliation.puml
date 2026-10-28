@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - proposed errors, correction and reconciliation
+title Milestone 3B - errors, correction and reconciliation
 actor "Estate manager" as M
 participant Operations as O
 database "Operations DB" as D

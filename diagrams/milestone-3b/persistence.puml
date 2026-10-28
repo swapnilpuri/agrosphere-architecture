@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - service-owned V3 schema (application rollout pending)
+title Milestone 3B - service-owned V3 schema (local implementation)
 !pragma layout smetana
 entity tapping_assignment <<existing>> {
  * id : uuid <<PK>>
@@ -67,7 +67,8 @@ Current root version has a deferred revision FK.
 Self FK replacement_of_collection_id is optional.
 External estate/block/division IDs have NO cross-service FK.
 Append-only evidence and completed command results are guarded.
-Restricted grants tested via NOLOGIN / SET ROLE;
-actual runtime/migration credential wiring remains pending.
+Separate Flyway-owner and restricted runtime logins.
+Tracked placeholders; generated disposable credentials verified.
+No existing environment provisioning or production rollout.
 end note
 @enduml

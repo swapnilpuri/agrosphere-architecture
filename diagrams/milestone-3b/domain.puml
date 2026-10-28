@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - proposed domain (Operations ownership)
+title Milestone 3B - domain (Operations ownership)
 !pragma layout smetana
 class TappingAssignment <<existing, unchanged>> {
  status = COMPLETED

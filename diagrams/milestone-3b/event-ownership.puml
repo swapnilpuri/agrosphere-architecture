@@ -1,5 +1,5 @@
 @startuml
-title Milestone 3B - proposed event publication and downstream ownership
+title Milestone 3B - event publication and downstream ownership
 !define RELATIVE_INCLUDE
 !pragma layout smetana
 !include ../../docs/architecture/includes/C4_Container.puml

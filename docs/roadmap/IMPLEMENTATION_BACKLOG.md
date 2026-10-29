@@ -20,3 +20,7 @@
 | P2 M5-02 | VR prototype and MR feasibility | immersive | Supported device, comfort/frame-time evidence, tracking accuracy limitations |
 
 Before the first business endpoint: confirm license/ownership, tenancy assumptions, authorization model and current dependency security status.
+
+## Owner-approved WA-1 — 2026-10-29
+
+Prioritize the estate worker register and daily attendance before the proposed incident/inspection increment. Follow WA-T00–WA-T09 in the [accepted review package](../milestones/WORKER_ATTENDANCE_REVIEW.md), with [dated approval](../milestones/WORKER_ATTENDANCE_APPROVAL.md), independent executable-contract review/release/pinning, and D08/D09 acceptance gates. This is a separate capability; do not silently rename provisional 3C or claim parent Milestone 3/M2 performance completion. Current task/evidence state belongs in DEVELOPMENT_CHECKPOINT.md.

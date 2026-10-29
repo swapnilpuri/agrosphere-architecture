@@ -15,3 +15,7 @@
 | FR-12 | Label REAL, SIMULATED, ESTIMATED, PREDICTED data in transport and presentation | All milestones |
 
 All domain endpoints and authorization policies are future work. SSE/WebSocket notifications require a delivery/reconnect design before adoption.
+
+## Accepted WA-1 increment — 2026-10-29
+
+The sentence above describes the historical foundation baseline, not current implementation status. The owner accepted worker registration/daily attendance requirements WA-R01–WA-R08 in the [reviewed package](../milestones/WORKER_ATTENDANCE_REVIEW.md); see [approval and retained gates](../milestones/WORKER_ATTENDANCE_APPROVAL.md) and ADR 0014. These requirements extend the product scope independently of FR-04. Acceptance criteria WA-AC01–18 are not yet passed. D08 workload inputs and D09 actual privacy/retention policy remain open gates; only SIMULATED development is eligible until real-data enablement is reviewed and verified.

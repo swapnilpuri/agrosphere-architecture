@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-28",
+  "timezone": "America/Chicago",
+  "status": "PROPOSED_PLANNING_ONLY_NOT_APPROVED",
+  "authorization": "Owner requested inspection and planning, checkpoint recording; no worker/attendance contracts or implementation authorized.",
+  "reviewPackage": {
+    "path": "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_REVIEW.md",
+    "sha256": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+    "decisions": "D01-D10 proposed",
+    "approval": null
+  },
+  "repositoryBaseline": {
+    "agrosphere-ai-service": {
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "status": "",
+      "diffStat": "",
+      "version": "0.1.0"
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "status": "",
+      "diffStat": "",
+      "version": "0.1.0"
+    },
+    "agrosphere-api-gateway": {
+      "head": "03de2c90f2fe5f7357ab20e61c4962c3dead0763",
+      "status": "",
+      "diffStat": "",
+      "version": "0.2.1"
+    },
+    "agrosphere-architecture": {
+      "head": "6de4d5f4dc0487d2834e5a0f8e50c564e374fe46",
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+      "diffStat": "docs/milestones/DEVELOPMENT_CHECKPOINT.md | 8 ++++++++\n 1 file changed, 8 insertions(+)",
+      "version": "0.5.0"
+    },
+    "agrosphere-contracts": {
+      "head": "ed47620986916cd0c38534a2296f91bb1c2352f6",
+      "status": "",
+      "diffStat": "",
+      "version": "0.5.0"
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "status": "",
+      "diffStat": "",
+      "version": "0.2.2"
+    },
+    "agrosphere-immersive": {
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "status": "",
+      "diffStat": "",
+      "version": "0.1.0"
+    },
+    "agrosphere-infrastructure": {
+      "head": "e48e518d11b92e4b25789da5820ca5873488ef6c",
+      "status": "",
+      "diffStat": "",
+      "version": "0.3.0"
+    },
+    "agrosphere-operations-service": {
+      "head": "a808c199f87562cb3469f4d612e22e5f894ab660",
+      "status": "",
+      "diffStat": "",
+      "version": "0.2.0"
+    },
+    "agrosphere-orchestrator": {
+      "head": "8a72920b27afe4fb5b22474f5e0732c83448a221",
+      "status": "",
+      "diffStat": "",
+      "version": null
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "status": "",
+      "diffStat": "",
+      "version": "0.2.1"
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "status": "",
+      "diffStat": "",
+      "version": "0.1.0"
+    },
+    "agrosphere-web": {
+      "head": "e09e7f708cebf2731e9d13134fa7662630d7818e",
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M e2e/fixtures.ts\n M e2e/live.spec.ts\n M eslint.config.mjs\n M package-lock.json\n M package.json\n M playwright.config.ts\nMM public/config.json\n M src/app/api/clients.spec.ts\n M src/app/api/estate/estate.api.ts\n M src/app/api/spatial/spatial.api.ts\n M src/app/app.routes.ts\n M src/app/core/auth/auth.service.spec.ts\n M src/app/core/auth/auth.service.ts\n M src/app/features/estates/estate.store.ts\n M src/app/layout/shell.component.html\n?? docs/ESTATE_ADMINISTRATION.md\n?? docs/ESTATE_ADMINISTRATION_VERIFICATION.md\n?? e2e/administration.spec.ts\n?? public/onboarding/\n?? src/app/features/administration/",
+      "diffStat": "AGENTS.md                                |  4 +++\n CHANGELOG.md                             |  6 ++++\n README.md                                | 12 ++++++--\n VERSION                                  |  2 +-\n e2e/fixtures.ts                          | 18 +++++++++--\n e2e/live.spec.ts                         | 29 ++++++++++++++++++\n eslint.config.mjs                        |  1 +\n package-lock.json                        |  4 +--\n package.json                             |  2 +-\n playwright.config.ts                     |  2 +-\n public/config.json                       |  2 +-\n src/app/api/clients.spec.ts              | 52 ++++++++++++++++++++++++++++++++\n src/app/api/estate/estate.api.ts         | 37 +++++++++++++++++++++++\n src/app/api/spatial/spatial.api.ts       | 11 +++++++\n src/app/app.routes.ts                    |  9 ++++++\n src/app/core/auth/auth.service.spec.ts   | 29 +++++++++++++++++-\n src/app/core/auth/auth.service.ts        | 23 ++++++++++++++\n src/app/features/estates/estate.store.ts | 10 ++++--\n src/app/layout/shell.component.html      | 16 ++++++++--\n 19 files changed, 254 insertions(+), 15 deletions(-)",
+      "version": "0.3.0"
+    }
+  },
+  "configPreservation": {
+    "indexBlob": "7bb3184f8218fbbbf86e22591d87f181760b7cae",
+    "worktreeSha256": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+    "result": "PASS: staged blob and working-tree SHA-256 unchanged; Web status unchanged; contents not reproduced in evidence"
+  },
+  "preexistingFileHashes": {
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "e206694e2496bb90899bbb94f1cdee6151b0f698b6fdab42a366e2576a2ae77c",
+    "agrosphere-web/docs/ESTATE_ADMINISTRATION.md": "9e8844eaf2af29e6dc91adaa273fa2a14300a198728f20920aede8be2a942a2a",
+    "agrosphere-web/docs/ESTATE_ADMINISTRATION_VERIFICATION.md": "36a67557882ba2d23b2860449334e5ee65a99db30fe93d63ea0c466b10b82799",
+    "agrosphere-web/e2e/administration.spec.ts": "c9cebfcb193c7bee1a0eef0246bb584f052c722ca23c84bdfdaa5f12e927bb65",
+    "agrosphere-web/public/onboarding/plantation-data-worksheet.csv": "292977e4a75b6d9453da8ec031fbfe234412ff616a984dca1b7cab832fb164e9",
+    "agrosphere-web/src/app/features/administration/administration.component.css": "0eec9394bfe411678504fecd1eca5d659176064faf5293ab7e42c18b1a299c43",
+    "agrosphere-web/src/app/features/administration/administration.component.html": "d858e70e7537c6b7c0cfb314c423511904f6c1085e2b914ef787ffa3709bc09f",
+    "agrosphere-web/src/app/features/administration/administration.component.ts": "b1774961dd3362b5f08771fb9ea5df04a648328aee3d88197e5be055862265b4",
+    "agrosphere-web/src/app/features/administration/administration.forms.spec.ts": "36c9e049919c4ff64c7da927805e6919f33772613f06d4f6ea9fa2c6cbbb318b",
+    "agrosphere-web/src/app/features/administration/administration.forms.ts": "11f36ca235dd4465e9679262b1f416590be34f3cf5ce7c6d32c85581261576d4",
+    "agrosphere-web/src/app/features/administration/administration.guard.ts": "ea51826ce5ad132abf275778c119c268eb09da72edeea7fe815f5d7415617ef0",
+    "agrosphere-web/src/app/features/administration/boundary-import.component.html": "eccc77d23850b12328e29ff5bfd211fb4a832b1faf4757ccf1f62c5567e14fc0",
+    "agrosphere-web/src/app/features/administration/boundary-import.component.ts": "31fd0913519df29dd63662615c55b676ad9442a1588bbb4d4cdd3b5b647635ff",
+    "agrosphere-web/src/app/features/administration/boundary-import.spec.ts": "317a4806965d947471e4fce3fe6e5bbb7b9562f77546f3751365e11eda6dbc92",
+    "agrosphere-web/src/app/features/administration/boundary-import.ts": "69df1007a16849fd2ea4a0c72012fc0a5f49aa78317c0c87e0be5f828ece87f5",
+    "agrosphere-web/AGENTS.md": "7a4aaebaa68639ed62359b3c655d297043b3fa989cccd09b6a11c86e510d3bff",
+    "agrosphere-web/CHANGELOG.md": "3539f07c7e4dec5cd2b7310e3c4826d109e955666d640b8dba80c82a91d2cfe7",
+    "agrosphere-web/README.md": "31873a9102512f3b1c9516e6b745e99f579d2e7a7ba2f552179ebcae1da30049",
+    "agrosphere-web/VERSION": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0",
+    "agrosphere-web/e2e/fixtures.ts": "682949c81063a9a44c01ad5e6833961cc91ed6e6fe0258ae65191c73ac0bd442",
+    "agrosphere-web/e2e/live.spec.ts": "f4f4bba93947860f999066a33dd52a78589957c1039b91153280b476f019409a",
+    "agrosphere-web/eslint.config.mjs": "4dfba3804f523ac42f8fc85348d62b8219123f4e70ad4e4315d80aa8be2e12a5",
+    "agrosphere-web/package-lock.json": "7644a986fc532b6d6daba1e668c0b457f63e2f7ebdaebf53c91c249a978d6cd4",
+    "agrosphere-web/package.json": "a0528abe39580cc509c612fc700d506c43a6cd781cd8fe745e496cb1c1e19b1c",
+    "agrosphere-web/playwright.config.ts": "6c1b0a1f1aa793e2fc00934c63027144e3a046494f6a43cd20c60ad19b102eb7",
+    "agrosphere-web/public/config.json": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+    "agrosphere-web/src/app/api/clients.spec.ts": "717403b1853d09ef39c748e58ebc46786825b32fc47eadc69df9e956a1dbc0cc",
+    "agrosphere-web/src/app/api/estate/estate.api.ts": "62e893818bb47edd4a511cb6cb68cd628ece224b043769533b6a39d37c0e76d0",
+    "agrosphere-web/src/app/api/spatial/spatial.api.ts": "f08b2f492cb1e62afe223c89437536c0577f90bef863ddccc698e55d21ae0ae9",
+    "agrosphere-web/src/app/app.routes.ts": "c23cce4a31aae22f42d4847ddfed1f07e3328bbb2e6092296ba60a3cfd78e787",
+    "agrosphere-web/src/app/core/auth/auth.service.spec.ts": "ce3e2a62e15cac5c125a3099ea8ccbf434387ef5c09f7bc3c4d6738336bc3c4a",
+    "agrosphere-web/src/app/core/auth/auth.service.ts": "5690f1c90f4a39e9a8fa72a5a0b5c1bd085cc3cfaaba05318dd703041d64d9c5",
+    "agrosphere-web/src/app/features/estates/estate.store.ts": "054883a41b1d0e98b70a65fa917eea7bf388abfda55cd41467aeea4a21e4295f",
+    "agrosphere-web/src/app/layout/shell.component.html": "b1db07b23ed68c92f7fc4ea3d90be3b329f1ed57881840a36d7d55f6f95aabe8"
+  },
+  "inspectedSourceSha256": {
+    "agrosphere-architecture/docs/requirements/FUNCTIONAL_REQUIREMENTS.md": "920e2b46397a04b2602063217c3d293e94ed17809a99c1e575230f9f91885126",
+    "agrosphere-architecture/docs/requirements/NONFUNCTIONAL_REQUIREMENTS.md": "274dfc985fc55e545ec66215a12b6b6683eba153984d050596df66906f34c995",
+    "agrosphere-architecture/docs/roadmap/MILESTONES.md": "ef718f842e2b0a8d508d46d3a7479149ecdb5ee4e21e97a11f064c914188ee22",
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": "7e0b3d6218705394bc64759e1fa3e58bc93a71b88d43607bb72abce47891cc11",
+    "agrosphere-architecture/docs/adr/0012-rubber-tapping-operations.md": "f9eb3c1ce02edfdac35b9bf77bef0fec6393cffac720ece24472128c1b8d1d0c",
+    "agrosphere-architecture/docs/adr/0013-latex-collection-and-drc.md": "e94c162ef4753f3368586a720a52b70855a407125bdff62d55ef90a8e5c00143",
+    "agrosphere-contracts/openapi/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+    "agrosphere-contracts/openapi/estate-service.yaml": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-operations-service/src/main/resources/contracts/RELEASE": "30029b05407da7fcb87324088028c0674b4862fca3e3a3fbac16bc9e0b389ca3",
+    "agrosphere-operations-service/src/main/resources/contracts/COLLECTION_RELEASE.json": "ab98682379b5c170a446f353c16e4a627ce396774afe039e4d29d0f15ead5378",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Access.java": "c1dad35b99250d9d20c4b3d661c4b3597cee3130a834b4bb1b02e865f9d3ba54",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionAccess.java": "9ab88eb3b3d9b84407522eca12a6c8ae62529915af3a12b055811dfd4080a2fa",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/Requests.java": "06ab35f8daae937e7e2e9ea1ec5dce3b49ab423d98a24f47bff8df8e8fbc36c4",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingService.java": "b86cbbccbb38f189a243a98dabfecaa97af82a35eeed4b7a9fcd15e866c019d0",
+    "agrosphere-api-gateway/src/main/resources/application.yaml": "11fb447cfbcd37e6efce75e77b62ddb9d3cc39f05caa042eada3b0f28c3713f6",
+    "agrosphere-infrastructure/keycloak/agrosphere-realm.json": "88ad0659c3b583ffbc32aeebcef07c11f98971655b784162ab4949409def4cfb",
+    "agrosphere-web/contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-web/contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+    "agrosphere-web/src/app/app.routes.ts": "c23cce4a31aae22f42d4847ddfed1f07e3328bbb2e6092296ba60a3cfd78e787",
+    "agrosphere-web/src/app/core/auth/auth.service.ts": "5690f1c90f4a39e9a8fa72a5a0b5c1bd085cc3cfaaba05318dd703041d64d9c5",
+    "agrosphere-web/docs/ESTATE_ADMINISTRATION.md": "9e8844eaf2af29e6dc91adaa273fa2a14300a198728f20920aede8be2a942a2a",
+    "agrosphere-web/docs/ESTATE_ADMINISTRATION_VERIFICATION.md": "36a67557882ba2d23b2860449334e5ee65a99db30fe93d63ea0c466b10b82799",
+    "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306",
+    "agrosphere-operations-service/src/main/resources/db/migration/V3__latex_collection.sql": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c",
+    "agrosphere-estate-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-estate-service/src/main/resources/db/migration/V2__estate_management.sql": "15ea271c075b8846c201fcbd02aa67423bcb2dab6bb62b2abebb9b20651732ea",
+    "agrosphere-estate-service/src/main/resources/db/migration/V3__outbox_trace_context.sql": "54c2d8f839c42104a770e98acb33726736f19da5150add02fa5e7fa37b9c3c9e"
+  },
+  "migrationHeads": {
+    "Operations": "V3__latex_collection.sql",
+    "Estate": "V3__outbox_trace_context.sql"
+  },
+  "contractObservations": {
+    "ContractsVersion": "0.5.0",
+    "OperationsPin": "0.5.0",
+    "OperationsOperationCount": 27,
+    "EstateOperationCount": 16,
+    "workerAttendanceResources": 0,
+    "WebSnapshots": [
+      "estate.openapi.json",
+      "spatial.openapi.json"
+    ]
+  },
+  "executedChecks": [
+    {
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "cwd": "agrosphere-architecture",
+      "exitCode": 0,
+      "result": "PASS architecture layout/13 ADRs, workflow YAML, 12 independent Git roots, workspace and heuristic tracked-source secret/ignore checks"
+    },
+    {
+      "command": "git diff --check",
+      "cwd": "agrosphere-architecture",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "Inline Python relative-link and ID inventory assertions",
+      "exitCode": 0,
+      "result": "PASS package links and WA-R01..08, WA-AC01..18, WA-T00..09; final evidence link rechecked after creation"
+    },
+    {
+      "command": "Inline Python preservation assertions against target/worker-attendance-baseline.json",
+      "exitCode": 0,
+      "result": "PASS all pre-existing files except intentionally appended checkpoint byte-identical; prior checkpoint text retained; Web status/config staged+working hashes unchanged; all HEADs and other repo statuses unchanged"
+    }
+  ],
+  "notRun": [
+    "Application/unit/browser/live mutation tests: planning-only; no application code changed",
+    "Maven/Docker/database/broker/performance checks: no new implementation",
+    "New contract validators/release gates: no executable contract authored",
+    "PlantUML rendering: no diagram changed"
+  ],
+  "scopeLimits": [
+    "No actual worker/plantation facts supplied or business records created",
+    "No private environment files read or changed",
+    "No Git index/commit/tag/remote actions",
+    "No running-stack/production/AEO mutations or destructive migrations",
+    "Historical Web 0.3.0/3B verification not rerun or upgraded to new acceptance"
+  ],
+  "nextEligibleAction": "Owner reviews D01-D10 and explicitly authorizes accepted scope; WA-T00 records exact package hashes/reviewer/date/conditions. Then contract authoring and dependency-ordered implementation subject to release gates."
+}

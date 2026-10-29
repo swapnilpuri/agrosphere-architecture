@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-29",
+  "timezone": "America/Chicago",
+  "status": "OWNER_DESIGN_ACCEPTED_EXECUTABLE_CONTRACT_REVIEW_GATE",
+  "ownerInstruction": "I have reviewed the review package and fine with it. PLease proceed for the next steps.",
+  "reviewedPackageSha256": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+  "approvalRecord": "docs/milestones/WORKER_ATTENDANCE_APPROVAL.md",
+  "candidateManifestSha256": "a729a0edc37e558a9f31766ba6d32ba29320def882c09cc963b5eddddade0d94",
+  "candidateArtifacts": {
+    "events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+    "events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+    "events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+    "events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+    "examples/operations/workforce/v1/negative.json": "a1fbd5f655ff5a460d6b0571e9b089fdb31eeab6f366a8d03e2f11d5b5f52e7a",
+    "examples/operations/workforce/v1/requests.json": "209928024d0a6fa2ca0dd270946f8df5bb978832dd4b363029de9f01a1358a43",
+    "examples/operations/workforce/v1/WorkerAttendanceChanged.json": "7a0a95cacd0f2cdc0c709f9afe996ae35b3b058e4531f31d0af3e4b25ed5d876",
+    "examples/operations/workforce/v1/WorkerAttendanceRecorded.json": "97de0c7fcc096782f2155ce93636352f26a3259988717d2d3ce3122672af627c",
+    "examples/operations/workforce/v1/WorkerRegistrationChanged.json": "78cd418e4153f8282587ca6e90848f0281237a7494b26a70d6a94198d3a7ea15",
+    "examples/operations/workforce/v1/WorkerRegistrationCreated.json": "584771b109063ad35d81ecb58770938282b064d7c105d86a12312c8109297b06",
+    "openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310"
+  },
+  "taskState": {
+    "WA-T00": "accepted design/scope and baseline recorded; D08/D09 downstream parameters open",
+    "WA-T01": "eleven executable artifacts authored/validated; independent acceptance/local release/pinning pending",
+    "WA-T02": "pure domain/ports complete; 24 new tests pass; no adapters/runtime wiring",
+    "WA-T03": "persistence/source/grants/locking design prepared; actual migration/JDBC blocked on reviewed stable executable schemas",
+    "WA-T04-T09": "not started, dependency and release gates retained"
+  },
+  "repositoryBaseline": {
+    "agrosphere-ai-service": {
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-api-gateway": {
+      "head": "03de2c90f2fe5f7357ab20e61c4962c3dead0763",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-architecture": {
+      "head": "6de4d5f4dc0487d2834e5a0f8e50c564e374fe46",
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n?? docs/milestones/WORKER_ATTENDANCE_ASSESSMENT_EVIDENCE.json\n?? docs/milestones/WORKER_ATTENDANCE_REVIEW.md",
+      "diffStat": "docs/milestones/DEVELOPMENT_CHECKPOINT.md | 22 ++++++++++++++++++++++\n 1 file changed, 22 insertions(+)"
+    },
+    "agrosphere-contracts": {
+      "head": "ed47620986916cd0c38534a2296f91bb1c2352f6",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-immersive": {
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-infrastructure": {
+      "head": "e48e518d11b92e4b25789da5820ca5873488ef6c",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-operations-service": {
+      "head": "a808c199f87562cb3469f4d612e22e5f894ab660",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-orchestrator": {
+      "head": "8a72920b27afe4fb5b22474f5e0732c83448a221",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "status": "",
+      "diffStat": ""
+    },
+    "agrosphere-web": {
+      "head": "e09e7f708cebf2731e9d13134fa7662630d7818e",
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M e2e/fixtures.ts\n M e2e/live.spec.ts\n M eslint.config.mjs\n M package-lock.json\n M package.json\n M playwright.config.ts\nMM public/config.json\n M src/app/api/clients.spec.ts\n M src/app/api/estate/estate.api.ts\n M src/app/api/spatial/spatial.api.ts\n M src/app/app.routes.ts\n M src/app/core/auth/auth.service.spec.ts\n M src/app/core/auth/auth.service.ts\n M src/app/features/estates/estate.store.ts\n M src/app/layout/shell.component.html\n?? docs/ESTATE_ADMINISTRATION.md\n?? docs/ESTATE_ADMINISTRATION_VERIFICATION.md\n?? e2e/administration.spec.ts\n?? public/onboarding/\n?? src/app/features/administration/",
+      "diffStat": "AGENTS.md                                |  4 +++\n CHANGELOG.md                             |  6 ++++\n README.md                                | 12 ++++++--\n VERSION                                  |  2 +-\n e2e/fixtures.ts                          | 18 +++++++++--\n e2e/live.spec.ts                         | 29 ++++++++++++++++++\n eslint.config.mjs                        |  1 +\n package-lock.json                        |  4 +--\n package.json                             |  2 +-\n playwright.config.ts                     |  2 +-\n public/config.json                       |  2 +-\n src/app/api/clients.spec.ts              | 52 ++++++++++++++++++++++++++++++++\n src/app/api/estate/estate.api.ts         | 37 +++++++++++++++++++++++\n src/app/api/spatial/spatial.api.ts       | 11 +++++++\n src/app/app.routes.ts                    |  9 ++++++\n src/app/core/auth/auth.service.spec.ts   | 29 +++++++++++++++++-\n src/app/core/auth/auth.service.ts        | 23 ++++++++++++++\n src/app/features/estates/estate.store.ts | 10 ++++--\n src/app/layout/shell.component.html      | 16 ++++++++--\n 19 files changed, 254 insertions(+), 15 deletions(-)"
+    }
+  },
+  "currentGitStatus": {
+    "agrosphere-architecture": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/FUNCTIONAL_REQUIREMENTS.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M scripts/validate.py\n?? docs/adr/0014-worker-registration-and-attendance.md\n?? docs/milestones/WORKER_ATTENDANCE_APPROVAL.md\n?? docs/milestones/WORKER_ATTENDANCE_ASSESSMENT_EVIDENCE.json\n?? docs/milestones/WORKER_ATTENDANCE_REVIEW.md",
+    "agrosphere-contracts": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/validate.py\n?? docs/worker-attendance/\n?? scripts/build_workforce_contracts.py\n?? scripts/test_workforce_contracts.py\n?? scripts/workforce_contract_validation.py",
+    "agrosphere-operations-service": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n?? docs/WORKFORCE_PERSISTENCE_PREPARATION.md\n?? src/main/java/com/agrosphere/operations/workforce/\n?? src/test/java/com/agrosphere/operations/WorkforceDomainTest.java",
+    "agrosphere-web": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M e2e/fixtures.ts\n M e2e/live.spec.ts\n M eslint.config.mjs\n M package-lock.json\n M package.json\n M playwright.config.ts\nMM public/config.json\n M src/app/api/clients.spec.ts\n M src/app/api/estate/estate.api.ts\n M src/app/api/spatial/spatial.api.ts\n M src/app/app.routes.ts\n M src/app/core/auth/auth.service.spec.ts\n M src/app/core/auth/auth.service.ts\n M src/app/features/estates/estate.store.ts\n M src/app/layout/shell.component.html\n?? docs/ESTATE_ADMINISTRATION.md\n?? docs/ESTATE_ADMINISTRATION_VERIFICATION.md\n?? e2e/administration.spec.ts\n?? public/onboarding/\n?? src/app/features/administration/"
+  },
+  "preservation": {
+    "result": "PASS",
+    "preexistingFileSha256": {
+      "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_ASSESSMENT_EVIDENCE.json": "c8f4c62a4ffea5e6e12a236409d6eeee51ff4ad826d7a7c272d2427176bb4b60",
+      "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_REVIEW.md": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+      "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "f8d19fcf53b150190454689d9ffa7f6febd5dcdb87c1439d039de1b619a4a69f",
+      "agrosphere-web/docs/ESTATE_ADMINISTRATION.md": "9e8844eaf2af29e6dc91adaa273fa2a14300a198728f20920aede8be2a942a2a",
+      "agrosphere-web/docs/ESTATE_ADMINISTRATION_VERIFICATION.md": "36a67557882ba2d23b2860449334e5ee65a99db30fe93d63ea0c466b10b82799",
+      "agrosphere-web/e2e/administration.spec.ts": "c9cebfcb193c7bee1a0eef0246bb584f052c722ca23c84bdfdaa5f12e927bb65",
+      "agrosphere-web/public/onboarding/plantation-data-worksheet.csv": "292977e4a75b6d9453da8ec031fbfe234412ff616a984dca1b7cab832fb164e9",
+      "agrosphere-web/src/app/features/administration/administration.component.css": "0eec9394bfe411678504fecd1eca5d659176064faf5293ab7e42c18b1a299c43",
+      "agrosphere-web/src/app/features/administration/administration.component.html": "d858e70e7537c6b7c0cfb314c423511904f6c1085e2b914ef787ffa3709bc09f",
+      "agrosphere-web/src/app/features/administration/administration.component.ts": "b1774961dd3362b5f08771fb9ea5df04a648328aee3d88197e5be055862265b4",
+      "agrosphere-web/src/app/features/administration/administration.forms.spec.ts": "36c9e049919c4ff64c7da927805e6919f33772613f06d4f6ea9fa2c6cbbb318b",
+      "agrosphere-web/src/app/features/administration/administration.forms.ts": "11f36ca235dd4465e9679262b1f416590be34f3cf5ce7c6d32c85581261576d4",
+      "agrosphere-web/src/app/features/administration/administration.guard.ts": "ea51826ce5ad132abf275778c119c268eb09da72edeea7fe815f5d7415617ef0",
+      "agrosphere-web/src/app/features/administration/boundary-import.component.html": "eccc77d23850b12328e29ff5bfd211fb4a832b1faf4757ccf1f62c5567e14fc0",
+      "agrosphere-web/src/app/features/administration/boundary-import.component.ts": "31fd0913519df29dd63662615c55b676ad9442a1588bbb4d4cdd3b5b647635ff",
+      "agrosphere-web/src/app/features/administration/boundary-import.spec.ts": "317a4806965d947471e4fce3fe6e5bbb7b9562f77546f3751365e11eda6dbc92",
+      "agrosphere-web/src/app/features/administration/boundary-import.ts": "69df1007a16849fd2ea4a0c72012fc0a5f49aa78317c0c87e0be5f828ece87f5",
+      "agrosphere-web/AGENTS.md": "7a4aaebaa68639ed62359b3c655d297043b3fa989cccd09b6a11c86e510d3bff",
+      "agrosphere-web/CHANGELOG.md": "3539f07c7e4dec5cd2b7310e3c4826d109e955666d640b8dba80c82a91d2cfe7",
+      "agrosphere-web/README.md": "31873a9102512f3b1c9516e6b745e99f579d2e7a7ba2f552179ebcae1da30049",
+      "agrosphere-web/VERSION": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0",
+      "agrosphere-web/e2e/fixtures.ts": "682949c81063a9a44c01ad5e6833961cc91ed6e6fe0258ae65191c73ac0bd442",
+      "agrosphere-web/e2e/live.spec.ts": "f4f4bba93947860f999066a33dd52a78589957c1039b91153280b476f019409a",
+      "agrosphere-web/eslint.config.mjs": "4dfba3804f523ac42f8fc85348d62b8219123f4e70ad4e4315d80aa8be2e12a5",
+      "agrosphere-web/package-lock.json": "7644a986fc532b6d6daba1e668c0b457f63e2f7ebdaebf53c91c249a978d6cd4",
+      "agrosphere-web/package.json": "a0528abe39580cc509c612fc700d506c43a6cd781cd8fe745e496cb1c1e19b1c",
+      "agrosphere-web/playwright.config.ts": "6c1b0a1f1aa793e2fc00934c63027144e3a046494f6a43cd20c60ad19b102eb7",
+      "agrosphere-web/public/config.json": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+      "agrosphere-web/src/app/api/clients.spec.ts": "717403b1853d09ef39c748e58ebc46786825b32fc47eadc69df9e956a1dbc0cc",
+      "agrosphere-web/src/app/api/estate/estate.api.ts": "62e893818bb47edd4a511cb6cb68cd628ece224b043769533b6a39d37c0e76d0",
+      "agrosphere-web/src/app/api/spatial/spatial.api.ts": "f08b2f492cb1e62afe223c89437536c0577f90bef863ddccc698e55d21ae0ae9",
+      "agrosphere-web/src/app/app.routes.ts": "c23cce4a31aae22f42d4847ddfed1f07e3328bbb2e6092296ba60a3cfd78e787",
+      "agrosphere-web/src/app/core/auth/auth.service.spec.ts": "ce3e2a62e15cac5c125a3099ea8ccbf434387ef5c09f7bc3c4d6738336bc3c4a",
+      "agrosphere-web/src/app/core/auth/auth.service.ts": "5690f1c90f4a39e9a8fa72a5a0b5c1bd085cc3cfaaba05318dd703041d64d9c5",
+      "agrosphere-web/src/app/features/estates/estate.store.ts": "054883a41b1d0e98b70a65fa917eea7bf388abfda55cd41467aeea4a21e4295f",
+      "agrosphere-web/src/app/layout/shell.component.html": "b1db07b23ed68c92f7fc4ea3d90be3b329f1ed57881840a36d7d55f6f95aabe8"
+    },
+    "config": {
+      "indexBlob": "7bb3184f8218fbbbf86e22591d87f181760b7cae",
+      "worktreeSha256": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4"
+    },
+    "notes": "All pre-existing modified/untracked files unchanged except new checkpoint section; prior checkpoint text retained. Web status/index config blob/working-tree config hash identical. All HEADs unchanged. All 71 released contract artifact bytes unchanged. No index/commit/remote operation."
+  },
+  "sourceAndDocumentSha256": {
+    "agrosphere-architecture/docs/adr/0014-worker-registration-and-attendance.md": "9b3de3c7810159544ec250cf4665e04ef88a1d81fc5ef0d9253a18e206208865",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_APPROVAL.md": "88a4375622c1138e4dc3fa72bb1cdbc0763b9f3de07fb9739367e61a95a9ac09",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_ASSESSMENT_EVIDENCE.json": "c8f4c62a4ffea5e6e12a236409d6eeee51ff4ad826d7a7c272d2427176bb4b60",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_REVIEW.md": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+    "agrosphere-architecture/AGENTS.md": "6f20fc4b72fdc30234a1f7897bc4fe6a096bb53cc8b649c500a5e160e82fe8d5",
+    "agrosphere-architecture/CHANGELOG.md": "fe4ec2c6ce1b76854cb4a4d295b432b23fcac03f2edd1dbe516b3d1f640f6a3f",
+    "agrosphere-architecture/README.md": "44b2be547933d6ec7a7c9ceccb8c04c62bf8237565be961a8a94b85b35d0732d",
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "50a722bc6e8b8ba83291434162a477c3acf6956dc4294c77e3768ad89256951e",
+    "agrosphere-architecture/docs/requirements/FUNCTIONAL_REQUIREMENTS.md": "f98e57aa77f679b8b9b5628eda6945626c6f95f9974eecd0bd01d5b95be27590",
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": "34e75a47dd41c7eca4fb42961fdd2fdb940f2bf4d4abe47e5993397093826e4c",
+    "agrosphere-architecture/scripts/validate.py": "43785bbba97e3d0f027f6ecd07822b8d5a05908bb1823580797f48fc4f0ca5af",
+    "agrosphere-contracts/docs/worker-attendance/CANDIDATE_MANIFEST.json": "a729a0edc37e558a9f31766ba6d32ba29320def882c09cc963b5eddddade0d94",
+    "agrosphere-contracts/docs/worker-attendance/CANDIDATE_REVIEW.md": "8db72ae4c1d09b17fab28543b3f8b5582136764e55564af3d22495824ee2518c",
+    "agrosphere-contracts/docs/worker-attendance/candidate/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+    "agrosphere-contracts/docs/worker-attendance/candidate/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+    "agrosphere-contracts/docs/worker-attendance/candidate/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+    "agrosphere-contracts/docs/worker-attendance/candidate/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/WorkerAttendanceChanged.json": "7a0a95cacd0f2cdc0c709f9afe996ae35b3b058e4531f31d0af3e4b25ed5d876",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/WorkerAttendanceRecorded.json": "97de0c7fcc096782f2155ce93636352f26a3259988717d2d3ce3122672af627c",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/WorkerRegistrationChanged.json": "78cd418e4153f8282587ca6e90848f0281237a7494b26a70d6a94198d3a7ea15",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/WorkerRegistrationCreated.json": "584771b109063ad35d81ecb58770938282b064d7c105d86a12312c8109297b06",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/negative.json": "a1fbd5f655ff5a460d6b0571e9b089fdb31eeab6f366a8d03e2f11d5b5f52e7a",
+    "agrosphere-contracts/docs/worker-attendance/candidate/examples/operations/workforce/v1/requests.json": "209928024d0a6fa2ca0dd270946f8df5bb978832dd4b363029de9f01a1358a43",
+    "agrosphere-contracts/docs/worker-attendance/candidate/openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-contracts/docs/worker-attendance/compatibility-baseline.json": "9d339ff4b0c29ca2eb4ee5b0a2efc0b268be74e9c0efd871e6d1d622452d45ac",
+    "agrosphere-contracts/scripts/build_workforce_contracts.py": "00bff45315db7961343bd32d89a5270a2661db73682ac6b9a789ed98836f3324",
+    "agrosphere-contracts/scripts/test_workforce_contracts.py": "699cd81a153ae2f5c712821d66a7dfe6b8034dfb84799852ea94c8464079ca59",
+    "agrosphere-contracts/scripts/workforce_contract_validation.py": "ca05cf388cd92f01a791e1f7a94ca3673e7c496267cf1b355f1fb94bad64e5a0",
+    "agrosphere-contracts/.github/workflows/ci.yml": "dbdfac0d9ccf166eb4f6707f50b01dde3a4fe41a45a7d1fee3391dddb9d24bb7",
+    "agrosphere-contracts/AGENTS.md": "572c2c1d6fe425836f736e919f2294c0c10f22987a40b940d6cbbd4ebade369b",
+    "agrosphere-contracts/CHANGELOG.md": "397fa30f5c2d360b559ee68dbd983deee5e5bf1cb44ea5ac5d0cd1bf4a8a010d",
+    "agrosphere-contracts/README.md": "38e4200b450eb38216880d25d0e3e4becff8cd64953f5c9b25931a52d664bb3c",
+    "agrosphere-contracts/scripts/validate.py": "f4bd8bc0b44a959e3a01f1f1432f4f3449a717e2f1deb574f68acde82cf0c1fe",
+    "agrosphere-operations-service/docs/WORKFORCE_PERSISTENCE_PREPARATION.md": "5c0ea9934331de15440b285e5d02394668ba5c2d81a5eba87099f4f7e9e5313b",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/application/WorkforcePorts.java": "38b3997b0d787b1cabfd4c48cc214f1f741659db15cbfc606292fdec24aaebc6",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/domain/AttendanceDay.java": "312844ec55f0fcecd2212b5ebfbf1f318e04bea0f5d84197cc73543e658dfbb2",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/domain/WorkerRegistration.java": "83daa3dc3d0190b2421c3ecc36ac618e118d0b29312b092d3a705d82b56aa939",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/domain/WorkforceRules.java": "c8966dc115cf0886526c4e79b3ac5c425b8639f44d6702ad6802b5c60b2b1f34",
+    "agrosphere-operations-service/src/test/java/com/agrosphere/operations/WorkforceDomainTest.java": "955785f23ed3f1d3de70de0030cc156900a52a1087efd3e3dbe337170c89519c",
+    "agrosphere-operations-service/AGENTS.md": "c6a55fdfd18339cb2ec1612a64b8f5ec857c8087a7ffd3c895fd5875aa3c8ce6",
+    "agrosphere-operations-service/CHANGELOG.md": "a132b197c4316fde0655c73e7686f7769de02511417dbb08cabbfb25abdabfbf",
+    "agrosphere-operations-service/README.md": "c43c485cadb7a278d86b4f7317f0d7c6790fd1621aafbaf49f0fbb8e337d7866"
+  },
+  "checks": [
+    {
+      "cwd": "agrosphere-architecture",
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "exitCode": 0,
+      "result": "PASS layout, fourteen accepted ADRs, workflows, twelve independent product roots, workspace/heuristic source checks"
+    },
+    {
+      "cwd": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/validate.py",
+      "exitCode": 0,
+      "result": "PASS existing families plus isolated workforce candidate; 71 old artifact hashes, 42 candidate operations, 4 events, 7 request shapes, 9 negatives",
+      "log": "target-wa1-validation.log"
+    },
+    {
+      "cwd": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/build_collection_contracts.py --check",
+      "exitCode": 0,
+      "result": "PASS legacy deterministic builder"
+    },
+    {
+      "cwd": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/build_workforce_contracts.py --check",
+      "exitCode": 0,
+      "result": "PASS eleven candidate artifacts"
+    },
+    {
+      "cwd": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_collection_contracts.py -v",
+      "exitCode": 0,
+      "result": "12 passed"
+    },
+    {
+      "cwd": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_workforce_contracts.py -v",
+      "exitCode": 0,
+      "result": "12 passed"
+    },
+    {
+      "cwd": "agrosphere-operations-service",
+      "command": "./mvnw.cmd verify",
+      "exitCode": 0,
+      "result": {
+        "tests": 99,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "log": "target/wa1-verify.log",
+      "logSha256": "31f86ca3520dc2548607c41498989fa20f796f7bf75aa42ad9617515376b6c5d",
+      "surefireSha256": {
+        "target/surefire-reports/TEST-com.agrosphere.operations.AuthorizationTest.xml": "6e499f13a0452d08ee6a0113ab1438efd28bb5d0c4f6e73d801d0de938620904",
+        "target/surefire-reports/TEST-com.agrosphere.operations.CollectionCommandTest.xml": "7aee26f74f478474be0a2b4cbf8efdd7a957e9a969bc9c03e2c2c47640582799",
+        "target/surefire-reports/TEST-com.agrosphere.operations.CollectionDomainTest.xml": "c5426ae8bf5380e6c0ff45c0ff9fe5be1b336749a307912e038b211d6e2a4f84",
+        "target/surefire-reports/TEST-com.agrosphere.operations.CollectionReferenceTest.xml": "01cfdb04595064dfb175bec87039b87d8791cd1ad737d0d4a16f3961a1305a07",
+        "target/surefire-reports/TEST-com.agrosphere.operations.config.CollectionAccessTest.xml": "583d5656f3d0a1bd5acae8bdc381c75ff5714b07af7d45d0e9ac7bd193cde4d4",
+        "target/surefire-reports/TEST-com.agrosphere.operations.DomainTest.xml": "f4b6783d0099c7c34ea39fff70dab56b65b88f4879d57e6b292359a3dfd1591b",
+        "target/surefire-reports/TEST-com.agrosphere.operations.OutboxDispatcherTest.xml": "6767de8bf0cc869fb0f4dacbcff27b134f0eddd8033d4891bbc76ead50185f8d",
+        "target/surefire-reports/TEST-com.agrosphere.operations.SecurityPolicyTest.xml": "a6236778d8b756de469206128ba71b0d4dad15f89f1a132a7f1c87144588e6f6",
+        "target/surefire-reports/TEST-com.agrosphere.operations.WorkforceDomainTest.xml": "88baa62dda763f0bfc07ffdc8cf2f3a49e91400cc89c1fb0b504bf9dff78726a"
+      }
+    },
+    {
+      "command": "affected git diff --check, new-file whitespace/JSON, relative links, manifest/support hashes and preservation assertions",
+      "exitCode": 0,
+      "result": "PASS"
+    }
+  ],
+  "acceptanceLimits": [
+    "WA-AC01-18 not fully accepted: pure domain/contract evidence is partial; no new signed-JWT HTTP adapters/routes, persistence/concurrency, broker or browser flows implemented.",
+    "No new Flyway migration or executable DDL; current service V1-V3 and all pinned release files unchanged.",
+    "No runtime API export check against WA-1: routes not implemented/pinned. Existing APIs not revalidated through integration this increment.",
+    "Docker/integration/browser/performance/hosted CI not run or claimed; no new diagram authored/rendered.",
+    "D08 workload/languages/connectivity inputs and D09 actual purpose/retention/deletion parameters remain open. All domain mutations unconditionally reject REAL until separately reviewed enablement.",
+    "Initial changelog helper used wrong cwd and failed before writes; rerun with correct workspace cwd succeeded. This was not a failed product test.",
+    "Existing JVM/Mockito final-field/agent/deprecation warnings retained; Maven success does not resolve them."
+  ],
+  "exclusions": "No real facts/records invented or existing data touched; no private environment access, existing-stack/realm provisioning/restart, expanded credential handling, destructive migration, production/AEO change, commit/tag/push/publish.",
+  "nextAction": "Review exact candidate manifest; if accepted explicitly authorize independent local Contracts 0.6.0 promotion/release and pinning. Then refresh baselines, validate byte preservation and follow WA-T03 onward dependencies without repeating design approvals."
+}

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — 2026-10-29 WA-1
+
+Recorded the owner-approved WA-1 scope/exact reviewed hash, ADR 0014 and dependency/acceptance gates. Prepared an isolated executable contract review, independent pure-domain evidence and persistence handoff; existing proposal/history and unrelated Web changes preserved. No release, deployment or AEO change.
+
 ## Unreleased - 2026-10-27 local 3B verification
 
 Recorded owner-scoped credential authorization and local T00-T09 implementation/AC01-AC28 verification, exact test/source evidence, independent runbooks/checkpoint and six current diagrams. Generated-only disposable drills; M2 performance stays open, no production/AEO/private-environment changes. Next incident/inspection planning handoff remains proposed.

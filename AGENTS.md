@@ -17,3 +17,7 @@ The owner request dated 2026-10-27 authorizes application-development coordinati
 ## Scoped credential-wiring authorization - 2026-10-27
 
 The owner authorizes the reviewed Operations-only runtime/Flyway wiring, tracked placeholders and provisioning-tool implementation, and generated credentials only in disposable tests. This supplements earlier secret-handling exclusions only for that scope. Do not read/modify existing private environment files, provision existing/running stacks, or change production/AEO state. See Architecture docs/milestones/MILESTONE_3B_CREDENTIAL_WIRING_APPROVAL.json and continue authorized T03-T09 in dependency order.
+
+## Owner-approved WA-1 — 2026-10-29
+
+See docs/milestones/WORKER_ATTENDANCE_APPROVAL.md and accepted ADR 0014. The owner accepted D01–D10 and authorized WA-T01–T09 in dependency order. Preserve the reviewed proposal bytes; the dated approval supersedes its historical status labels. Independent executable-contract acceptance/local release must precede pinning. D08 rollout/load inputs and D09 actual privacy/retention parameters remain acceptance gates; no REAL workforce collection is enabled. Preserve current Web changes/config and all production/AEO/Git exclusions.

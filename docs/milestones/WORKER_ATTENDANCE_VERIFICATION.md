@@ -34,7 +34,7 @@ Gateway adds two path families. Infrastructure adds four explicit workforce bind
 | Web narrow layout | PASS at 390 px, no horizontal overflow; retained screenshot visually reviewed at `agrosphere-web/target/workforce-narrow.png` |
 | Architecture workspace validation | PASS; fourteen ADRs, twelve independent product Git roots, no parent build/submodules, workflow/layout checks |
 
-Final Web image status/hash is recorded in evidence/checkpoint after the public-source allowlist rebuild. Packaging excludes the owner's configuration, private environments and Git metadata, using generated public defaults. Browser mocks are not a live browser mutation test; real HTTP/platform acceptance is separate. Neither software WebGL timing nor this platform drill establishes D08 workload latency or M2 reference-device performance.
+Final public-source allowlist rebuild PASS: `agrosphere-web:0.4.0-local`, `sha256:c2aeedc7c9344fac7ef14efd8b2cb9cfcfbb5bc6f7c155391c942a3f2dbaaea0`. Packaging excludes the owner's configuration, private environments and Git metadata, using generated public defaults. Browser mocks are not a live browser mutation test; real HTTP/platform acceptance is separate. Neither software WebGL timing nor this platform drill establishes D08 workload latency or M2 reference-device performance.
 
 The final successful Compose project was `agrosphere-3a-check-c21fb93d`. Its finally cleanup completed. Read-only Docker checks on 2026-10-30 found no containers/volumes for it or the earlier failed `agrosphere-3a-check-86c8515e`. Existing stacks were not reset, seeded, upgraded or restarted.
 

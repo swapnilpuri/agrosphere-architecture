@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-30",
+  "scope": "WA-1 local SIMULATED-only implementation; no publication/deployment",
+  "baselineDate": "2026-10-29",
+  "repositories": {
+    "agrosphere-ai-service": {
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-api-gateway": {
+      "head": "03de2c90f2fe5f7357ab20e61c4962c3dead0763",
+      "headMatchesBaseline": true,
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M src/main/resources/application.yaml\n M src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java",
+      "changedFileSha256": {
+        "AGENTS.md": "3b65572bd020c01ace0399e52870d8a6792f87c8b124048af5b12f26e90f4eea",
+        "CHANGELOG.md": "a4e9318f3c15cdc50c31d4b59b37c8988d2031b0b4732f3150beca3b7f35f3ad",
+        "README.md": "e5b2ac3780fd75b044784b0b56d518e0dcfe101dc139247da256247c40da37a5",
+        "src/main/resources/application.yaml": "b70e77d6f7005fec663a8d0cb830ecd2d62dcc690fe3ffb3c88dfd7a47bfc133",
+        "src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java": "53ae0f050e46760db94253970f4253cb5b169618eaadfd12dbb329afb0b9d3db"
+      }
+    },
+    "agrosphere-architecture": {
+      "head": "6b41a5bb10e8ed64bc7c1704d48011dd64575f4c",
+      "headMatchesBaseline": true,
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n?? docs/milestones/WORKER_ATTENDANCE_CONTRACT_APPROVAL.md\n?? docs/milestones/WORKER_ATTENDANCE_VERIFICATION.md",
+      "changedFileSha256": {
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "3c778b51fe231ac56c43cce9f7d92ef2c4fa40031b678352e2aeaa420a6182d7",
+        "docs/milestones/WORKER_ATTENDANCE_CONTRACT_APPROVAL.md": "606bbb31b4230eef7a93689fc2d843d516b1275a646943f9dad02e3e01c94400",
+        "docs/milestones/WORKER_ATTENDANCE_VERIFICATION.md": "cff31e969fac39698fd073797a46307d8107dee82e00adda5a926edab76f8d07"
+      }
+    },
+    "agrosphere-contracts": {
+      "head": "58d4455b73a36de783b539bc8ca97baa11f47121",
+      "headMatchesBaseline": true,
+      "status": "M .gitattributes\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M openapi/operations-service.yaml\n M scripts/collection_contract_validation.py\n M scripts/workforce_contract_validation.py\n?? docs/worker-attendance/RELEASE_0_6_0.json\n?? docs/worker-attendance/previous-0.5.0/\n?? events/operations/workforce/\n?? examples/operations/workforce/",
+      "changedFileSha256": {
+        ".gitattributes": "e0e74760ac78a8abb0a8647b04c6f644d3f074cf856c954a418762d13c255d27",
+        "AGENTS.md": "6aa8b880c4146d503286b779da3078f9da515d56586aad5159912bbbc48f3b84",
+        "CHANGELOG.md": "ca347b977a6cde11e814d49a01c6c863f170d0c6095064337e98d7663838f24b",
+        "README.md": "7f9822d205b752469a45fae699090c6d129d4daf247494f6e4499274b1d8dcfb",
+        "VERSION": "97a5d6e540a6120d09c39ddb667e0e8e2bac7fcc2ffef813b82e08fd60365bce",
+        "docs/worker-attendance/RELEASE_0_6_0.json": "855a8d3538285fdbbd12550fb114494219ec26b1ba4919689d46a10e7a33aae7",
+        "docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+        "events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+        "events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+        "events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+        "events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+        "examples/operations/workforce/v1/WorkerAttendanceChanged.json": "7a0a95cacd0f2cdc0c709f9afe996ae35b3b058e4531f31d0af3e4b25ed5d876",
+        "examples/operations/workforce/v1/WorkerAttendanceRecorded.json": "97de0c7fcc096782f2155ce93636352f26a3259988717d2d3ce3122672af627c",
+        "examples/operations/workforce/v1/WorkerRegistrationChanged.json": "78cd418e4153f8282587ca6e90848f0281237a7494b26a70d6a94198d3a7ea15",
+        "examples/operations/workforce/v1/WorkerRegistrationCreated.json": "584771b109063ad35d81ecb58770938282b064d7c105d86a12312c8109297b06",
+        "examples/operations/workforce/v1/negative.json": "a1fbd5f655ff5a460d6b0571e9b089fdb31eeab6f366a8d03e2f11d5b5f52e7a",
+        "examples/operations/workforce/v1/requests.json": "209928024d0a6fa2ca0dd270946f8df5bb978832dd4b363029de9f01a1358a43",
+        "openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+        "scripts/collection_contract_validation.py": "1c4dc9e02181819bf7fe83858103f32aacdff38e84321d9301ec9d3ef848c6a5",
+        "scripts/workforce_contract_validation.py": "cdc46673c674027732572f2177d858cb47faeb0bf16b250d98dc985102b89395"
+      }
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-immersive": {
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-infrastructure": {
+      "head": "e48e518d11b92e4b25789da5820ca5873488ef6c",
+      "headMatchesBaseline": true,
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M rabbitmq/definitions.json\n M scripts/validate.py\n?? scripts/verify_workforce.py",
+      "changedFileSha256": {
+        "AGENTS.md": "e084518c392f761d19730858f40e64873d7962ae66af5ed22f032ee6b2fc6739",
+        "CHANGELOG.md": "707e5b43a5ec1c4257aa07c78fada717ff5924c61c2e0a335a332a8a41527b4a",
+        "README.md": "4623d511df8ba821f4ed2070f6e6288b3a7c82ee6db6fad23c62619a2d2c1944",
+        "rabbitmq/definitions.json": "4e6ee7aaea739be8b853958febf4a9b16396fdc96c5b2020d51c531e90fd15a6",
+        "scripts/validate.py": "4abe9eb79566fb4d1c3dc7d38b91304126946fe73b5868006bf2ec45545b14d2",
+        "scripts/verify_workforce.py": "40333a929e178eeb4a6bdc6395cd69c5d2112e196ea6b1b5c9bec1b260f7e1fa"
+      }
+    },
+    "agrosphere-operations-service": {
+      "head": "fbc7c2127b5223b7a7ed991c232013c0f68d54b1",
+      "headMatchesBaseline": true,
+      "status": "M .gitattributes\n M .github/workflows/ci.yml\n M CHANGELOG.md\n M README.md\n M scripts/test_contract_checkout.py\n M scripts/validate_collection_pins.py\n M src/main/java/com/agrosphere/operations/workforce/application/WorkforcePorts.java\n M src/main/resources/contracts/RELEASE\n M src/main/resources/contracts/operations-service.yaml\n M src/test/java/com/agrosphere/operations/CollectionCredentialsIT.java\n M src/test/java/com/agrosphere/operations/CollectionSchemaIT.java\n M src/test/java/com/agrosphere/operations/CollectionServiceIT.java\n M src/test/java/com/agrosphere/operations/TappingServiceIT.java\n?? docs/WORKFORCE_IMPLEMENTATION.md\n?? scripts/test_workforce_projection.py\n?? scripts/validate_workforce_runtime.py\n?? src/main/java/com/agrosphere/operations/workforce/api/\n?? src/main/java/com/agrosphere/operations/workforce/application/WorkforceCommands.java\n?? src/main/java/com/agrosphere/operations/workforce/application/WorkforceEventSnapshots.java\n?? src/main/java/com/agrosphere/operations/workforce/application/WorkforceQueryService.java\n?? src/main/java/com/agrosphere/operations/workforce/application/WorkforceService.java\n?? src/main/java/com/agrosphere/operations/workforce/application/WorkforceViews.java\n?? src/main/java/com/agrosphere/operations/workforce/infrastructure/\n?? src/main/resources/contracts/WORKFORCE_RELEASE.json\n?? src/main/resources/contracts/events/operations/workforce/\n?? src/main/resources/contracts/previous-0.5.0/\n?? src/main/resources/db/migration/V4__worker_registration_and_attendance.sql\n?? src/test/java/com/agrosphere/operations/WorkforcePersistenceTest.java\n?? src/test/java/com/agrosphere/operations/WorkforceServiceIT.java\n?? src/test/java/com/agrosphere/operations/WorkforceStoreIT.java",
+      "changedFileSha256": {
+        ".gitattributes": "1b0301e7efc3ae4ce424e39fbff202168d8587a91329ba0c44be537f97107064",
+        ".github/workflows/ci.yml": "8e74d987f7c854286a511f04baeafc5b88bd3892292f39d5d7917bfd80f16a12",
+        "CHANGELOG.md": "b384b6ab101991eaca0fd664809a7df24dce49fd1bd5e5e3b2bdde0a19163522",
+        "README.md": "9dade083f951ed8c1ce1397f7430696253403aa53588bc2b35f10a5f4e7ba852",
+        "docs/WORKFORCE_IMPLEMENTATION.md": "36271dbcdead3bf32761bc88c7ce250d0181bef8c901cf76a8c75c0ae773b1d2",
+        "scripts/test_contract_checkout.py": "cd189796edd36c6ae065db2069f069dd4d51e401b968602cd8e84c9880fb100d",
+        "scripts/test_workforce_projection.py": "b08cd71fb709a30d70796a7774b9944ece3d969cd4b10e5aea5294cc896c3476",
+        "scripts/validate_collection_pins.py": "b94aa150250ca3d7b8793b4d0d2c328d2cc88ca35c87c5012b4c172c924bb282",
+        "scripts/validate_workforce_runtime.py": "ebcbb2c769b57af8a1f18ad4750e74f0d1e6610553dfe43f69dd6f683b71584f",
+        "src/main/java/com/agrosphere/operations/workforce/api/WorkforceController.java": "28eccdcd70d778a2be2dd9e0a668e26d16aa4153de35a3ca52f02cb347a354c1",
+        "src/main/java/com/agrosphere/operations/workforce/api/WorkforceOpenApi.java": "9c038665e29b2ba937b2e839eb424af646fcbdfea3e6eae64edf4d9154d47530",
+        "src/main/java/com/agrosphere/operations/workforce/api/WorkforceProblems.java": "8fec1e2f0d12f0414f775c46ac1fc0e9435cb709141163e1a7dbe3d91819f957",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforceCommands.java": "d9854a1bcb85095836b00c5bc86836c4049cb4cb6254d3e0a3ef4e90635d77cd",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforceEventSnapshots.java": "c6f06ce4afa9b76b1d238f36bf6db616fd38ee25ad13b73dcecae65898087d76",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforcePorts.java": "1ae2886468fc5c0ce674316fd60adbffefdd6bb6fb1fe12b89e6238b42fd56af",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforceQueryService.java": "c19b16dd9c22cd9fe29ccedf1c597ed4671648e8f291f052ff082355bd2120b2",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforceService.java": "868766c113d0ec99b5c10922b1d694dbff9eb9a87bb65bd09819f6a7858d520d",
+        "src/main/java/com/agrosphere/operations/workforce/application/WorkforceViews.java": "8ae266460cba29a2c56dd1d5ae46e23625751498cc76a432481f42823221a110",
+        "src/main/java/com/agrosphere/operations/workforce/infrastructure/JdbcWorkforceStore.java": "1c30b7c9b0a7404d1da56a1e162d900ad4b43ea99dbc4039bbdc3d615f0befe9",
+        "src/main/java/com/agrosphere/operations/workforce/infrastructure/JwtWorkforceIdentity.java": "0e249d1d0941a831e5727a7895da558b8f3a6dca28c196ab7c342bb79f7f5d50",
+        "src/main/java/com/agrosphere/operations/workforce/infrastructure/WorkforceEstateClient.java": "140b8543e94c5f0045777505b54a91fa205c2e7fe5694166a965052b4be52cec",
+        "src/main/java/com/agrosphere/operations/workforce/infrastructure/WorkforceState.java": "1d65a6bde9621f7bfa55511d330487f3ebad9e8de7657a3b6fef27f2eab92a21",
+        "src/main/java/com/agrosphere/operations/workforce/infrastructure/WorkforceTransactions.java": "17ac4731edcf2f7d2c3259eed18634f9fbcf25d77acec5b3f58e2050dbe5edbb",
+        "src/main/resources/contracts/RELEASE": "4c7c568ee482efde562e81d65c229501b63acc9462d0b7191d16e54118a92525",
+        "src/main/resources/contracts/WORKFORCE_RELEASE.json": "076e9f5e9eec1b1419e2ec34c96f81bae38f36ecab6dc3f4191be819102a8a77",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+        "src/main/resources/contracts/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+        "src/main/resources/contracts/previous-0.5.0/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+        "src/main/resources/db/migration/V4__worker_registration_and_attendance.sql": "6c673a34b1d43ae8b856a49b28890ce37fa0e9f691802c384779bb51bd4acab3",
+        "src/test/java/com/agrosphere/operations/CollectionCredentialsIT.java": "1cc3966b85bf320b94c43fec9444e6db84f355d568ea4e846985670ed4406427",
+        "src/test/java/com/agrosphere/operations/CollectionSchemaIT.java": "31c0037eae65663c44b83be4e9ee5d68eaa9ddecdd2fe0e6071f61f5b9feb0e7",
+        "src/test/java/com/agrosphere/operations/CollectionServiceIT.java": "a13cbbe287c6761a2c76c492012edddd782b7066bc355e844213b5a29549370c",
+        "src/test/java/com/agrosphere/operations/TappingServiceIT.java": "fbadf1ce82ec93dd8602ba6f507e522f52b880e2a2f3ccc103ceb113ada9d78c",
+        "src/test/java/com/agrosphere/operations/WorkforcePersistenceTest.java": "da846c6d50a74193bfc559ab0a04266041aaaea62cc911ca9bee66720195dd34",
+        "src/test/java/com/agrosphere/operations/WorkforceServiceIT.java": "eb988295139b3cd28d54c748caea09103e96c63bf797c8faa2a8da98e783252f",
+        "src/test/java/com/agrosphere/operations/WorkforceStoreIT.java": "ee730b495aa0b197dd3f8cc03dc86b7c3722658d81777f32b60426cebe727a73"
+      }
+    },
+    "agrosphere-orchestrator": {
+      "head": "8a72920b27afe4fb5b22474f5e0732c83448a221",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "headMatchesBaseline": true,
+      "status": "",
+      "changedFileSha256": {}
+    },
+    "agrosphere-web": {
+      "head": "d93466193cab34d49b40f76621a2ca21f4378fdb",
+      "headMatchesBaseline": true,
+      "status": "M .gitattributes\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M package-lock.json\n M package.json\n M playwright.config.ts\n M scripts/check-api.mjs\n M src/app/app.routes.ts\n M src/app/core/auth/auth.guard.spec.ts\n M src/app/core/auth/auth.guard.ts\n M src/app/core/auth/auth.service.spec.ts\n M src/app/core/auth/auth.service.ts\n M src/app/core/auth/login.component.html\n M src/app/features/estates/estate.store.ts\n M src/app/layout/shell.component.html\n M src/app/layout/shell.component.ts\n M src/styles.css\n?? contracts/operations.openapi.json\n?? contracts/operations.release.json\n?? docs/WORKFORCE.md\n?? e2e/workforce.spec.ts\n?? scripts/build-public-image.ps1\n?? src/api/operations.generated.ts\n?? src/app/features/workforce/",
+      "changedFileSha256": {
+        ".gitattributes": "c2796ba0efdcd5cf70cf7607c0c7755b00ee46630de708a979981e51d6355de4",
+        "AGENTS.md": "34b632514bf6c6d2a05e29909e214816cb9cb16e5368a287d0348eccb7b69480",
+        "CHANGELOG.md": "2891cb225b88c26e43c1313b1d76b486256999014935b82fe6f1e3647d947a5e",
+        "README.md": "956b3a293b90f2914135da3d7f7e6a36b5a2ddcf32bc1d978d30e9a22fd77b5b",
+        "VERSION": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79",
+        "contracts/operations.openapi.json": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+        "contracts/operations.release.json": "db15ace0522be145f606ad328f9a3b47bfe2d8dab0a2a1f3aa8490ca3086cc78",
+        "docs/WORKFORCE.md": "ab41ef75ecf5de0949f96d6504c1d4f2e0d4424005eb14c2e0fe7be548c6f686",
+        "e2e/workforce.spec.ts": "1dedcdb9a2e749fa7aaa423750771bdfb0b40d785aac6dcadeef0279d56d6405",
+        "package-lock.json": "58ac5ee3dffd6dc102bec76a77b38902fa37d3b9b50234af9b9800a84e21bd37",
+        "package.json": "a4d4a4630a10ee8104ab42416443ae4a6609c1f3d432c4fa8e9eca635b7f9cc4",
+        "playwright.config.ts": "70bec44f27e6a88b5b2b129af14c547e3dd970818f0e6cb37031fd61f9ba1263",
+        "scripts/build-public-image.ps1": "cbd8a76db7734407575e84e074ba5416760dc467a67b2639758bec0dca1ec489",
+        "scripts/check-api.mjs": "7236b575267e0f792c882f22107268bb9d46f5bcfe87c46f15f96962c6a77a5a",
+        "src/api/operations.generated.ts": "29499b54bd4963646af98274596c371fc6b7fd9678c4c1179eb92bc06d689a21",
+        "src/app/app.routes.ts": "2bfcfcc3879a1f801273755d99d46b35e758788bc49710c9e9a9ff8d77fc5d76",
+        "src/app/core/auth/auth.guard.spec.ts": "f70c0e97f7d0eddcc97cbc2caeea6b6ba306f8c30af79e97307709ad48635e46",
+        "src/app/core/auth/auth.guard.ts": "24c57d21e94faf061a601cd1b9cf40396ec8259f6ef34359858c6f12c5f91c26",
+        "src/app/core/auth/auth.service.spec.ts": "fd487877f8e81ae685a896d46f22ac59b16a1a58a7a417be8e29a3c9b3cb80f2",
+        "src/app/core/auth/auth.service.ts": "f9dd2d934a3af74f59411a76099bbb34cd4fee59e3ce05759c7c3b68b867da07",
+        "src/app/core/auth/login.component.html": "786969586b706bc3e55790e5ceeedbf31aa52ecfb0fe106fe9143d7d2e50e0ea",
+        "src/app/features/estates/estate.store.ts": "615b3f164e29171bc53e7ad5cc318a7bd8eb294b960b8ffccc528b756bbdd7f0",
+        "src/app/features/workforce/workforce.api.ts": "a6d60d1e1d411ed7d113d59cc89533a0df8169558b3d485056ec5ea3ac04f6b3",
+        "src/app/features/workforce/workforce.component.css": "a7516b8bd6ac87557e045e51929817f1eade50b85a449e568b3ef5a559cd2b77",
+        "src/app/features/workforce/workforce.component.html": "12e390ce474cb193b648a2a4c3eee9329f665ad801e981fd48b689cd89ae157e",
+        "src/app/features/workforce/workforce.component.ts": "1cd694ae365b36ba9114b91ea6a9d5150964510f5f8d5688e06e52f3b362b7e6",
+        "src/app/features/workforce/workforce.forms.spec.ts": "aceb92f195acb86239358d7db7bee51069c2baf3972c30d1bdf2c25aa3f80f97",
+        "src/app/features/workforce/workforce.forms.ts": "6639df6f59c10b63cb44884cb0436c972f4207f0061548b7dc27666c67647de9",
+        "src/app/layout/shell.component.html": "1a6336fe48c952008e6f7660ed449bc77613111b41a5466523f180433928cdae",
+        "src/app/layout/shell.component.ts": "c87cb4e7866ed0dbcaf0db4e36d75ca84b49dbf91f9f39899b23e8233102894b",
+        "src/styles.css": "e3af4e1cf18af9d87bbb2a042d1e2616d837f30b2b594e0be602a1d1b6b2e6c9"
+      }
+    }
+  },
+  "artifacts": {
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_REVIEW.md": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+    "agrosphere-contracts/docs/worker-attendance/CANDIDATE_MANIFEST.json": "a729a0edc37e558a9f31766ba6d32ba29320def882c09cc963b5eddddade0d94",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+    "agrosphere-contracts/examples/operations/workforce/v1/negative.json": "a1fbd5f655ff5a460d6b0571e9b089fdb31eeab6f366a8d03e2f11d5b5f52e7a",
+    "agrosphere-contracts/examples/operations/workforce/v1/requests.json": "209928024d0a6fa2ca0dd270946f8df5bb978832dd4b363029de9f01a1358a43",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerAttendanceChanged.json": "7a0a95cacd0f2cdc0c709f9afe996ae35b3b058e4531f31d0af3e4b25ed5d876",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerAttendanceRecorded.json": "97de0c7fcc096782f2155ce93636352f26a3259988717d2d3ce3122672af627c",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerRegistrationChanged.json": "78cd418e4153f8282587ca6e90848f0281237a7494b26a70d6a94198d3a7ea15",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerRegistrationCreated.json": "584771b109063ad35d81ecb58770938282b064d7c105d86a12312c8109297b06",
+    "agrosphere-contracts/openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306",
+    "agrosphere-operations-service/src/main/resources/db/migration/V3__latex_collection.sql": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c",
+    "agrosphere-operations-service/target/wa1-backend-full.log": "a0f236af5dccee94510065a4f06da3e926a26ea6b42743f350c40ddc08f36b49",
+    "agrosphere-operations-service/target/wa1-image-compatibility.log": "bc24c2f96e6b2d6468eb256dc24ff34dced8ea4bfb41715462ff0c77b7969a8d",
+    "agrosphere-api-gateway/target-wa1-gateway.log": "f3b4ad45ba2078b7beee563680ad49680156d5979549e800137b11de5a89cd51",
+    "agrosphere-infrastructure/target-wa1-platform.log": "61dd3dedeb23726c96da22bcf6c4e73568cd2fb7a4a18d42bb3615c7fd83d6e2",
+    "agrosphere-web/target-wa1-ci.log": "11ccb18bce0def746517f30d8d272a81734853dfedb8edf4a5e35c11a5a93dda",
+    "agrosphere-web/target-wa1-build.log": "7e99731a4e85092a29ee80a10107a7c87a9e935cba2adf47e4fef998b523b7a0",
+    "agrosphere-web/target-wa1-test-final.log": "d5e0e10d062d19eee05bcea4f788c411e86a145e4dff04ea24a3b5cf5143b2fb",
+    "agrosphere-web/target-wa1-e2e-final.log": "0b28918f6178306c8bd77634d68ae0fb216fd759afe157fc160f3ff46714b92e",
+    "agrosphere-web/target-wa1-graphics.log": "e3ffb088c2f3bd462937a2696dbbd86ed727437a76837a6799bb34d3b434fb24",
+    "agrosphere-web/target-wa1-docker-final.log": "67217aa122b90991cb60ec1014cdc2e428bdac1e0a53cb2bd26e027e2cd29e12",
+    "agrosphere-web/target/workforce-narrow.png": "5f4d23d4ec008946ad7464d2e19b4053a3a22e4364de21c1a875625f5facc8ac"
+  },
+  "reports": {
+    "agrosphere-operations-service/surefire": {
+      "testsFailuresErrorsSkipped": [
+        102,
+        0,
+        0,
+        0
+      ],
+      "sha256": {
+        "TEST-com.agrosphere.operations.AuthorizationTest.xml": "a1e781376b486b21794ba6b76f04fb8b6e1e0079a75d2c0a6dcc22b09246297d",
+        "TEST-com.agrosphere.operations.CollectionCommandTest.xml": "0045c6a31fff77d3819b7d410de45c29677a8922e5cadf07412c9981e869ede3",
+        "TEST-com.agrosphere.operations.CollectionDomainTest.xml": "a4a7290827496d9d15abe1a7f3e9980e119c7c575435a689e77d563183636958",
+        "TEST-com.agrosphere.operations.CollectionReferenceTest.xml": "26d61b2e73c042a09a1fb6a4b48e1190c93edd228de9d64aee1e9d66f59fddcb",
+        "TEST-com.agrosphere.operations.config.CollectionAccessTest.xml": "446542607449a2c1b07b21c57af13c1bf32ac0de820e93f6e5a3b5f1598bc712",
+        "TEST-com.agrosphere.operations.DomainTest.xml": "58b7e2cc8e3d140f5179119db1fd06d579584fd4eba8ae76c4cdaa19d6763cc5",
+        "TEST-com.agrosphere.operations.OutboxDispatcherTest.xml": "27c78871fb6bc83ab3324c15653e72716a1b4b07f74cb864e67ffeaaa9f8e6b5",
+        "TEST-com.agrosphere.operations.SecurityPolicyTest.xml": "9b3bb469bb601afeff9753d6c925dcebbbb256fe9cd4a2b517966bdd13b60056",
+        "TEST-com.agrosphere.operations.WorkforceDomainTest.xml": "792f363a381dcaae949e34d4dedf8e8a41782325ebba324069929577e8c50a48",
+        "TEST-com.agrosphere.operations.WorkforcePersistenceTest.xml": "6af0520590dd964b7d3b2ec65b24350d639c27e2b15cd117341592f3869efdf2"
+      }
+    },
+    "agrosphere-operations-service/failsafe": {
+      "testsFailuresErrorsSkipped": [
+        76,
+        0,
+        0,
+        0
+      ],
+      "sha256": {
+        "TEST-com.agrosphere.operations.CollectionCredentialsIT.xml": "356fbf4f32fbfca13117d9120af1754734adf345410b4cab7a7183f27251d41a",
+        "TEST-com.agrosphere.operations.CollectionSchemaIT.xml": "1e91722fddb559508a1d3d73c107f76b62ed9ca87c4d0bcbae36988a80094c86",
+        "TEST-com.agrosphere.operations.CollectionServiceIT.xml": "a31a8fd1023fd4d7d3bef6a97dd5faccae3bdd01902a68e4d9851be1b4f03bb8",
+        "TEST-com.agrosphere.operations.CollectionStoreIT.xml": "ce21ebc8870fcf1ed189f8ebe143b759d5591877d384f004221ec7c30299d045",
+        "TEST-com.agrosphere.operations.TappingServiceIT.xml": "f550843ca36ac1ddc942a7ebd1d9a23a52dda83c14d1881e8243c02aab4d4224",
+        "TEST-com.agrosphere.operations.WorkforceServiceIT.xml": "6c3a3365b8c624254996f99b4c2118a5391e357cb5b35e57881373702fa57a58",
+        "TEST-com.agrosphere.operations.WorkforceStoreIT.xml": "11ca5381bf53f8ccb05a11f24b5e1430cef663fb23c339a99762df1567740446"
+      }
+    },
+    "agrosphere-api-gateway/surefire": {
+      "testsFailuresErrorsSkipped": [
+        14,
+        0,
+        0,
+        0
+      ],
+      "sha256": {
+        "TEST-com.agrosphere.gateway.GatewayIntegrationTest.xml": "5ef5f115caff16108d79d02c4f4f1b1e1a1fd8a332983ee68c48ef5cb8b87da7",
+        "TEST-com.agrosphere.gateway.SecurityPolicyTest.xml": "a198df56df6286363d91471f4fe8506aa4309b2a8e0f8596eba0577b86797431"
+      }
+    }
+  },
+  "gates": {
+    "D08": "OPEN: actual workload/languages/connectivity/response budgets",
+    "D09": "OPEN: actual purpose/access/retention/deletion; REAL denied",
+    "production": "Not authorized",
+    "M2Performance": "Independently open"
+  },
+  "docker": {
+    "webImage": "agrosphere-web:0.4.0-local",
+    "imageId": "sha256:c2aeedc7c9344fac7ef14efd8b2cb9cfcfbb5bc6f7c155391c942a3f2dbaaea0",
+    "cleanedProjects": [
+      "agrosphere-3a-check-c21fb93d",
+      "agrosphere-3a-check-86c8515e"
+    ],
+    "cleanupVerified": "2026-10-30 read-only docker ps/volume ls: no matching resources"
+  },
+  "configuration": {
+    "indexBlob": "56cd16c0316bcd9ce3ee399ff92d1b69021a580c",
+    "workingTreeSha256": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+    "matchesBaseline": true,
+    "contentExcluded": true
+  },
+  "checks": {
+    "contracts": "validator + 24 tests PASS",
+    "web": "ci/lint/format/types/api/build PASS; 49 unit, 14 UI, 1 graphics PASS",
+    "gateway": "14 tests PASS",
+    "operations": "102 unit + full 75 integration PASS; subsequent updated CredentialsIT 5 PASS; aggregate current integration 76 PASS",
+    "platform": "WA-1 + retained 3A/3B real generated-only Compose PASS",
+    "projection": "2 workforce + 5 collection + 3 comparison PASS",
+    "architecture": "workspace validation PASS",
+    "diffCheck": "all six affected roots PASS"
+  }
+}

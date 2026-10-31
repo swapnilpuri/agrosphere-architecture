@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-30",
+  "timezone": "America/Chicago",
+  "scope": "II-1 repository inspection and review documentation only; not implementation approval",
+  "baseline": {
+    "agrosphere-architecture": {
+      "head": "b74090943eb01651b36c9e3c349e4aa4781a855f",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-contracts": {
+      "head": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-operations-service": {
+      "head": "bf66e6136d60e436d8b034f9a6df3573da1248ed",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-web": {
+      "head": "0465e2e84d1359cbbb15a1f3b5e3ca14fbb03ab6",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-api-gateway": {
+      "head": "46b7a0fa68c79e675df40238559fc0e30e19b3c5",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-infrastructure": {
+      "head": "a4322de1cae5e482b94b7598cc5b19fa6d9cf62d",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "status_short": "",
+      "diff_stat": ""
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "status_short": "",
+      "diff_stat": ""
+    }
+  },
+  "web_config": {
+    "sha256": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+    "index_entry": "100644 56cd16c0316bcd9ce3ee399ff92d1b69021a580c 0\tpublic/config.json"
+  },
+  "source_sha256": {
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "8b51d33b81272922ec29e5c58bf327015aa8fb4c772bca683e3d1887d530b435",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_VERIFICATION.md": "90f44cfa7fd62751677d0c366b8ee555f4c42192e514970020508293eec10b36",
+    "agrosphere-architecture/docs/milestones/MILESTONE_3C_PLANNING_HANDOFF.md": "46b2422bf5a5f5920f45a14e35866bbba1f736034f3f05e1428afb16f9bae469",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_REVIEW.md": "d579f63907a57b9c0145cb8a1268cd21175f18a8a926298485464717a76363bd",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_APPROVAL.md": "88a4375622c1138e4dc3fa72bb1cdbc0763b9f3de07fb9739367e61a95a9ac09",
+    "agrosphere-architecture/docs/milestones/WORKER_ATTENDANCE_CONTRACT_APPROVAL.md": "606bbb31b4230eef7a93689fc2d843d516b1275a646943f9dad02e3e01c94400",
+    "agrosphere-architecture/docs/requirements/FUNCTIONAL_REQUIREMENTS.md": "f98e57aa77f679b8b9b5628eda6945626c6f95f9974eecd0bd01d5b95be27590",
+    "agrosphere-architecture/docs/requirements/NONFUNCTIONAL_REQUIREMENTS.md": "274dfc985fc55e545ec66215a12b6b6683eba153984d050596df66906f34c995",
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": "34e75a47dd41c7eca4fb42961fdd2fdb940f2bf4d4abe47e5993397093826e4c",
+    "agrosphere-contracts/openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-contracts/events/v1/CropHealthIncidentDetected.schema.json": "af448a69432a22a1fb21485771a4cf704392ee3c3ab178a952062e6c509928d3",
+    "agrosphere-api-gateway/src/main/resources/application.yaml": "b70e77d6f7005fec663a8d0cb830ecd2d62dcc690fe3ffb3c88dfd7a47bfc133",
+    "agrosphere-web/src/app/app.routes.ts": "2bfcfcc3879a1f801273755d99d46b35e758788bc49710c9e9a9ff8d77fc5d76",
+    "agrosphere-web/package.json": "a4d4a4630a10ee8104ab42416443ae4a6609c1f3d432c4fa8e9eca635b7f9cc4",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/domain/WorkforceRules.java": "c8966dc115cf0886526c4e79b3ac5c425b8639f44d6702ad6802b5c60b2b1f34",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/workforce/infrastructure/JwtWorkforceIdentity.java": "0e249d1d0941a831e5727a7895da558b8f3a6dca28c196ab7c342bb79f7f5d50",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/infrastructure/messaging/OutboxDispatcher.java": "a3fe6e3357e83118a3933035aa332581bacf15a54263c53982544598cbffae7d",
+    "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306",
+    "agrosphere-operations-service/src/main/resources/db/migration/V3__latex_collection.sql": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c",
+    "agrosphere-operations-service/src/main/resources/db/migration/V4__worker_registration_and_attendance.sql": "6c673a34b1d43ae8b856a49b28890ce37fa0e9f691802c384779bb51bd4acab3"
+  },
+  "checkpoint_before_sha256": "6f562ca2349f1b932ea47014ca3f2e88a43e765d85f9365c7b9a9094781803b1",
+  "checks": []
+}

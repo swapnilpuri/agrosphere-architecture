@@ -1,3 +1,5 @@
+Current reconciled progress: [Project completion checklist](PROJECT_COMPLETION_CHECKLIST.md), updated 2026-11-01. The historical milestone/scope statements below remain preserved; use current verification and the development checkpoint for delivered implementation and outstanding gates.
+
 # Milestones and exit gates
 | Milestone | Scope | Exit gate |
 |---|---|---|

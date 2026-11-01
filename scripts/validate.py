@@ -23,7 +23,9 @@ for file in (ROOT / "docs/architecture").glob("*.puml"):
     source = file.read_text()
     assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
 assert len(list((ROOT / "docs/architecture").glob("*.puml"))) == 7
-assert len(list((ROOT / "docs/adr").glob("*.md"))) == 14
+assert len(list((ROOT / "docs/adr").glob("*.md"))) == 16
+assert "Status: ACCEPTED" in (ROOT / "docs/adr/0016-in-app-crop-health-alerts.md").read_text(encoding="utf-8")
+assert "Status: ACCEPTED" in (ROOT / "docs/adr/0015-inspections-and-crop-health-incidents.md").read_text(encoding="utf-8")
 assert "Status: ACCEPTED" in (ROOT / "docs/adr/0014-worker-registration-and-attendance.md").read_text(encoding="utf-8")
 assert len(list((ROOT / "diagrams/milestone-3a").glob("*.puml"))) == 7
 for file in (ROOT / "diagrams/milestone-3a").glob("*.puml"):
@@ -34,7 +36,7 @@ for file in (ROOT / "diagrams/milestone-3b").glob("*.puml"):
     assert source.startswith("@startuml") and source.rstrip().endswith("@enduml"), file
 assert "Status: ACCEPTED" in (ROOT / "docs/adr/0013-latex-collection-and-drc.md").read_text(encoding="utf-8")
 check_workflow(ROOT / ".github/workflows/ci.yml")
-print("PASS: architecture source layout, fourteen ADRs, workflow YAML/structure")
+print("PASS: architecture source layout, sixteen ADRs, workflow YAML/structure")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--workspace", type=Path)

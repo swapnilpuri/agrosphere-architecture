@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-01",
+  "status": "GENERATED_WATCHDOG_POLICY_VERIFIED_LIVE_INTEGRATION_OPEN",
+  "userAnswers": {
+    "WF01": "Individually assigned",
+    "WF02": "One workday"
+  },
+  "nextQuestion": "Model of first Android reference device; pending, no answer assumed",
+  "scope": "Independent PM04 policy evaluator only; no installed observer/runner/scheduler or database adapter",
+  "checks": {
+    "unitTests": {
+      "command": "python -m unittest discover -s scripts -p test_privacy_maintenance_watchdog.py",
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "exitCode": 0
+    },
+    "infrastructureValidator": {
+      "command": "python scripts/validate.py",
+      "exitCode": 0
+    },
+    "architectureValidator": {
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "exitCode": 0
+    },
+    "realFileCliSmoke": {
+      "result": "PASS",
+      "cases": [
+        "HEALTHY exit 0 from valid generated files",
+        "UNKNOWN exit 3 with missing observation"
+      ],
+      "cleanup": "Exact owned fixture files removed; no recursive delete"
+    },
+    "initialAttempt": {
+      "tests": 23,
+      "errors": 2,
+      "reason": "Sandbox denied access/cleanup in newly generated TemporaryDirectory paths; no policy assertions failed",
+      "resolution": "Use bounded in-memory streams for parser tests and separate real-file CLI smoke under existing ignored target"
+    },
+    "priorCheckpointAndRegisterBytesPreserved": "PASS",
+    "priorChangelogContentPreserved": "PASS",
+    "newCheckpointAndChecklistLinks": "PASS"
+  },
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "6fa55348f26bc6f7fdf62816c5b9a44c420ead8b",
+      "initialStatus": "M  AGENTS.md\nMM CHANGELOG.md\nM  README.md\nA  docs/adr/0015-inspections-and-crop-health-incidents.md\nA  docs/adr/0016-in-app-crop-health-alerts.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_APPROVAL.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_ASSESSMENT_EVIDENCE.json\nAM docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_CONTRACT_APPROVAL.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_INCREMENT_EVIDENCE.json\nA  docs/milestones/ALERTS_NOTIFICATIONS_LOCAL_EVIDENCE.json\nAM docs/milestones/ALERTS_NOTIFICATIONS_PRIVACY_DECISIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_REVIEW.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_ROLLOUT_EXPECTATIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_VERIFICATION.md\nA  docs/milestones/ALERTS_PRIVACY_APPROVAL.md\nA  docs/milestones/ALERTS_PRIVACY_EXTENSION_REVIEW.md\nA  docs/milestones/ALERTS_PRIVACY_LOCAL_STACK_PLAN.md\nA  docs/milestones/ALERTS_PRIVACY_REVIEW_EVIDENCE.json\nMM docs/milestones/DEVELOPMENT_CHECKPOINT.md\nA  docs/milestones/INCIDENT_INSPECTION_APPROVAL.md\nM  docs/milestones/INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_CONTRACT_APPROVAL.md\nA  docs/milestones/INCIDENT_INSPECTION_INCREMENT_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_LOCAL_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_REVIEW.md\nA  docs/milestones/INCIDENT_INSPECTION_VERIFICATION.md\nA  docs/milestones/LOCAL_II1_STACK_UPGRADE_2026_10_31.md\nM  docs/requirements/FUNCTIONAL_REQUIREMENTS.md\nM  docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\nM  scripts/validate.py\n?? docs/milestones/ALERTS_PRIVACY_LOCAL_EVIDENCE.json\n?? docs/milestones/ALERTS_PRIVACY_MAINTENANCE_PACKAGE.md\n?? docs/milestones/ALERTS_PRIVACY_MAINTENANCE_SPEC.json\n?? docs/milestones/ALERTS_PRIVACY_OPERATING_READINESS.md\n?? docs/milestones/ALERTS_PRIVACY_OPERATING_READINESS_EVIDENCE.json\n?? docs/milestones/ALERTS_PRIVACY_VERIFICATION.md\n?? docs/milestones/PROJECT_COMPLETION_PLANNING_EVIDENCE_2026_11_01.json\n?? docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n",
+      "finalStatus": "M  AGENTS.md\nMM CHANGELOG.md\nM  README.md\nA  docs/adr/0015-inspections-and-crop-health-incidents.md\nA  docs/adr/0016-in-app-crop-health-alerts.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_APPROVAL.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_ASSESSMENT_EVIDENCE.json\nAM docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_CONTRACT_APPROVAL.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_INCREMENT_EVIDENCE.json\nA  docs/milestones/ALERTS_NOTIFICATIONS_LOCAL_EVIDENCE.json\nAM docs/milestones/ALERTS_NOTIFICATIONS_PRIVACY_DECISIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_REVIEW.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_ROLLOUT_EXPECTATIONS.md\nA  docs/milestones/ALERTS_NOTIFICATIONS_VERIFICATION.md\nA  docs/milestones/ALERTS_PRIVACY_APPROVAL.md\nA  docs/milestones/ALERTS_PRIVACY_EXTENSION_REVIEW.md\nA  docs/milestones/ALERTS_PRIVACY_LOCAL_STACK_PLAN.md\nA  docs/milestones/ALERTS_PRIVACY_REVIEW_EVIDENCE.json\nMM docs/milestones/DEVELOPMENT_CHECKPOINT.md\nA  docs/milestones/INCIDENT_INSPECTION_APPROVAL.md\nM  docs/milestones/INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_CONTRACT_APPROVAL.md\nA  docs/milestones/INCIDENT_INSPECTION_INCREMENT_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_LOCAL_EVIDENCE.json\nA  docs/milestones/INCIDENT_INSPECTION_REVIEW.md\nA  docs/milestones/INCIDENT_INSPECTION_VERIFICATION.md\nA  docs/milestones/LOCAL_II1_STACK_UPGRADE_2026_10_31.md\nM  docs/requirements/FUNCTIONAL_REQUIREMENTS.md\nM  docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\nM  scripts/validate.py\n?? docs/milestones/ALERTS_PRIVACY_LOCAL_EVIDENCE.json\n?? docs/milestones/ALERTS_PRIVACY_MAINTENANCE_PACKAGE.md\n?? docs/milestones/ALERTS_PRIVACY_MAINTENANCE_SPEC.json\n?? docs/milestones/ALERTS_PRIVACY_OPERATING_READINESS.md\n?? docs/milestones/ALERTS_PRIVACY_OPERATING_READINESS_EVIDENCE.json\n?? docs/milestones/ALERTS_PRIVACY_VERIFICATION.md\n?? docs/milestones/PROJECT_COMPLETION_PLANNING_EVIDENCE_2026_11_01.json\n?? docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n",
+      "baselineFileCount": 129,
+      "changedPreExistingFiles": [
+        "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md",
+        "CHANGELOG.md",
+        "docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md",
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md"
+      ],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "166e36948226e5dacfeeb2cf8d70e06d8e7d1fc34141c814b97566b90d7ba5da",
+      "stagedEntriesSha256": "f1a2d6318b1073a7f819b020e9e1bdecdd681ca2cd9c738ce38ee6a0fd9b5f52",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    },
+    "agrosphere-contracts": {
+      "head": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+      "initialStatus": "MM .gitattributes\nM  .github/workflows/ci.yml\nM  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  VERSION\nA  docs/alerts-notifications/CANDIDATE_MANIFEST.json\nA  docs/alerts-notifications/CANDIDATE_REVIEW.md\nA  docs/alerts-notifications/RELEASE_0_8_0.json\nA  docs/alerts-notifications/candidate/examples/negative.json\nA  docs/alerts-notifications/candidate/examples/requests.json\nA  docs/alerts-notifications/candidate/examples/responses.json\nA  docs/alerts-notifications/candidate/openapi/operations-service.yaml\nA  docs/alerts-notifications/compatibility-baseline.json\nA  docs/alerts-notifications/previous-0.7.0/VERSION\nA  docs/alerts-notifications/previous-0.7.0/openapi/operations-service.yaml\nA  docs/alerts-privacy/CANDIDATE_MANIFEST.json\nA  docs/alerts-privacy/CANDIDATE_REVIEW.md\nA  docs/alerts-privacy/RELEASE_0_9_0.json\nA  docs/alerts-privacy/candidate/examples/negative.json\nA  docs/alerts-privacy/candidate/examples/requests.json\nA  docs/alerts-privacy/candidate/examples/responses.json\nA  docs/alerts-privacy/candidate/openapi/operations-service.yaml\nA  docs/alerts-privacy/candidate/semantics.json\nA  docs/alerts-privacy/previous-0.8.0/VERSION\nA  docs/alerts-privacy/previous-0.8.0/openapi/operations-service.yaml\nA  docs/incident-inspection/CANDIDATE_MANIFEST.json\nA  docs/incident-inspection/CANDIDATE_REVIEW.md\nA  docs/incident-inspection/RELEASE_0_7_0.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentChanged.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentReported.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionChanged.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionRecorded.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/negative.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/requests.json\nA  docs/incident-inspection/candidate/openapi/operations-service.yaml\nA  docs/incident-inspection/compatibility-baseline.json\nA  docs/incident-inspection/previous-0.6.0/VERSION\nA  docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml\nA  events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nA  examples/operations/alerts/v1/negative.json\nA  examples/operations/alerts/v1/requests.json\nA  examples/operations/alerts/v1/responses.json\nA  examples/operations/alerts/v2/negative.json\nA  examples/operations/alerts/v2/requests.json\nA  examples/operations/alerts/v2/responses.json\nA  examples/operations/alerts/v2/semantics.json\nA  examples/operations/crop-health/v1/CropHealthIncidentChanged.json\nA  examples/operations/crop-health/v1/CropHealthIncidentReported.json\nA  examples/operations/crop-health/v1/FieldInspectionChanged.json\nA  examples/operations/crop-health/v1/FieldInspectionRecorded.json\nA  examples/operations/crop-health/v1/negative.json\nA  examples/operations/crop-health/v1/requests.json\nM  openapi/operations-service.yaml\nA  scripts/alert_contract_validation.py\nA  scripts/alert_privacy_contract_validation.py\nA  scripts/build_alert_contracts.py\nA  scripts/build_alert_privacy_contracts.py\nM  scripts/build_collection_contracts.py\nA  scripts/build_crop_health_contracts.py\nM  scripts/build_workforce_contracts.py\nM  scripts/collection_contract_validation.py\nA  scripts/crop_health_contract_validation.py\nA  scripts/test_alert_contracts.py\nA  scripts/test_alert_privacy_contracts.py\nA  scripts/test_crop_health_contracts.py\nM  scripts/validate.py\nM  scripts/workforce_contract_validation.py\n",
+      "finalStatus": "MM .gitattributes\nM  .github/workflows/ci.yml\nM  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  VERSION\nA  docs/alerts-notifications/CANDIDATE_MANIFEST.json\nA  docs/alerts-notifications/CANDIDATE_REVIEW.md\nA  docs/alerts-notifications/RELEASE_0_8_0.json\nA  docs/alerts-notifications/candidate/examples/negative.json\nA  docs/alerts-notifications/candidate/examples/requests.json\nA  docs/alerts-notifications/candidate/examples/responses.json\nA  docs/alerts-notifications/candidate/openapi/operations-service.yaml\nA  docs/alerts-notifications/compatibility-baseline.json\nA  docs/alerts-notifications/previous-0.7.0/VERSION\nA  docs/alerts-notifications/previous-0.7.0/openapi/operations-service.yaml\nA  docs/alerts-privacy/CANDIDATE_MANIFEST.json\nA  docs/alerts-privacy/CANDIDATE_REVIEW.md\nA  docs/alerts-privacy/RELEASE_0_9_0.json\nA  docs/alerts-privacy/candidate/examples/negative.json\nA  docs/alerts-privacy/candidate/examples/requests.json\nA  docs/alerts-privacy/candidate/examples/responses.json\nA  docs/alerts-privacy/candidate/openapi/operations-service.yaml\nA  docs/alerts-privacy/candidate/semantics.json\nA  docs/alerts-privacy/previous-0.8.0/VERSION\nA  docs/alerts-privacy/previous-0.8.0/openapi/operations-service.yaml\nA  docs/incident-inspection/CANDIDATE_MANIFEST.json\nA  docs/incident-inspection/CANDIDATE_REVIEW.md\nA  docs/incident-inspection/RELEASE_0_7_0.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentChanged.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentReported.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionChanged.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionRecorded.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/negative.json\nA  docs/incident-inspection/candidate/examples/operations/crop-health/v1/requests.json\nA  docs/incident-inspection/candidate/openapi/operations-service.yaml\nA  docs/incident-inspection/compatibility-baseline.json\nA  docs/incident-inspection/previous-0.6.0/VERSION\nA  docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml\nA  events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nA  examples/operations/alerts/v1/negative.json\nA  examples/operations/alerts/v1/requests.json\nA  examples/operations/alerts/v1/responses.json\nA  examples/operations/alerts/v2/negative.json\nA  examples/operations/alerts/v2/requests.json\nA  examples/operations/alerts/v2/responses.json\nA  examples/operations/alerts/v2/semantics.json\nA  examples/operations/crop-health/v1/CropHealthIncidentChanged.json\nA  examples/operations/crop-health/v1/CropHealthIncidentReported.json\nA  examples/operations/crop-health/v1/FieldInspectionChanged.json\nA  examples/operations/crop-health/v1/FieldInspectionRecorded.json\nA  examples/operations/crop-health/v1/negative.json\nA  examples/operations/crop-health/v1/requests.json\nM  openapi/operations-service.yaml\nA  scripts/alert_contract_validation.py\nA  scripts/alert_privacy_contract_validation.py\nA  scripts/build_alert_contracts.py\nA  scripts/build_alert_privacy_contracts.py\nM  scripts/build_collection_contracts.py\nA  scripts/build_crop_health_contracts.py\nM  scripts/build_workforce_contracts.py\nM  scripts/collection_contract_validation.py\nA  scripts/crop_health_contract_validation.py\nA  scripts/test_alert_contracts.py\nA  scripts/test_alert_privacy_contracts.py\nA  scripts/test_crop_health_contracts.py\nM  scripts/validate.py\nM  scripts/workforce_contract_validation.py\n",
+      "baselineFileCount": 182,
+      "changedPreExistingFiles": [],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "ba87160ed185c5b74e98a337fdcf5b2f199fe743a32e5e853af9d9cf3b40ad64",
+      "stagedEntriesSha256": "85cd3ff762a8183a34db001e1379e2bef1175287bf6023945b89d4a7a693abb7",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    },
+    "agrosphere-operations-service": {
+      "head": "bf66e6136d60e436d8b034f9a6df3573da1248ed",
+      "initialStatus": "MM .gitattributes\nMM .github/workflows/ci.yml\nM  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nA  docs/ALERTS_IMPLEMENTATION.md\nA  docs/ALERTS_PERSISTENCE_PREPARATION.md\nA  docs/CROP_HEALTH_IMPLEMENTATION.md\nA  docs/CROP_HEALTH_PERSISTENCE_PREPARATION.md\nA  docs/alerts-notifications/prior-ii1-manifest.json\nA  docs/alerts-notifications/prior-ii1/CropHealthService.java.txt\nA  docs/alerts-notifications/prior-ii1/RELEASE\nMM scripts/test_contract_checkout.py\nA  scripts/test_crop_health_projection.py\nAM scripts/validate_alert_runtime.py\nM  scripts/validate_collection_pins.py\nM  scripts/validate_contracts.py\nAM scripts/validate_crop_health_runtime.py\nM  scripts/validate_workforce_runtime.py\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertController.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertNoStoreFilter.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertOpenApi.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertProblems.java\nA  src/main/java/com/agrosphere/operations/alerts/api/PrivacyAlertController.java\nA  src/main/java/com/agrosphere/operations/alerts/application/AlertPorts.java\nA  src/main/java/com/agrosphere/operations/alerts/application/AlertRuntime.java\nAM src/main/java/com/agrosphere/operations/alerts/application/PrivacyAlertRuntime.java\nA  src/main/java/com/agrosphere/operations/alerts/application/PrivacyExpired.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/AlertPrivacyPolicy.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/AlertRules.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/CropHealthAlert.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/PrivacyAlert.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/PrivacyCommandRules.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/AlertState.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/JdbcAlertStore.java\nAM src/main/java/com/agrosphere/operations/alerts/infrastructure/JdbcPrivacyAlertStore.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/PrivacyState.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthController.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthOpenApi.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthProblems.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthChanges.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthInput.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthPorts.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthService.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/CropHealthRules.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/CropIncident.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/FieldInspection.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthEstateClient.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthState.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthTransactions.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/JdbcCropHealthStore.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/JwtCropHealthIdentity.java\nA  src/main/resources/contracts/ALERT_RELEASE.json\nA  src/main/resources/contracts/CROP_HEALTH_RELEASE.json\nA  src/main/resources/contracts/PRIVACY_RELEASE.json\nM  src/main/resources/contracts/RELEASE\nA  src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nM  src/main/resources/contracts/operations-service.yaml\nA  src/main/resources/contracts/previous-0.6.0/operations-service.yaml\nA  src/main/resources/contracts/previous-0.7.0/operations-service.yaml\nA  src/main/resources/contracts/previous-0.8.0/RELEASE\nA  src/main/resources/contracts/previous-0.8.0/operations-service.yaml\nA  src/main/resources/db/migration/V5__inspections_and_crop_health.sql\nA  src/main/resources/db/migration/V6__in_app_crop_health_alerts.sql\nAM src/main/resources/db/migration/V7__alert_privacy_storage.sql\nA  src/test/java/com/agrosphere/operations/AlertDomainTest.java\nA  src/test/java/com/agrosphere/operations/AlertInputTest.java\nA  src/test/java/com/agrosphere/operations/AlertPrivacyPolicyTest.java\nA  src/test/java/com/agrosphere/operations/AlertServiceIT.java\nMM src/test/java/com/agrosphere/operations/CollectionCredentialsIT.java\nM  src/test/java/com/agrosphere/operations/CollectionSchemaIT.java\nM  src/test/java/com/agrosphere/operations/CollectionServiceIT.java\nA  src/test/java/com/agrosphere/operations/CropHealthDomainTest.java\nA  src/test/java/com/agrosphere/operations/CropHealthOpenApiTest.java\nA  src/test/java/com/agrosphere/operations/CropHealthServiceIT.java\nA  src/test/java/com/agrosphere/operations/CropHealthStoreIT.java\nAM src/test/java/com/agrosphere/operations/PrivacyAlertServiceIT.java\nA  src/test/java/com/agrosphere/operations/PrivacyAlertTest.java\nM  src/test/java/com/agrosphere/operations/TappingServiceIT.java\nM  src/test/java/com/agrosphere/operations/WorkforceServiceIT.java\n?? docs/ALERTS_PRIVACY_IMPLEMENTATION.md\n?? scripts/validate_alert_privacy_runtime.py\n",
+      "finalStatus": "MM .gitattributes\nMM .github/workflows/ci.yml\nM  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nA  docs/ALERTS_IMPLEMENTATION.md\nA  docs/ALERTS_PERSISTENCE_PREPARATION.md\nA  docs/CROP_HEALTH_IMPLEMENTATION.md\nA  docs/CROP_HEALTH_PERSISTENCE_PREPARATION.md\nA  docs/alerts-notifications/prior-ii1-manifest.json\nA  docs/alerts-notifications/prior-ii1/CropHealthService.java.txt\nA  docs/alerts-notifications/prior-ii1/RELEASE\nMM scripts/test_contract_checkout.py\nA  scripts/test_crop_health_projection.py\nAM scripts/validate_alert_runtime.py\nM  scripts/validate_collection_pins.py\nM  scripts/validate_contracts.py\nAM scripts/validate_crop_health_runtime.py\nM  scripts/validate_workforce_runtime.py\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertController.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertNoStoreFilter.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertOpenApi.java\nA  src/main/java/com/agrosphere/operations/alerts/api/AlertProblems.java\nA  src/main/java/com/agrosphere/operations/alerts/api/PrivacyAlertController.java\nA  src/main/java/com/agrosphere/operations/alerts/application/AlertPorts.java\nA  src/main/java/com/agrosphere/operations/alerts/application/AlertRuntime.java\nAM src/main/java/com/agrosphere/operations/alerts/application/PrivacyAlertRuntime.java\nA  src/main/java/com/agrosphere/operations/alerts/application/PrivacyExpired.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/AlertPrivacyPolicy.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/AlertRules.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/CropHealthAlert.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/PrivacyAlert.java\nA  src/main/java/com/agrosphere/operations/alerts/domain/PrivacyCommandRules.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/AlertState.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/JdbcAlertStore.java\nAM src/main/java/com/agrosphere/operations/alerts/infrastructure/JdbcPrivacyAlertStore.java\nA  src/main/java/com/agrosphere/operations/alerts/infrastructure/PrivacyState.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthController.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthOpenApi.java\nA  src/main/java/com/agrosphere/operations/crophealth/api/CropHealthProblems.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthChanges.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthInput.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthPorts.java\nA  src/main/java/com/agrosphere/operations/crophealth/application/CropHealthService.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/CropHealthRules.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/CropIncident.java\nA  src/main/java/com/agrosphere/operations/crophealth/domain/FieldInspection.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthEstateClient.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthState.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/CropHealthTransactions.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/JdbcCropHealthStore.java\nA  src/main/java/com/agrosphere/operations/crophealth/infrastructure/JwtCropHealthIdentity.java\nA  src/main/resources/contracts/ALERT_RELEASE.json\nA  src/main/resources/contracts/CROP_HEALTH_RELEASE.json\nA  src/main/resources/contracts/PRIVACY_RELEASE.json\nM  src/main/resources/contracts/RELEASE\nA  src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionChanged.schema.json\nA  src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json\nM  src/main/resources/contracts/operations-service.yaml\nA  src/main/resources/contracts/previous-0.6.0/operations-service.yaml\nA  src/main/resources/contracts/previous-0.7.0/operations-service.yaml\nA  src/main/resources/contracts/previous-0.8.0/RELEASE\nA  src/main/resources/contracts/previous-0.8.0/operations-service.yaml\nA  src/main/resources/db/migration/V5__inspections_and_crop_health.sql\nA  src/main/resources/db/migration/V6__in_app_crop_health_alerts.sql\nAM src/main/resources/db/migration/V7__alert_privacy_storage.sql\nA  src/test/java/com/agrosphere/operations/AlertDomainTest.java\nA  src/test/java/com/agrosphere/operations/AlertInputTest.java\nA  src/test/java/com/agrosphere/operations/AlertPrivacyPolicyTest.java\nA  src/test/java/com/agrosphere/operations/AlertServiceIT.java\nMM src/test/java/com/agrosphere/operations/CollectionCredentialsIT.java\nM  src/test/java/com/agrosphere/operations/CollectionSchemaIT.java\nM  src/test/java/com/agrosphere/operations/CollectionServiceIT.java\nA  src/test/java/com/agrosphere/operations/CropHealthDomainTest.java\nA  src/test/java/com/agrosphere/operations/CropHealthOpenApiTest.java\nA  src/test/java/com/agrosphere/operations/CropHealthServiceIT.java\nA  src/test/java/com/agrosphere/operations/CropHealthStoreIT.java\nAM src/test/java/com/agrosphere/operations/PrivacyAlertServiceIT.java\nA  src/test/java/com/agrosphere/operations/PrivacyAlertTest.java\nM  src/test/java/com/agrosphere/operations/TappingServiceIT.java\nM  src/test/java/com/agrosphere/operations/WorkforceServiceIT.java\n?? docs/ALERTS_PRIVACY_IMPLEMENTATION.md\n?? scripts/validate_alert_privacy_runtime.py\n",
+      "baselineFileCount": 208,
+      "changedPreExistingFiles": [],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "f0548d2da79f273b0c918c77cc27c75d634ac6b981dcb5f416b9035af36d0787",
+      "stagedEntriesSha256": "5824e2dde22da564101a4dc3eac8d4bff778291ffdd9d04595b29f235c4e528b",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    },
+    "agrosphere-web": {
+      "head": "0465e2e84d1359cbbb15a1f3b5e3ca14fbb03ab6",
+      "initialStatus": "MM .gitattributes\nMM AGENTS.md\nMM CHANGELOG.md\nM  README.md\nM  VERSION\nM  contracts/operations.openapi.json\nM  contracts/operations.release.json\nA  contracts/previous-0.6.0/operations.openapi.json\nA  contracts/previous-0.7.0/operations.openapi.json\nA  contracts/previous-0.8.0/operations.openapi.json\nA  contracts/previous-0.8.0/operations.release.json\nAM docs/ALERTS.md\nA  docs/CROP_HEALTH.md\nAM e2e/alerts.spec.ts\nA  e2e/crop-health.spec.ts\n M e2e/fixtures.ts\nM  package-lock.json\nMM package.json\nM  playwright.config.ts\nMM scripts/build-public-image.ps1\nMM scripts/check-api.mjs\nM  src/api/operations.generated.ts\nM  src/app/app.routes.ts\nM  src/app/core/auth/auth.service.ts\nMM src/app/core/interceptors/gateway.interceptor.spec.ts\nMM src/app/core/interceptors/gateway.interceptor.ts\nA  src/app/features/alerts/alert-inbox.spec.ts\nA  src/app/features/alerts/alert-inbox.ts\nAM src/app/features/alerts/alerts.api.ts\nA  src/app/features/alerts/alerts.component.css\nAM src/app/features/alerts/alerts.component.html\nAM src/app/features/alerts/alerts.component.ts\nAM src/app/features/alerts/uuid-v7.spec.ts\nAM src/app/features/alerts/uuid-v7.ts\nA  src/app/features/crop-health/crop-health.api.ts\nA  src/app/features/crop-health/crop-health.component.css\nA  src/app/features/crop-health/crop-health.component.html\nA  src/app/features/crop-health/crop-health.component.ts\nA  src/app/features/crop-health/crop-health.forms.spec.ts\nA  src/app/features/crop-health/crop-health.forms.ts\nM  src/app/features/estates/estate.store.ts\nM  src/app/layout/shell.component.html\nM  src/app/layout/shell.component.ts\n",
+      "finalStatus": "MM .gitattributes\nMM AGENTS.md\nMM CHANGELOG.md\nM  README.md\nM  VERSION\nM  contracts/operations.openapi.json\nM  contracts/operations.release.json\nA  contracts/previous-0.6.0/operations.openapi.json\nA  contracts/previous-0.7.0/operations.openapi.json\nA  contracts/previous-0.8.0/operations.openapi.json\nA  contracts/previous-0.8.0/operations.release.json\nAM docs/ALERTS.md\nA  docs/CROP_HEALTH.md\nAM e2e/alerts.spec.ts\nA  e2e/crop-health.spec.ts\n M e2e/fixtures.ts\nM  package-lock.json\nMM package.json\nM  playwright.config.ts\nMM scripts/build-public-image.ps1\nMM scripts/check-api.mjs\nM  src/api/operations.generated.ts\nM  src/app/app.routes.ts\nM  src/app/core/auth/auth.service.ts\nMM src/app/core/interceptors/gateway.interceptor.spec.ts\nMM src/app/core/interceptors/gateway.interceptor.ts\nA  src/app/features/alerts/alert-inbox.spec.ts\nA  src/app/features/alerts/alert-inbox.ts\nAM src/app/features/alerts/alerts.api.ts\nA  src/app/features/alerts/alerts.component.css\nAM src/app/features/alerts/alerts.component.html\nAM src/app/features/alerts/alerts.component.ts\nAM src/app/features/alerts/uuid-v7.spec.ts\nAM src/app/features/alerts/uuid-v7.ts\nA  src/app/features/crop-health/crop-health.api.ts\nA  src/app/features/crop-health/crop-health.component.css\nA  src/app/features/crop-health/crop-health.component.html\nA  src/app/features/crop-health/crop-health.component.ts\nA  src/app/features/crop-health/crop-health.forms.spec.ts\nA  src/app/features/crop-health/crop-health.forms.ts\nM  src/app/features/estates/estate.store.ts\nM  src/app/layout/shell.component.html\nM  src/app/layout/shell.component.ts\n",
+      "baselineFileCount": 135,
+      "changedPreExistingFiles": [],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "d3827123ac98f7f7993a5e1556eb008988dfae5aeaa3656bf92988d40bf654fc",
+      "stagedEntriesSha256": "f82cbedda40a17d08d0961aa401c183094231c83c13a082b64cfabc0f2501d0c",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    },
+    "agrosphere-api-gateway": {
+      "head": "46b7a0fa68c79e675df40238559fc0e30e19b3c5",
+      "initialStatus": "M  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  src/main/resources/application.yaml\nM  src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java\n",
+      "finalStatus": "M  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  src/main/resources/application.yaml\nM  src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java\n",
+      "baselineFileCount": 26,
+      "changedPreExistingFiles": [],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "35774177e3b393ce89d930785dcc3690d80e93cb70a44361b9bfae8aa6b0facc",
+      "stagedEntriesSha256": "46f29573867a43f8cb77bcaa5f2b725b1c87d4b929ba6e2a063024baa8ce90c1",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    },
+    "agrosphere-infrastructure": {
+      "head": "a4322de1cae5e482b94b7598cc5b19fa6d9cf62d",
+      "initialStatus": "M  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  rabbitmq/definitions.json\nM  scripts/validate.py\nA  scripts/verify_alerts.py\nA  scripts/verify_crop_health.py\nMM scripts/verify_tapping.py\n?? scripts/verify_alert_privacy.py\n",
+      "finalStatus": " M .github/workflows/ci.yml\nM  AGENTS.md\nMM CHANGELOG.md\nMM README.md\nM  rabbitmq/definitions.json\nM  scripts/validate.py\nA  scripts/verify_alerts.py\nA  scripts/verify_crop_health.py\nMM scripts/verify_tapping.py\n?? docs/PRIVACY_MAINTENANCE.md\n?? scripts/privacy_maintenance_watchdog.py\n?? scripts/test_privacy_maintenance_watchdog.py\n?? scripts/verify_alert_privacy.py\n",
+      "baselineFileCount": 54,
+      "changedPreExistingFiles": [
+        ".github/workflows/ci.yml",
+        "CHANGELOG.md"
+      ],
+      "allOtherBaselineFilesPreserved": true,
+      "rawIndexSha256": "15a24af405054ce9226a918e617209dbf65ea01b525d47350e3be4a5ddc17a36",
+      "stagedEntriesSha256": "a552773282a7e4f6fffc6f365f849c3c8ad7d95ed31b595237c310a2969b4b51",
+      "headIndexAndStagedEntriesUnchanged": true,
+      "diffChecks": {
+        "unstaged": {
+          "exitCode": 0,
+          "result": "PASS"
+        },
+        "stagedCrAtEol": {
+          "exitCode": 0,
+          "result": "PASS"
+        }
+      }
+    }
+  },
+  "artifactSha256": {
+    "agrosphere-infrastructure/scripts/privacy_maintenance_watchdog.py": "3acd641f8775d2e529de834584a0d438ce5c0dd5a976b209021df5650f6d862f",
+    "agrosphere-infrastructure/scripts/test_privacy_maintenance_watchdog.py": "dd1b010434669a941ea94eea4c310db34c6ab26d30c0bf01f1c743e2bdaf5095",
+    "agrosphere-infrastructure/docs/PRIVACY_MAINTENANCE.md": "7e1082e5815c11316785e2335998fd0ed1e511925ea3b9694f7c497ac8fca6c2",
+    "agrosphere-infrastructure/.github/workflows/ci.yml": "ae7a933e0c5e9e838463056be7bfdb62e3355a11f08e56f139a89b16901b05d0"
+  },
+  "openGates": {
+    "OR01": "OPEN",
+    "OR02": "OPEN",
+    "OR03": "OPEN",
+    "OR04": "OPEN",
+    "OR05": "OPEN",
+    "OR06": "OPEN",
+    "AP-T08": "OPEN",
+    "PM01": "OPEN",
+    "PM02": "OPEN",
+    "PM03": "OPEN",
+    "PM05": "OPEN",
+    "PM06": "OPEN",
+    "PM04_LIVE_ADAPTER": "OPEN"
+  },
+  "limitations": [
+    "No database/Docker/browser/provider/full-platform test or existing-stack/private-configuration inspection",
+    "No migrations, pins, application privileges, accounts, records, volumes, geometry, Web configuration or AEO changed",
+    "No Git staging/commit/remote/deployment; no hosted CI run claimed",
+    "Staged diff checks use cr-at-eol for existing frozen CRLF bytes; no source normalized",
+    "Generated fixture HEALTHY is evidence evaluation only, not trusted live collection or target authorization"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "package": "AP_MAINTENANCE_1",
+  "date": "2026-11-01",
+  "status": "PROPOSED_GENERATED_ONLY_NOT_INSTALLED",
+  "existingStackExecutionAuthorized": false,
+  "actualSubjectEnablementAuthorized": false,
+  "target": {
+    "host": null,
+    "port": null,
+    "database": null,
+    "schema": null,
+    "generatedProjectIdentity": null,
+    "expectedMigrationFingerprints": null,
+    "requireExplicitTarget": true,
+    "requireOwnedDisposableTarget": true
+  },
+  "runner": {
+    "triggerIntervalSeconds": 3600,
+    "batchRootLimit": 200,
+    "statementTimeoutSeconds": 30,
+    "lockTimeoutSeconds": 2,
+    "runBudgetSeconds": 120,
+    "maxBatches": 100,
+    "maxTransientRetries": 2,
+    "retryBackoffSeconds": [1, 2],
+    "commitEachBatch": true,
+    "zeroProcessedRootsProvesNoBacklog": false,
+    "localBudgetClock": "MONOTONIC",
+    "eligibilityClock": "DATABASE_UTC"
+  },
+  "watchdog": {
+    "independentOfRunner": true,
+    "missedRunsWarning": 2,
+    "oldestEligibleWarningSeconds": 43200,
+    "oldestEligibleBreachSeconds": 86400,
+    "verifiedRemovalDeadlineSeconds": 2592000,
+    "observerMaxAgeSeconds": 300,
+    "maxClockSkewSeconds": 60,
+    "exitCodes": {
+      "HEALTHY": 0,
+      "WARNING": 1,
+      "BREACH": 2,
+      "UNKNOWN": 3,
+      "ERROR": 4
+    },
+    "priority": ["BREACH", "UNKNOWN", "ERROR", "WARNING", "HEALTHY"],
+    "externalNotificationEnabled": false
+  },
+  "proposedFunctionPrivileges": {
+    "runtime": [],
+    "cleanup": ["privacy_cleanup(integer)", "privacy_observe()"],
+    "monitor": ["privacy_observe()"],
+    "verifiedRemovalOperator": ["privacy_request_removal(text,text)"],
+    "broadDeleteOrDdl": false,
+    "publicExecution": false
+  },
+  "acceptanceCriteria": [
+    "PM-AC01", "PM-AC02", "PM-AC03", "PM-AC04", "PM-AC05",
+    "PM-AC06", "PM-AC07", "PM-AC08", "PM-AC09", "PM-AC10"
+  ],
+  "operatingGates": {
+    "OR01": "OPEN", "OR02": "OPEN", "OR03": "OPEN",
+    "OR04": "OPEN", "OR05": "OPEN", "OR06": "OPEN"
+  }
+}

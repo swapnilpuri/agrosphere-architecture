@@ -24,3 +24,11 @@ Before the first business endpoint: confirm license/ownership, tenancy assumptio
 ## Owner-approved WA-1 — 2026-10-29
 
 Prioritize the estate worker register and daily attendance before the proposed incident/inspection increment. Follow WA-T00–WA-T09 in the [accepted review package](../milestones/WORKER_ATTENDANCE_REVIEW.md), with [dated approval](../milestones/WORKER_ATTENDANCE_APPROVAL.md), independent executable-contract review/release/pinning, and D08/D09 acceptance gates. This is a separate capability; do not silently rename provisional 3C or claim parent Milestone 3/M2 performance completion. Current task/evidence state belongs in DEVELOPMENT_CHECKPOINT.md.
+
+## Owner-approved II-1 — 2026-10-31
+
+WA-1 is locally delivered; II-1 is the next accepted bounded Operations increment (provisional 3C). Follow [II-T00–09](../milestones/INCIDENT_INSPECTION_REVIEW.md) and [dated approval](../milestones/INCIDENT_INSPECTION_APPROVAL.md). Executable candidate review/local release/pinning remains independent; REAL/privacy/load/M2 gates and deferred alert delivery remain visible. Do not interpret parent M3/M4 rows as authorization to implement MQTT/Analytics alongside it.
+
+## Owner-approved AN-1 — 2026-10-31
+
+II-1 and its separately authorized local stack upgrade are complete. Proceed with the [accepted AN-1 tasks](../milestones/ALERTS_NOTIFICATIONS_REVIEW.md) by dependency; see [approval](../milestones/ALERTS_NOTIFICATIONS_APPROVAL.md). Isolated executable candidate review/release precedes runtime pins. Generated-only pure rules/ports can proceed independently. Keep subject-policy/workload, WA/II/M2/REAL and functional acceptance gates open; MQTT/Analytics and external notification delivery remain separate scopes.

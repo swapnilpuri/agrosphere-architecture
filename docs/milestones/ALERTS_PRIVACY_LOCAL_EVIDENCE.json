@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-31",
+  "status": "GENERATED_RUNTIME_VERIFIED_OPERATING_CONTROLS_OPEN",
+  "approval": "ALERTS_PRIVACY_APPROVAL.md",
+  "approvedCandidateManifestSha256": "ea6402a205d1da7a0801090b0acabac58ae164ba6544b474d709d8a4a608286b",
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "6fa55348f26bc6f7fdf62816c5b9a44c420ead8b",
+      "initialIndexSha256": "4df9f201e6e25969baac8974b9862a905efd426f8114b70e6e583a593c521ab9",
+      "finalIndexSha256": "166e36948226e5dacfeeb2cf8d70e06d8e7d1fc34141c814b97566b90d7ba5da",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    },
+    "agrosphere-contracts": {
+      "head": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+      "initialIndexSha256": "02dcc634640a25d0bd05905729de36e8f5bea00c6ccead2e358862bd09343168",
+      "finalIndexSha256": "ba87160ed185c5b74e98a337fdcf5b2f199fe743a32e5e853af9d9cf3b40ad64",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    },
+    "agrosphere-operations-service": {
+      "head": "bf66e6136d60e436d8b034f9a6df3573da1248ed",
+      "initialIndexSha256": "8320aba8ae39988de14616fe17e9a662635c06d2b18699f861577c9c3e473311",
+      "finalIndexSha256": "f0548d2da79f273b0c918c77cc27c75d634ac6b981dcb5f416b9035af36d0787",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    },
+    "agrosphere-web": {
+      "head": "0465e2e84d1359cbbb15a1f3b5e3ca14fbb03ab6",
+      "initialIndexSha256": "0a4328d56e73cadc3e599d912ee8a08983a0ec32155d915a5ce7218eee304762",
+      "finalIndexSha256": "d3827123ac98f7f7993a5e1556eb008988dfae5aeaa3656bf92988d40bf654fc",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    },
+    "agrosphere-api-gateway": {
+      "head": "46b7a0fa68c79e675df40238559fc0e30e19b3c5",
+      "initialIndexSha256": "ebaf764481ba170a4c8e4fccf55c30de921003ff7a12be657f8a2a197a43a745",
+      "finalIndexSha256": "35774177e3b393ce89d930785dcc3690d80e93cb70a44361b9bfae8aa6b0facc",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    },
+    "agrosphere-infrastructure": {
+      "head": "a4322de1cae5e482b94b7598cc5b19fa6d9cf62d",
+      "initialIndexSha256": "f1c002b20a4924953e8aa060fad360c73e882964a4c35db119db112191c1e1e7",
+      "finalIndexSha256": "15a24af405054ce9226a918e617209dbf65ea01b525d47350e3be4a5ddc17a36",
+      "stagedEntriesPreservedSinceObservedMidRunStagingChange": true,
+      "preExistingProtectedFilesUnchanged": true,
+      "diffCheck": "PASS"
+    }
+  },
+  "sourceHashes": {
+    "agrosphere-contracts/docs/alerts-privacy/CANDIDATE_MANIFEST.json": "ea6402a205d1da7a0801090b0acabac58ae164ba6544b474d709d8a4a608286b",
+    "agrosphere-contracts/docs/alerts-privacy/RELEASE_0_9_0.json": "d46d1c26f149945fbd0c8b450a47e53db7eb1999a046562367be4bcb596b4b6d",
+    "agrosphere-contracts/openapi/operations-service.yaml": "f8a862a4f4d1cc397999fc5a47f763a23140eb7d72b38a4e2ec9c036315b71bc",
+    "agrosphere-operations-service/src/main/resources/db/migration/V7__alert_privacy_storage.sql": "d3d2596ad926a35de5904c86cbcf7daa6a7a21327b50f70343dc3703ffef83c7",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/alerts/domain/PrivacyAlert.java": "ca7e0423bb9f5ace9edf12d0de1f5d2c4aea50d81ac7733ccb0409892d9f32d1",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/alerts/domain/PrivacyCommandRules.java": "6d717dea2bfbeda1221823a15a85507f69658dba4855f9159f2679fbbb3af5eb",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/alerts/application/PrivacyAlertRuntime.java": "f7efb528231fb98ee77fd30fe93d664e46d13e6c92118e0df4287e2a7420bdee",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/alerts/infrastructure/JdbcPrivacyAlertStore.java": "8ee7ea8523f71d6227175352fc7f5b0cba607266b86c8c5ae2339b6c88e1bbc0",
+    "agrosphere-web/contracts/operations.openapi.json": "f8a862a4f4d1cc397999fc5a47f763a23140eb7d72b38a4e2ec9c036315b71bc",
+    "agrosphere-web/src/app/features/alerts/uuid-v7.ts": "6028f667e1d40ca5afba04991fe1474fc679c16e9c45c2107cd275f6cf52efd6",
+    "agrosphere-infrastructure/scripts/verify_alert_privacy.py": "9b8de762ca1be374e8d0d0f45fe59d7668c6742aa0cb570aab91083a434022a4"
+  },
+  "checks": {
+    "contractsTests": 59,
+    "operationsFullProfile": {
+      "unit": 172,
+      "integration": 113,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "log": "Operations target/privacy-final-verify.log"
+    },
+    "laterTargetedFinalPrivacy": {
+      "integration": 12,
+      "failures": 0,
+      "errors": 0,
+      "log": "Operations target/privacy-it-boundaries-final.log",
+      "note": "Includes inclusive removal-cutoff predicate refinement and two additional regressions; follows full-profile run, not another full profile"
+    },
+    "gatewayTests": 16,
+    "webUnitTests": 66,
+    "webUiTests": 29,
+    "webGraphicsSmokeTests": 1,
+    "webStaticChecks": "PASS",
+    "webLockedInstall": "PASS with scoped escalation after sandbox EPERM",
+    "webPublicDockerImage": "sha256:fddb0fb79d6a9fa3f4ad8c1006d39493bf10cdb5cec1782e9d302a3fbbb0bd8a",
+    "operationsRuntimePinsAndResponseShapes": "PASS, 70 operations and ten privacy shapes; retained legacy shapes/events verified",
+    "checkoutByteRegression": "PASS autocrlf false/true disposable indexes",
+    "projectionTests": {
+      "collection": 5,
+      "workforce": 2,
+      "cropHealth": 4,
+      "comparator": 3
+    },
+    "generatedPlatform": {
+      "result": "PASS",
+      "project": "agrosphere-3a-check-47eab4d5",
+      "cleanupReported": true,
+      "log": "Infrastructure target-privacy-platform-final.log",
+      "note": "Precedes final inclusive cutoff SQL predicate; that branch covered by later 12-case targeted recheck; no later wire changes"
+    },
+    "architectureWorkspaceValidator": "PASS",
+    "finalDiffChecks": {
+      "agrosphere-architecture": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "PASS"
+      },
+      "agrosphere-contracts": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "Pre-existing frozen CRLF artifact lines reported; protected bytes retained"
+      },
+      "agrosphere-operations-service": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "PASS"
+      },
+      "agrosphere-web": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "PASS"
+      },
+      "agrosphere-api-gateway": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "PASS"
+      },
+      "agrosphere-infrastructure": {
+        "unstaged": "PASS",
+        "stagedWithExplicitCrAtEol": "PASS",
+        "ordinaryStagedDiff": "PASS"
+      }
+    },
+    "reviewLinks": "PASS",
+    "generatedProjectContainerAndVolumeCleanup": "PASS no matching containers/volumes"
+  },
+  "preservation": {
+    "oldMigrationsAndEventsAndApprovedPackages": true,
+    "priorCheckpointVerbatimSuffix": true,
+    "webPublicConfigWorkingBytes": true,
+    "headsUnchanged": true,
+    "initialIndexesIdentical": false,
+    "stagingObservation": "All six indexes/staged inventories changed during execution. No root staging/reset/commit command was issued; current observed staged entries preserved, not reset to original baseline."
+  },
+  "notPerformed": [
+    "existing stack upgrade/maintenance",
+    "private configuration or existing backup read",
+    "existing record/volume/geometry reseed/reset",
+    "actual-account enablement",
+    "REAL collection",
+    "external notifications",
+    "existing role/credential changes",
+    "Git staging/commit/push/publication/deployment",
+    "AEO state change"
+  ],
+  "remainingGates": [
+    "protected daily cleanup job/authority and overdue monitoring",
+    "actual log/backup retention and current-ledger operating controls",
+    "client/controller/basis/notice/hosting facts",
+    "separate exact local-stack preflight and execution authorization",
+    "owner functional acceptance",
+    "AN-D08, WA D08/D09, II-D07/08, M2, REAL, offline Android/French/faster refresh"
+  ]
+}

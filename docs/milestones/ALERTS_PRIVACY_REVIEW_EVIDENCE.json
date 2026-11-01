@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-31",
+  "status": "READY_FOR_NEW_EXACT_REVIEW_NOT_IMPLEMENTED",
+  "candidateManifestSha256": "ea6402a205d1da7a0801090b0acabac58ae164ba6544b474d709d8a4a608286b",
+  "reviewArtifacts": {
+    "agrosphere-architecture/docs/milestones/ALERTS_PRIVACY_EXTENSION_REVIEW.md": "d067b0cad47f604db0fc18a6f6e52de88103ed805860aecf5206a4384ea8d8ac",
+    "agrosphere-architecture/docs/milestones/ALERTS_PRIVACY_LOCAL_STACK_PLAN.md": "caba7d9f90a639d3a0d4a49ce4b2f8984ac193e6e36884df398cda9ec9066d91",
+    "agrosphere-contracts/docs/alerts-privacy/CANDIDATE_REVIEW.md": "8d16acd02058c451b8f13e2fffcbcfe406f3cf162f503e8e276d99bd3f033935"
+  },
+  "observedHeads": {
+    "agrosphere-architecture": "6fa55348f26bc6f7fdf62816c5b9a44c420ead8b",
+    "agrosphere-contracts": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+    "agrosphere-operations-service": "bf66e6136d60e436d8b034f9a6df3573da1248ed"
+  },
+  "checks": {
+    "contractsExistingValidator": "PASS",
+    "privacyCandidateValidator": "PASS",
+    "contractTests": {
+      "total": 59,
+      "retained": 48,
+      "new": 11,
+      "failures": 0,
+      "errors": 0
+    },
+    "architectureWorkspaceValidator": "PASS",
+    "threeDiffChecks": "PASS",
+    "preExistingContractFilesUnchanged": true,
+    "observedHeadsAndIndexesUnchanged": true,
+    "priorCheckpointVerbatimSuffix": true,
+    "webPublicConfigUnchanged": true,
+    "newRelativeReviewLinksResolve": true
+  },
+  "notPerformed": [
+    "new runtime enforcement",
+    "new contract release/pinning",
+    "database deletion/migration",
+    "role/credential changes",
+    "private configuration access",
+    "existing stack upgrade",
+    "new integration/browser/restore/load tests",
+    "owner functional acceptance",
+    "client policy acceptance",
+    "Git staging/commit/push/publish/deploy",
+    "AEO action"
+  ],
+  "nextGate": "new exact five-artifact executable acceptance and technical package review; old AN-1 approvals persist"
+}

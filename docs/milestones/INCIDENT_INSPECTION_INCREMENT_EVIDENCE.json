@@ -1,0 +1,364 @@
+{
+  "date": "2026-10-31",
+  "timezone": "America/Chicago",
+  "scope": "II-T00 approval; II-T01 isolated executable candidate awaiting independent release acceptance; II-T02 pure domain/ports; II-T03 preparation only",
+  "approval": {
+    "reviewer": "project owner via explicit conversation approval",
+    "packageSha256": "79944183a963bdddd4008557e2a8eb1e15acff739b612fb0d2e95d9d4f7da8e8",
+    "record": "INCIDENT_INSPECTION_APPROVAL.md"
+  },
+  "candidate": {
+    "manifestSha256": "e04a8b289682dcfe1e6b38f490cb867ca67fd7db7717348f40a30758be9307bd",
+    "artifactCount": 11,
+    "proposedRelease": "0.7.0",
+    "releasedVersionUnchanged": "0.6.0",
+    "accepted": false
+  },
+  "baseline": {
+    "agrosphere-ai-service": {
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-api-gateway": {
+      "head": "46b7a0fa68c79e675df40238559fc0e30e19b3c5",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-architecture": {
+      "head": "6fa55348f26bc6f7fdf62816c5b9a44c420ead8b",
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json\n?? docs/milestones/INCIDENT_INSPECTION_REVIEW.md",
+      "diff_stat": "docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 14 ++++\n .../INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json   | 79 +++++++++++++++++++++-\n 2 files changed, 92 insertions(+), 1 deletion(-)"
+    },
+    "agrosphere-contracts": {
+      "head": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-immersive": {
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-infrastructure": {
+      "head": "a4322de1cae5e482b94b7598cc5b19fa6d9cf62d",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-operations-service": {
+      "head": "bf66e6136d60e436d8b034f9a6df3573da1248ed",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-web": {
+      "head": "0465e2e84d1359cbbb15a1f3b5e3ca14fbb03ab6",
+      "status": "",
+      "diff_stat": ""
+    }
+  },
+  "final_observation": {
+    "agrosphere-ai-service": {
+      "head": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-api-gateway": {
+      "head": "46b7a0fa68c79e675df40238559fc0e30e19b3c5",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-architecture": {
+      "head": "6fa55348f26bc6f7fdf62816c5b9a44c420ead8b",
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json\n M docs/requirements/FUNCTIONAL_REQUIREMENTS.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M scripts/validate.py\n?? docs/adr/0015-inspections-and-crop-health-incidents.md\n?? docs/milestones/INCIDENT_INSPECTION_APPROVAL.md\n?? docs/milestones/INCIDENT_INSPECTION_REVIEW.md",
+      "diff_stat": "AGENTS.md                                          |  4 ++\n CHANGELOG.md                                       |  4 ++\n README.md                                          |  8 ++-\n docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 34 ++++++++++\n .../INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json   | 79 +++++++++++++++++++++-\n docs/requirements/FUNCTIONAL_REQUIREMENTS.md       |  4 ++\n docs/roadmap/IMPLEMENTATION_BACKLOG.md             |  4 ++\n scripts/validate.py                                |  5 +-\n 8 files changed, 138 insertions(+), 4 deletions(-)"
+    },
+    "agrosphere-contracts": {
+      "head": "ff5e315dac858856287fdb02c4c53be594ca0c1b",
+      "status": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/validate.py\n?? docs/incident-inspection/\n?? scripts/build_crop_health_contracts.py\n?? scripts/crop_health_contract_validation.py\n?? scripts/test_crop_health_contracts.py",
+      "diff_stat": ".github/workflows/ci.yml | 2 ++\n AGENTS.md                | 4 ++++\n CHANGELOG.md             | 4 ++++\n README.md                | 4 ++++\n scripts/validate.py      | 3 +++\n 5 files changed, 17 insertions(+)"
+    },
+    "agrosphere-estate-service": {
+      "head": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-immersive": {
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-infrastructure": {
+      "head": "a4322de1cae5e482b94b7598cc5b19fa6d9cf62d",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-operations-service": {
+      "head": "bf66e6136d60e436d8b034f9a6df3573da1248ed",
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n?? docs/CROP_HEALTH_PERSISTENCE_PREPARATION.md\n?? src/main/java/com/agrosphere/operations/crophealth/\n?? src/test/java/com/agrosphere/operations/CropHealthDomainTest.java",
+      "diff_stat": "AGENTS.md    | 4 ++++\n CHANGELOG.md | 4 ++++\n README.md    | 4 ++++\n 3 files changed, 12 insertions(+)"
+    },
+    "agrosphere-spatial-service": {
+      "head": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "status": "",
+      "diff_stat": ""
+    },
+    "agrosphere-web": {
+      "head": "0465e2e84d1359cbbb15a1f3b5e3ca14fbb03ab6",
+      "status": "",
+      "diff_stat": ""
+    }
+  },
+  "protected_sha256": {
+    "agrosphere-contracts/openapi/ai-service.yaml": "0bc93aa4c50c05c2df65228304f203b7b2c4b738ae6de66fac9560c6e3f66dc9",
+    "agrosphere-contracts/openapi/analytics-service.yaml": "2efa666c3e48c2fce9338645adb2ad6ef42be1154de49712f14d4360c3bc2514",
+    "agrosphere-contracts/openapi/estate-service.yaml": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-contracts/openapi/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-contracts/openapi/spatial-service.yaml": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+    "agrosphere-contracts/openapi/telemetry-service.yaml": "1bfc36028bd17709009e45ab1625da80307fdfb8d89a37b6487f8e7be3a9a829",
+    "agrosphere-contracts/events/v1/CropHealthIncidentDetected.schema.json": "af448a69432a22a1fb21485771a4cf704392ee3c3ab178a952062e6c509928d3",
+    "agrosphere-contracts/events/v1/envelope.schema.json": "1385db4529ec56cfbd59956c1f8c109295c5e98b17a726d3c98f05ed3e763c3a",
+    "agrosphere-contracts/events/v1/EstateCreated.schema.json": "09e203d4fa19e37106ec7aebae11ead60494e35a46e2a1ad39b90e5bb731a8de",
+    "agrosphere-contracts/events/v1/LatexCollectionRecorded.schema.json": "593106b29369bde3f70aa6ac60278863b4c5986489fe78ddd27fbffdbaa5636e",
+    "agrosphere-contracts/events/v1/PlantationBlockCreated.schema.json": "3dad1b862f54d38057a3d367726bc9ab803c24dbb017c85bfaebfe25484701a5",
+    "agrosphere-contracts/events/v1/PlantationBlockUpdated.schema.json": "604d290044d9059f0e523ddf6e8356286074a4f980774e7c34d7559bfd9b2733",
+    "agrosphere-contracts/events/v1/SensorReadingReceived.schema.json": "c1e4270ffbbb919d904b7adbce021ab6e465a3db5cc023731d7a5325e7126666",
+    "agrosphere-contracts/events/v1/TappingActivityRecorded.schema.json": "7f919feba565a6e1624d26b66473bfcf78e1c12b2fbd1a122e8f6f0967b366ba",
+    "agrosphere-contracts/events/v1/YieldForecastGenerated.schema.json": "062c7471b8c1f5f91f645197faa2a0b234e82ec3fdee7b0c001acaeffb8e85bf",
+    "agrosphere-contracts/events/v2/EstateCreated.schema.json": "9f6d63c477759e2a3a7fcce3a1444febad0cef7e59548c6da7a04c160882d668",
+    "agrosphere-contracts/events/v2/EstateUpdated.schema.json": "f74b3829d2889a363792df10eb3c05dfdfc2b553a75e51a5ec9b20de2e2a46bc",
+    "agrosphere-contracts/events/v2/PlantationBlockCreated.schema.json": "d7a6a5bff8a8c1fc3fa930c044098dbbf0877a944d87109cd25e00417c0cadee",
+    "agrosphere-contracts/events/v2/PlantationBlockUpdated.schema.json": "c99731baf15262ef3ddefac0dc64eacf76bbd1f82c87d12f8cb1077dcbdfcd02",
+    "agrosphere-contracts/events/spatial/v1/DigitalTwinAssetRegistered.schema.json": "d46b29fb3171339c986e5e2dee526c080965c1314434a81b6983a0b5a9b0c91b",
+    "agrosphere-contracts/events/spatial/v1/SpatialBoundaryChanged.schema.json": "ee2883c66b3b8606799f73733c14761a0f2c617e22f1e12c2d3c4adfce1b85d7",
+    "agrosphere-contracts/events/spatial/v1/SpatialFeatureCreated.schema.json": "4edd367673b4f8d0c634100265676b36eaed92eb4f1cbe9345202180d120ff4c",
+    "agrosphere-contracts/events/spatial/v1/SpatialFeatureUpdated.schema.json": "d5aff1cb168c96453ef79e329d903b2495d88a3c5c5069dcb673ecacf43f701a",
+    "agrosphere-contracts/events/spatial/v1/SpatialLayerCreated.schema.json": "569fa41811f3728f478ccd7ca4942031b92b03f68303b17ddafcc1bad86dece5",
+    "agrosphere-contracts/events/operations/v1/TappingAssignmentCancelled.schema.json": "71b18783088fb9b0c31de3f89ee290b9763a50039cd4264d3289088a6400d3f7",
+    "agrosphere-contracts/events/operations/v1/TappingAssignmentCreated.schema.json": "13627255d5263816357abdf4ca14b02ee0182df786f89b1cd580a6addbfa3189",
+    "agrosphere-contracts/events/operations/v1/TappingAssignmentStarted.schema.json": "b187cc74a92c81d4617357b1fecbf55d2b116e410f5ea9fba283239d041c82a0",
+    "agrosphere-contracts/events/operations/v1/TappingCompleted.schema.json": "5b16dd80b6516087468223bff372c8f6cc5a5a5851c2b27771a16cc2b15b993b",
+    "agrosphere-contracts/events/operations/v1/TappingMissed.schema.json": "4c4b7695551be1dd685a377447fedec40f3a9d05a903fdc8f10e5793af1244c7",
+    "agrosphere-contracts/events/operations/v1/TappingScheduleActivated.schema.json": "554f177a23339a491930508b7241220cf6f7ce21ef4f64019ca12a39f435abac",
+    "agrosphere-contracts/events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "agrosphere-contracts/events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "agrosphere-contracts/events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "agrosphere-contracts/events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+    "agrosphere-contracts/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+    "agrosphere-contracts/examples/CropHealthIncidentDetected.json": "977ca745f3db62784885f2521e9aceb7c03dd50d142efca3df85250f134215a5",
+    "agrosphere-contracts/examples/EstateCreated.json": "7c7822cbd9c2dbe3bdcb9042b0d1300d56f55fcec8375c1675ae9da31cb2b983",
+    "agrosphere-contracts/examples/LatexCollectionRecorded.json": "edce38a9f183934c20120f44f9f3517a9e9bbf294a50df76a76039ea324ce934",
+    "agrosphere-contracts/examples/PlantationBlockCreated.json": "086f116194575c84a58da7577923766fee1b6f5d3be920fee591961326cb4be5",
+    "agrosphere-contracts/examples/PlantationBlockUpdated.json": "cb5d19efe2a25a3506b7a5a87c72df20d2e4f9b0f3da1d9fed89f4a6d0ffb644",
+    "agrosphere-contracts/examples/SensorReadingReceived.json": "689c9963bc25303ab99da8f7d6e46f601e3082a819a8eb4f3fd4bbeb2aa01e69",
+    "agrosphere-contracts/examples/TappingActivityRecorded.json": "c454d301a940d0f1a58efc01c2cc8fdc96472ec0cf5ec549cf84ca53a2fe5d07",
+    "agrosphere-contracts/examples/YieldForecastGenerated.json": "774c617aacbc3aaff5361845e35228c887c67649db441d51edb79a2783a74c85",
+    "agrosphere-contracts/examples/v2/EstateCreated.json": "454b4e4c17675563907d37f8fc6306bfba5ba51091006956deb2ec47fe79b9e5",
+    "agrosphere-contracts/examples/v2/EstateUpdated.json": "e0423f2af4d8ad9de5cb889b3aad378fba2b1711302c1344474a7db7620f0851",
+    "agrosphere-contracts/examples/v2/PlantationBlockCreated.json": "bde3b583db04a6b4ecf8b6c106ee8f19167c5f643e8a90659d03814c685c7d28",
+    "agrosphere-contracts/examples/v2/PlantationBlockUpdated.json": "88b054cc09fb6cc3a8d9213788fd77c257d41dc9647dff9890b5b53518dad2fc",
+    "agrosphere-contracts/examples/spatial/v1/DigitalTwinAssetRegistered.json": "7ebcada146d0fd961d9ac370740d5fb7d739fd1e55cdb06df1372d913cc67188",
+    "agrosphere-contracts/examples/spatial/v1/SpatialBoundaryChanged.json": "de3bc447fd3a3d2e43b5b0e64f2e0b238c757748556278e052c4cef5b594239f",
+    "agrosphere-contracts/examples/spatial/v1/SpatialFeatureCreated.json": "24948f35d1798f06fbc557422fa180ec966294cfc302dc838f83fa347f21eac2",
+    "agrosphere-contracts/examples/spatial/v1/SpatialFeatureUpdated.json": "e7b89cbf4018a07da6eae59b5e17f634cd7ba1349412fd02fab8d820321c3d68",
+    "agrosphere-contracts/examples/spatial/v1/SpatialLayerCreated.json": "9f19e976ab8e894671fec787bcb049c31f26948c59eae98ae57cf79510cd8854",
+    "agrosphere-contracts/examples/operations/v1/TappingAssignmentCancelled.json": "2ec21f01d511e56d33d8085bb7761d33a0276bd1745aefc2c0ea0e44b55bc485",
+    "agrosphere-contracts/examples/operations/v1/TappingAssignmentCreated.json": "2194798a7a8a0b1ef63123f1de5f1babcec3434bb08f838f584c7d1afb0c9d05",
+    "agrosphere-contracts/examples/operations/v1/TappingAssignmentStarted.json": "f0fd522b493c6dce03e54c92eaace66fe285cd19128eee6f891e057e7ca3822d",
+    "agrosphere-contracts/examples/operations/v1/TappingCompleted.json": "20c7337b0872f9f04b0013d4f327cf9f822ee28c6d1b725f38f535ecefe1a79f",
+    "agrosphere-contracts/examples/operations/v1/TappingMissed.json": "9b053d5d7986a95df4b54a50958dfd9bbcd2aa5c6a57643434457498aeef1f9a",
+    "agrosphere-contracts/examples/operations/v1/TappingScheduleActivated.json": "5383c9ad86d1156d91bb313173653a2a1b7d67b6e92519d9fb257524cdb73221",
+    "agrosphere-contracts/examples/operations/v2/DrcMeasurementRecorded.json": "c024cabadcc8e4461e81ef93b13d4f4e9cf5c8eee88e4fc587ba182d0abe8cf9",
+    "agrosphere-contracts/examples/operations/v2/LatexCollectionAdjusted.json": "c0a0fb8d4e6b397d7ce66c8826eca86a88ffeb37465ccd4955a5e5590391295e",
+    "agrosphere-contracts/examples/operations/v2/LatexCollectionRecorded.json": "ed7cf9e6995f7f2119d29a4fc3c80005c5ba1199cee1b275adb74c4ab2766b18",
+    "agrosphere-contracts/examples/operations/v2/LatexCollectionVoided.json": "011a6bb9741355d2fbb176c6e5a8b65c261e359476dc8e4ceeee3f11a15a9834",
+    "agrosphere-contracts/examples/operations/v2/requests.json": "6d5994f5a54ed536f7bb541bba949dc84d198b3f3be3d316c9418b18e47feea5",
+    "agrosphere-contracts/examples/operations/workforce/v1/negative.json": "a1fbd5f655ff5a460d6b0571e9b089fdb31eeab6f366a8d03e2f11d5b5f52e7a",
+    "agrosphere-contracts/examples/operations/workforce/v1/requests.json": "209928024d0a6fa2ca0dd270946f8df5bb978832dd4b363029de9f01a1358a43",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerAttendanceChanged.json": "7a0a95cacd0f2cdc0c709f9afe996ae35b3b058e4531f31d0af3e4b25ed5d876",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerAttendanceRecorded.json": "97de0c7fcc096782f2155ce93636352f26a3259988717d2d3ce3122672af627c",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerRegistrationChanged.json": "78cd418e4153f8282587ca6e90848f0281237a7494b26a70d6a94198d3a7ea15",
+    "agrosphere-contracts/examples/operations/workforce/v1/WorkerRegistrationCreated.json": "584771b109063ad35d81ecb58770938282b064d7c105d86a12312c8109297b06",
+    "agrosphere-contracts/examples/operations/v2/edge/half-up.json": "6134394423a1509056b70343f493c2838fc94d3154bbd6875705b5a2aafed606",
+    "agrosphere-contracts/examples/operations/v2/edge/zero-drc.json": "1aace9471d27e24244b88cc797ca8bcc7ca029daf5ca1a499fa723e6003e204f",
+    "agrosphere-contracts/examples/operations/v2/negative/bad-uuid.json": "bf58e0452b80af9caf516c1500aeb3b09d2edd39674605b9723cd456e6d0cd09",
+    "agrosphere-contracts/examples/operations/v2/negative/lossy-timestamp.json": "80a415e04ccfe1b8fd7f1c04ac8c38d0ae3940e3104a16d884f44a2ae4771611",
+    "agrosphere-contracts/examples/operations/v2/negative/measurement-before-collection.json": "0d0b029aa4aeceb6caa2b8dfbbfdb9c2facdc38f48c45562a8ec885fdfa00f9d",
+    "agrosphere-contracts/examples/operations/v2/negative/mixed-provenance.json": "f8e83d72b134be5393887422cc08bee4b2a68489d71993032d1876609290d254",
+    "agrosphere-contracts/examples/operations/v2/negative/wrong-envelope-identity.json": "7f61a384ecf895783d5af731adeeb54965c5102fa07530dd5f173ccb1756ef71",
+    "agrosphere-contracts/examples/operations/v2/negative/wrong-formula.json": "fea4d436602b164f480c369c42350b229dfedb43afc010743f0f3398726b5705",
+    "agrosphere-contracts/examples/operations/v2/negative/wrong-version.json": "1a27ebbd7a35c7e037d4bbe56097d2e3fbb18b2cbf37c560bf38a16c5010fefe",
+    "agrosphere-operations-service/src/main/resources/contracts/COLLECTION_RELEASE.json": "ab98682379b5c170a446f353c16e4a627ce396774afe039e4d29d0f15ead5378",
+    "agrosphere-operations-service/src/main/resources/contracts/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-operations-service/src/main/resources/contracts/RELEASE": "4c7c568ee482efde562e81d65c229501b63acc9462d0b7191d16e54118a92525",
+    "agrosphere-operations-service/src/main/resources/contracts/WORKFORCE_RELEASE.json": "076e9f5e9eec1b1419e2ec34c96f81bae38f36ecab6dc3f4191be819102a8a77",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentCancelled.schema.json": "71b18783088fb9b0c31de3f89ee290b9763a50039cd4264d3289088a6400d3f7",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentCreated.schema.json": "13627255d5263816357abdf4ca14b02ee0182df786f89b1cd580a6addbfa3189",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingAssignmentStarted.schema.json": "b187cc74a92c81d4617357b1fecbf55d2b116e410f5ea9fba283239d041c82a0",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingCompleted.schema.json": "5b16dd80b6516087468223bff372c8f6cc5a5a5851c2b27771a16cc2b15b993b",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingMissed.schema.json": "4c4b7695551be1dd685a377447fedec40f3a9d05a903fdc8f10e5793af1244c7",
+    "agrosphere-operations-service/src/main/resources/contracts/events/TappingScheduleActivated.schema.json": "554f177a23339a491930508b7241220cf6f7ce21ef4f64019ca12a39f435abac",
+    "agrosphere-operations-service/src/main/resources/contracts/previous-0.5.0/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+    "agrosphere-operations-service/src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+    "agrosphere-operations-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-operations-service/src/main/resources/db/migration/V2__rubber_tapping.sql": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306",
+    "agrosphere-operations-service/src/main/resources/db/migration/V3__latex_collection.sql": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c",
+    "agrosphere-operations-service/src/main/resources/db/migration/V4__worker_registration_and_attendance.sql": "6c673a34b1d43ae8b856a49b28890ce37fa0e9f691802c384779bb51bd4acab3",
+    "agrosphere-web/contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-web/contracts/operations.openapi.json": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+    "agrosphere-web/contracts/operations.release.json": "db15ace0522be145f606ad328f9a3b47bfe2d8dab0a2a1f3aa8490ca3086cc78",
+    "agrosphere-web/contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+    "agrosphere-contracts/VERSION": "97a5d6e540a6120d09c39ddb667e0e8e2bac7fcc2ffef813b82e08fd60365bce",
+    "agrosphere-operations-service/VERSION": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9",
+    "agrosphere-web/VERSION": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79"
+  },
+  "web_config_sha256": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4",
+  "web_config_index": "100644 56cd16c0316bcd9ce3ee399ff92d1b69021a580c 0\tpublic/config.json",
+  "changed_source_sha256": {
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "0ba151d02d51f55f1617c1dbf068e576e26cdda01ce1878999df526b14e8aff8",
+    "agrosphere-architecture/docs/milestones/INCIDENT_INSPECTION_ASSESSMENT_EVIDENCE.json": "706ac1e129bfa5bb7cead673023313ef94785d587e5807ceaa9b6645f38fb55f",
+    "agrosphere-architecture/docs/requirements/FUNCTIONAL_REQUIREMENTS.md": "52423ce3a6b8072db8ff6aefd12e27ba8f47bde71fc3562916037c055f3c8089",
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": "83cb35330e8073e535f0d1f3a34de6e4edd15aee6a991801bb7eb0f919238898",
+    "agrosphere-architecture/docs/milestones/INCIDENT_INSPECTION_APPROVAL.md": "c7f71861c064a1c2697798980bcbcbe4d043660c38f82c03381d5bf861dbfe21",
+    "agrosphere-architecture/scripts/validate.py": "67b62ada940b4cf58e773eee838db24859798d614b54c88dad45175d97a38632",
+    "agrosphere-architecture/AGENTS.md": "adccf2cf8c496981c71d6febfcec7f44db61f30463de1f63f2a67c2b014619cc",
+    "agrosphere-architecture/CHANGELOG.md": "f3adde8db2d582bde36524515ac280998e1be007236f651ccb2dbb37fb85ea73",
+    "agrosphere-architecture/README.md": "1a36141c359756739e50863f1f7469b46b4c7a3297f9a5811a7e8689ddc82e02",
+    "agrosphere-architecture/docs/milestones/INCIDENT_INSPECTION_REVIEW.md": "79944183a963bdddd4008557e2a8eb1e15acff739b612fb0d2e95d9d4f7da8e8",
+    "agrosphere-architecture/docs/adr/0015-inspections-and-crop-health-incidents.md": "2479309bef74335b3439d156806cef76e57165aac4f66828e63268c0ccaa7663",
+    "agrosphere-contracts/docs/incident-inspection/candidate/openapi/operations-service.yaml": "d93d54a038edfa9e9cdaeb6f089015571ae399855169b1fba4e26388215c8c67",
+    "agrosphere-contracts/docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json": "38ce1639ef2437238c256e26df5563dfd2b8549aaa639b60f39382007bc03c2c",
+    "agrosphere-contracts/.github/workflows/ci.yml": "472cb99cfd1dbf30bd19f498b742ecc21c68d4d986cbe92fff6fb3dc600380c1",
+    "agrosphere-contracts/scripts/crop_health_contract_validation.py": "41af1bce70b26c1488d5094123387c89ab3e63e3a2c9d120c2c5d2f593bab3fb",
+    "agrosphere-contracts/scripts/test_crop_health_contracts.py": "302257c8c9f2862765966868cdd89e9ccc776260f626544d9168dcfb808ae92b",
+    "agrosphere-contracts/scripts/validate.py": "b3ad319c57a9745ab1065de0fa289cfa259f201d18f5534a1aa1a4bb81ea31bd",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/negative.json": "bd05d28a2c724f79c8e6e878cc89b7f140f8da19029f5176cb654c037a785663",
+    "agrosphere-contracts/AGENTS.md": "78a1769b6f6cccef16c61c2bbc6f75eff08bfb9ec7c5415ce657b060d649afa9",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionChanged.json": "c15f4d5d0b6ca06c5d3b546072b7ee3790711138d1a0ff5feb40ffe1c4d00e58",
+    "agrosphere-contracts/CHANGELOG.md": "1f128a2f23e1008ff4bdb0461fee5bf8a0a3a89e9c424523790e631f00f3d20e",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/requests.json": "ab15157319a1c8fa66510d9a6a736b4461ce6547fc09184e53524ae520da773e",
+    "agrosphere-contracts/README.md": "50367b3295f891077f4fca763dcc485ae09d31ce83d7ea016cc0c1b1def9e8e1",
+    "agrosphere-contracts/docs/incident-inspection/CANDIDATE_MANIFEST.json": "e04a8b289682dcfe1e6b38f490cb867ca67fd7db7717348f40a30758be9307bd",
+    "agrosphere-contracts/docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json": "c1b8f700a64d4477ea1d25b27f1463a8082a83af5619dbf68c2efcfe3eeaade7",
+    "agrosphere-contracts/docs/incident-inspection/CANDIDATE_REVIEW.md": "7773b14027e61861ce64870d4952649c246471a6f9946f2f79dce19cdabc1252",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentReported.json": "d21adcc8b839e0d06ce5fd6985ce8b4a604d5faa6e8831b2e06cab76845fc269",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentChanged.json": "f9b0048531c9189f69b5c8f5c274b950daa255ff43b4e6c8891e95d9d8e198ae",
+    "agrosphere-contracts/docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionRecorded.json": "482ca5858369e50e261e36c0d7cc8e9624e66b7a76a01944d25cfa58b3085630",
+    "agrosphere-contracts/docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json": "57339d13e770fd4e54873ba2e19e31d6b91aba239042df2b604e3cd4311f26c3",
+    "agrosphere-contracts/scripts/build_crop_health_contracts.py": "2f056e6142d93eb22fb4b3c5bb156d49639be407a2cd58e7c6474b48b69831f8",
+    "agrosphere-contracts/docs/incident-inspection/compatibility-baseline.json": "f72bcfa89f2f47a03f760bc1b7d2bce6f2b5fba8415b583b09c711c11134464f",
+    "agrosphere-contracts/docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionChanged.schema.json": "4276a0cead25cb490f4e21943056751929b3d3348cfa9c643140260b9f0798dd",
+    "agrosphere-operations-service/docs/CROP_HEALTH_PERSISTENCE_PREPARATION.md": "6e191b3010eea01662e2e03f12e28fb1b67380c5f35611edc5ad103c5a280933",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/crophealth/domain/CropIncident.java": "cb388cf04588af9db8629fac390d697d54f775a6f7091924b9063029b043e9ee",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/crophealth/application/CropHealthPorts.java": "631accc49e6b70dbec1f19050a37902392892cff119b47e2e2685e563620a803",
+    "agrosphere-operations-service/src/test/java/com/agrosphere/operations/CropHealthDomainTest.java": "0a86538c19fe8fc1ec59f6563262a6991bf5d0b4409e634ba6f470ef1beeed97",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/crophealth/domain/CropHealthRules.java": "d6fda2eab3adcd9b2ea60e4e050293e9950834e2636af29c4bf0291b054637b8",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/crophealth/application/CropHealthChanges.java": "54abb1c16be822c9cbf2a74c89ee135fd45def2f8ed67979993d1018ccb762f6",
+    "agrosphere-operations-service/AGENTS.md": "c38b7bdad6fc171d9f0227d7405c96152577419cc1e7fd91a0e04984e635e211",
+    "agrosphere-operations-service/CHANGELOG.md": "df7c81b9dd7ddb294e660026702589fc6e3fae84d4ca65d946d31305f2fd3dc4",
+    "agrosphere-operations-service/README.md": "69df5b1b7a3526a27936735d9d5677aee9772230890c7e64d0dea3e254fd4a2d",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/crophealth/domain/FieldInspection.java": "c69282273d0072676d49d58007ef71a60203a168cb93c2dbed123a0096762554"
+  },
+  "report_sha256": {
+    "agrosphere-operations-service/target/surefire-reports/TEST-com.agrosphere.operations.CropHealthDomainTest.xml": "e4b3699c1d9f5ac0bd111973308e6792e2590f575423d572691a02f363375acb",
+    "agrosphere-operations-service/target/ii1-domain-verify.log": "43e2c65f435703b0eaec1a470629ff9f6cc988b644e1a505d06793c49b889a6b"
+  },
+  "checks": [
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/validate.py",
+      "exit": 0,
+      "result": "PASS legacy and candidate OpenAPI/schema/semantic/privacy/compatibility checks"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe scripts/build_collection_contracts.py --check; .venv/Scripts/python.exe scripts/build_workforce_contracts.py --check; .venv/Scripts/python.exe scripts/build_crop_health_contracts.py --check",
+      "exit": 0,
+      "result": "PASS all deterministic builders; no old artifact drift"
+    },
+    {
+      "repository": "agrosphere-contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_*contracts.py -v",
+      "exit": 0,
+      "result": "36 passing tests: 24 retained and 12 new"
+    },
+    {
+      "repository": "agrosphere-operations-service",
+      "command": "mvnw.cmd verify (output target/ii1-domain-verify.log)",
+      "exit": 0,
+      "result": "127 passing tests: 102 retained and 25 new; zero failures/errors/skips"
+    },
+    {
+      "repository": "agrosphere-architecture",
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "exit": 0,
+      "result": "PASS 15 accepted ADRs and 12 independent product Git roots/layout/workflow/secret-pattern checks"
+    },
+    {
+      "repository": "all 12 product roots independently",
+      "command": "git diff --check; Python source/config/index/HEAD/status/link/report/manifest preservation assertions",
+      "exit": 0,
+      "result": "PASS 111 protected release/pin/migration files, approved package bytes, Web config/index and nine untouched product roots; new review links resolve"
+    }
+  ],
+  "resolved_verification_failures": [
+    "Initial Python ZoneInfo check failed because Windows environment has no tzdata package. Removed unsupported cross-platform IANA validation from schema harness; Java ZoneId validates actual IANA/local-date/DST domain semantics; affected contract checks passed. No timezone data approximation or dependency change.",
+    "Initial Maven compile failed due missing static import in new application ports; corrected and final full verify passed."
+  ],
+  "not_executed": [
+    "II-T03 migration/JDBC/grants/DB locking/old-image/restore tests (preparation only)",
+    "II-T04 signed HTTP/JWT/reference/runtime API validation (no adapters/routes)",
+    "II-T05 real broker producer/recovery (no producer)",
+    "II-T06 Gateway/topology changes",
+    "II-T07 Web/browser/Docker packaging",
+    "II-T08 full platform/load/privacy acceptance",
+    "Diagram rendering (no diagrams authored)",
+    "Hosted CI"
+  ],
+  "open_gates": [
+    "Exact executable candidate independent acceptance/local release/pinning",
+    "II-D07/08 actual privacy/retention/deletion and workload/language/connectivity",
+    "WA D08/D09; REAL workforce disabled",
+    "M2 reference-device performance; notification delivery excluded"
+  ],
+  "preservation": "No live stack/DB/data/volume/geometry, private environment, credential/role, Git index/commit/tag/push/remote/publication, production/destructive migration or AEO mutation."
+}

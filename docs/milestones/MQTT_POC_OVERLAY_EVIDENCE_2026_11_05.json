@@ -1,0 +1,222 @@
+{
+  "recordedAtUtc": "2026-11-05T06:38:54.143789+00:00",
+  "scope": "Owner-approved TLM-02; SIMULATED new owned disposable fixtures only",
+  "engineeringStatus": "IMPLEMENTED_AND_LOCALLY_VERIFIED",
+  "ownerFunctionalAcceptance": "OPEN",
+  "parentM3Acceptance": "OPEN",
+  "approvalReviewSha256": "0d8a67aef15b295dbca267adad300ab0c94c2c88ec37cbff0c6a69c1ff7a49c9",
+  "telemetryApiSha256": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa",
+  "webImageId": "sha256:4103b16b465bd0078a4c1e92e85be48868410e959d18caa890dd3e9053504d2b",
+  "platform": {
+    "status": "PASS",
+    "scope": "SIMULATED owned disposable platform only",
+    "project": "agrosphere-3a-check-d572a47d",
+    "run": "737d9a51-c29f-4af6-85fb-cdd6507f5f11",
+    "realKeycloakGatewayEstate": true,
+    "deterministicPublisher": true,
+    "sampleCount": 6,
+    "observationCount": 18,
+    "confirmedEventCount": 18,
+    "duplicateCount": 18,
+    "processRestartSamePlan": true,
+    "realGeneratedWeb": true,
+    "planSha256": "ffa2430d2105d40dbdab9f4d22a8e73930d093df4bf8ea5df5f9e294d7c1a062",
+    "uiTraceDisabled": true,
+    "ownedWebListenerClosed": true,
+    "ownedProjectResourcesAbsent": true,
+    "ownedExtraContainersRemoved": 2
+  },
+  "realCanvasPickAndRenderedCurrentPixels": true,
+  "allAttemptProjectsResourceAbsenceAudited": [
+    "agrosphere-3a-check-d5ef31fe",
+    "agrosphere-3a-check-af9007a1",
+    "agrosphere-3a-check-23ceb290",
+    "agrosphere-3a-check-66f910c7",
+    "agrosphere-3a-check-00889b58",
+    "agrosphere-3a-check-2e77ab0c",
+    "agrosphere-3a-check-d572a47d"
+  ],
+  "webRuntimeConfigAndPackageLockUnchanged": true,
+  "checkpointHistoricalSuffixPreserved": true,
+  "roots": {
+    "agrosphere-web": {
+      "head": "466eb4c21929b615e83fa37857a17f7a278a51f1",
+      "indexSha256": "aef0f783cfb72e5f0df961263d1fd011084ef8e7db55c1bae73aaa7c47ac20c6",
+      "headAndIndexPreserved": true,
+      "unchangedBaselineFileCount": 113,
+      "changedBaselineFilesSha256": {
+        ".gitattributes": "414f457080636da2396ffbe3bc230d2247d395e3def3274784efd6797d135987",
+        ".prettierignore": "dc58ae498b08831fe2ee43fb1a81b72d78e99cc9f320fd3a1b98115ddcb35819",
+        "AGENTS.md": "bc31bf82342672d4e37fcf9acf3897364e3d0bd6acc102b93efa28862751ba1a",
+        "CHANGELOG.md": "a85e49f71a1d8a21e0d6cbe008535a67e91b3640bfae6f6d10939a5d2097949d",
+        "README.md": "fdf1b2fd7c3182843ca20b4d243b63391b083538de3dd6c05a7fcce1f10c4633",
+        "e2e/administration.spec.ts": "8add4f45a17a7ca73eec89a9466ee808fb042bb74bd790f090bacf7afa246d99",
+        "e2e/alerts.spec.ts": "2dc8c7aa909addebee368bc42fc27a9760c0ec668fbeeb8d69dec871f672e740",
+        "e2e/crop-health.spec.ts": "3acaef6f23fa67a94812eb66e1ac6fc14a4a18aba95fd082b33dcc2f11a9b22e",
+        "e2e/fixtures.ts": "a08330169653bf17d9ce8b595acc7afa733069192217e166f95285d469f77cb3",
+        "e2e/graphics.spec.ts": "c3a7adb0e630746b0b40c9839b57034097c61ac585df16c39a17a666a821d074",
+        "e2e/workforce.spec.ts": "e89e3fb41b7175e22e65bc6380c1c61c9a60f4676c030bd29a22fabaad95fb0b",
+        "package.json": "fb4a8ca0af1267123f5cf10e6d2f074d4b19b050c3c1f20790ad5e0b97f47589",
+        "playwright.config.ts": "bb575db5820292934f5a52c05595d1d280d67aed52f10e039b28a9825f5a8233",
+        "scripts/check-api.mjs": "193a9850ad84cf3136df0b55c525d66d7404494351042e9087080a866fe3a57d",
+        "scripts/preview.mjs": "7f3734ab7ec4109dc0b97703dafeebc1f1f8f385701d01e9da445841441ec8fa",
+        "src/app/core/auth/auth.service.ts": "636b2e282cfd8ade67cd5c3c258151395e59db60109e47f554ac056f5217418c",
+        "src/app/core/config.ts": "c6d2638992e48d1f82dfafc387e012f48afb264506e8a349bfae129cee3a9e0a",
+        "src/app/features/digital-twin/cesium-viewer.component.ts": "42a6528d01bb521d87e841b9218b2bf55528697bb8fc2e7179f59f6468868e58",
+        "src/app/features/digital-twin/cesium-viewer.service.ts": "c5f2cb0a76c5b8d3f9eba3a180d3be190d0aaf288faf47f6c754050f557a2664",
+        "src/app/features/digital-twin/digital-twin.component.html": "4e57cecd49941af4921cc35eec353fdb82357c9ee664d4ad63c84b08881f472a",
+        "src/app/features/digital-twin/digital-twin.component.ts": "ffb81f308d379a709a9f694fa238d8c7ce489898364e0bf680ab65607c8f04c8",
+        "src/styles.css": "aa38032aecf505461f6cffa37e5a8be1c7fbae40be8ebcbc7bdf5450fbe297b2"
+      },
+      "newFilesSha256": {
+        "contracts/telemetry.openapi.json": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa",
+        "contracts/telemetry.release.json": "32ef4da22938a9d06d9f2c82fec6b8ec2d2a66bca48af8c1aa06339cea1729f6",
+        "docs/TELEMETRY.md": "d01f0b2c6148dfc1976e24d276445b8c9b010fd76f8e5949d4f357d45dac48e1",
+        "e2e/telemetry-fixtures.ts": "6e48b20eb2c51a9c1be75b9acfdc316756d237d7ff478d584835ba9522eaee32",
+        "e2e/telemetry-graphics.ts": "7b78363e2a39d4f849deb7ab949cab33d48bdda9b9b488fe57650076f3aa5d84",
+        "e2e/telemetry-live.spec.ts": "41454eac98b33ea43e8d20fa4d92b56f19322cfb9bc78e33a5f1d3b977496627",
+        "e2e/telemetry.spec.ts": "3fe502dfb3348012e38737ff03ec789a1097de5d2e311b32603626d3ae3a4c75",
+        "src/api/telemetry.generated.ts": "26bcc1a53b0aa41c3cb2aee799c87dc724d3603baa2c1626ca235007be8808fc",
+        "src/app/features/telemetry/telemetry-overlay.spec.ts": "d65310cfe15360a2dd788fec7d43a7b60add664b4ed7ab22d9afdc867ca5d68d",
+        "src/app/features/telemetry/telemetry-panel.component.html": "425375d500b27fa1dfba29b7f06e35a7c04bc4efb4dafb808c2549fd9730a726",
+        "src/app/features/telemetry/telemetry-panel.component.ts": "d3182108683a9e5dc5ac1fa102c6bbf57af284656e94b2cd5ebc7b370167bbc2",
+        "src/app/features/telemetry/telemetry-state.ts": "78f5907675fa1b6f1fec54dd77f5c96320786a10c41739e4b49d3afd530e7022",
+        "src/app/features/telemetry/telemetry.store.spec.ts": "642df3145a3a6f8d118ff3d03755e7afccfbc14e42e6c3d2781c186cf13d8cb4",
+        "src/app/features/telemetry/telemetry.store.ts": "1015c86da5240c1173d471d68562baf85f37327fc4be90c3060375e60f2e115c"
+      },
+      "status": "M .gitattributes\n M .prettierignore\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M e2e/administration.spec.ts\n M e2e/alerts.spec.ts\n M e2e/crop-health.spec.ts\n M e2e/fixtures.ts\n M e2e/graphics.spec.ts\n M e2e/workforce.spec.ts\n M package.json\n M playwright.config.ts\n M scripts/check-api.mjs\n M scripts/preview.mjs\n M src/app/core/auth/auth.service.ts\n M src/app/core/config.ts\n M src/app/features/digital-twin/cesium-viewer.component.ts\n M src/app/features/digital-twin/cesium-viewer.service.ts\n M src/app/features/digital-twin/digital-twin.component.html\n M src/app/features/digital-twin/digital-twin.component.ts\n M src/styles.css\n?? contracts/telemetry.openapi.json\n?? contracts/telemetry.release.json\n?? docs/TELEMETRY.md\n?? e2e/telemetry-fixtures.ts\n?? e2e/telemetry-graphics.ts\n?? e2e/telemetry-live.spec.ts\n?? e2e/telemetry.spec.ts\n?? src/api/telemetry.generated.ts\n?? src/app/features/telemetry/telemetry-overlay.spec.ts\n?? src/app/features/telemetry/telemetry-panel.component.html\n?? src/app/features/telemetry/telemetry-panel.component.ts\n?? src/app/features/telemetry/telemetry-state.ts\n?? src/app/features/telemetry/telemetry.store.spec.ts\n?? src/app/features/telemetry/telemetry.store.ts"
+    },
+    "agrosphere-infrastructure": {
+      "head": "358e45e2a7d4f1637474503d7f83a3fee77fd99d",
+      "indexSha256": "825cb371f24557b1a29b22c38a086b6596cff228005ded77061d7bd5c380e9cb",
+      "headAndIndexPreserved": true,
+      "unchangedBaselineFileCount": 55,
+      "changedBaselineFilesSha256": {
+        "scripts/verify_telemetry.py": "11b9742380f0dada81e0514f0596138812c5aacdc3335d1ab37b33031bb7eebf",
+        ".github/workflows/ci.yml": "d2be27e1260d275bc475fd87847cd1115fdb7bd32e1277a8bd9a313f83c71cff",
+        "AGENTS.md": "a7661051d40ded64f849e1ca92c204f95d6935c5a25d622f8a2ad77084a396d5",
+        "CHANGELOG.md": "a53a2c61a3ffa2e4331c4cc8801fe995204a6c307f5cf9029268840af992bb7b",
+        "README.md": "d1cafb300c33b5a16d2f86f2d83d31ed2266e70a1ec6b51dee019d032d9452e3",
+        "scripts/verify_tapping.py": "9da6b32447572bd63038d6a4f05902f81c4fb71248721c70244a0d1e69ad3970"
+      },
+      "newFilesSha256": {
+        "docs/TELEMETRY_SIMULATOR.md": "5e75b207c7564514cc19c1aa9b626bed2f8dfb5583b782936f027a3b8ff0c901",
+        "scripts/telemetry_simulator.py": "b0e7c93589e102e639f51b76ab9a43bd3fe22c7f53f156fb377f87c4f1890b48",
+        "scripts/test_telemetry_simulator.py": "c27e6f332232b023022c491fbe255923301dc58f4cb05eeb2f71d867b9fcbbc4",
+        "scripts/verify_telemetry_overlay.py": "37d0160801c605bafcf2610351aac6895ef524a3536ce8b53ae8a1b619f3575a"
+      },
+      "status": "M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/validate.py\n M scripts/verify_tapping.py\n?? docs/TELEMETRY_SIMULATOR.md\n?? scripts/telemetry_simulator.py\n?? scripts/test_telemetry_simulator.py\n?? scripts/verify_telemetry.py\n?? scripts/verify_telemetry_overlay.py\n?? tests/telemetry-contracts/TelemetryObservationRecorded.schema.json\n?? tests/telemetry-contracts/manifest.json"
+    },
+    "agrosphere-architecture": {
+      "head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+      "indexSha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "headAndIndexPreserved": true,
+      "unchangedBaselineFileCount": 137,
+      "changedBaselineFilesSha256": {
+        "AGENTS.md": "efa68844f83611cf0ad789701b5dd60a49a22e890e585ecf9668ddeed157b134",
+        "CHANGELOG.md": "788fa41bf2bddd8ceac1edc8b8192bcdb8c75b5f13b8592ad7d95a876c2ff5ed",
+        "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "9b2b743ee8c6072d8f279314f123472acb6291893416fba3fccd12e17393f85f",
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "dd8ed1c348d0febc60adc8f64b833bcb3e8eb666a5f36561e3a5210d07b2477a",
+        "docs/roadmap/MILESTONES.md": "330df15dcafd9bc41e047668ad410ad5d260ab184540a7dfddb156a19a3dbe53",
+        "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "816343a7571fe7a01cbcc8a7379f7eb316d0b7fd9a4bf66ef740f5ae1c7cc477"
+      },
+      "newFilesSha256": {
+        "docs/milestones/ANALYTICS_POC_REVIEW.md": "3f4b8ee7c521502e0a29196ab647d84598dcb09aa91700856ef1bdc36e452342",
+        "docs/milestones/MQTT_POC_OVERLAY_APPROVAL.md": "6eed0cb37a6c707019cea8116872333e5cc9c474c06d5bae515b08f7e2808576",
+        "docs/milestones/MQTT_POC_OVERLAY_VERIFICATION.md": "bdd7ac5499584189e7f359ddfb61d5b77014b0705df7e1edf65e66e4f99e0770"
+      },
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/ANALYTICS_POC_REVIEW.md\n?? docs/milestones/MQTT_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/MQTT_POC_ADAPTER_EVIDENCE_2026_11_04.json\n?? docs/milestones/MQTT_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/MQTT_POC_APPROVAL.md\n?? docs/milestones/MQTT_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_REVIEW.md\n?? docs/milestones/MQTT_POC_OVERLAY_VERIFICATION.md\n?? docs/milestones/MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_RELEASE_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json"
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "indexSha256": "71118d3e37aea28ea7d6e276c4fc862d6ba532901b9fbbe58150bdfd1170085d",
+      "headAndIndexPreserved": true,
+      "unchangedBaselineFileCount": 59,
+      "changedBaselineFilesSha256": {},
+      "newFilesSha256": {},
+      "status": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M pom.xml\n M src/main/java/com/agrosphere/telemetry/SecurityConfiguration.java\n M src/main/resources/application.yaml\n?? docs/TLM01_ADAPTER_ENGINEERING_REVIEW.md\n?? docs/TLM01_ADAPTER_REVIEW.md\n?? docs/TLM01_DOMAIN_PREPARATION.md\n?? docs/TLM01_RUNTIME.md\n?? requirements-test.txt\n?? scripts/validate_contract_pins.py\n?? scripts/validate_telemetry_runtime.py\n?? src/main/java/com/agrosphere/telemetry/JwtValidationConfiguration.java\n?? src/main/java/com/agrosphere/telemetry/TelemetryConfiguration.java\n?? src/main/java/com/agrosphere/telemetry/TelemetryRuntime.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/messaging/GeneratedChannel.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/messaging/MqttTelemetry.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/ObservationJson.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryAccess.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryController.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryProblems.java\n?? src/main/java/com/agrosphere/telemetry/adapter/out/messaging/TelemetryOutbox.java\n?? src/main/java/com/agrosphere/telemetry/adapter/out/persistence/JdbcTelemetry.java\n?? src/main/java/com/agrosphere/telemetry/adapter/out/web/EstateClient.java\n?? src/main/java/com/agrosphere/telemetry/application/TelemetryIngestion.java\n?? src/main/java/com/agrosphere/telemetry/application/port/out/TelemetryPorts.java\n?? src/main/java/com/agrosphere/telemetry/domain/DeviceRegistration.java\n?? src/main/java/com/agrosphere/telemetry/domain/Observation.java\n?? src/main/java/com/agrosphere/telemetry/domain/ObservationPolicy.java\n?? src/main/resources/contracts/RELEASE.json\n?? src/main/resources/contracts/events/telemetry/v1/TelemetryObservationRecorded.schema.json\n?? src/main/resources/contracts/mqtt/Observation.schema.json\n?? src/main/resources/contracts/openapi/telemetry-service.yaml\n?? src/main/resources/db/migration/V2__simulated_telemetry.sql\n?? src/test/java/com/agrosphere/telemetry/ContractPinsTest.java\n?? src/test/java/com/agrosphere/telemetry/ObservationJsonTest.java\n?? src/test/java/com/agrosphere/telemetry/ObservationPolicyTest.java\n?? src/test/java/com/agrosphere/telemetry/TelemetryAdaptersIT.java"
+    },
+    "agrosphere-contracts": {
+      "head": "6461db157213c57ed3448480e2099ef463b7c889",
+      "indexSha256": "9fc9ff0c81a96569cbf754b9ff2ed408c9d68250e205dd0f1efd9393c77a60f0",
+      "headAndIndexPreserved": true,
+      "unchangedBaselineFileCount": 206,
+      "changedBaselineFilesSha256": {},
+      "newFilesSha256": {},
+      "status": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M openapi/telemetry-service.yaml\n M scripts/alert_contract_validation.py\n M scripts/alert_privacy_contract_validation.py\n M scripts/crop_health_contract_validation.py\n M scripts/validate.py\n M scripts/workforce_contract_validation.py\n?? docs/telemetry-poc/CANDIDATE_MANIFEST.json\n?? docs/telemetry-poc/CANDIDATE_REVIEW.md\n?? docs/telemetry-poc/RELEASE_0_10_0.json\n?? docs/telemetry-poc/candidate/events/telemetry/v1/TelemetryObservationRecorded.schema.json\n?? docs/telemetry-poc/candidate/examples/AIR_TEMPERATURE.json\n?? docs/telemetry-poc/candidate/examples/INTERVAL_RAINFALL.json\n?? docs/telemetry-poc/candidate/examples/LatestReadings.json\n?? docs/telemetry-poc/candidate/examples/SOIL_MOISTURE.json\n?? docs/telemetry-poc/candidate/examples/TelemetryObservationRecorded.json\n?? docs/telemetry-poc/candidate/mqtt/Observation.schema.json\n?? docs/telemetry-poc/candidate/openapi/telemetry-service.yaml\n?? docs/telemetry-poc/previous-0.9.0/VERSION\n?? docs/telemetry-poc/previous-0.9.0/openapi/telemetry-service.yaml\n?? events/telemetry/v1/TelemetryObservationRecorded.schema.json\n?? examples/telemetry/v1/AIR_TEMPERATURE.json\n?? examples/telemetry/v1/INTERVAL_RAINFALL.json\n?? examples/telemetry/v1/LatestReadings.json\n?? examples/telemetry/v1/SOIL_MOISTURE.json\n?? examples/telemetry/v1/TelemetryObservationRecorded.json\n?? mqtt/Observation.schema.json\n?? scripts/build_telemetry_contracts.py\n?? scripts/telemetry_contract_validation.py\n?? scripts/telemetry_release_compatibility.py\n?? scripts/test_telemetry_contracts.py"
+    }
+  },
+  "artifactsSha256": {
+    "agrosphere-web/target/tlm02-install.log": "8518ed4b6e60311ffe2c9b244e41d1cb6bb289086d801989d8e2413fef6b4cac",
+    "agrosphere-web/target/tlm02-unit.log": "ca53a8406122a9b6a38481444e59a8def948c68b9429dea99877991f61048ca8",
+    "agrosphere-web/target/tlm02-ui-final.log": "4c6e539f7a2c67314d5ec4d0d85e20ebb9e6021c96190cecbe12ff323ea8df65",
+    "agrosphere-web/target/tlm02-graphics-color.log": "1d76d2640c3839029e45a7f7af73a78cba8bd429bb68e9bdebecdc6f4879de59",
+    "agrosphere-web/target/tlm02-build.log": "b052e85df72b0fa3fa778f77bc99ac73fc0adbcbca940d5aa0bb7ad81f2d636f",
+    "agrosphere-web/target/tlm02-lint.log": "58bedc4d9e0e5696852e1a269e195f67680babd19ccd1aed921b2748b9a51d91",
+    "agrosphere-web/target/tlm02-typecheck.log": "78996b6c3be26db4eb59b6344e188a2e5edec793795a3155481e3605508bafca",
+    "agrosphere-web/target/tlm02-format.log": "51b762d2f3e78c96e5ed87bcf017c44b36b452690efd702decd220885181d73d",
+    "agrosphere-web/target/tlm02-api.log": "3c36f6a69a9346aa85854174e3f2e0756bbe28fcf24c7136fe8368ae6e0eeec7",
+    "agrosphere-web/target/tlm02-docker-camera-verified.log": "1ce8c2b0e61a6b416e399caa22feb4dfd7a79bb9322dcbe13055c27811106092",
+    "agrosphere-web/target/telemetry-generated-live.png": "f1562c294950f1eb26a42de252dfb347d8ed318b201e5fdbb544e9aaad40ff02",
+    "agrosphere-infrastructure/target/tlm02-platform-color-verified.log": "b020c6dcd891befd9ce8547e4d84bcd2dc2be77c18d3f1a44b72fda51f443a36",
+    "agrosphere-infrastructure/target/telemetry-overlay-browser.log": "f153e65bcf515711322ff84bbcb7a168bdf358628c3bbcfc217aba99a65eecfb",
+    "agrosphere-infrastructure/target/telemetry-overlay-platform.json": "6fc39ffe4cb2e79f3e7fef39a92a7a5190e54d62210615597ef08496b04c8f54",
+    "agrosphere-infrastructure/target/tlm02-validation.log": "c6250fe956164a0de576e4ffe36cda3cfef3b7cddd1ae0e785e13b9c518f6252",
+    "agrosphere-infrastructure/target/tlm02-simulator-unit.log": "2c4dd2bc7d05c067f148b0403bbe7f181548cc16890c429eed5cb5d0f4d65115",
+    "agrosphere-infrastructure/target/tlm02-watchdog-unit.log": "0e4c321d7594e6499bd0f5272c86352a965dbc8ef2c3fded47cce774d55c98a7",
+    "agrosphere-architecture/target/tlm02-document-validation.log": "d1b9b7d2d4bee2d3f123cfd296072ebc5de8822164b0f26ea5ef03c289707776",
+    "agrosphere-architecture/target/tlm02-diagram-validation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "checks": {
+    "webInstallLintFormatTypeApiBuild": "PASS",
+    "webUnit": {
+      "passed": 80,
+      "files": 20
+    },
+    "mockUi": {
+      "passed": 31
+    },
+    "graphics": {
+      "passed": 1,
+      "softwareWebGlOnly": true
+    },
+    "realGeneratedBrowser": {
+      "passed": 1,
+      "traces": "OFF"
+    },
+    "publisherUnit": {
+      "passed": 7
+    },
+    "retainedWatchdogUnit": {
+      "passed": 23
+    },
+    "infrastructureValidateCompilePlaceholderCompose": "PASS",
+    "architectureWorkspaceAndDiagramSyntax": "PASS",
+    "hostedCI": "NOT_RUN",
+    "referenceDevicePerformance": "OPEN",
+    "existingAccountOrStackVerification": "EXCLUDED_NOT_RUN",
+    "currentCoordinationLocalLinks": {
+      "passed": 52,
+      "historicalCheckpointSuffixUnchanged": true
+    },
+    "diffWhitespaceAndFinalSourceIndexAudit": "PASS"
+  },
+  "limits": [
+    "No owner acceptance or original milestone closure inferred",
+    "No REAL/offline/English-French/production readiness inferred",
+    "Unchanged TLM-01 rejection/reconnect checks retained as separately dated historical evidence"
+  ],
+  "next": {
+    "increment": "ANL-01 isolated Contracts candidate + Analytics pure domain/ports/tests preparation",
+    "authorization": "PENDING",
+    "review": "ANALYTICS_POC_REVIEW.md",
+    "sha256": "3f4b8ee7c521502e0a29196ab647d84598dcb09aa91700856ef1bdc36e452342"
+  },
+  "environment": {
+    "os": "Windows",
+    "python": "3.14.2",
+    "node": "24.13.1",
+    "npm": "11.8.0",
+    "dockerEngine": "29.8.2"
+  }
+}

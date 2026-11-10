@@ -1,0 +1,7 @@
+# ANL-02 exact executable/local release approval — 2026-11-05
+
+Owner response: **"i approve"**, directly to the exact fourteen-artifact candidate/local Contracts 0.12.0 release and independent Analytics pin request, with the candidate review open in the IDE.
+
+Accepts [exact review](../../../agrosphere-contracts/docs/analytics-environment-poc/CANDIDATE_REVIEW.md), SHA-256 `841278e1fe7576e137cb48ec68b3d9509e087baecd75729d6d3e6379dc6db924`, and [manifest](../../../agrosphere-contracts/docs/analytics-environment-poc/CANDIDATE_MANIFEST.json), SHA-256 `1759e5d95fb3602b623b995e4650f035b67dbb550760116587f46c031ca7d111`: fourteen candidate artifacts/three unchanged input fingerprints. Authorizes local independent Contracts 0.12.0 archive/promotion/release metadata and Analytics API/unchanged Telemetry input pins, retaining four collection-v2 inputs and old API/RELEASE archive. Compatibility validators/builders must preserve exact prior artifacts through archives; no weakened legacy checks or sibling source dependency.
+
+Preparation/executable gates are satisfied for this exact scope; do not repeat them. [Runtime package](../../../agrosphere-analytics-service/docs/ANL02_ADAPTER_REVIEW.md) remains a later separate decision, unapproved. No parser/SQL/AMQP/HTTP/Web/Gateway runtime or provisioning authority. Preserve prior reviewed bytes, migrations/config/data, Git indexes/commits/remotes, and original owner/M4/M1/M2/field/REAL gates. No existing-stack/private config/account/role/credential, REAL, Git publication/deployment or AEO action.

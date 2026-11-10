@@ -1,0 +1,116 @@
+{
+  "link_check": "PASS: package and current coordination links resolve",
+  "original_coordination_suffixes_preserved": {
+    "DEVELOPMENT_CHECKPOINT.md": true,
+    "APPLICATION_DEVELOPMENT_WORKFLOW.md": true,
+    "../roadmap/IMPLEMENTATION_BACKLOG.md": true
+  },
+  "product_git_preservation": {
+    "agrosphere-ai-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-analytics-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-api-gateway": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-architecture": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-contracts": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-estate-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-immersive": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-infrastructure": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-operations-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-spatial-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-telemetry-service": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    },
+    "agrosphere-web": {
+      "head_unchanged": true,
+      "staged_stat_unchanged": true,
+      "index_bytes_unchanged": true
+    }
+  },
+  "package_sha256": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+  "excluded": "AEO/private configuration/data; no broad filesystem attestation",
+  "preparation_command_note": "First roadmap update command had a Python syntax error before any execution; corrected command completed. Contracts initial fixture failure and retry are in review checks.",
+  "final_status_comparison": {
+    "agrosphere-ai-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-analytics-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-api-gateway": {
+      "status_unchanged": true
+    },
+    "agrosphere-architecture": {
+      "status_unchanged": false
+    },
+    "agrosphere-contracts": {
+      "status_unchanged": true
+    },
+    "agrosphere-estate-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-immersive": {
+      "status_unchanged": true
+    },
+    "agrosphere-infrastructure": {
+      "status_unchanged": true
+    },
+    "agrosphere-operations-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-spatial-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-telemetry-service": {
+      "status_unchanged": true
+    },
+    "agrosphere-web": {
+      "status_unchanged": true
+    }
+  },
+  "final_architecture_workspace_validation": {
+    "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+    "exit_code": 0,
+    "result": "PASS after coordination changes"
+  }
+}

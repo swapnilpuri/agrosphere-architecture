@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-01",
+  "scope": "Architecture documentation only; historical verification not rerun",
+  "architecture_head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+  "architecture_status_before": "",
+  "index_before": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+  "files_before": {
+    "docs/roadmap/MILESTONES.md": "34563c68abdb62ba7331cea2fede3c0ed355c4be54daaf3dc7165f6ef1ec3a19",
+    "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "3fa42a96425a46b021331b961952082b241ec194f629b2ceaff4d987cd26c5a8",
+    "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "786a78ecf6e66a9068d827b7e3ed79e5852592bb834cbbb10f2be8204476fa10",
+    "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "8b51d33b81272922ec29e5c58bf327015aa8fb4c772bca683e3d1887d530b435",
+    "docs/requirements/PRODUCT_VISION.md": "dfbff96b61998a54e2fb2f8bd302df7da0393591e6f2792637515cb31417d870",
+    "docs/requirements/POC_SCOPE.md": "a898a2067e57f85d05433c019aeb8ad5831de290c0e9d5b14fc725671cdb6319",
+    "docs/roadmap/IMPLEMENTATION_BACKLOG.md": "b6f2b02088b7d716e5e5ddf4aa8aeade8ddc35840d1a8d4aa00ca1f6a89fdd3a",
+    "CHANGELOG.md": "b151d69ebf75785a267e38be9c0ca13ef22f12aaae4ed3b1f550596d263c7670"
+  },
+  "checkpoint_prefix_length": 122146,
+  "source_observations": {
+    "telemetry": "Application/SecurityConfiguration/package-info and V1 messaging foundation only; OpenAPI paths empty",
+    "analytics": "Application/SecurityConfiguration/package-info and V1 messaging foundation only",
+    "ai": "liveness only; no business inference",
+    "immersive": "descriptor/config/toolchain/validator only; no gameplay or editor evidence"
+  },
+  "checks": [
+    {
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "result": "PASS: architecture, sixteen ADRs/workflow and twelve independent product roots; heuristic scan only"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS; pre-existing mixed line-ending warnings; no normalization of protected artifacts"
+    },
+    {
+      "command": "pinned target/plantuml.jar SHA-256 then java -jar target/plantuml.jar -checkonly docs/architecture/*.puml diagrams/milestone-3a/*.puml diagrams/milestone-3b/*.puml",
+      "result": "PASS exit 0; checksum aa4a1d06f8911c4b842beff4828dd955be431692b631a312d04c0e9fab9581de"
+    },
+    {
+      "command": "local relative-link, historical checkpoint suffix, index and HEAD assertions",
+      "result": "PASS: 35 links; full previous checkpoint byte suffix retained; Architecture index/HEAD unchanged"
+    }
+  ],
+  "files_after": {
+    "docs/roadmap/MILESTONES.md": "3176a9c364813cf7c3cc57c24968ca674d2780fe0baca35a47436f121dbab816",
+    "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "8cc0dd40022fc7909344a458d99e377335ad465dc508429e8399109b11a960af",
+    "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "bf9a4cc06d7f6f945935a8e3303548c2a041a889bd37714155db004aeda75626",
+    "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "a2b068cd4f60ca7299f80363fe3f1ca62c005edb162b23602abb5cd4838ff558",
+    "docs/requirements/PRODUCT_VISION.md": "8e5c193f2fc66a2dcdea14c6f128fa9b8811a3fe7b839b2116885e7b6609c2ab",
+    "docs/requirements/POC_SCOPE.md": "e8946d33f11a3a0bf918b6cdca86276b265afb933479ba7d748610e72634b2fa",
+    "docs/roadmap/IMPLEMENTATION_BACKLOG.md": "db174400bcfd75eb55c77c91d463353739c74392d0ad68cb204841b88216acb8",
+    "CHANGELOG.md": "4382215e7da0a1fa4e3d72536f1a1139a9e76c38ccfa3aac60d38eccce111461",
+    "docs/milestones/MQTT_POC_REVIEW.md": "84ba22535e81de2296d76746c612325571ea6364962bb42d7fe2138716dd3dbd"
+  },
+  "source_observation_hashes": {
+    "agrosphere-telemetry-service/src/main/java/com/agrosphere/telemetry/Application.java": "223fe8b7b7fe95ea77be8074f9a512a966fbcd3c66a62d59dfe9e0417e13c582",
+    "agrosphere-telemetry-service/src/main/java/com/agrosphere/telemetry/SecurityConfiguration.java": "6488200b44957ede28fc5a6695d15d910e6d61228b315cf7ae4b916246fc745f",
+    "agrosphere-telemetry-service/src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "agrosphere-contracts/openapi/telemetry-service.yaml": "1bfc36028bd17709009e45ab1625da80307fdfb8d89a37b6487f8e7be3a9a829",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/Application.java": "efb3c80439833ae946df1c8841fdfde5f2509d1fbafb00cc904650ca501de7cb",
+    "agrosphere-ai-service/src/agrosphere_ai/main.py": "584189ebb21fb2d22023563ce379f60fe848762f17cc3222440bfef4b157645a",
+    "agrosphere-immersive/AgroSphere.uproject": "dc08e581743a18d519a40031d98be1666630997e3cfdc7cf5c417e38d66b4d24",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/TappingService.java": "b86cbbccbb38f189a243a98dabfecaa97af82a35eeed4b7a9fcd15e866c019d0",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/application/CollectionService.java": "9d9099d465dc3fe2b4755964263c345fc4625274b10fb77562d2e0fbeed09867",
+    "agrosphere-operations-service/src/main/java/com/agrosphere/operations/alerts/application/PrivacyAlertRuntime.java": "f7efb528231fb98ee77fd30fe93d664e46d13e6c92118e0df4287e2a7420bdee",
+    "agrosphere-operations-service/src/main/resources/db/migration/V7__alert_privacy_storage.sql": "d3d2596ad926a35de5904c86cbcf7daa6a7a21327b50f70343dc3703ffef83c7",
+    "agrosphere-web/src/app/features/alerts/alerts.api.ts": "98cbd10fd22e9d54ad1d6c46b233e51b52a4368c15a5a3f575ea1920486b7071",
+    "agrosphere-operations-service/docs/ALERTS_PRIVACY_MAINTENANCE.md": "06793c365ff15841542a2e1ae39ef041fceb75a16856de114b96cb48bf7ad587"
+  },
+  "limitations": [
+    "No application/Maven/browser/DB/MQTT/Unreal/device/load/restore suites executed; cited execution remains historical.",
+    "No hosted CI or owner functional acceptance claimed.",
+    "Read-only sibling source inventory corroborates presence/foundation, not complete current behavior.",
+    "Only Architecture had a before/after Git baseline in this increment; no sibling mutation was performed."
+  ],
+  "next_gate": "Accept/revise MQTT_POC_REVIEW.md exact package for Contracts candidate and pure Telemetry domain/ports/tests; not exact executable acceptance or target execution",
+  "preservation": "No AEO/private configuration/existing data/Git index/commits/remotes/deployment action. Prior checkpoint preserved as byte suffix."
+}

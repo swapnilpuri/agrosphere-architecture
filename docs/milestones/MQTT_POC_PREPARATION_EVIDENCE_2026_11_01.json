@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-01",
+  "scope": "TLM-01 approved isolated candidate and pure domain/ports/tests only",
+  "accepted_domain_package_sha256": "84ba22535e81de2296d76746c612325571ea6364962bb42d7fe2138716dd3dbd",
+  "candidate_manifest_sha256": "174140bc1db129ab879d9e431e9065a6715746c31c70fa0ec2bb7992063f01b0",
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+      "index_sha256_unchanged": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "protected_prior_file_count": 129,
+      "protected_fingerprints_sha256": "3c242d76e4d52ed02b89b981070f1b7acd4781e533ecb0431f693453ba53ab01",
+      "before_status": " M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json\n",
+      "after_status": " M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/MQTT_POC_APPROVAL.md\n?? docs/milestones/MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json\n",
+      "changed_or_new_hashes": {
+        "docs/milestones/MQTT_POC_APPROVAL.md": "a8e90ef5ecd40f2f35cc8cf1d2ed58126c110bd65f73ea39cfcf76a9584af839",
+        "AGENTS.md": "e520bae9fff571483b01c363f26682010e959dfcef30ec9ea4fbfe97e658337c",
+        "CHANGELOG.md": "0db047714a1fd09504b983898b2e4c0eee06cc607e4834869016efb078b85be5",
+        "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "d76af97e2f86296149d1c418757d72bef47d6ce4066f5a0a5a3a361bce8be3ca",
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "f41d69fb740bae1c8d7a730591bb7c4a16329d00484b3b561478d3301d8504e3",
+        "docs/roadmap/MILESTONES.md": "b1730004faf3cdf32b8854b5b83fcc13e990fe1065be0e33f438564dcbc717f6",
+        "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "97bb7732215010618b2412006156d7429f926c01bfb3bb31463ed1afd1c40e35"
+      }
+    },
+    "agrosphere-contracts": {
+      "head": "6461db157213c57ed3448480e2099ef463b7c889",
+      "index_sha256_unchanged": "9fc9ff0c81a96569cbf754b9ff2ed408c9d68250e205dd0f1efd9393c77a60f0",
+      "protected_prior_file_count": 176,
+      "protected_fingerprints_sha256": "bab58a1a991865624c8c12fbe679a1cd55f558e7f2c09a2874016a412b05e8b2",
+      "before_status": "",
+      "after_status": " M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/validate.py\n?? docs/telemetry-poc/\n?? scripts/build_telemetry_contracts.py\n?? scripts/telemetry_contract_validation.py\n?? scripts/test_telemetry_contracts.py\n",
+      "changed_or_new_hashes": {
+        "docs/telemetry-poc/CANDIDATE_MANIFEST.json": "174140bc1db129ab879d9e431e9065a6715746c31c70fa0ec2bb7992063f01b0",
+        "docs/telemetry-poc/CANDIDATE_REVIEW.md": "dccffe810bf4c7b52a69754a192d6351c8ebade453188a4b7c7d0025d99ae141",
+        "docs/telemetry-poc/candidate/events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+        "docs/telemetry-poc/candidate/examples/AIR_TEMPERATURE.json": "8b7c9d69d0475845235f5ca4f7dbf0d87bcb5aeee241d019ef1484daa0fb8e99",
+        "docs/telemetry-poc/candidate/examples/INTERVAL_RAINFALL.json": "c90a6dc7c6cece0b820c6aa3d27971848a4ebbcf8280ad13f877370334b2790e",
+        "docs/telemetry-poc/candidate/examples/LatestReadings.json": "ec2a3af20fcea17c702b9a201d77633affc5ba80d54294179df7b96a96991ff6",
+        "docs/telemetry-poc/candidate/examples/SOIL_MOISTURE.json": "8880bbd45b494b2d0eedbb19f65a651e674eeddb2f03fd2f7f5182feafd735a3",
+        "docs/telemetry-poc/candidate/examples/TelemetryObservationRecorded.json": "bf30e8466dce6064ccc0d3fe00f6869fd534e399fd9fe3c74cd26f28106f97b9",
+        "docs/telemetry-poc/candidate/mqtt/Observation.schema.json": "bf3a58d8e5929f367a95344fc7a34c4f548ad9c44fc833d7415dbe8e7b44b255",
+        "docs/telemetry-poc/candidate/openapi/telemetry-service.yaml": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa",
+        "scripts/build_telemetry_contracts.py": "3412c37a8b004c3ba980047c7b30e157fe724c284d026c1628d721848f895323",
+        "scripts/telemetry_contract_validation.py": "bee896a3d0767f60eac6427685381ab122da38f62d5664f9a31d5f89cdb96d5b",
+        "scripts/test_telemetry_contracts.py": "19a1224112ead00304842daf29363fef251bdf0ba219ee856618c2b5ca7234d2",
+        ".gitattributes": "816e989e20c18eb6e93724c5fd61a3b0aba321c29cccd146568c48f573439c97",
+        ".github/workflows/ci.yml": "70c5e4c206ba90d4d24e6dafd1024ea40b6d99eb11cb676702fe523282f91dd4",
+        "AGENTS.md": "6f52b09b92e207768b763ea19e4457dc98f17d18eb30125e8e25bbb81d13cbea",
+        "CHANGELOG.md": "dac086a89143f74a3685ce72f670108dad3923481fc4ceeb7a4651cf1c188448",
+        "README.md": "1bcb05df9dc0f22d93a8bd6bc16a056c4a8d0dc2604f12d02b2e8d5c0a5b6ea5",
+        "scripts/validate.py": "c09f5accec8ca0b74c56808dd778363c51300a47200c3f70daa2206fe2362a51"
+      }
+    },
+    "agrosphere-telemetry-service": {
+      "head": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+      "index_sha256_unchanged": "71118d3e37aea28ea7d6e276c4fc862d6ba532901b9fbbe58150bdfd1170085d",
+      "protected_prior_file_count": 23,
+      "protected_fingerprints_sha256": "7f6d841b308e2c5274a41714ccc36bd85a3905230acc04cebe3dec667560393f",
+      "before_status": "",
+      "after_status": " M AGENTS.md\n M CHANGELOG.md\n M README.md\n?? docs/\n?? src/main/java/com/agrosphere/telemetry/application/port/out/TelemetryPorts.java\n?? src/main/java/com/agrosphere/telemetry/domain/DeviceRegistration.java\n?? src/main/java/com/agrosphere/telemetry/domain/Observation.java\n?? src/main/java/com/agrosphere/telemetry/domain/ObservationPolicy.java\n?? src/test/java/com/agrosphere/telemetry/ObservationPolicyTest.java\n",
+      "changed_or_new_hashes": {
+        "docs/TLM01_DOMAIN_PREPARATION.md": "f0ccefcf34fd7bd4bc77c7bb13f4aedc3b7f522e89bafcd66bf04b9b2e49eb28",
+        "src/main/java/com/agrosphere/telemetry/application/port/out/TelemetryPorts.java": "58c59a50b56c74d66c43adc4e68eae88027d6a039aeb04b7ddca69ec7b759664",
+        "src/main/java/com/agrosphere/telemetry/domain/DeviceRegistration.java": "d4d2b14a8de2cad86a28cbdfd4d140a02a066b54875f9112388962c67a568ae6",
+        "src/main/java/com/agrosphere/telemetry/domain/Observation.java": "e87b9e3c48a83f650fcd0774800623096516683d6c2912d2023e5eacf580be1d",
+        "src/main/java/com/agrosphere/telemetry/domain/ObservationPolicy.java": "a90315b4f7954ae30e045f37a37d8bd5c578ac62852342ada7b0842e567350d8",
+        "src/test/java/com/agrosphere/telemetry/ObservationPolicyTest.java": "756341e40a335fca79251b2ff1145f90bdd9d66645c39bbf85a38e539d410f84",
+        "AGENTS.md": "2868611560509da2293bf555ce12600951c1ba97cbeaf8f551076a3faa9fa8d9",
+        "CHANGELOG.md": "f28954bdc6d9b0ae444918cfe418e3b53277c2c25d27a9162bdbd2652da5cdb0",
+        "README.md": "c34fe2338ac5fa639ffe4e34fa3dd83fecc38b065375ac163175631d288d91f6"
+      }
+    }
+  },
+  "prior_checkpoint_suffix_preserved": true,
+  "links_checked": 35,
+  "raw_candidate_attributes": "docs/telemetry-poc/candidate/openapi/telemetry-service.yaml: text: unset\ndocs/telemetry-poc/CANDIDATE_MANIFEST.json: text: unset\n",
+  "java": "C:/myprograms/jdk-25.0.2 selected per-process; default Java 27 not used for Maven",
+  "checks": [
+    {
+      "command": "Telemetry mvnw.cmd --batch-mode --no-transfer-progress verify",
+      "result": "PASS: 22 tests (18 new domain + 4 retained mock security); zero failures/errors/skips",
+      "log": "agrosphere-telemetry-service/target/tlm01-verify.log",
+      "log_sha256": "e828a77d80388350a7987aa785028118de751d9f08d37ae2a892dd2c0ff85972"
+    },
+    {
+      "command": "Contracts .venv/Scripts/python.exe scripts/validate.py",
+      "result": "PASS existing compatibility and new isolated TLM candidate"
+    },
+    {
+      "command": "Contracts scripts/build_telemetry_contracts.py --check",
+      "result": "PASS deterministic eight-artifact manifest"
+    },
+    {
+      "command": "Contracts .venv/Scripts/python.exe -m unittest discover -s scripts -p 'test_*contracts.py' -v",
+      "result": "PASS 71 tests: 59 retained + 12 new"
+    },
+    {
+      "command": "Contracts targeted telemetry unittest after adding year-limit regression and overflow-safe timestamp subtraction",
+      "result": "PASS 12 cases; exact candidate bytes unchanged"
+    },
+    {
+      "command": "Architecture python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "result": "PASS sixteen ADRs/layout/workflow and twelve independent product roots; heuristic secret scan only"
+    },
+    {
+      "command": "Pinned PlantUML SHA-256 + java -jar target/plantuml.jar -checkonly docs/architecture/*.puml diagrams/milestone-3a/*.puml diagrams/milestone-3b/*.puml",
+      "result": "PASS exit 0; checksum aa4a1d06f8911c4b842beff4828dd955be431692b631a312d04c0e9fab9581de"
+    },
+    {
+      "command": "git diff --check in Architecture, Contracts, Telemetry",
+      "result": "PASS; mixed-newline warnings only, no protected artifact normalization"
+    },
+    {
+      "command": "Protected-file/HEAD/index/checkpoint-suffix/link/attribute/XML assertions",
+      "result": "PASS"
+    }
+  ],
+  "reports": [
+    {
+      "path": "agrosphere-telemetry-service\\target\\surefire-reports\\TEST-com.agrosphere.telemetry.ObservationPolicyTest.xml",
+      "sha256": "d5825598e1c917df3a4f16f10b22aede91d4586bc93e5daea33f4343f1618531",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "agrosphere-telemetry-service\\target\\surefire-reports\\TEST-com.agrosphere.telemetry.SecurityPolicyTest.xml",
+      "sha256": "30c0e5b4ca9c522fc7e159d3f1ea322fb835139de9507d857d334fd09504267b",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "limitations": [
+    "No live MQTT/DB/broker/signed business JWT/outbox/restart/transaction/overlay/device/performance/integration execution; pure rules and offline oracles only.",
+    "No hosted CI or owner functional acceptance; TLM-AC01-06 runtime/POC acceptance remains open.",
+    "Full Contracts unittest output observed through tool transcript; no separate raw unittest log retained.",
+    "Initial preparation command had Python syntax error before execution; corrected before mutation. Two absent guessed source paths were corrected using inventory.",
+    "Report inventory initially included a stale ApplicationTest.xml (one test) absent from current sources and current Maven run; left untouched and excluded. Final evidence uses only the two suites named in the current 22-test log."
+  ],
+  "next_gate": "Exact eight-artifact executable acceptance and proposed local Contracts 0.10.0 archive/promotion/release metadata/Telemetry pins; no adapter/provisioning authority yet",
+  "exclusions": "No AEO/private configuration/existing records or volumes/roles/credentials/Git index/commit/remotes/deployment action."
+}

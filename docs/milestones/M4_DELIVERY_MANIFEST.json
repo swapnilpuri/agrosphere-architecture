@@ -1,0 +1,11 @@
+{
+  "revision": 1,
+  "status": "PROPOSED; owner approval pending",
+  "scope": "single consolidated remaining-M4 package; no product implementation acceptance",
+  "artifacts": {
+    "M4_DELIVERY_PACKAGE.md": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+    "M4_RECONCILIATION_BASELINE_2026_11_05.json": "c584f2c6d8316daa8c9e37cab275a08abf62f8543b6182a08c824a2dee4fb897",
+    "M4_RECONCILIATION_SOURCE_EVIDENCE_2026_11_05.json": "dc7011c91e0533323fd7972ff852e122cf014a0931f2e39ccd6fe5383b8a6eb5",
+    "M4_REVIEW_CHECKS_2026_11_05.json": "a6323d1dced333472ca4650b58a8d85cfe919244c678b697df3698c60a3aa2f0"
+  }
+}

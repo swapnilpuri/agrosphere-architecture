@@ -1,3 +1,11 @@
+# Milestone delivery anchor — 2026-11-05
+
+Use the [consolidated remaining-M4 package](../milestones/M4_DELIVERY_PACKAGE.md) as the one proposed delivery review. It covers all remaining M4 capabilities through a working generated demonstration, with explicit bounded yield and deterministic-provider scope decisions. Approval is pending; this file grants no implementation authority. Old priority rows and Ollama expectation below are retained historical requirements; D07 proposes their explicit POC disposition rather than silently treating an LLM as delivered. Existing original-milestone/field/REAL gates remain in the sole completion checklist.
+
+# Current sequencing anchor — 2026-11-01
+
+The [original M0–M5 roadmap](MILESTONES.md) and [completion checklist](PROJECT_COMPLETION_CHECKLIST.md) now govern progress and the finite SIMULATED local POC finish line. The [checkpoint](../milestones/DEVELOPMENT_CHECKPOINT.md) owns next action/authorization. Offline Android capture/sync and English/French remain confirmed field-release requirements; real-data/production operating readiness is tracked separately. All accepted requirements/approvals persist. Foundation-only/future-work/old-priority statements below are historical, superseded for current status and scheduling; they grant no new implementation authority.
+
 # Implementation backlog
 | Priority / ID | Work | Owner | Acceptance / dependency |
 |---|---|---|---|

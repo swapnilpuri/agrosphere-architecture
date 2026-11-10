@@ -1,105 +1,65 @@
-# AgroSphere project completion checklist
+# AgroSphere completion and acceptance checklist
 
-As of 2026-11-01 (America/Chicago). This is the reconciled progress index for the original rubber-plantation POC and remaining operating/rollout work. It supplements the historical [milestones](MILESTONES.md) and [backlog](IMPLEMENTATION_BACKLOG.md); their early foundation-only/pending-client labels do not override newer exact verification/approval records. Current execution state remains in the [checkpoint](../milestones/DEVELOPMENT_CHECKPOINT.md).
+Reconciled 2026-11-01; consolidated M4 delivery review update 2026-11-05 (America/Chicago). [M0â€“M5 roadmap](MILESTONES.md) defines the finite original SIMULATED local POC and increment criteria. This is the single completion tracker; [checkpoint](../milestones/DEVELOPMENT_CHECKPOINT.md) owns next action/authority; original reports retain evidence; the [client register](../milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md) alone owns answers. Checked means only the stated implementation/evidence exists, never parent milestone or owner acceptance. No percentage or date promised.
 
-No percentage or completion date is assigned: remaining scope, staffing, device measurements, hosting and client facts are unresolved. Local generated verification, running-stack delivery, owner functional acceptance and production readiness are distinct. A checked item below means only the explicitly stated evidence exists. It does not accept a parent milestone or authorize the next one.
+## Track A â€” original POC, M0â€“M5
 
-## Evidence-backed starting point
+| Milestone | Implementation / historical verification | Remaining verification and exit | Owner acceptance |
+|---|---|---|---|
+| M0 | Independent foundations/contracts/CI/configuration | Reproduce exact independent artifacts/setup/owned teardown; demo asset/notices review | OPEN: explicit foundation/whole-demo acceptance |
+| M1 | Scoped 1A/B/C CRUD/GIS/JWT/outbox/isolation; [matrix](../milestones/reconciliation-1a-3a/ACCEPTANCE_MATRIX.md) | Reproduce identity/geometry/recovery; query-load measurement; reconcile FR-01 company gap/accepted ADR 0008 narrowing and inferred division lifecycle. General CRS/external hosting not delivered | OPEN: broad original-scope disposition; no full FR-01 claim |
+| M2 | Functional Cesium/Gateway/details/provenance/admin UI | Named desktop frame/view/asset/memory measurements and reviewed budgets; canonical walkthrough | OPEN; performance PARTIAL; Android gate separate |
+| M3 | Tapping/DRC/WA/II/AN/privacy locally implemented/generated verified; [TLM-01 adapters](../milestones/MQTT_POC_ADAPTER_VERIFICATION.md), exact local Contracts 0.10.0 pins; [approved TLM-02 finite publisher/Web detail/overlay verification](../milestones/MQTT_POC_OVERLAY_VERIFICATION.md) | TLM-01/02 owner connected functional acceptance; actual demo alert controls below; scoped WA/II/AN dispositions; integrated auth/replay/recovery walkthrough | OPEN: owner connected generated and parent-M3 acceptance |
+| M4 | ANL-01 materialized history/API/Web and finite profile engineering verified; [ANL-02 immutable environment/API/Web and generated runtime verified](../milestones/ANALYTICS_ENVIRONMENT_ADAPTER_VERIFICATION.md), local Contracts 0.12.0; default disabled. AI foundation only | [Consolidated remaining-M4 revision 1](../milestones/M4_DELIVERY_PACKAGE.md) PENDING: explicit D01–D10 scope/security/provider/contract/cost decisions, then autonomous E01–E10 implementation and actual connected demo/recovery/cleanup evidence. No AI completion from documentation | OPEN: functional scope, evaluated results, synthetic limits and connected ANL acceptance; independent of engineering/package approval |
+| M5 | Descriptor/toolchain/architecture only | XR-01/02 shared estate, validated editor/plugin, supported VR and comfort/frame evidence; MR feasibility/accuracy | OPEN; desktop alone insufficient |
 
-| Capability | Current evidenced state | Evidence / acceptance still needed |
-|---|---|---|
-| Independent foundation and Estate/GIS | Local implementation/integration recorded | [M1C](MILESTONE_1C.md); real plantation details/surveys, selected-environment controls and operational acceptance remain separate |
-| Web/Cesium and estate administration | Local UI implemented; geometry correction and administration checks recorded | [Checkpoint](../milestones/DEVELOPMENT_CHECKPOINT.md); [Web administration verification](../../../agrosphere-web/docs/ESTATE_ADMINISTRATION_VERIFICATION.md); reference-device M2 performance remains OPEN |
-| Tapping | Locally implemented/verified | [3A completion](../milestones/milestone-3a-completion.md); actual rollout/functional acceptance separate |
-| Collections/DRC | Locally implemented/verified | [3B verification](../milestones/MILESTONE_3B_LOCAL_VERIFICATION.md); production/owner sign-off not inferred |
-| Workers/attendance | SIMULATED-only local implementation/verification | [WA verification](../milestones/WORKER_ATTENDANCE_VERIFICATION.md); WA D08 workload and D09 actual privacy/retention remain OPEN |
-| Inspections/incidents | SIMULATED-only local implementation/verification; separate II-1 stack upgrade recorded | [II verification](../milestones/INCIDENT_INSPECTION_VERIFICATION.md), [II upgrade](../milestones/LOCAL_II1_STACK_UPGRADE_2026_10_31.md); II-D07/08 remain OPEN; do not repeat II-1 |
-| Alerts/privacy | Generated-only runtime/API/Web/restore verified; existing alert/privacy stack upgrade not performed by current work | [Privacy verification](../milestones/ALERTS_PRIVACY_VERIFICATION.md); OR01–06 and AN-D07/08 still OPEN |
-| Offline capture/sync, French, faster refresh | Confirmed needs; implementation/acceptance not delivered by connected UI | [Owner rollout inputs](../milestones/ALERTS_NOTIFICATIONS_ROLLOUT_EXPECTATIONS.md), [single client register](../milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md) |
-| MQTT telemetry | Foundation only; device/ingestion use cases not delivered | [Telemetry README](../../../agrosphere-telemetry-service/README.md); source inventory contains foundation/security/package declarations and V1 messaging infrastructure |
-| Materialized analytics | Foundation only; test projection harnesses are not a shipped Analytics service | [Analytics README](../../../agrosphere-analytics-service/README.md), [3B verification](../milestones/MILESTONE_3B_LOCAL_VERIFICATION.md) |
-| Forecasts/anomalies/assistant | Foundation only; liveness is not inference/authenticated business capability | [AI README](../../../agrosphere-ai-service/README.md) |
-| Unreal/VR/MR | Foundation descriptor/architecture only; no validated editor/client/VR implementation | [Immersive README](../../../agrosphere-immersive/README.md) |
+- [ ] Reproduce full roadmap scenario with exact independent source/pins/images, SIMULATED fixtures, stable UUIDs, WGS84 longitude/latitude, units/times/provenance.
+- [ ] Record negative authorization/isolation, replay/rebuild/recovery and actual performance evidence; unavailable checks remain OPEN.
+- [ ] Record owner pass/fail by capability and final M0â€“M5 acceptance. A scope change identifies the retained requirement, rationale and explicit approval; no implicit AI/VR/M1/M2 deferral.
 
-These are document/source observations, not fresh execution of every historical suite. Telemetry/Analytics business source inventories and AI inbound source were inspected in this increment; no runtime is started. Preserve original reports with their original dates and limitations.
+## M4 delivery and acceptance states
 
-## Stage 1 — make the current connected application operable
+- [x] Existing ANL-01/02 bounded runtime engineering evidence retained; this review freshly corroborated 27 final changed-existing-file hashes, not a full runtime rerun.
+- [x] Consolidated remaining-M4 review prepared; fresh workspace/Contracts checks and two AI foundation tests recorded in [review evidence](../milestones/M4_REVIEW_CHECKS_2026_11_05.json). This checks review readiness only.
+- [ ] Owner approves [D01–D10](../milestones/M4_DELIVERY_PACKAGE.md), including target/provider scope and delegated conforming engineering gates. Do not infer this from the request to prepare the package.
+- [ ] E01–E06 implemented and verified: versioned Contracts/pins, chronology, dry/wet baselines/anomalies, immutable registry/evaluation, scoped assistant/API/Gateway/Web.
+- [ ] E07–E10 pass with a working end-to-end generated demonstration, real negative authorization and recovery, regression, exact artifact/check report and owned cleanup. Engineering completion requires these results.
+- [ ] Owner reviews demonstration/results/limitations and explicitly accepts or rejects bounded M4. Package approval and engineering PASS do not check this box.
 
-- [x] Prepare alerts/privacy operating-readiness review with open owners/evidence and stop conditions.
-- [x] Prepare [generated-only maintenance implementation package](../milestones/ALERTS_PRIVACY_MAINTENANCE_PACKAGE.md) and parameter specification; these are proposed artifacts, not installed controls.
-- [ ] Implement and verify PM01–06: restricted aggregate observation, bounded cleanup runner, independent watchdog and failure/permission/recovery drill in new disposable resources.
-- [ ] Assign actual operating/recovery/security responsibilities and select log/backup/current-ledger controls; verify selected-environment OR01–04 evidence rather than relying on generated tests.
-- [ ] Resolve actual-subject notice/controller/basis/hosting/request facts through PR01–17; preserve delegated provisional development defaults without presenting them as client/legal acceptance.
-- [ ] Prepare exact authorized existing-stack preflight and protected isolated restore evidence; nonempty V6 requires a separate preservation-focused conversion review.
-- [ ] Obtain separate authorization for the exact existing-stack upgrade actions; execute only those actions, retain data/config/volumes/geometry and leave accounts disabled unless separately governed.
-- [ ] Conduct separately scoped connected SIMULATED owner walkthrough and record pass/fail per feature. This is distinct from production or offline/French acceptance.
+## Minimum alerts/privacy boundary for Track A
 
-Dependency: generated implementation can proceed without knowing production hosting, but generated success cannot close selected-environment controls. Backup/inspection/grant/demo-write permissions must be explicit in the later target-specific proposal. The current request does not execute that upgrade.
+Existing [AN verification](../milestones/ALERTS_NOTIFICATIONS_VERIFICATION.md), [privacy verification](../milestones/ALERTS_PRIVACY_VERIFICATION.md), [observer evidence](../milestones/ALERTS_PRIVACY_OBSERVER_EVIDENCE_2026_11_01.json) and accepted artifacts persist. PM01/02 candidate is PARTIAL (unknown original eligibility ages; V7 authority hardening); PM04 fixture evaluator exists; PM03/05 and live PM04 remain OPEN. None is an installed operating control.
 
-## Stage 2 — deliver the actual field workflow
+Recommended final walkthrough uses a **separately owned disposable connected demonstration**, generated subjects and records. This avoids AP-T08 on the existing stack. It is a proposed arrangement, not authorization to provision/run it now. Historical generated tests do not supply this walkthrough's owner acceptance.
 
-- [x] Record owner choices: direct offline inspection/incident field entry, office synchronization, Android phones/tablets, English/French. These are requirements, not delivered functionality.
-- [x] Record owner answers: individually assigned Android devices; one normal workday away from office connectivity (2026-11-01). These do not set offline access expiry or draft-deletion deadlines.
-- [ ] Identify a first reference device; review offline access, draft retention, exceptional outages and loss/recovery expectations one input at a time in the existing register.
-- [ ] Review a bounded offline design: permitted office-prepared reference data; encrypted/minimized device storage; ownership/account/estate isolation and handover; offline unlock/session expiry; clear saved draft/pending/server-confirmed states.
-- [ ] Independently review executable contracts where changed; implement sync with current office authentication/authorization, original observation time, duplicate prevention and explicit conflict/rejection recovery. No offline alert read/ack queue, attendance or attachment expansion is assumed.
-- [ ] Implement/review English/French UI and user information, dates/numbers/errors and accessibility; verify both languages on supported Android devices.
-- [ ] Agree connected alert-delay/workload target; implement and measure foreground delivery/reconnect behavior. Proposed five seconds remains unaccepted/unmeasured; current healthy 30–35-second polling does not meet it.
-- [ ] Verify restart/storage pressure, shared-device isolation, field-to-office reconnection, expired/revoked access, conflict, duplicate/unknown upload outcome and device-loss handling on named supported Android/browser versions.
+- [ ] Before execution, review exact artifacts, generated-only allowlist/default-disabled controls, signed JWT role/estate boundaries, local exposure, allowed fixture writes, duration, copy inventory and owned cleanup/stop procedure. No actual accounts, personal workforce records or external delivery.
+- [ ] Demonstrate HIGH/CRITICAL incidentâ†’inbox, own read, shared acknowledgement, resolve/reopen, history/redaction/expiry and version/retry semantics. Retain WA/II/3B/3A regression. State current polling delay; this does not accept five seconds.
+- [ ] Verify expiry/access suppression and no-resurrection for exercised paths. For short-lived resources, verified teardown of **all owned DB/broker/log/export/backup copies** can bound lifetime; do not claim an unattended deletion SLA. A retained backup or exercised restore requires applicable current-ledger/barrier/restore-before-access controls.
+- [ ] Verify actual demo log minimization/access, copy lifetime and deletion; stop on uncertain target/copy ownership or cleanup. If persistence crosses an applicable expiry/removal boundary, relevant reviewed maintenance/monitoring/log/backup/ledger controls become demo prerequisites. UNKNOWN age is never on-time evidence; accepted privacy semantics remain unchanged.
+- [ ] Record scoped connected SIMULATED owner acceptance. Unmet AN-D07/08 demo-relevant portions block it; actual-subject/legal/production portions stay OPEN in Track C. WA D08/D09 and II-D07/08 need explicit scope dispositions, not blanket closure.
 
-Do not ask again whether direct field entry or Android devices are required; both are already answered. The first reference-device model is the next requested input; individually assigned devices and one normal workday away are now supplied. This does not stop independent generated maintenance work. Fresh server alerts require office connectivity/server-accepted reports; no field delivery without connectivity is promised.
+**Exit:** these five items have reviewed/executed evidence and owner acceptance for the exact disposable scenario. Full PM01â€“06/OR01â€“06 selected-environment closure and actual hosting/controller facts do not gate unrelated Telemetry/Analytics/AI/Unreal development. If the existing stack is selected instead, OR06 preservation/preflight, AP-T08 execution authorization and applicable operating controls become dependencies; do not repeat the completed II-1 upgrade or infer new data-write/role authority.
 
-## Stage 3 — accept workload, device performance and real onboarding
+## Track B â€” confirmed field release
 
-- [ ] Resolve WF03 record-category and role/session interpretation; obtain real estate/user/volume/growth inputs when available. Ten-per-category and 10–15 generated sessions are labelled scenarios, not client capacity facts.
-- [ ] Measure M2 frame time/assets/memory and supported Android behavior on named hardware; validate agreed API latency/concurrency and recovery targets. Keep proposed targets in [nonfunctional requirements](../requirements/NONFUNCTIONAL_REQUIREMENTS.md) separate from achieved results.
-- [ ] Close WA D08/D09, II-D07/08 and AN-D07/08 against their own requirements/evidence; shared inputs do not automatically close all three domains.
-- [ ] Collect owner-confirmed plantation identities/divisions/fields/hectares/timezones and owner-supplied survey geometry; validate units/provenance/UUID continuity. No invented names/counts/boundaries or replacement with fixtures.
-- [ ] Approve actual-data collection/retention/access and onboarding scope before real worker/operational records or account enablement; validate existing-data preservation and recovery.
+- [x] Requirement recorded: direct offline inspection/incident entry, office synchronization, Android phones/tablets, English/French.
+- [x] Owner facts: individually assigned devices; one normal workday before office sync. Reference model unavailable now; do not repeat the question or infer versions/hours/expiry.
+- [ ] Review office-prepared references, encrypted/minimized drafts, account/estate isolation, unlock/expiry, device loss/recovery and exceptional outages. One workday does not define access/deletion lifetime.
+- [ ] Independently review changed sync contracts; implement original observation times, authenticated/authorized upload, duplicate/unknown-outcome safety, conflicts/rejections and saved/pending/server-confirmed states. Offline alert ack, attendance and attachments need separate scope review.
+- [ ] Implement/review English/French UI, user information, dates/numbers/errors/accessibility.
+- [ ] Verify named supported Android/browser restart/storage pressure, revoked/expired access, reconnect, conflicts/duplicates and loss/handover isolation. Physical-device acceptance stays OPEN until representative hardware exists.
+- [ ] Agree connected delivery-delay/workload target; implement/measure foreground/reconnect behavior. Healthy polling is approximately 30â€“35 seconds in existing evidence; five seconds remains proposed/unaccepted/unmeasured. No server-alert promise while disconnected.
+- [ ] Obtain field workflow/language/device owner acceptance. Dependencies: II/identity/privacy/sync contracts and relevant WA/II/AN workload gates; AI/VR do not inherently precede field release.
 
-These acceptance tasks may overlap Stage 2 when inputs exist; stage numbering is priority/dependency guidance, not an instruction to stall all independent work.
+## Track C â€” real data and production operation
 
-## Stage 4 — finish Operations/IoT and analytics
+- [ ] Resolve WF03 category/role/session interpretation and actual estate/user/volume/growth facts; ten-per-category/10â€“15 generated sessions are scenarios only. Close WA D08/D09, II-D07/08 and AN-D07/08 separately against evidence.
+- [ ] Obtain confirmed estate/division/field/hectare/timezone facts and surveys; review actual-data collection, worker purpose/retention/access and account enablement before collection. Fixtures do not replace real evidence.
+- [ ] Complete PM01â€“06 metadata/authority review, bounded runner/heartbeat, observer/watchdog and generated failure/recovery drills under existing scope. Candidate tests do not promote V8.
+- [ ] Close OR01 authority, OR02 unattended cleanup, OR03 all-copy log expiry, OR04 protected backup/current-ledger/final-barrier recovery, OR05 subject/deployment and OR06 target preflight in the [operating handoff](../milestones/ALERTS_PRIVACY_OPERATING_HANDOFF.md). Generated evidence cannot accept a selected environment.
+- [ ] Resolve PR01â€“17/OP01â€“04 in the existing register; preserve delegated provisional rules, accepted privacy parameters and exact approvals. No invented legal/contact/provider facts.
+- [ ] Separately authorize existing-stack inspection/backup/upgrade/demo writes where chosen; preserve records/config/volumes/geometry. Nonempty V6 needs a preservation-focused conversion review. AP-T08 execution remains unauthorized.
+- [ ] Select hosting/identity/TLS/secrets, licensing/redistribution, accountable security/operating/recovery owners and copy/data-flow locations; verify threat/access/isolation, restore/load/rollback and environment-specific controls.
+- [ ] Obtain actual-data/operational acceptance and separate publication/deployment authority. Local results do not certify hosted CI, production security or deployment.
 
-- [ ] Review Telemetry scope/contracts/ownership, device identity/estate mapping, authenticated MQTT, timestamp/unit/provenance rules and retention before implementing ingestion.
-- [ ] Deliver generated sensor simulator, validation/normalization, replay/dedup, outage/DLQ recovery, scoped API and environmental overlays; preserve observation versus ingestion times and SIMULATED labels.
-- [ ] Review Analytics KPI definitions, formulas, source contracts, history/correction rules, retention and authorization; keep service-owned projection storage.
-- [ ] Implement event consumers with transactional dedup, correction/replay/rebuild/reconciliation and coverage/provenance; deliver authorized historical dashboards. No cross-service SQL or test harness presented as production analytics.
-- [ ] Obtain functional/load/recovery acceptance of complete M3 capabilities and materialized analytics; do not mark M3 complete merely because tapping/incidents/alerts exist.
-
-This is future capability scope requiring its reviewed decisions/authorization, not automatically authorized by maintenance planning. Analytics planning can proceed from accepted Operations events independently of Telemetry if the chosen KPI scope permits it.
-
-## Stage 5 — evidence-backed AI
-
-- [ ] Review prediction/anomaly use cases, lawful/minimized data inputs, chronological datasets, baseline metrics and acceptance thresholds.
-- [ ] Implement time-aware evaluation, forecast/anomaly baselines and versioned model/evidence registry; retain PREDICTED labels and uncertainty/coverage.
-- [ ] Deliver authenticated scoped inference and evidence-linked assistant through provider ports; test authorization, unsupported claims and prompt/model versioning.
-- [ ] Accept evaluation/functional results; no autonomous agronomic decisions or fabricated certainty. Synthetic evaluation does not prove accuracy on real plantations.
-
-Model/provider selection, spending, deployment and actual-data use need concrete decisions when reached. No model installation or service is started by this checklist.
-
-## Stage 6 — shared Unreal estate and immersive feasibility
-
-- [ ] Confirm licensed toolchain/assets/terrain and supported device/runtime, then validate the matching editor/plugin combination.
-- [ ] Implement authoritative Gateway API integration, canonical estate/block identity, georeference/selection and provenance across Web/Unreal.
-- [ ] Prototype VR with comfort/frame-time evidence on the selected hardware; record MR feasibility/accuracy limits separately.
-- [ ] Accept POC immersive scope or record an explicit reviewed deferral. A deferral changes completion scope; it is not silent completion of original M5.
-
-Unreal/VR belong to the original wider POC roadmap; production rollout can have a separately agreed narrower release boundary. Procedural trees remain illustrative, never a surveyed inventory.
-
-## Release and production gate — cross-cutting
-
-- [ ] Agree POC versus production release boundary and accountable acceptance/recovery owners; settle licensing/redistribution and relevant asset notices.
-- [ ] Select hosting/identity/TLS/secret management, backup/log retention and data-flow locations; resolve applicable governance facts without guessing them.
-- [ ] Produce environment-specific threat/access/isolation and dependency-security review, restore rehearsal, monitoring/runbooks, capacity and release/rollback evidence.
-- [ ] Validate all acceptance criteria against exact source/pins/images and chosen device/environment; reconcile gaps/approved deferrals visibly.
-- [ ] Obtain separate publication/deployment authorization; record owner functional and operational acceptance. Local checks do not assert hosted CI, deployment or security certification.
-
-AEO remains paused and outside this product completion scope. No AEO change, Git commit/push/publication, cloud resource or deployment is authorized by the checklist. PM04 now has a tested generated-fixture policy evaluator; live observation/runner/scheduler integration and the remaining PM01–06 acceptance stay OPEN. The next single user input is the first reference-device model. All future requests for user action should name one specific action, one at a time.
-
-
-### Observer review increment — 2026-11-01
-
-PM01/02 now have an [Operations-owned reviewed SQL candidate and generated test suite](../../../agrosphere-operations-service/docs/ALERTS_PRIVACY_MAINTENANCE.md), outside automatic migrations. Original watermark eligibility ages can be unknown; source deadline metadata needs an additive design before an on-time claim. Effective SQL-role checks are not authenticated job-principal provisioning or V7 hardening. The initial 13-case candidate run passed; final regression/preservation results are in [observer evidence](../milestones/ALERTS_PRIVACY_OBSERVER_EVIDENCE_2026_11_01.json). PM01–06 and OR01–06 remain incomplete; no existing-stack inspection or upgrade is performed.
-
-Reference-device availability update observed during final capture: the owner cannot provide a model now, as recorded in the single client register. Treat the question as answered unavailable and keep physical-device acceptance OPEN; do not repeat the device-model question.
+Track C applies to A/B where actual identities/data/copies/exposure/persistence require it; no blanket production prerequisite. All accepted requirements/approvals remain. AEO, private configuration, existing data, Git indexes/commits/remotes and deployment are outside this increment.

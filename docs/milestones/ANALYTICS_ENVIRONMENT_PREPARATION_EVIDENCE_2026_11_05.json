@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-05",
+  "timezone": "America/Chicago",
+  "scope": "ANL-02 isolated candidate and pure rules/ports/tests preparation fulfilled",
+  "approvalReviewSha256": "c15ac50638feb09b176a44b5b16033d50e1b7365cbbe4467550f25d5910a17e9",
+  "candidateManifestSha256": "1759e5d95fb3602b623b995e4650f035b67dbb550760116587f46c031ca7d111",
+  "checks": [
+    {
+      "repository": "Analytics",
+      "command": "JDK 25.0.2: mvnw.cmd --batch-mode --no-transfer-progress verify",
+      "result": "PASS",
+      "tests": 41,
+      "newEnvironmentalTests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "repository": "Analytics",
+      "command": "python scripts/validate_contract_pins.py --jar target/agrosphere-analytics-service-0.1.0.jar",
+      "result": "PASS",
+      "release": "0.11.0"
+    },
+    {
+      "repository": "Contracts",
+      "command": ".venv/Scripts/python.exe scripts/validate.py",
+      "result": "PASS"
+    },
+    {
+      "repository": "Contracts",
+      "command": ".venv/Scripts/python.exe scripts/build_environmental_contracts.py --check",
+      "result": "PASS"
+    },
+    {
+      "repository": "Contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_*contracts.py",
+      "result": "PASS",
+      "tests": 86,
+      "newEnvironmentalTests": 7
+    },
+    {
+      "repository": "Contracts",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_analytics_release.py -v",
+      "initialResult": "2 cases pass; third case has 3 subtest fixture-creation errors (WinError 5) under restricted execution",
+      "finalResult": "PASS after reviewed require_escalated retry of identical command",
+      "tests": 3,
+      "testSourceChanged": false
+    },
+    {
+      "repository": "Architecture",
+      "command": "python scripts/validate.py --workspace C:/Projects/agrosphere",
+      "result": "PASS"
+    },
+    {
+      "command": "Local Markdown existence checks in new/changed coordination files (current headers only for checkpoint/workflow)",
+      "result": "PASS",
+      "links": 48,
+      "missing": []
+    }
+  ],
+  "baselineFile": "ANALYTICS_ENVIRONMENT_PREPARATION_BASELINE_2026_11_05.json",
+  "baselinePublicFilesCompared": 432,
+  "changedExistingPublicFiles": {
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": {
+      "before": "77d432b1a140179417145fd815562fd0148939bfbf55e2dc26b99565e7153f43",
+      "after": "912585c3e3cb8329f3c531edb0d809e12ad09caa0d02b5ac9b52f5746feccc4b"
+    },
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": {
+      "before": "19cdf81c11152b3b429a7193e3009d61fcdcdbacb22a3ab98bc9c05e451a8f96",
+      "after": "a28325cc7fd0815a278584ced9f534c19921c20edb4bfb668b64007c31f99eaf"
+    },
+    "agrosphere-architecture/docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": {
+      "before": "8d86bf3ca7a41346c38589f83bf58a3926bdbd528b186f5b62119fb5af029be1",
+      "after": "c674a85629110e94839be7e0ad6312b04f2cda6a4b3dc87ca04370fd86fbe475"
+    },
+    "agrosphere-architecture/CHANGELOG.md": {
+      "before": "f561b15df93760410eea3ecb009ea42dcccd5d14c980d841619bdbce1544c140",
+      "after": "08afc16e4ceec9f636729f953b4024fd7d43dd9d9ab572e9f6f22dadfa93be86"
+    },
+    "agrosphere-contracts/scripts/validate.py": {
+      "before": "b6642cb066bdff48c74700cf0753f22ff6c1fca2b55df9b2e005de1ab3601034",
+      "after": "8a698804d90343fe7bc4ad56070e214d7717eef0d5ccb6802fa5c00b9ca485ef"
+    },
+    "agrosphere-contracts/AGENTS.md": {
+      "before": "c29f752019602542e0e8e90ad454443ff055faeade54d92547fd6be4b912c145",
+      "after": "8407fc489bb2ade619b59f1051c286f4c48f70f946b27de1167ae50e229893c3"
+    },
+    "agrosphere-contracts/README.md": {
+      "before": "5341be80b752b2bd08c91ed6fa74c6ee81852eabf4031e019858e8c43cbcc0e1",
+      "after": "b2be76c3abf20409aedd6f88c21cccfb0fb2fd2fd36a2c433d33674763a81c47"
+    },
+    "agrosphere-contracts/CHANGELOG.md": {
+      "before": "bd81b05e2aa5fbf5317f7f51f7faa8b572e9b4fda0085a32190c75d83e9b2e37",
+      "after": "638928032a915ea2f1012c96aa0c08520c96a3d01c7a08fcbeb117d8f976fbd3"
+    },
+    "agrosphere-contracts/.github/workflows/ci.yml": {
+      "before": "d2d393b1e0f97726856ac3107723d2a0b89d1e69243976d77003ffba4955e74c",
+      "after": "0431d813e2a501c69cb9c66c631e3639bf162aa4496fac1c4f3b81e927726a6d"
+    },
+    "agrosphere-analytics-service/AGENTS.md": {
+      "before": "5909392552a758e803b2f19ff3a5708f999dd36a10ba841ae05aeb073a757965",
+      "after": "75f34d8a95ed8fa1b1243b2076ebc0c669b6b1d826d7e414cf08fa436dd4297d"
+    },
+    "agrosphere-analytics-service/README.md": {
+      "before": "5bd86fbe4c9ea160c947d456f3fd7b3dfd826d10e468f058aee21355e3f5baab",
+      "after": "f002ea2fb30843ddc893bed44bf264e385e08be10448e438b86ad1387ff72772"
+    },
+    "agrosphere-analytics-service/CHANGELOG.md": {
+      "before": "427b20b19e601c2ee801af2a52ed0f24314ccb2ae18dfcbc6fbb2e7905cb071b",
+      "after": "3fe085871ccfa60935bdaf7b0c2db15b22a7049aa36b3040a28eba20c679196d"
+    }
+  },
+  "unexpectedChanges": [],
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+      "headUnchanged": true,
+      "indexSha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "indexUnchanged": true,
+      "status": " M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_POC_APPROVAL.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_POC_REVIEW.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_BASELINE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_ADAPTER_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_ADMISSION_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_ADMISSION_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_ADMISSION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_PREPARATION_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_PREPARATION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_RELEASE_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_RELEASE_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_REVIEW.md\n?? docs/milestones/MQTT_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/MQTT_POC_ADAPTER_EVIDENCE_2026_11_04.json\n?? docs/milestones/MQTT_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/MQTT_POC_APPROVAL.md\n?? docs/milestones/MQTT_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_EVIDENCE_2026_11_05.json\n?? docs/milestones/MQTT_POC_OVERLAY_REVIEW.md\n?? docs/milestones/MQTT_POC_OVERLAY_VERIFICATION.md\n?? docs/milestones/MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_RELEASE_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json\n",
+      "diffCheckExit": 0
+    },
+    "agrosphere-contracts": {
+      "head": "6461db157213c57ed3448480e2099ef463b7c889",
+      "headUnchanged": true,
+      "indexSha256": "eb954405cf7e0c87ac2888515cfe6f96debb2be72e9dd8130e0017376a722bc5",
+      "indexUnchanged": true,
+      "status": " M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M openapi/analytics-service.yaml\n M openapi/telemetry-service.yaml\n M scripts/alert_contract_validation.py\n M scripts/alert_privacy_contract_validation.py\n M scripts/crop_health_contract_validation.py\n M scripts/validate.py\n M scripts/workforce_contract_validation.py\n?? docs/analytics-environment-poc/\n?? docs/analytics-poc/\n?? docs/telemetry-poc/\n?? events/telemetry/\n?? examples/analytics/\n?? examples/telemetry/\n?? mqtt/\n?? scripts/analytics_contract_validation.py\n?? scripts/analytics_release_compatibility.py\n?? scripts/build_analytics_contracts.py\n?? scripts/build_environmental_contracts.py\n?? scripts/build_telemetry_contracts.py\n?? scripts/environmental_contract_validation.py\n?? scripts/telemetry_contract_validation.py\n?? scripts/telemetry_release_compatibility.py\n?? scripts/test_analytics_contracts.py\n?? scripts/test_analytics_release.py\n?? scripts/test_environmental_contracts.py\n?? scripts/test_telemetry_contracts.py\n",
+      "diffCheckExit": 0
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "headUnchanged": true,
+      "indexSha256": "b875774a9490b85aed4bac20b87a2d0b52017a4037a0e35ee926008466cb3fab",
+      "indexUnchanged": true,
+      "status": " M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M pom.xml\n M src/main/java/com/agrosphere/analytics/SecurityConfiguration.java\n M src/main/resources/application.yaml\n?? docs/\n?? scripts/\n?? src/main/java/com/agrosphere/analytics/AnalyticsMigrationConfiguration.java\n?? src/main/java/com/agrosphere/analytics/AnalyticsRuntime.java\n?? src/main/java/com/agrosphere/analytics/GeneratedAnalytics.java\n?? src/main/java/com/agrosphere/analytics/JwtValidationConfiguration.java\n?? src/main/java/com/agrosphere/analytics/OwnedRebuildMain.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/CollectionEventJson.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/ProductionConsumer.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/ProductionController.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/ProductionProblems.java\n?? src/main/java/com/agrosphere/analytics/adapter/out/persistence/ProductionJdbc.java\n?? src/main/java/com/agrosphere/analytics/adapter/out/web/\n?? src/main/java/com/agrosphere/analytics/application/ReadEnvironmentalHistory.java\n?? src/main/java/com/agrosphere/analytics/application/ReadProductionHistory.java\n?? src/main/java/com/agrosphere/analytics/application/port/out/EnvironmentalPorts.java\n?? src/main/java/com/agrosphere/analytics/application/port/out/ProductionPorts.java\n?? src/main/java/com/agrosphere/analytics/domain/EnvironmentalObservation.java\n?? src/main/java/com/agrosphere/analytics/domain/EnvironmentalProjection.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionProjection.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionRevision.java\n?? src/main/resources/contracts/\n?? src/main/resources/db/migration/V2__production_projection.sql\n?? src/test/java/com/agrosphere/analytics/CollectionEventJsonTest.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalProjectionTest.java\n?? src/test/java/com/agrosphere/analytics/GeneratedAnalyticsTest.java\n?? src/test/java/com/agrosphere/analytics/ProductionAmqpIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionHttpIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionJdbcIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionProjectionTest.java\n?? src/test/resources/\n",
+      "diffCheckExit": 0
+    }
+  },
+  "outputFiles": {
+    "agrosphere-architecture/docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_BASELINE_2026_11_05.json": "9eb6a61e7c88e8774948b255af6a3f835f6a0088c307772ef8cbe0f93c447a79",
+    "agrosphere-architecture/docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_VERIFICATION.md": "81428d3465d6e7196052d0312fa73487629bc54f2abd89bb5a380fd0cb565f5a",
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "912585c3e3cb8329f3c531edb0d809e12ad09caa0d02b5ac9b52f5746feccc4b",
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "a28325cc7fd0815a278584ced9f534c19921c20edb4bfb668b64007c31f99eaf",
+    "agrosphere-architecture/docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "c674a85629110e94839be7e0ad6312b04f2cda6a4b3dc87ca04370fd86fbe475",
+    "agrosphere-architecture/CHANGELOG.md": "08afc16e4ceec9f636729f953b4024fd7d43dd9d9ab572e9f6f22dadfa93be86",
+    "agrosphere-contracts/scripts/build_environmental_contracts.py": "150090a11f0d8f4ae59db6909e8a556d726fdc34e1acc1ef2a9ea3bae9e1c39a",
+    "agrosphere-contracts/scripts/environmental_contract_validation.py": "76b3bcfdebed533c51dd8a93817f64d9139c36af2edccaead1f5bf33d074e32a",
+    "agrosphere-contracts/scripts/test_environmental_contracts.py": "4dc7d853b51e308cdd67bb01d9d449cba225ac6d41aba27f21be0364794ca03e",
+    "agrosphere-contracts/scripts/validate.py": "8a698804d90343fe7bc4ad56070e214d7717eef0d5ccb6802fa5c00b9ca485ef",
+    "agrosphere-contracts/docs/analytics-environment-poc/CANDIDATE_MANIFEST.json": "1759e5d95fb3602b623b995e4650f035b67dbb550760116587f46c031ca7d111",
+    "agrosphere-contracts/docs/analytics-environment-poc/CANDIDATE_REVIEW.md": "841278e1fe7576e137cb48ec68b3d9509e087baecd75729d6d3e6379dc6db924",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/air_temperature.json": "f928efca56925d51aeb2edcf66b2378b7d7b8d375133e06a40d96854c8c9a4f1",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/conflict-outside-window.json": "ba7773ef015b78a8d46129558570096f2bdac19663870658907e7ee8cc29622a",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/interval_rainfall.json": "a86dd108a29afee38093ee7aa540aed26545ebc8b3494923fb75cb373074f6b9",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/mixed.json": "3e358e14e81e62a32215c08cf79d6cc25b1d67f63ab5b84b9b2672e874eefa5a",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/none.json": "d114a2d32797441f3f71b007ca65a2289109fe9f9679d27cb19c44abd8f27344",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-400.json": "24f523e4bd0b2130782859ce2363e4a38ec2661a67562e42f45b2855f9fba082",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-401.json": "4ff6c4225f3f39a57b526a8f3debf7592da1ac587fa720bddb06b5775924d59b",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-403.json": "5cf5b79a010747f0d927dbba6897cab0bd5c12049b203331501cfff9cd1f8c78",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-404.json": "b32f67ce924b93cc49f894d519673a678c92a67882b7f67ad9832a7a2a2254dd",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-429.json": "7c23513aa00c35ed01ca4d42794f17479ed7af955204aca77370a32c253b8b54",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/problem-503.json": "c892e8131ed1a473dc25113933e95b3cab349d9cf8f59f18d2011b97c3dbac93",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/soil_moisture.json": "92f487e8c586f01e8fa450264231e464b0fa414bee3e07797031f818f8db796f",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/examples/truncated.json": "9ec3628d2686f260785477e0335e32c4229b5ac8e3203955b6922a7336aae19f",
+    "agrosphere-contracts/docs/analytics-environment-poc/candidate/openapi/analytics-service.yaml": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432",
+    "agrosphere-contracts/AGENTS.md": "8407fc489bb2ade619b59f1051c286f4c48f70f946b27de1167ae50e229893c3",
+    "agrosphere-contracts/README.md": "b2be76c3abf20409aedd6f88c21cccfb0fb2fd2fd36a2c433d33674763a81c47",
+    "agrosphere-contracts/CHANGELOG.md": "638928032a915ea2f1012c96aa0c08520c96a3d01c7a08fcbeb117d8f976fbd3",
+    "agrosphere-contracts/.github/workflows/ci.yml": "0431d813e2a501c69cb9c66c631e3639bf162aa4496fac1c4f3b81e927726a6d",
+    "agrosphere-contracts/.gitattributes": "ea8a9be0194d72fad6c782530a852e2c5f57be6c2dfa3fd6a2cb0566ebb6ed41",
+    "agrosphere-analytics-service/src/test/java/com/agrosphere/analytics/EnvironmentalProjectionTest.java": "449bcea86a9b7bd2fadf5ba96b2d823f74be39b4bc6cc9eb9947c72191a93820",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/application/ReadEnvironmentalHistory.java": "06b3f47934ad6c843ad112863b7581d5376d7c0c961f1c96853114ac594b7eec",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/domain/EnvironmentalObservation.java": "f0acd01b430c0a6e0feb726f48cee67c6d3b897e3fb1c09f87b0f70b21ff3e89",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/domain/EnvironmentalProjection.java": "ba1db3d376cb28b5da04fc736346f3b39670dd4d4da6a75685b80ec75cf5da7c",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/application/port/out/EnvironmentalPorts.java": "0b85dd017f97aaede616aa4ed1f425e845feaecfadbb36465a4eb4c8c7d08d4e",
+    "agrosphere-analytics-service/docs/ANL02_ADAPTER_MANIFEST.json": "afff8ff5a13e1167d53ab569f0ea28c5f003def01fab9318db455f291f537ea8",
+    "agrosphere-analytics-service/docs/ANL02_ADAPTER_REVIEW.md": "ecb5540e401219a3db5c6c161762d26e48fb6bff7b26877833fd4272adbe7b92",
+    "agrosphere-analytics-service/docs/ANL02_PURE_PREPARATION.md": "cc1fb8133592efd79fc38007dd8378daf27e4a83f64d7b3dab9f2523a346e242",
+    "agrosphere-analytics-service/docs/anl02-adapter/V3__environmental_history.sql": "78165fefbd980776ac44cb567e8fb213ac4fdd5ac979a4442e7e2d6d545647a6",
+    "agrosphere-analytics-service/AGENTS.md": "75f34d8a95ed8fa1b1243b2076ebc0c669b6b1d826d7e414cf08fa436dd4297d",
+    "agrosphere-analytics-service/README.md": "f002ea2fb30843ddc893bed44bf264e385e08be10448e438b86ad1387ff72772",
+    "agrosphere-analytics-service/CHANGELOG.md": "3fe085871ccfa60935bdaf7b0c2db15b22a7049aa36b3040a28eba20c679196d"
+  },
+  "limits": [
+    "Scoped public-file baseline only, not private/AEO/whole-workspace attestation",
+    "No environmental runtime/integration/SQL installation, stack provisioning or owner/M4 acceptance",
+    "No diagram source changed or PlantUML rendering claimed",
+    "Hosted CI not run; existing generated/runtime checks not repeated for pure preparation",
+    "Current independent releases and all runtime resource pins remain 0.11.0",
+    "Exact executable acceptance/local release/pins pending; subsequent runtime review unapproved"
+  ]
+}

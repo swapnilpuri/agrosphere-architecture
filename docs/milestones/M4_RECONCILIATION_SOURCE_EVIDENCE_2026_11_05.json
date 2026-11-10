@@ -1,0 +1,148 @@
+{
+  "prior_ANL02_changed_file_comparison": [
+    {
+      "path": "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md",
+      "expected": "0f542f71b507c21926ae3bf809f5191a0fa0c80c944753df6e115846acd315f8",
+      "actual": "0f542f71b507c21926ae3bf809f5191a0fa0c80c944753df6e115846acd315f8"
+    },
+    {
+      "path": "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+      "expected": "f2cfbc0696720427acb8f1a3fe6e666b9c6ee60771dec1db82ed092a7359fbcd",
+      "actual": "f2cfbc0696720427acb8f1a3fe6e666b9c6ee60771dec1db82ed092a7359fbcd"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/MILESTONES.md",
+      "expected": "ea693ea4f996600f6f9410da46bfcf5d594cf69b577fce2209ddd498b5736272",
+      "actual": "ea693ea4f996600f6f9410da46bfcf5d594cf69b577fce2209ddd498b5736272"
+    },
+    {
+      "path": "agrosphere-architecture/docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md",
+      "expected": "cd5868028fb5b8cc67bc7d8e2ed4fd1ff621d115ad01cd0433ebd09dcfeaa255",
+      "actual": "cd5868028fb5b8cc67bc7d8e2ed4fd1ff621d115ad01cd0433ebd09dcfeaa255"
+    },
+    {
+      "path": "agrosphere-architecture/AGENTS.md",
+      "expected": "3a1b20e4ecfe65537f859320ca80bf4f96ec37ef3ff235e787d48764100715b3",
+      "actual": "3a1b20e4ecfe65537f859320ca80bf4f96ec37ef3ff235e787d48764100715b3"
+    },
+    {
+      "path": "agrosphere-architecture/CHANGELOG.md",
+      "expected": "694b5e34b2f6ff385a7fc91649ee1c498d519e65e04272dc6b11fea16067668f",
+      "actual": "694b5e34b2f6ff385a7fc91649ee1c498d519e65e04272dc6b11fea16067668f"
+    },
+    {
+      "path": "agrosphere-analytics-service/src/test/java/com/agrosphere/analytics/GeneratedAnalyticsTest.java",
+      "expected": "a24471640963e43c7ce17e7d867a9a70040fd6c6f78c6469cd14d4f93619f044",
+      "actual": "a24471640963e43c7ce17e7d867a9a70040fd6c6f78c6469cd14d4f93619f044"
+    },
+    {
+      "path": "agrosphere-analytics-service/src/main/resources/application.yaml",
+      "expected": "b3a109626556338b6ac200c3671631118794087ff129aa4d08a302bfdb1cbdb9",
+      "actual": "b3a109626556338b6ac200c3671631118794087ff129aa4d08a302bfdb1cbdb9"
+    },
+    {
+      "path": "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/AnalyticsMigrationConfiguration.java",
+      "expected": "80af124e3e7fc6605fd70bb7bb402cf96d8b98b62a529320f90ff55eeba81af1",
+      "actual": "80af124e3e7fc6605fd70bb7bb402cf96d8b98b62a529320f90ff55eeba81af1"
+    },
+    {
+      "path": "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/GeneratedAnalytics.java",
+      "expected": "7076eea28e5eeb904d73cb5e109b1173d68c2ec91234ac599d23df03f3262671",
+      "actual": "7076eea28e5eeb904d73cb5e109b1173d68c2ec91234ac599d23df03f3262671"
+    },
+    {
+      "path": "agrosphere-analytics-service/AGENTS.md",
+      "expected": "f0b61e8cb04340e39d02354bd24206e2a540b9ebb874a685a2857cee848a5d16",
+      "actual": "f0b61e8cb04340e39d02354bd24206e2a540b9ebb874a685a2857cee848a5d16"
+    },
+    {
+      "path": "agrosphere-analytics-service/README.md",
+      "expected": "6396a49412a10cbb2b4325fd11f5ecb3aa0ba695b11c99587117ff70e096ef42",
+      "actual": "6396a49412a10cbb2b4325fd11f5ecb3aa0ba695b11c99587117ff70e096ef42"
+    },
+    {
+      "path": "agrosphere-analytics-service/CHANGELOG.md",
+      "expected": "8494c9e991d5039f8c41b0634b99fb92d09fe4a5b9d9e582175fa7f6af2d8d4e",
+      "actual": "8494c9e991d5039f8c41b0634b99fb92d09fe4a5b9d9e582175fa7f6af2d8d4e"
+    },
+    {
+      "path": "agrosphere-infrastructure/AGENTS.md",
+      "expected": "10fca88ee0c40451ad424b9790fea604b30584972b81c0790e98cde0adce662b",
+      "actual": "10fca88ee0c40451ad424b9790fea604b30584972b81c0790e98cde0adce662b"
+    },
+    {
+      "path": "agrosphere-infrastructure/README.md",
+      "expected": "03468c36c83bc079bf3fb68c46071aef6b21e002deaa3dfd7dac6941af8ec6f0",
+      "actual": "03468c36c83bc079bf3fb68c46071aef6b21e002deaa3dfd7dac6941af8ec6f0"
+    },
+    {
+      "path": "agrosphere-infrastructure/CHANGELOG.md",
+      "expected": "5d93aa8317f979b102d5440921ccb73035b99cefff3b95cc20b6591388f13323",
+      "actual": "5d93aa8317f979b102d5440921ccb73035b99cefff3b95cc20b6591388f13323"
+    },
+    {
+      "path": "agrosphere-web/src/api/analytics.generated.ts",
+      "expected": "e16b6d00a3b5f9fb0a566dbd13ed433ed51559299e3bf36e5fd4c369cb1c3b13",
+      "actual": "e16b6d00a3b5f9fb0a566dbd13ed433ed51559299e3bf36e5fd4c369cb1c3b13"
+    },
+    {
+      "path": "agrosphere-web/src/app/features/production/production.component.html",
+      "expected": "13729a67b97910c197bf3c967710d86c8559310a3a26864b2b34f1fe772fb4aa",
+      "actual": "13729a67b97910c197bf3c967710d86c8559310a3a26864b2b34f1fe772fb4aa"
+    },
+    {
+      "path": "agrosphere-web/src/app/features/production/production.component.ts",
+      "expected": "154d50bdf913abe27315700fb4ebe2eaa43dc737dc0b1fe0379c52b646f47219",
+      "actual": "154d50bdf913abe27315700fb4ebe2eaa43dc737dc0b1fe0379c52b646f47219"
+    },
+    {
+      "path": "agrosphere-web/scripts/check-api.mjs",
+      "expected": "4d0173922a1c12373bf5be38d6e6fbc850611cffbfe127bc0704d8051e44a809",
+      "actual": "4d0173922a1c12373bf5be38d6e6fbc850611cffbfe127bc0704d8051e44a809"
+    },
+    {
+      "path": "agrosphere-web/contracts/analytics.openapi.json",
+      "expected": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432",
+      "actual": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432"
+    },
+    {
+      "path": "agrosphere-web/contracts/analytics.release.json",
+      "expected": "27520e0cd0cc474a476bf7e2041919b0d6786733a436d803d242865a37f3b57e",
+      "actual": "27520e0cd0cc474a476bf7e2041919b0d6786733a436d803d242865a37f3b57e"
+    },
+    {
+      "path": "agrosphere-web/AGENTS.md",
+      "expected": "d2e21100c908f527b41932e27bc00281a2adf1ea4ad0255cb2c9959326fc9d91",
+      "actual": "d2e21100c908f527b41932e27bc00281a2adf1ea4ad0255cb2c9959326fc9d91"
+    },
+    {
+      "path": "agrosphere-web/README.md",
+      "expected": "ce2b72327e6f592dd00521cf781a018687bc12e4f81d0e5b7edbe61efdd98782",
+      "actual": "ce2b72327e6f592dd00521cf781a018687bc12e4f81d0e5b7edbe61efdd98782"
+    },
+    {
+      "path": "agrosphere-web/CHANGELOG.md",
+      "expected": "634b265f600ba6c44b8fdd1b99da315f6a1d5ca3bfa7c189198b241fa71e028c",
+      "actual": "634b265f600ba6c44b8fdd1b99da315f6a1d5ca3bfa7c189198b241fa71e028c"
+    },
+    {
+      "path": "agrosphere-web/playwright.config.ts",
+      "expected": "a4edf17c469cc081378d8975117af67b67f22a0d14223b85f170121e4804daa8",
+      "actual": "a4edf17c469cc081378d8975117af67b67f22a0d14223b85f170121e4804daa8"
+    },
+    {
+      "path": "agrosphere-web/.gitattributes",
+      "expected": "bdd2fb03af5e71000ae813728cdc7c4aaee45948421541717917627cb441b962",
+      "actual": "bdd2fb03af5e71000ae813728cdc7c4aaee45948421541717917627cb441b962"
+    }
+  ],
+  "before_edit": {
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": "f2cfbc0696720427acb8f1a3fe6e666b9c6ee60771dec1db82ed092a7359fbcd",
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "0f542f71b507c21926ae3bf809f5191a0fa0c80c944753df6e115846acd315f8",
+    "agrosphere-architecture/docs/roadmap/MILESTONES.md": "ea693ea4f996600f6f9410da46bfcf5d594cf69b577fce2209ddd498b5736272",
+    "agrosphere-architecture/docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "cd5868028fb5b8cc67bc7d8e2ed4fd1ff621d115ad01cd0433ebd09dcfeaa255",
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": "db174400bcfd75eb55c77c91d463353739c74392d0ad68cb204841b88216acb8",
+    "agrosphere-architecture/CHANGELOG.md": "694b5e34b2f6ff385a7fc91649ee1c498d519e65e04272dc6b11fea16067668f",
+    "agrosphere-architecture/docs/milestones/AI_BASELINES_POC_REVIEW.md": "14b40f33c757d380f1c5e516d2626e7c7b42f84edde723b08efee4fad404cfa7"
+  }
+}

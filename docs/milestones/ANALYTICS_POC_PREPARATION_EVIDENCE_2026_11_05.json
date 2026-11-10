@@ -1,0 +1,176 @@
+{
+  "recordedAtUtc": "2026-11-05T07:06:39.390004+00:00",
+  "scope": "Owner-approved ANL-01 isolated candidate and pure Analytics domain/ports/tests only",
+  "status": "PREPARATION_COMPLETE",
+  "approvedReviewSha256": "3f4b8ee7c521502e0a29196ab647d84598dcb09aa91700856ef1bdc36e452342",
+  "candidate": {
+    "manifestSha256": "43d9e5f7b328002c735cdf85da3f6ed5e0c9ff41a2f74aaccdcc0b8e8a396998",
+    "artifacts": {
+      "candidate/examples/calculated.json": "7c457ae47f1f5898108f0905a9cbb64c45b8214900260e505c731b932f5d64c9",
+      "candidate/examples/corrected.json": "be943fa730b868d9fcc5b6a7acbbe44050aeded80b7f390c44a8b97fcdd6306a",
+      "candidate/examples/denied.json": "307a40f97c14d7d7c519ed40deb97288636748c05b309ddf3deb9dcca2f54177",
+      "candidate/examples/incomplete.json": "d7ea608107621c6c1ff13f99ee12d06c447cddd093d09d36ad2b5c72dcf92eed",
+      "candidate/examples/none.json": "0da8c68a53d499e6ef744f423dd0740659bf5ff87e53f1fe14a27b36f1cd2278",
+      "candidate/examples/pending.json": "3f209115914ffd3e6d053fca69bd10f00a68a189d27a2d42a197fbb9d7c1ec1d",
+      "candidate/examples/unavailable.json": "09c10dbd16bb776df871673def90ade6c8b63ad09ac1f25607c02cda3af10bf0",
+      "candidate/examples/voided.json": "2dec275ba21758fe8c5b10ddad6b7c3dfc0c7aed3c1a36380c0311a1e3124f18",
+      "candidate/examples/zero-drc.json": "1cd9fb6af6107be49395a8efa8f786fe1df6fd34270fc163d9e261fb0145b318",
+      "candidate/openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300"
+    },
+    "unchangedReleasedInputSchemas": {
+      "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+      "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+      "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+      "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+    },
+    "exactReviewSha256": "d2d54aebe7c13aac09b89006728f8a5c2b3df2c12bf5dfe437e1467dbc792c84",
+    "status": "UNRELEASED_UNPROMOTED_UNPINNED",
+    "proposedLocalRelease": "0.11.0"
+  },
+  "checks": {
+    "analyticsWrapperVerify": {
+      "passed": 21,
+      "newPure": 17,
+      "retainedMockSecurity": 4,
+      "jdk": "25.0.2",
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "contractsMainValidator": "PASS",
+    "contractsAllTests": {
+      "passed": 79,
+      "newAnalytics": 8
+    },
+    "allSevenCandidateGeneratorsCheck": "PASS",
+    "architectureWorkspaceValidator": "PASS",
+    "diagramSyntax": "PASS",
+    "diffWhitespaceAndProtectedSourcePreservation": "PASS",
+    "hostedCI": "NOT_RUN",
+    "runtimeAPI_JWT_DB_AMQP_ACK_DLQ_Web": "NOT_IMPLEMENTED_NOT_RUN",
+    "currentCoordinationLinks": {
+      "passed": 51,
+      "historicalSuffixBytePreserved": true
+    }
+  },
+  "reports": {
+    "ProductionProjectionTest": {
+      "tests": 17,
+      "sha256": "49959158b6cbcd9dbf23b01da6092d75296574fcb64d57c353dab9fad4367c9b"
+    },
+    "SecurityPolicyTest": {
+      "tests": 4,
+      "sha256": "fffd2b3116df19c511e9999e096b44dcd586c148846938db584cee4e3209aff1"
+    }
+  },
+  "staleSurefireReportsExcluded": [
+    "TEST-com.agrosphere.analytics.ApplicationTest.xml; not executed by current source/wrapper run; retained untouched"
+  ],
+  "logSha256": {
+    "anl01-wrapper-verify.log": "a98f8159008bf212627a40e5da04d913ce94c2f2401d2ea20ba4663ab4154f9e",
+    "anl01-contract-validation.log": "39bd8ff23b2538ead4e9d6ba1d26f3d2bc551020464c77b894d06bcc2151e98e",
+    "anl01-contract-all-tests.log": "e4613704ed517147ff3825c43329384d47927bc6b29f6b1b0b10bc556462553f",
+    "anl01-all-generators.log": "66039b7fbc4330a3eb43c4929187a0934e3096f050cd30f6f348cfcb4ebb67bb",
+    "anl01-doc-validation.log": "d1b9b7d2d4bee2d3f123cfd296072ebc5de8822164b0f26ea5ef03c289707776",
+    "anl01-diagram-validation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "artifactSha256": {
+    "analyticsJar": "dc7ff603db0187af1fd2f6f546bb81f8e7d8ac7dfe232f05acf4b4629a28f3a7"
+  },
+  "roots": {
+    "agrosphere-architecture": {
+      "head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+      "headPreserved": true,
+      "baselineIndexSha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "observedIndexSha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "indexBytesMatchBaseline": true,
+      "finalStagedEntriesEqualHEAD": true,
+      "unchangedBaselineFiles": 141,
+      "changedBaselineFilesSha256": {
+        "AGENTS.md": "9c819dc1411e4acecc612c5bef6925c877a98c54d08983c8a07cbc5155078442",
+        "CHANGELOG.md": "6043a5f16ccf5f859f2a0bb343dec6f7ce573258577d61e74a3e53cf663df43c",
+        "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": "f466fba87ef7dda7f86fe6bff905a7cdc7669df5504fea372d0ae2280792b4e2",
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md": "309273e866de23d5b601dc032d82b45e0d9f50d4e719d5fcc9bf6c64697509a6",
+        "docs/roadmap/MILESTONES.md": "0bb752b21d49ea865b4cd6a19520836c05866fa642b5c1b925bccacf38227819",
+        "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "0ed2f88dece10cb2fc00a8885a043d7573bcfd324d39d88dfbbfade13bbb3c0f"
+      },
+      "newFilesSha256": {
+        "docs/milestones/ANALYTICS_POC_APPROVAL.md": "502fdbd60bc505ec71bc3adc3822393197d29a48823452740edcddece05a3d96",
+        "docs/milestones/ANALYTICS_POC_PREPARATION_VERIFICATION.md": "39b22464e735637c22302b690929d150c1d64a3c1ee684d7e36a815ddd09dc67"
+      },
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/ANALYTICS_POC_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_PREPARATION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_REVIEW.md\n?? docs/milestones/MQTT_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/MQTT_POC_ADAPTER_EVIDENCE_2026_11_04.json\n?? docs/milestones/MQTT_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/MQTT_POC_APPROVAL.md\n?? docs/milestones/MQTT_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_EVIDENCE_2026_11_05.json\n?? docs/milestones/MQTT_POC_OVERLAY_REVIEW.md\n?? docs/milestones/MQTT_POC_OVERLAY_VERIFICATION.md\n?? docs/milestones/MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_RELEASE_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json"
+    },
+    "agrosphere-contracts": {
+      "head": "6461db157213c57ed3448480e2099ef463b7c889",
+      "headPreserved": true,
+      "baselineIndexSha256": "9fc9ff0c81a96569cbf754b9ff2ed408c9d68250e205dd0f1efd9393c77a60f0",
+      "observedIndexSha256": "eb954405cf7e0c87ac2888515cfe6f96debb2be72e9dd8130e0017376a722bc5",
+      "indexBytesMatchBaseline": false,
+      "finalStagedEntriesEqualHEAD": true,
+      "unchangedBaselineFiles": 200,
+      "changedBaselineFilesSha256": {
+        ".gitattributes": "364c16260c0c8eafb6eb369c863b182dd5bf13153b4122d3bfda47300bd692ea",
+        ".github/workflows/ci.yml": "43ebdfc861009cdbceb0ae0fdf44bc56197459b0bf81fb3d08b5b2878e92b07c",
+        "AGENTS.md": "6f66492b5bbb7642a1f944f44736f1c7a32d63d37633e9cfc43ca87dfae50c66",
+        "CHANGELOG.md": "b9d7919621a16e9f438f7af99b512a4d447b12131fc6d09a7949bf9ec2e48bb3",
+        "README.md": "61588af1caa1fff1cf1373b636289a822471246772716e01c426a4ebd938ac9b",
+        "scripts/validate.py": "b6642cb066bdff48c74700cf0753f22ff6c1fca2b55df9b2e005de1ab3601034"
+      },
+      "newFilesSha256": {
+        "docs/analytics-poc/CANDIDATE_MANIFEST.json": "43d9e5f7b328002c735cdf85da3f6ed5e0c9ff41a2f74aaccdcc0b8e8a396998",
+        "docs/analytics-poc/CANDIDATE_REVIEW.md": "d2d54aebe7c13aac09b89006728f8a5c2b3df2c12bf5dfe437e1467dbc792c84",
+        "docs/analytics-poc/candidate/examples/calculated.json": "7c457ae47f1f5898108f0905a9cbb64c45b8214900260e505c731b932f5d64c9",
+        "docs/analytics-poc/candidate/examples/corrected.json": "be943fa730b868d9fcc5b6a7acbbe44050aeded80b7f390c44a8b97fcdd6306a",
+        "docs/analytics-poc/candidate/examples/denied.json": "307a40f97c14d7d7c519ed40deb97288636748c05b309ddf3deb9dcca2f54177",
+        "docs/analytics-poc/candidate/examples/incomplete.json": "d7ea608107621c6c1ff13f99ee12d06c447cddd093d09d36ad2b5c72dcf92eed",
+        "docs/analytics-poc/candidate/examples/none.json": "0da8c68a53d499e6ef744f423dd0740659bf5ff87e53f1fe14a27b36f1cd2278",
+        "docs/analytics-poc/candidate/examples/pending.json": "3f209115914ffd3e6d053fca69bd10f00a68a189d27a2d42a197fbb9d7c1ec1d",
+        "docs/analytics-poc/candidate/examples/unavailable.json": "09c10dbd16bb776df871673def90ade6c8b63ad09ac1f25607c02cda3af10bf0",
+        "docs/analytics-poc/candidate/examples/voided.json": "2dec275ba21758fe8c5b10ddad6b7c3dfc0c7aed3c1a36380c0311a1e3124f18",
+        "docs/analytics-poc/candidate/examples/zero-drc.json": "1cd9fb6af6107be49395a8efa8f786fe1df6fd34270fc163d9e261fb0145b318",
+        "docs/analytics-poc/candidate/openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300",
+        "scripts/analytics_contract_validation.py": "61df478cdc947d0ad986418c6a9258163010e26749e622a1361fb805b65a708d",
+        "scripts/build_analytics_contracts.py": "b45ee72d2f9656f11e9a928124d0e86ac923ecac52f992a621403ec6ebf845a7",
+        "scripts/test_analytics_contracts.py": "b0d46a934647e3d7fc38ef8e93ce8f20852b3da08a320de3c8072b2ba7b3395d"
+      },
+      "status": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M openapi/telemetry-service.yaml\n M scripts/alert_contract_validation.py\n M scripts/alert_privacy_contract_validation.py\n M scripts/crop_health_contract_validation.py\n M scripts/validate.py\n M scripts/workforce_contract_validation.py\n?? docs/analytics-poc/CANDIDATE_MANIFEST.json\n?? docs/analytics-poc/CANDIDATE_REVIEW.md\n?? docs/analytics-poc/candidate/examples/calculated.json\n?? docs/analytics-poc/candidate/examples/corrected.json\n?? docs/analytics-poc/candidate/examples/denied.json\n?? docs/analytics-poc/candidate/examples/incomplete.json\n?? docs/analytics-poc/candidate/examples/none.json\n?? docs/analytics-poc/candidate/examples/pending.json\n?? docs/analytics-poc/candidate/examples/unavailable.json\n?? docs/analytics-poc/candidate/examples/voided.json\n?? docs/analytics-poc/candidate/examples/zero-drc.json\n?? docs/analytics-poc/candidate/openapi/analytics-service.yaml\n?? docs/telemetry-poc/CANDIDATE_MANIFEST.json\n?? docs/telemetry-poc/CANDIDATE_REVIEW.md\n?? docs/telemetry-poc/RELEASE_0_10_0.json\n?? docs/telemetry-poc/candidate/events/telemetry/v1/TelemetryObservationRecorded.schema.json\n?? docs/telemetry-poc/candidate/examples/AIR_TEMPERATURE.json\n?? docs/telemetry-poc/candidate/examples/INTERVAL_RAINFALL.json\n?? docs/telemetry-poc/candidate/examples/LatestReadings.json\n?? docs/telemetry-poc/candidate/examples/SOIL_MOISTURE.json\n?? docs/telemetry-poc/candidate/examples/TelemetryObservationRecorded.json\n?? docs/telemetry-poc/candidate/mqtt/Observation.schema.json\n?? docs/telemetry-poc/candidate/openapi/telemetry-service.yaml\n?? docs/telemetry-poc/previous-0.9.0/VERSION\n?? docs/telemetry-poc/previous-0.9.0/openapi/telemetry-service.yaml\n?? events/telemetry/v1/TelemetryObservationRecorded.schema.json\n?? examples/telemetry/v1/AIR_TEMPERATURE.json\n?? examples/telemetry/v1/INTERVAL_RAINFALL.json\n?? examples/telemetry/v1/LatestReadings.json\n?? examples/telemetry/v1/SOIL_MOISTURE.json\n?? examples/telemetry/v1/TelemetryObservationRecorded.json\n?? mqtt/Observation.schema.json\n?? scripts/analytics_contract_validation.py\n?? scripts/build_analytics_contracts.py\n?? scripts/build_telemetry_contracts.py\n?? scripts/telemetry_contract_validation.py\n?? scripts/telemetry_release_compatibility.py\n?? scripts/test_analytics_contracts.py\n?? scripts/test_telemetry_contracts.py"
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "headPreserved": true,
+      "baselineIndexSha256": "b875774a9490b85aed4bac20b87a2d0b52017a4037a0e35ee926008466cb3fab",
+      "observedIndexSha256": "b875774a9490b85aed4bac20b87a2d0b52017a4037a0e35ee926008466cb3fab",
+      "indexBytesMatchBaseline": true,
+      "finalStagedEntriesEqualHEAD": true,
+      "unchangedBaselineFiles": 23,
+      "changedBaselineFilesSha256": {
+        "AGENTS.md": "cf100c7e230f0618ee1623cd64470c32c46b10c3cc9e28ffe35a830ba081c5b0",
+        "CHANGELOG.md": "af7f8696c311e304b26e51b0414a02b7441f09107838d3f69a34023379365480",
+        "README.md": "328c3d7fd697c0dbccae401a0fe7e70d5b27e56dd3cc56d431663939bbfadd76"
+      },
+      "newFilesSha256": {
+        "docs/ANL01_PURE_PREPARATION.md": "343d8106d1354939c0580388af025b87b02e1dc868fca26219a918719324aade",
+        "src/main/java/com/agrosphere/analytics/application/ReadProductionHistory.java": "40a9c0582f8ce7d1644c010a51d8dc60ef4d4828cbe8027aa31ccf36e47390c7",
+        "src/main/java/com/agrosphere/analytics/application/port/out/ProductionPorts.java": "b1576fe385f17d4b3dfead4d57a0238b97a07944674d10f34e91708b95ac1bc6",
+        "src/main/java/com/agrosphere/analytics/domain/ProductionProjection.java": "2e76aa08d885a0933b1e031bc67e7a444c101b6b6d34d443629cacedba7bf51e",
+        "src/main/java/com/agrosphere/analytics/domain/ProductionRevision.java": "f37d9818bbb182c2602f9496b3bfc91cdfbd5289cb81cc31a68c44508189ad95",
+        "src/test/java/com/agrosphere/analytics/ProductionProjectionTest.java": "9f4a3608ff7ffd3d8c70b8c3942dec3b34637a40804bc955c3e03cbe9eabb0a3"
+      },
+      "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n?? docs/ANL01_PURE_PREPARATION.md\n?? src/main/java/com/agrosphere/analytics/application/ReadProductionHistory.java\n?? src/main/java/com/agrosphere/analytics/application/port/out/ProductionPorts.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionProjection.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionRevision.java\n?? src/test/java/com/agrosphere/analytics/ProductionProjectionTest.java"
+    }
+  },
+  "historicalCheckpointSuffixPreserved": true,
+  "releasedContractsVersionPreserved": true,
+  "analyticsPOM_V1_RuntimeConfigSecurityPreserved": true,
+  "existingPrivateConfigDataStacksRolesCredentials": "EXCLUDED_UNTOUCHED",
+  "gitActions": "No staging/index-writing/commit/remote commands issued; Contracts index checksum difference observed, cause not established; left alone. Final staged diffs empty.",
+  "deploymentAEO": "UNTOUCHED",
+  "next": {
+    "increment": "Local Contracts Analytics API archive/release 0.11.0 + independent Analytics API/four-input pins",
+    "authorization": "PENDING_EXACT_EXECUTABLE_ACCEPTANCE",
+    "review": "agrosphere-contracts/docs/analytics-poc/CANDIDATE_REVIEW.md",
+    "manifestSha256": "43d9e5f7b328002c735cdf85da3f6ed5e0c9ff41a2f74aaccdcc0b8e8a396998",
+    "runtimeAdapters": "NOT_AUTHORIZED; concrete bounded review follows release/pins"
+  },
+  "ownerM4FieldRealProductionAcceptance": "OPEN"
+}

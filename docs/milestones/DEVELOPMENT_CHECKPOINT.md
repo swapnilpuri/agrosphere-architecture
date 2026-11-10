@@ -1,3 +1,253 @@
+# Active: M4 approved; exclusive milestone delivery — 2026-11-09
+
+Owner approved revision 1 of [M4_DELIVERY_PACKAGE.md](M4_DELIVERY_PACKAGE.md), SHA-256 `befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d`; [actual approval and scope](M4_DELIVERY_APPROVAL_2026_11_09.json). D01–D10 and E01–E10 are authorized, including delegated conforming contract/release/pin/SQL engineering gates. The reviewed package's PROPOSED labels are historical; preserve its exact bytes. Engineering completion and owner functional acceptance remain OPEN.
+
+**Milestone prompt rule:** work exclusively on the milestone named/approved by the owner. Current milestone is M4. Complete its authorized implementation, verification, demonstration and checkpoint; then stop for the owner's next milestone prompt. Do not advance to M5, field work, M1/M2 closure or other product scope automatically. Cross-repository changes needed for M4 are permitted; unrelated milestone development is not. No repeated M4 approval or routine engineering prompts.
+
+Active: E01 baseline/design and dependency-ordered E02–E10. [Fresh independent baseline](M4_IMPLEMENTATION_BASELINE_2026_11_09.json). Preserve current dirty work, all accepted ANL/TLM artifacts and prior checkpoint bytes. No production deployment, Git publication/staging/commit, REAL enablement, AEO work or private configuration/existing-target mutation. Stop only for material scope change or genuine blocker; never mark M4 complete from documents alone.
+
+---
+
+# Current: consolidated remaining-M4 package ready; owner decision pending — 2026-11-05
+
+The owner's latest request switches scheduling to **milestone-by-milestone delivery**. [Remaining-M4 revision 1](M4_DELIVERY_PACKAGE.md) consolidates forecasting (observed dry/wet mass), anomalies, immutable model/evaluation records, a scoped evidence-backed assistant, API/UI integration and an owned end-to-end demonstration. It proposes one approval for D01–D10 and autonomous E01–E10 delivery, including conforming exact Contracts/local release/pin and SQL/security engineering gates. **No package approval, AI business implementation, M4 demonstration or M4 acceptance is claimed.** The proposed deterministic assistant substitution for Ollama and bounded FR-08 target interpretation require explicit owner acceptance in this one review.
+
+ANL-01/02 and TLM engineering work/approvals remain preserved; owner functional acceptance is independently OPEN. The original M0–M5 roadmap/checklist remain authoritative; M1 broad scope/load, M2 reference-device performance, M3 connected/privacy, M5 physical XR, field Android/offline/sync/English–French and REAL/operating requirements remain OPEN. No requirement is silently removed. Earlier AI-01 preparation-only scheduling and requests for multiple later approvals are superseded for planning by this consolidated proposal; until accepted, they grant no new execution authority.
+
+Fresh preparation checks: Architecture workspace validator PASS; current Contracts validator PASS; **92 Contracts tests PASS** on normal-access retry after three initial sandbox fixture errors; **two AI foundation tests PASS** (liveness and absent business/docs endpoints). All 27 final changed-existing-file hashes in ANL-02 runtime evidence matched before this session's coordination edits. Historical Java/Web/runtime results are not fresh reruns. [Commands/results/limits](M4_REVIEW_CHECKS_2026_11_05.json), [12-root Git baseline](M4_RECONCILIATION_BASELINE_2026_11_05.json), [source evidence](M4_RECONCILIATION_SOURCE_EVIDENCE_2026_11_05.json). Existing dirty work is retained; no AEO or private-config inspection.
+
+Package SHA-256: `befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d`; [artifact manifest](M4_DELIVERY_MANIFEST.json), [final preservation/link verification](M4_REVIEW_FINAL_VERIFICATION_2026_11_05.json). Final workspace validation PASS after coordination edits. All twelve product HEADs, staged-diff observations and index hashes match baseline; non-Architecture Git status is unchanged. No new full-stack demonstration is claimed.
+
+**Next:** obtain the single decision on [revision 1](M4_DELIVERY_PACKAGE.md), record the actual reply/package hash and conditions, then autonomously execute approved E01–E10 in dependency order. A partial answer does not approve undecided material boundaries. Stop only for material scope change or genuine blocker; consolidate amendments. After working demo/checks/cleanup, update engineering status and leave owner functional acceptance OPEN until actually received. No production deployment, Git publication/staging/commit, REAL enablement, existing-target/private configuration/data/credential changes or AEO work. This is a review-ready checkpoint, not milestone completion. Historical checkpoint bytes follow unchanged.
+
+---
+
+# Current: ANL-02 runtime engineering verified; AI-01 preparation decision next — 2026-11-05
+
+[Exact runtime approval](ANALYTICS_ENVIRONMENT_ADAPTER_APPROVAL.md) and [implementation/check record](ANALYTICS_ENVIRONMENT_ADAPTER_VERIFICATION.md) fulfill the bounded environmental increment: immutable Analytics SQL/consumer/API, independent Web 0.12.0 panel and actual generated MQTT/Telemetry→Analytics→Gateway→Keycloak/Web. Final owned project agrosphere-3a-check-4c3c494b PASS; twenty source facts/twenty reverse duplicates, conflicts/diagnostics/pause/restart/rebuild/source oracle and full owned teardown verified. Default disabled; V1/V2, accepted artifacts/pins and existing production/Gateway behavior preserved. **Owner functional/M4 acceptance remains OPEN.**
+
+**One next engineering increment: AI-01 isolated Contracts candidate and independent AI pure rules/ports/tests preparation; authorization PENDING.** [Concrete review](AI_BASELINES_POC_REVIEW.md), SHA-256 `14b40f33c757d380f1c5e516d2626e7c7b42f84edde723b08efee4fad404cfa7`, proposes explicit next-local-date observed wet-mass proxy, immutable as-of availability/label chronology, deterministic forecast/comparator/anomaly baseline and reproducible registry/evaluation metadata. New target/cutoff/threshold semantics need this separate domain decision. No AI implementation/runtime/provider/dependency installation yet. Do not repeat satisfied ANL-01/02/TLM approvals.
+
+Actual checks: final Java 47 unit tests, earlier full 27 integration plus final 7 affected JDBC recheck; Analytics pins/JAR and 4 Python tests; Web 103 unit/36 UI/graphics/real generated live/browser and public-context Docker packaging; Infrastructure simulator/validators. [Evidence](ANALYTICS_ENVIRONMENT_RUNTIME_EVIDENCE_2026_11_05.json) records final hashes, failures/retries and audit limits. Original M0–M5/M1/M2/owner/AI-02/XR, Android offline/sync/English-French, privacy/REAL/operating gates remain OPEN in the sole checklist. No existing-target/private config/data/account/role/credential, Git index/commit/remote, deployment or AEO authority. Historical checkpoint follows unchanged; earlier current/pending labels are superseded for scheduling.
+
+---
+
+# Active: ANL-02 bounded runtime approved — 2026-11-05
+
+Owner accepted exact runtime/SQL package; [approval](ANALYTICS_ENVIRONMENT_ADAPTER_APPROVAL.md). Review SQL/grants then implement adapters/Web/new owned disposable verification in dependency order. No repeated scope/executable approval. Preserve original gates and existing-target/Git/AEO exclusions. Historical checkpoint follows.
+
+---
+
+# Current: ANL-02 local release/pins verified; bounded runtime review next — 2026-11-05
+
+[Exact owner approval](ANALYTICS_ENVIRONMENT_CONTRACT_APPROVAL.md) and [verification](ANALYTICS_ENVIRONMENT_RELEASE_VERIFICATION.md) fulfill the previous executable gate: local Contracts **0.12.0** exact fourteen-artifact promotion/archive and independent Analytics six-resource API/input pins. Original candidate/review/manifest and all prior released bytes are preserved, with superseded API/VERSION/pin metadata archived exactly. No environmental runtime is delivered by these pins. Actual checks: Java **41 tests**, Analytics **4 pin tests**, Contracts **86 contract + 6 release tests**, standalone/JAR pins, deterministic candidate and main/workspace validators pass.
+
+**One next engineering increment: SIMULATED environmental materialization, scoped read API/read-only Web panel and newly owned disposable verification; authorization PENDING.** [Concrete runtime package](../../../agrosphere-analytics-service/docs/ANL02_ADAPTER_REVIEW.md) and [review/SQL manifest](../../../agrosphere-analytics-service/docs/ANL02_ADAPTER_MANIFEST.json) are prepared. Exact SQL/grant engineering review precedes installation only after that approval. Do not repeat satisfied preparation/executable/ANL-01/TLM approvals. No new role, producer change or Gateway route widening.
+
+Original owner/M4/M0–M5/M1/M2/AI/XR, field Android offline/sync/English-French, privacy/REAL/operating gates stay OPEN in the sole completion checklist. Existing-target/private config/data/account/role/credential, Git index/commit/remote, deployment and AEO exclusions persist. Earlier current/pending scheduling labels below are historical.
+
+---
+
+# Active: ANL-02 exact local release/pins approved - 2026-11-05
+
+Owner approved exact fourteen-artifact candidate; [approval](ANALYTICS_ENVIRONMENT_CONTRACT_APPROVAL.md). Archive/promote local Contracts 0.12.0 and independently pin Analytics, preserving old bytes. Runtime review remains pending. Historical checkpoint follows.
+
+---
+
+# Current: ANL-02 preparation verified; exact executable acceptance next — 2026-11-05
+
+Approved preparation is fulfilled: [verification](ANALYTICS_ENVIRONMENT_PREPARATION_VERIFICATION.md), [machine evidence](ANALYTICS_ENVIRONMENT_PREPARATION_EVIDENCE_2026_11_05.json). Isolated Contracts environmental API/thirteen examples and Analytics pure immutable facts/history/access ports/tests are complete. Current release/pins 0.11.0 and all runtime/migrations remain unchanged. Actual checks: Java 25 wrapper **41 tests**, Contracts **86 contract + 3 retained release tests**, main/candidate/pin/workspace checks pass. This is preparation, not owner/M4 acceptance or a running environmental feature.
+
+**One next increment: exact candidate acceptance for local Contracts 0.12.0 archive/promotion and independent Analytics pins only; PENDING.** [Exact review](../../../agrosphere-contracts/docs/analytics-environment-poc/CANDIDATE_REVIEW.md), fourteen artifacts/three unchanged input fingerprints, manifest SHA-256 `1759e5d95fb3602b623b995e4650f035b67dbb550760116587f46c031ca7d111`. Do not repeat approved preparation/ANL-01/TLM decisions. [Subsequent runtime/SQL/queue/security/copy review](../../../agrosphere-analytics-service/docs/ANL02_ADAPTER_REVIEW.md) is prepared, unapproved; no adapter/provisioning implementation yet.
+
+Original M0–M5/M1/M2/owner/AI/XR, Android offline/sync/English-French, privacy/REAL/operating gates remain OPEN in the existing roadmap/checklist. No existing-target/private config/data/role/credential, Git index/commit/remote, deployment or AEO action. Earlier current/active labels below are superseded for scheduling; historical bytes preserved.
+
+---
+
+# Active: ANL-02 approved preparation in progress - 2026-11-05
+
+Owner resumed the approved new-session handoff. Independent baselines and exact review hash verified; isolated Contracts candidate and pure Analytics rules/ports/tests underway. No release/pins/runtime or existing-target authority. Historical checkpoint follows unchanged.
+
+---
+
+# Current: ANL-02 preparation approved; begin in a new session
+
+Owner approved the exact [ANL-02 preparation package](ANALYTICS_ENVIRONMENT_POC_REVIEW.md), SHA-256 `c15ac50638feb09b176a44b5b16033d50e1b7365cbbe4467550f25d5910a17e9`, and requested a new-session start. [Approval and handoff](ANALYTICS_ENVIRONMENT_POC_APPROVAL.md) records the exact response. **Authorized; implementation NOT STARTED. Do not repeat this approval request.**
+
+**One next engineering increment:** isolated independent Contracts environmental-history candidate plus Analytics pure rules/ports/tests, SIMULATED only. On the owner's resume in a new session, read this repository's AGENTS/workflow, the approval/review and affected Contracts/Analytics AGENTS; refresh independent baselines and execute the approved preparation. Current release/pins and all old reviewed artifacts remain unchanged. Exact executable acceptance/release/pins and runtime adapter/security/provisioning review remain subsequent separate gates.
+
+ANL-01 bounded engineering verification is complete; owner functional/M4 acceptance remains OPEN. Original M0-M5/M1/M2/AI/Unreal-VR, field/offline Android/English-French, privacy and REAL/operating gates persist. No existing-stack/private config/data/role/credential, Git index/commit/remote, deployment or AEO action. All earlier pending/next scheduling labels below are superseded; historical checkpoint bytes retained.
+
+---
+
+# Current: ANL-01 finite profile verified; ANL-02 preparation next
+
+[Exact finite-profile approval](ANALYTICS_POC_ADMISSION_APPROVAL.md) and [implementation/check evidence](ANALYTICS_POC_ADMISSION_VERIFICATION.md) satisfy the previous admission gate and bounded engineering exit. Prior domain/executable/local release/runtime/profile approvals remain satisfied. Owner connected ANL-01/M4 acceptance stays OPEN; default runtime stays disabled outside explicit owned generated fixtures.
+
+**One next engineering increment: ANL-02 isolated Contracts environmental-history candidate and Analytics pure rules/ports/tests preparation. Authorization PENDING.** The [concrete review](ANALYTICS_ENVIRONMENT_POC_REVIEW.md), SHA-256 `c15ac50638feb09b176a44b5b16033d50e1b7365cbbe4467550f25d5910a17e9`, proposes unchanged Telemetry v1 input, explicit UTC half-open windows up to 24 hours, exact per-device samples capped at 1000 with count/truncation, immutable conflicts/rebuild and existing scoped read permissions. New domain/window/read-contract semantics require this next decision. No runtime SQL/AMQP/HTTP/Web, new credentials/topology or existing-target action is authorized by preparation; exact executable release/pins and runtime review follow separately. Do not repeat satisfied ANL-01/TLM approvals.
+
+All earlier active/current/pending scheduling guidance below is **SUPERSEDED**. Historical checkpoint bytes remain intact. Original M1/M2/owner/AI/Unreal-VR, actual demo privacy, field Android offline/sync/English-French and REAL/operating/AP-T08 gates remain in the sole roadmap/checklist. No AEO/private config/existing data/index/commit/remote/deployment mutation.
+
+---
+
+# Active: approved ANL-01 finite admission implementation
+
+Owner approved the exact finite profile; see [approval](ANALYTICS_POC_ADMISSION_APPROVAL.md). One authorized increment: pre-arithmetic resource checks, ADMISSION_LIMIT diagnosis/confirmation/pause and bounded regression/generated verification. Earlier pending scheduling guidance below is superseded; historical bytes retained. Default-disabled generated-only scope and all original owner/field/REAL exclusions persist.
+
+# Current: ANL-01 implemented; finite admission decision next - 2026-11-05
+
+[Runtime continuation](ANALYTICS_POC_ADAPTER_APPROVAL.md) satisfied the prior runtime approval request. [Implementation/check record](ANALYTICS_POC_ADAPTER_VERIFICATION.md) records actual results, limits and owner acceptance separately. SQL/parser/JDBC/consumer/scoped API, Gateway and Web are implemented behind the verified generated-only/default-disabled boundary. No owner/M4/original POC completion claim.
+
+**One next engineering increment: resolve and implement the ANL-01 finite admission profile. Authorization PENDING for this additional boundary only.** The concrete [admission review](../../../agrosphere-analytics-service/docs/ANL01_ADMISSION_REVIEW.md) identifies a schema-valid same-instant timestamp body exceeding the reviewed byte budget, proposed limits/classification, bounded tests and unchanged-contract consequences. The accepted adapter package explicitly requires revision in this situation. Do not silently reject it as a malformed schema or claim universal compatibility; no additional profile implementation/activation until that decision. Prior domain/executable/local release/runtime approvals remain satisfied. ANL-02/AI/XR and M1/M2/owner/field/REAL/operating gates remain visible in the sole roadmap/checklist.
+
+All older active/current/next/pending scheduling guidance below is **SUPERSEDED** by this section. Historical checkpoint bytes remain intact. No existing-stack/private configuration/data/account/role/credential, REAL, Git index/commit/remote, deployment or AEO action.
+
+---
+
+# Active: ANL-01 bounded runtime/dashboard continuation — 2026-11-05
+
+Owner instructed "please resume" following the concrete runtime-package decision request; [continuation record](ANALYTICS_POC_ADAPTER_APPROVAL.md) identifies exact scope and wording. Active: SQL/grant engineering review, then dependency-ordered parser/JDBC/consumer/scoped API, Gateway, Web and exclusively new disposable verification. Contracts 0.11.0 and prior approvals remain satisfied; no existing stack or REAL/deployment authority. Preserve historical checkpoint bytes below.
+
+# Current: ANL-01 local release/pins complete; runtime review next — 2026-11-05
+
+[Exact owner approval](ANALYTICS_POC_CONTRACT_APPROVAL.md) satisfies the pending executable/local release/pin gate below. [Verification](ANALYTICS_POC_RELEASE_VERIFICATION.md) and [machine evidence](ANALYTICS_POC_RELEASE_EVIDENCE_2026_11_05.json) record actual checks. Older pending/active continuation labels are superseded for scheduling; historical checkpoint bytes remain a suffix.
+
+Completed: local Contracts 0.11.0 exact Analytics API/nine-example promotion with prior placeholder/VERSION archive; independent Analytics API/four collection-v2 input resource pins and standalone/JAR validation. Original reviewed manifest/review/candidate, unrelated released bytes, pure rules, POM/V1/runtime security/configuration remain unchanged. No running materialized Analytics or dashboard is delivered by a release/pin.
+
+Actual checks: Java 25 wrapper **21 tests**, exact five resource/JAR pins; Contracts main validator and **82 tests**, candidate determinism; Architecture workspace/diagram and current-link checks. No actual SQL/AMQP/JWT/API/Web/rebuild/owner acceptance is inferred. Git HEAD/staged/index/protected-source observations and any checksum differences are recorded honestly in machine evidence; indexes are never restored or rewritten.
+
+**One next engineering increment: ANL-01 SIMULATED materialized runtime, scoped Gateway read and one Web production-history dashboard. Authorization PENDING.** The [bounded adapter/dashboard review](../../../agrosphere-analytics-service/docs/ANL01_ADAPTER_REVIEW.md), SHA-256 `855fe1894c530cf7942d3175e7a3eae850d0b34abff976a5e6bf7ba87a5618f3`, includes proposed exact additive SQL, parser/fingerprint, atomicity/rebuild, credentials/ACLs/queues/retry/stop/privacy and disposable acceptance. SQL is outside automatic migrations and unexecuted. This is the next runtime/security/provisioning scope decision explicitly required by the accepted plan. Do not repeat satisfied preparation/executable/local release/pin approvals or change the unchanged 0.11.0 contract.
+
+All original M0–M5, M1/M2/owner/alert/privacy/WA/II/AN, offline Android/English–French and REAL/hosting/operating/AP-T08 gates persist in the single roadmap/checklist. No existing-stack/private configuration/data/account/role/credential, REAL, Git publication/deployment or AEO action. Safe resume: record only actual acceptance of the bounded runtime review, refresh independent baselines, engineering-review the exact SQL/grants before any new-fixture installation, then implement accepted dependencies. Until acceptance, no runtime/queue/migration/Gateway/Web implementation or existing-target execution.
+
+---
+
+# Current: ANL-01 preparation verified; exact executable gate next — 2026-11-05
+
+[Owner approval](ANALYTICS_POC_APPROVAL.md) satisfies the preparation/domain decision below. [Verification](ANALYTICS_POC_PREPARATION_VERIFICATION.md) and [machine evidence](ANALYTICS_POC_PREPARATION_EVIDENCE_2026_11_05.json) record an isolated Contracts candidate and Analytics pure rules/ports/tests only. Older active/pending preparation continuation labels are **superseded for scheduling**; accepted decisions, exclusions and historical checkpoint bytes remain intact.
+
+Delivered preparation: one proposed read-only SIMULATED block/day production-history contract; exact decimal/absence/coverage/date/source-version semantics; immutable minimal source facts, duplicate/conflict/version-gap/tombstone/correction/rebuild rules and access-before-dependency ports. No public Analytics API, pin, migration, storage, broker consumer, Gateway/Web dashboard or production feature is shipped. POM/V1/runtime config/security and released Contracts artifacts/VERSION remain byte-preserved.
+
+Actual fresh checks: independent Java 25 Maven wrapper **21 tests (17 pure + four retained mock-security), zero failures/errors/skips**; Contracts main validator, **79 tests (eight new)** and deterministic generator checks. Architecture required workspace/diagram and current link checks are recorded in evidence. These do not prove real signed-token, transaction/ACK/DLQ, rebuild/restore or hosted-CI behavior.
+
+**One next engineering increment: local Contracts 0.11.0 Analytics API archive/promotion and independent Analytics API/four-input pins. Authorization PENDING.** The [exact candidate review](../../../agrosphere-contracts/docs/analytics-poc/CANDIDATE_REVIEW.md) requests ten candidate artifacts plus four unchanged released collection-v2 input fingerprints in manifest SHA-256 `43d9e5f7b328002c735cdf85da3f6ed5e0c9ff41a2f74aaccdcc0b8e8a396998`. This is the separate executable gate required by the already accepted preparation package; do not repeat its domain/scope approval. No release, pin or runtime adapter is authorized yet. After exact acceptance/release/pins, prepare concrete SQL/consumer/retry/DLQ/queue/security/provisioning review before runtime work.
+
+Original M0–M5 POC finish line and the single roadmap/checklist remain authoritative. M4 materialized storage/history/dashboard, ANL-02 and evaluated evidence-backed AI, M5 Unreal/VR/MR, M1 scope/load, M2 named-device metrics, TLM connected owner acceptance, bounded alerts/privacy and WA/II/AN dispositions remain OPEN. Confirmed Android offline capture/sync and English/French field release, actual-data/hosting/operating readiness and AP-T08 remain separate required gates; no requirement or approval is canceled or silently deferred.
+
+Three affected roots retain baseline HEADs and protected prior files. Architecture/Analytics index bytes match baseline; Contracts index checksum changed during the session, with an empty final staged diff. Cause is not established; no index-writing Git command was issued and the index was left alone. This metadata difference is recorded, not claimed as byte preservation. Approved review bytes and previous checkpoint suffix are preserved. No AEO/private configuration/existing data/roles/credentials/stacks, Git staging/commit/remote or deployment action. Safe resume: obtain only the exact artifact/local release/pin decision above, record its actual scope/hash, then perform accepted work independently. Until then no promotion/pin/adapters or existing-target execution.
+
+---
+
+# Active: owner-approved ANL-01 preparation — 2026-11-05
+
+[Exact approval](ANALYTICS_POC_APPROVAL.md) satisfies the pending preparation decision below. Active increment: isolated Contracts candidate/validation plus Analytics pure domain/ports/tests, SIMULATED only. No release/pins/runtime adapters or existing-stack work. Preserve historical checkpoint bytes and all original M0–M5/field/REAL acceptance gates. Exact executable review follows this preparation; do not repeat the accepted domain/scope question.
+
+# Current: TLM-02 implemented and generated verification passed — 2026-11-05
+
+[Exact TLM-02 approval](MQTT_POC_OVERLAY_APPROVAL.md) is satisfied within its scope. [Verification](MQTT_POC_OVERLAY_VERIFICATION.md) and [machine evidence](MQTT_POC_OVERLAY_EVIDENCE_2026_11_05.json) separate current engineering results from owner acceptance. All older active/pending continuation labels below are **superseded for scheduling**; their evidence, accepted decisions and exclusions remain intact. Prior checkpoint bytes are retained as a suffix.
+
+Delivered: finite deterministic SIMULATED publisher, unchanged independent Telemetry 0.10.0 Web pin/types, selected-block exact values/units/source/received clocks/coverage, foreground cancellation/visibility/denial states and optional freshness fill with canonical selection outline. The no-estate-polygon reset race is corrected using authoritative bounds. Actual generated MQTT/DB/outbox/Keycloak/Gateway/Spatial/Web flow verifies 18 observations/events plus 18 same-plan process-restart duplicates, selectable geometry and rendered CURRENT tint. No agronomic alarm, REAL device or existing-stack rollout.
+
+Fresh local checks: Web **80 unit tests / 20 files**, **31 UI + one graphics + one generated real-browser test**, sequential browser suites; lint/format/type/API/build and public-only Docker packaging. Infrastructure validator, **seven publisher + 23 retained watchdog tests**, placeholder Compose/compile checks; Architecture workspace validator and diagram syntax. Exact final project/image/source/log hashes and owned cleanup are recorded in machine evidence. No hosted CI, physical-device benchmark or owner functional sign-off is claimed.
+
+**One next engineering increment: ANL-01 isolated Contracts candidate and Analytics pure domain/ports/tests preparation. Authorization PENDING.** The [bounded review](ANALYTICS_POC_REVIEW.md), SHA-256 `3f4b8ee7c521502e0a29196ab647d84598dcb09aa91700856ef1bdc36e452342`, is prepared for new daily production KPI semantics, collection-day/version precedence, minimization and scoped reads. Accept/revise only that preparation scope next. Do not begin the new candidate/domain implementation until accepted; exact executable acceptance/local release and a concrete adapter/security/queue review follow separately. Do not repeat any satisfied TLM/domain/executable/adapter approval.
+
+TLM-01/02 **owner connected functional acceptance remains OPEN**, independently of Analytics preparation. Original POC closure still requires the [M0–M5 roadmap](../roadmap/MILESTONES.md) and [single checklist](../roadmap/PROJECT_COMPLETION_CHECKLIST.md): M1 company/scope/load disposition, M2 named-device frame/view/assets/memory, bounded connected alerts/privacy acceptance, WA/II/AN dispositions, materialized Analytics/evaluated evidence-backed AI and shared Unreal/VR/MR. Confirmed offline Android capture/sync and English/French remain required in the separate field track; REAL/hosting/operating/AP-T08 gates stay separate and apply where the actual demo requires them. No device/hosting question is repeated.
+
+Preserved: five baseline HEADs/indexes, unchanged Telemetry/Contracts source and old snapshots/reviews, Web package lock/runtime configuration, historical checkpoint and prior dirty work. New fixture listener/containers/project copies are removed and absence verified. No AEO/private configuration/existing data/accounts/roles/credentials, Git indexes/commits/remotes or deployment action.
+
+Safe resume: read current workflow/verification and the one ANL-01 review. Record only an actual matching new scope decision, refresh independent baselines, then perform its accepted preparation in each owning root. If no decision is supplied, the review is ready; no further TLM approval or actual-account/device fact is needed to complete this evidence.
+
+---
+
+# Active: owner-approved TLM-02 publisher and Web overlay — 2026-11-04
+
+[Owner approval](MQTT_POC_OVERLAY_APPROVAL.md) satisfies the pending TLM-02 scope decision below. Implement the exact accepted bounded publisher and selected-block Web detail/overlay; preserve immutable 0.10.0 schemas, prior UI/config/index and data. Active tasks: independent pin/types, deterministic generated publisher, visibility/cancellation/age store, panel/Cesium tint and scoped verification. No renewed domain/executable approval is needed. Prior checkpoint retained below.
+
+# Current: TLM-01 implemented and generated verification passed — 2026-11-04
+
+[Adapter approval](MQTT_POC_ADAPTER_APPROVAL.md) and the earlier domain/executable/local release approvals are satisfied within their scope. Do not repeat them. [Verification report](MQTT_POC_ADAPTER_VERIFICATION.md) and [machine evidence](MQTT_POC_ADAPTER_EVIDENCE_2026_11_04.json) record current implementation, exact artifacts and actual dated checks. Prior active/pending labels below are historical; prior checkpoint bytes are retained as a suffix.
+
+Delivered: SIMULATED-only immutable device/channel mapping, strict MQTT parsing/admission, service-owned additive V2, distinct generated runtime/migration logins, atomic duplicate/conflict-safe observation/outbox, stable latest ordering, confirmed bounded event relay, signed-JWT scoped GET and Gateway route only. Runtime is disabled by default; startup needs the explicitly owned generated fixture. No Web simulator/overlay, REAL or existing-stack rollout. Accepted Contracts 0.10.0 pins, V1 and old artifacts remain unchanged.
+
+Fresh November 4 PASS: Java 25 **30 unit + 16 integration tests**, zero failures/errors/skips; six actual HTTP response cases and fourteen actual event envelopes match local pins; Gateway **16 tests**; Infrastructure validator plus **23 watchdog tests**. Final-source real generated Keycloak/Gateway/Estate/MQTT platform project `agrosphere-3a-check-71279daf` passed, retained tapping checks and duplicate one-observation/one-event behavior, and verified exact owned resource cleanup. The initial attempt was unavailable because Docker was stopped; owner made it available and the rerun resolved that temporary gate. Historical November 1 checks remain historical. No hosted CI, physical device benchmark or owner functional sign-off is claimed.
+
+**One next engineering increment: TLM-02 deterministic SIMULATED publisher and selected-block Web environmental detail/overlay.** [Concrete bounded review](MQTT_POC_OVERLAY_REVIEW.md), SHA-256 `0d8a67aef15b295dbca267adad300ab0c94c2c88ec37cbff0c6a69c1ff7a49c9`, is prepared. **Implementation authorization PENDING**: the accepted adapter package explicitly excluded these product features. This review reuses the unchanged 0.10.0 API; it proposes finite synthetic cadence/sample bounds, UI age states, cancellation/foreground refresh and Cesium freshness styling, never agronomic severity or sensor facts. No new public wire contract or repeated executable approval is proposed. Do not modify Web/product publisher code until this scope is accepted.
+
+TLM-01 engineering verification is not parent M3 completion or owner functional acceptance. The owner walkthrough remains OPEN independently of the new feature decision. M1 company/scope/query-load disposition, M2 named-device frame/view/asset acceptance, alert/privacy/operating/AP-T08 and WA/II/AN gates, offline Android/English–French, materialized Analytics, evaluated AI, Unreal/VR and REAL/production readiness stay visible in the existing roadmap/checklist. No device-model question is repeated.
+
+Five-root HEAD/index/source observations are in machine evidence; all roots began with prior changes and those changes were preserved. No AEO/private configuration/existing data/volumes/accounts/roles/credentials, Git index/commit/remotes or deployment action. Only newly owned disposable verification resources were created/removed under the accepted package.
+
+Safe resume: read the current workflow/approval/verification and record only the TLM-02 scope decision if supplied. Refresh affected independent baselines; preserve Web configuration/index and prior features. Implement accepted scope in each owning root; no running-stack or REAL activation follows automatically. If TLM-02 is not yet accepted, its review preparation is complete and no additional user/device/hosting input is required for TLM-01 evidence.
+
+---
+
+# Active: owner-approved TLM-01 adapters — 2026-11-01
+
+[Adapter approval](MQTT_POC_ADAPTER_APPROVAL.md) satisfies the pending gate below. Implement the accepted generated-only package; do not repeat approvals. Active increment: engineering-review SQL/ACL/client behavior, implement Telemetry adapters and Gateway route, verify in exclusively new disposable fixtures and preserve exact pins/old sources/indexes. Existing target/private config/REAL/AEO/Git/deployment exclusions remain. Prior checkpoint retained below.
+
+# Current: TLM-01 local contract release/pins complete — 2026-11-01
+
+[Exact owner acceptance](MQTT_POC_CONTRACT_APPROVAL.md) is recorded for manifest `174140bc1db129ab879d9e431e9065a6715746c31c70fa0ec2bb7992063f01b0` and its eight artifacts. Prior domain and executable approval prompts below are satisfied; do not repeat them. Original candidate/review/manifest bytes remain frozen.
+
+Completed authorized work: independent local Contracts **0.10.0** archive/promotion/release metadata; exact Telemetry API/MQTT/event pins plus local RELEASE.json. [Release record](../../../agrosphere-contracts/docs/telemetry-poc/RELEASE_0_10_0.json) maps all eight promoted bytes and archived 0.9.0 Telemetry placeholder/VERSION. Telemetry stays 0.1.0/unreleased; Maven packaged-resource hashes and standalone stdlib pin validation require no sibling source. No Git tag/commit/remote/publication/deployment.
+
+**One next engineering increment: SIMULATED TLM-01 runtime adapters and disposable integration.** [Concrete bounded adapter review](../../../agrosphere-telemetry-service/docs/TLM01_ADAPTER_REVIEW.md), SHA-256 `389f1d3cfa6ca80fd602c2f945b9f23965723b53d5ca169919f7e11099e2bc75`, is PREPARED / **PENDING owner authorization**. It covers Telemetry ingestion/registry persistence/outbox/latest-readings API, Gateway route only and generated Infrastructure fixture, exact SQL/ACL/dependency engineering review, generated credentials only in owned disposable tests, bounded queues/retries/manual acknowledgement, schema/security/replay/recovery and complete teardown evidence. Existing broker/DB/config/private files/roles/credentials/data/volumes remain excluded. No adapter/migration has been installed. No need to repeat accepted wire/domain decisions.
+
+Important review boundary: ordinary MQTT subscriptions do not carry publisher username. Proposed trust derives from a verified immutable principal/topic/registry ACL binding at the generated broker, never body-provided identity. Missing or changed binding fails closed. Exact client/dependency support for post-commit manual ACK and retained-message handling must be verified before adapter selection. This security/provisioning/implementation scope is not inferred from local release approval.
+
+Actual checks: Contracts existing .venv main validator and deterministic candidate check PASS; all **71 contract tests PASS** after updating historical compatibility validators to recognize 0.10.0 while checking the original Telemetry placeholder via exact archive. Initial validation stopped at old VERSION=0.9.0 expectation; corrected version/inventory/archive routing without editing old baselines or accepted schemas. Telemetry stdlib pins PASS; Java 25 Maven verify **23 tests (18 domain, 4 retained mock security, 1 packaged-pin), zero failures/errors/skips**. No live MQTT/JWT/DB/outbox/restart/overlay/device/load or hosted CI claim. Architecture/diagram/diff/link/preservation results and source/log/report hashes: [release evidence](MQTT_POC_RELEASE_EVIDENCE_2026_11_01.json).
+
+Independent HEADs unchanged: Architecture `8c7e722ba92431a50f8e7c7879b2e42b4e12392e`, Contracts `6461db157213c57ed3448480e2099ef463b7c889`, Telemetry `8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a`. All began with prior uncommitted work, preserved. Previous checkpoint remains a byte-for-byte suffix; old schemas/candidates/releases, V1/POM/application config/domain code and all three Git indexes preserved except explicitly authorized current Telemetry API/VERSION promotion and release-check/documentation changes. No AEO/private config/existing data/role/credential/stack action.
+
+M0–M5 finish line and field/REAL separation remain in roadmap/checklist. M1 scope/load, M2 performance, M3 runtime/functional acceptance, alerts owner/privacy/operating/AP-T08 gates, materialized Analytics/AI/Unreal/VR and confirmed offline Android/French remain OPEN independently. No new device/client facts requested.
+
+Safe resume: record only the new adapter-package decision above if supplied; refresh affected independent baselines; follow accepted generated-only scope and owning guidance. Exact SQL/ACL/client review belongs inside that next authorization; ask again only for an actual change to accepted semantics/security/scope or non-disposable target. Do not infer existing-stack or REAL authorization.
+
+---
+
+# Current: TLM-01 authorized preparation complete — 2026-11-01
+
+Owner [approval](MQTT_POC_APPROVAL.md) of unchanged bounded MQTT review SHA-256 `84ba22535e81de2296d76746c612325571ea6364962bb42d7fe2138716dd3dbd` is recorded and satisfied. All earlier NOT AUTHORIZED/domain-review and active-preparation labels below are historical for that scope. Do not repeat this approval.
+
+**One next engineering increment:** exact executable Contracts acceptance and independent local release/pinning of TLM-01. [Concrete review](../../../agrosphere-contracts/docs/telemetry-poc/CANDIDATE_REVIEW.md) identifies all eight artifacts in [manifest](../../../agrosphere-contracts/docs/telemetry-poc/CANDIDATE_MANIFEST.json), SHA-256 `174140bc1db129ab879d9e431e9065a6715746c31c70fa0ec2bb7992063f01b0`. **PENDING owner executable acceptance/local release authority** for proposed Contracts 0.10.0 and exact Telemetry API/MQTT/event pins. VERSION remains Contracts 0.9.0 / Telemetry 0.1.0; no promotion or pins yet. Broker/ACL/provisioning/migration review remains before later adapters/integration; do not treat executable acceptance as existing-target or credential authority.
+
+Completed eligible work: isolated deterministic OpenAPI/MQTT/event candidate and five SIMULATED examples; format/schema/cross-field negative tests and CI/main-validator integration; Telemetry pure immutable measurement/registry model, admission/replay/latest/coverage policy and outbound ports. No runtime listener/controller/migration/seed/security-adapter change. Interface atomicity requirements are not verified DB/outbox behavior. Candidate numeric/time/payload constraints are exact proposed wire rules, not device facts. [Telemetry preparation](../../../agrosphere-telemetry-service/docs/TLM01_DOMAIN_PREPARATION.md) records limits.
+
+Actual PASS: Java 25 `mvnw.cmd --batch-mode --no-transfer-progress verify`: **22 tests (18 new domain + 4 retained foundation mock-security), zero failures/errors/skips**. Contracts existing .venv main validator, deterministic builder --check and `unittest discover -s scripts -p 'test_*contracts.py' -v`: **71 tests (59 retained + 12 new), PASS**. Initial Telemetry run had 21 tests; one UUID signed-order regression then added and final run passed 22. Architecture/link/diff/byte-preservation and exact source/report hashes are in [preparation evidence](MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json). No hosted CI, actual MQTT/JWT/DB/restart/transaction/outbox/overlay/device verification or owner functional acceptance is claimed.
+
+Affected independent HEADs: Architecture `8c7e722ba92431a50f8e7c7879b2e42b4e12392e`; Contracts `6461db157213c57ed3448480e2099ef463b7c889`; Telemetry `8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a`. Architecture began with previous re-anchor changes; Contracts/Telemetry initially clean. Preserve all prior changes and index entries. Original review bytes, old release/candidate/schema bytes, Telemetry V1/POM/config and prior checkpoint suffix remain unchanged. No AEO/private configuration/existing records/volumes/roles/credentials/Git indexes/commits/remotes/deployment action.
+
+Original M0–M5 finish line and separate field/REAL tracks remain in [roadmap](../roadmap/MILESTONES.md)/[single checklist](../roadmap/PROJECT_COMPLETION_CHECKLIST.md). M1 scope/load, M2 performance, connected alerts owner acceptance/PM/OR/AP-T08, WA/II/AN domain gates, offline Android/French and actual data/production stay independently OPEN. No new client/device question needed.
+
+Safe continuation: obtain only the exact eight-artifact decision above; record actual acceptance/hash/conditions, refresh affected baselines, then promote/archive/release/pin only the accepted scope. Do not install adapters or touch a running stack automatically. Prior checkpoint is retained byte-for-byte below.
+
+---
+
+# Active TLM-01 candidate and pure-domain preparation — 2026-11-01
+
+Owner approved the exact bounded MQTT package; see [approval](MQTT_POC_APPROVAL.md). The earlier NOT AUTHORIZED/review prompt below is historical and satisfied for candidate/pure-domain preparation only. Active work: author isolated executable Contracts candidate plus Telemetry pure domain/ports/tests, then run owning checks and prepare the next exact executable review gate. No release/pins/adapters or existing-target execution is authorized. Preserve original M0–M5/field/production separation and all independent open gates. Prior checkpoint retained byte-for-byte below.
+
+# Current checkpoint — original M0–M5 re-anchor, 2026-11-01
+
+This section is the current continuation authority. All earlier entries below are retained byte-for-byte as historical evidence. Their NEXT/exact-continuation instructions are **superseded for scheduling**, including maintenance-first, device-model and old 3B/WA/II/AN approval prompts. Their accepted decisions, exclusions, evidence and unresolved acceptance gates remain in force.
+
+Objective: finite reproducible SIMULATED local M0–M5 demonstration in the [roadmap](../roadmap/MILESTONES.md). The [completion checklist](../roadmap/PROJECT_COMPLETION_CHECKLIST.md) is the single gate tracker, with separate original POC, confirmed offline Android/English–French field release, and real-data/production tracks. No completion/owner acceptance is invented.
+
+**One next engineering increment: TLM-01 — generated authenticated MQTT ingestion, Telemetry-owned observation and scoped latest-reading behavior.** Current authorized preparation is COMPLETE: [bounded domain/security review](MQTT_POC_REVIEW.md), SHA-256 `84ba22535e81de2296d76746c612325571ea6364962bb42d7fe2138716dd3dbd`. **Implementation NOT YET AUTHORIZED:** proposed device/topic/measurement/time/dedup/security semantics require the next owner decision; Telemetry AGENTS remains foundation-only. Accept/revise that concrete package for isolated Contracts candidate and pure domain/ports/tests. Exact executable artifact acceptance/local release must still precede adapters/pins. Do not request renewed 3B/WA/II/AN/0.8.0/0.9.0 acceptance.
+
+Why this next: Telemetry source and empty-path contract are foundations; MQTT is the unfinished M3 capability. No dependency requires production hosting, actual-account enablement, offline/French or full PM/OR completion before generated Telemetry development. Analytics planning can later use accepted Operations events independently of MQTT; XR can run alongside after toolchain/device review. Final POC closure still needs all M0–M5 criteria.
+
+Alerts/privacy remaining POC scope is bounded by the checklist's exact disposable connected walkthrough/control/cleanup criteria. This arrangement is proposed, not executed. Original-deadline metadata/authority design, runner/watchdog and recovery work remain eligible within prior generated scope and necessary before relevant persistent/restore use; they no longer monopolize the product sequence. PM01/02 remain PARTIAL, PM04 fixture-only, PM03/05/live integration OPEN; OR01–06/AP-T08 actual-target gates OPEN. No V8 promotion, existing-stack inspection/upgrade or actual-account rollout follows. Preserve all applicable expiry/access/no-resurrection controls for the actual demo.
+
+M1 gaps: FR-01 company scope/accepted ADR 0008 narrowing, inferred division lifecycle and query-load acceptance. M2: reference-device frame/useful-view/asset/memory verification remains OPEN/PARTIAL. WA D08/D09, II-D07/08, AN-D07/08, owner walkthrough, offline/French and REAL gates remain independently OPEN. Individually assigned Android/one-workday answers persist; reference model unavailable now, do not repeat that question. Five-second connected delay is unaccepted/unmeasured.
+
+Only Architecture documentation changed. Safe process probe succeeded; baseline Architecture HEAD `8c7e722ba92431a50f8e7c7879b2e42b4e12392e`, initially clean. [Re-anchor evidence](POC_REANCHOR_EVIDENCE_2026_11_01.json) records actual documentation checks, index/checkpoint preservation and limits. Historical application tests were not rerun. AEO/private configuration/existing data/Git index/commits/remotes/deployment are untouched.
+
+Safe resume: read current workflow/checkpoint, record the TLM-01 package decision when supplied, refresh read-only affected baselines, then do only accepted work in the owning root. Until then do not implement proposed domain/security/contracts. No other owner input is requested now.
+
+---
+
 ## Observer SQL/privilege review and generated candidate — 2026-11-01
 
 Owner requested proceeding to the next step. Operations now has an [exact internal SQL candidate and engineering review](../../../agrosphere-operations-service/docs/ALERTS_PRIVACY_MAINTENANCE.md), plus `PrivacyMaintenanceServiceIT`. The candidate lives under `docs/privacy-maintenance`, outside automatic runtime migrations; no V8 is promoted or installed in an existing target. Review preceded application in unique schemas of a new disposable PostgreSQL Testcontainer. No external/parallel reviewer or owner/client security acceptance is claimed.

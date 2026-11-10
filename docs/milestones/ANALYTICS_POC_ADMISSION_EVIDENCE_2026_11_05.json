@@ -1,0 +1,258 @@
+{
+  "recordedAtUtc": "2026-11-05T16:50:18.197395+00:00",
+  "authority": {
+    "ownerReply": "approved",
+    "reviewSha256": "5c9a6787f0ebf2ad0d3d172e5fc3ac2ebb9d83ea9936c3664331fa81fe8629f8",
+    "scope": "Approved finite generated local admission only; no owner functional/M4 or existing-target acceptance"
+  },
+  "platform": {
+    "status": "PASS",
+    "scope": "SIMULATED owned disposable platform only",
+    "project": "agrosphere-3a-check-f3b6eb8d",
+    "runId": "2e15d87d-0d7c-4813-8b18-7bb5417c6901",
+    "originalSourceEvents": 7,
+    "duplicateReplay": 7,
+    "receipts": 7,
+    "highestRoots": 3,
+    "exactWetKg": "3.000",
+    "exactKnownDryKg": "0.000",
+    "conflictCount": 1,
+    "malformedSanitized": true,
+    "diagnosticFailurePaused": true,
+    "explicitRecovery": true,
+    "runtimeSqlDenials": true,
+    "privateBrokerPermissions": true,
+    "cacheRebuild": true,
+    "realGeneratedWeb": true,
+    "ownerAcceptance": "OPEN",
+    "manifestSha256": "20daaa27c9d6fefacf619659b9efec32a779dbf6320805c82b71fde2371923db",
+    "admissionProfile": "APPROVED_FINITE_GENERATED",
+    "admissionDiagnostics": 2,
+    "oversizedSchemaValidation": true,
+    "exponentRejectedBeforeArithmetic": true,
+    "admissionPauseRecovery": true,
+    "admissionNoProjectionMutation": true,
+    "analyticsContainerRemoved": true,
+    "projectResourcesRemoved": true
+  },
+  "preservation": {
+    "agrosphere-architecture": {
+      "head": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+      "headUnchanged": true,
+      "indexSha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md",
+        "docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+        "docs/roadmap/MILESTONES.md",
+        "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md"
+      ],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    },
+    "agrosphere-analytics-service": {
+      "head": "38725317675493237b2769ed38e1840b3991d69e",
+      "headUnchanged": true,
+      "indexSha256": "b875774a9490b85aed4bac20b87a2d0b52017a4037a0e35ee926008466cb3fab",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "README.md",
+        "docs/ANL01_RUNTIME.md",
+        "src/main/java/com/agrosphere/analytics/adapter/in/messaging/CollectionEventJson.java",
+        "src/main/java/com/agrosphere/analytics/adapter/in/messaging/ProductionConsumer.java",
+        "src/test/java/com/agrosphere/analytics/CollectionEventJsonTest.java"
+      ],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    },
+    "agrosphere-infrastructure": {
+      "head": "358e45e2a7d4f1637474503d7f83a3fee77fd99d",
+      "headUnchanged": true,
+      "indexSha256": "825cb371f24557b1a29b22c38a086b6596cff228005ded77061d7bd5c380e9cb",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [
+        ".gitattributes",
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "README.md",
+        "scripts/validate.py",
+        "scripts/verify_analytics.py"
+      ],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    },
+    "agrosphere-web": {
+      "head": "466eb4c21929b615e83fa37857a17f7a278a51f1",
+      "headUnchanged": true,
+      "indexSha256": "aef0f783cfb72e5f0df961263d1fd011084ef8e7db55c1bae73aaa7c47ac20c6",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [
+        "AGENTS.md",
+        "CHANGELOG.md",
+        "docs/PRODUCTION_HISTORY.md"
+      ],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    },
+    "agrosphere-api-gateway": {
+      "head": "f559534dc4227b26d067f6e2d89c62046d6999f7",
+      "headUnchanged": true,
+      "indexSha256": "cc7236ba91aa004d423dff664c002a6cc632df9042d8d877818e7d5d43d47fd7",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    },
+    "agrosphere-contracts": {
+      "head": "6461db157213c57ed3448480e2099ef463b7c889",
+      "headUnchanged": true,
+      "indexSha256": "eb954405cf7e0c87ac2888515cfe6f96debb2be72e9dd8130e0017376a722bc5",
+      "indexUnchanged": true,
+      "stagedUnchanged": true,
+      "changedPreexisting": [],
+      "missingPreexisting": [],
+      "preexistingMigrationsPinsPrivateConfigUnchanged": true
+    }
+  },
+  "sourceHashes": {
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/adapter/in/messaging/CollectionEventJson.java": "2983010166fe8a22f19f3bbd25e1eaa453125d0fda98c7547166d2575de1984e",
+    "agrosphere-analytics-service/src/main/java/com/agrosphere/analytics/adapter/in/messaging/ProductionConsumer.java": "990b046108c3589741fc400a83caac50b8224606846d0ff22e7b191948a19db6",
+    "agrosphere-analytics-service/src/test/java/com/agrosphere/analytics/CollectionEventJsonTest.java": "54a5af191e72498f64003e366e1ee9244a96d4988e337c3079cb7feb32a363a1",
+    "agrosphere-infrastructure/scripts/verify_analytics.py": "3fd8d0950b579adb934e931f74f8ea74b840fe09afc96bd5de50d3aaa2c6d2d5",
+    "agrosphere-infrastructure/scripts/validate.py": "4894743f30cb8db8f390d07dec81f68d253f168d4eb3ba2be4ce988a5e504114",
+    "agrosphere-infrastructure/tests/analytics-contracts/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "agrosphere-architecture/docs/milestones/ANALYTICS_ENVIRONMENT_POC_REVIEW.md": "c15ac50638feb09b176a44b5b16033d50e1b7365cbbe4467550f25d5910a17e9"
+  },
+  "images": {
+    "agrosphere-3a-check-f3b6eb8d-analytics": "sha256:e74ede475a41810cab4dcf94b8ddab9ce0b4d305fb966f230ffc0496f9f7bb53",
+    "agrosphere-3a-check-f3b6eb8d-operations": "sha256:ae16100b9c72122c17a5a059d5332a835e34b31e724aa0606a318592ef8e9c71",
+    "agrosphere-3a-check-f3b6eb8d-estate": "sha256:fcc477252501ca28aac05367612cc091a6726096f482effe72a2424bb657fd9a",
+    "agrosphere-3a-check-f3b6eb8d-gateway": "sha256:2ce3672b8b471aab373c029892fd55012055ce4d67069fad90efaf5c2b95adbc"
+  },
+  "checks": {
+    "analyticsUnit": {
+      "com.agrosphere.analytics.CollectionEventJsonTest": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "com.agrosphere.analytics.GeneratedAnalyticsTest": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "com.agrosphere.analytics.ProductionProjectionTest": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "com.agrosphere.analytics.SecurityPolicyTest": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "analyticsIntegration": {
+      "com.agrosphere.analytics.ProductionAmqpIT": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "com.agrosphere.analytics.ProductionHttpIT": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "com.agrosphere.analytics.ProductionJdbcIT": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "commands": [
+      {
+        "command": "Java 25 mvnw verify -Pintegration",
+        "status": "PASS",
+        "logSha256": "394876b8d3ee7c21a03623f706fc6d5041e9189bb59b8efd0bb7d27307cbd369"
+      },
+      {
+        "command": "Java 25 mvnw -Dtest=CollectionEventJsonTest test (independent fingerprint goldens added)",
+        "status": "PASS",
+        "logSha256": "7b2419cdb24db75371c1bb7cf7bd2a6e357cca4d54206f813fecd50ae36f6b0d"
+      },
+      {
+        "command": "python scripts/validate_contract_pins.py --jar target/agrosphere-analytics-service-0.1.0.jar",
+        "status": "PASS"
+      },
+      {
+        "command": "Infrastructure python scripts/verify_analytics.py",
+        "status": "PASS",
+        "logSha256": "22e98f492ca0b3e98662fe7fad3bcb5afc16a4b1778973b5b7774e9d81f42e87"
+      },
+      {
+        "command": "Infrastructure python scripts/validate.py; python -m py_compile scripts/verify_analytics.py",
+        "status": "PASS"
+      },
+      {
+        "command": "Architecture python scripts/validate.py --workspace C:/Projects/agrosphere",
+        "status": "PASS",
+        "logSha256": "d1b9b7d2d4bee2d3f123cfd296072ebc5de8822164b0f26ea5ef03c289707776"
+      },
+      {
+        "command": "Pinned PlantUML -checkonly architecture/3A/3B diagrams",
+        "status": "PASS"
+      },
+      {
+        "command": "Web prettier (changed documentation) and npm run format:check",
+        "status": "PASS"
+      },
+      {
+        "command": "Real generated Web production-live browser",
+        "status": "PASS",
+        "tests": 1,
+        "traceDisabled": true
+      }
+    ],
+    "notRerun": "Unchanged broader Web UI/unit/graphics/public packaging, Gateway and unrelated infrastructure tests retain their historical adapter verification; not claimed fresh here.",
+    "excludedCachedReport": {
+      "name": "com.agrosphere.analytics.ApplicationTest",
+      "reason": "No current test source or execution in retained verify log; stale report preserved on disk, excluded from fresh totals."
+    }
+  },
+  "limits": {
+    "utf8Bytes": 262144,
+    "containerDepth": 64,
+    "members": 10000,
+    "numericTokenCharacters": 1000,
+    "absoluteRawExponent": 1000
+  },
+  "checkpointHistoricalSuffixPreserved": true,
+  "cleanup": {
+    "containersRemaining": 0,
+    "volumesRemaining": 0,
+    "networksRemaining": 0
+  },
+  "notClaimed": [
+    "Universal encoding/producer compatibility",
+    "Owner connected functional/M4/M0-M5 acceptance",
+    "M1/M2 measurement/scope closure",
+    "ANL-02 implementation authority",
+    "Offline Android/English-French or REAL/production/hosting delivery"
+  ]
+}

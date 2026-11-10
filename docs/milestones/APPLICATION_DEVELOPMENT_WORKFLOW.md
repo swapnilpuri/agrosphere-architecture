@@ -1,3 +1,69 @@
+## Owner milestone prompt and exclusive focus — 2026-11-09
+
+The owner approved [remaining-M4 revision 1](M4_DELIVERY_PACKAGE.md); [approval](M4_DELIVERY_APPROVAL_2026_11_09.json) records the exact response/hash. Work exclusively on M4 through its authorized E01–E10 delivery. Routine reversible choices and conforming delegated contract/release/SQL checks do not need another owner turn. Package approval is not engineering completion or owner functional acceptance.
+
+Going forward, the owner selects each milestone by prompt. Work only on that milestone and its necessary dependencies across independent repositories. Deliver its working results/checks/limitations and updated checkpoint, then wait for the next milestone prompt; do not start another milestone automatically. Material scope changes/genuine blockers remain stopping boundaries. All previous exclusions persist. Historical pending labels below are satisfied for this exact approved package only.
+
+## Milestone-by-milestone delivery — 2026-11-05
+
+The latest owner instruction replaces increment-by-increment approval scheduling with one consolidated remaining-M4 review. Read [M4_DELIVERY_PACKAGE.md](M4_DELIVERY_PACKAGE.md) and the newest checkpoint first. D01–D10 remain **proposed**; after actual package approval, execute E01–E10 autonomously through their delegated conforming contract/release/pin/SQL engineering gates, recording exact artifacts and results. New material semantics/security/cost decisions need one consolidated amendment; routine reversible engineering does not need another prompt. Package approval and engineering verification never imply owner functional acceptance.
+
+Preserve existing ANL/TLM and other accepted work. The original M0–M5 roadmap/checklist, field and REAL/operating gates remain. No production/Git publication/REAL/private-config/existing-target/AEO authority. Earlier per-increment next/pending scheduling below is historical and superseded by this requested delivery mode; unaccepted proposals are not promoted to approvals. Until the package is accepted, authorized work is reconciliation and review preparation only.
+
+## ANL-02 runtime fulfilled; AI-01 preparation decision next
+
+[Owner runtime approval](ANALYTICS_ENVIRONMENT_ADAPTER_APPROVAL.md) is satisfied by [bounded verification](ANALYTICS_ENVIRONMENT_ADAPTER_VERIFICATION.md). Preparation/executable/runtime gates must not be repeated; owner/M4 acceptance stays open. Current checkpoint selects [AI-01 concrete pure preparation review](AI_BASELINES_POC_REVIEW.md), pending its new target/cutoff/threshold domain decision. Existing-target/private config/Git/AEO/REAL and all original field/owner gates persist; historical scheduling labels below are superseded.
+
+## ANL-02 exact release/pins fulfilled; runtime gate next
+
+[Owner approval](ANALYTICS_ENVIRONMENT_CONTRACT_APPROVAL.md) and [verification](ANALYTICS_ENVIRONMENT_RELEASE_VERIFICATION.md) satisfy exact executable/local Contracts 0.12.0 release and independent Analytics pins. No repeated preparation/executable approval. Current checkpoint selects the prepared bounded runtime/SQL/queue/security/copy package as the next separate decision, pending authorization. Preserve all historical evidence and original owner/field/REAL/existing-target/Git/AEO gates.
+
+## ANL-02 preparation verified; exact executable gate next
+
+Approved preparation is complete; see [verification](ANALYTICS_ENVIRONMENT_PREPARATION_VERIFICATION.md) and current checkpoint. No repeat preparation approval. Exact candidate local Contracts 0.12.0 release/pins remains pending; runtime package is prepared only. Earlier scheduling labels below are historical. Preserve original owner/field/REAL and all existing-target/Git/AEO exclusions.
+
+## ANL-02 preparation approved; owner requests new-session start
+
+[Exact approval and handoff](ANALYTICS_ENVIRONMENT_POC_APPROVAL.md) satisfies the prior ANL-02 preparation gate. Preparation is authorized and unstarted; begin only when the owner resumes in a new session. Follow the current checkpoint, refresh independent baselines and read affected AGENTS before work. No repeated ANL-01/TLM/ANL-02 preparation approval. Exact executable release and runtime review remain later gates. Historical scheduling guidance below is superseded; original acceptance/field/REAL exclusions persist.
+
+## ANL-01 finite profile fulfilled; ANL-02 preparation decision next
+
+[Exact finite-profile approval](ANALYTICS_POC_ADMISSION_APPROVAL.md) satisfies the old pending admission decision. [Implementation and actual checks](ANALYTICS_POC_ADMISSION_VERIFICATION.md) close its bounded engineering exit, not owner/M4 acceptance or broad producer compatibility. The one next increment is [ANL-02 isolated Contracts candidate plus Analytics pure environmental-history rules/ports/tests](ANALYTICS_ENVIRONMENT_POC_REVIEW.md), authorization PENDING because observation windows, sample/absence/conflict rules and a new read candidate require a new domain decision. No ANL-02 runtime or repeated ANL-01/TLM approval. Older scheduling guidance below is superseded, with historical evidence and original M0-M5/field/REAL gates retained.
+
+## ANL-01 runtime continuation and admission boundary - 2026-11-05
+
+[Continuation authority](ANALYTICS_POC_ADAPTER_APPROVAL.md) satisfies the historical pending runtime/dashboard gate below. [Implementation and checks](ANALYTICS_POC_ADAPTER_VERIFICATION.md) distinguish executed component/generated verification from owner acceptance. The exact accepted package requires revision if schema-valid input can exceed a parser ceiling; that condition was reproduced. The [finite admission supplement](../../../agrosphere-analytics-service/docs/ANL01_ADMISSION_REVIEW.md) is the one new pending decision; do not repeat satisfied domain/executable/local release/runtime approvals. Default disabled; no existing-target, REAL, Git/deployment or AEO authority. Original M0-M5/checklist tracks remain authoritative. Older next/pending guidance below is superseded for scheduling, preserving historical evidence.
+
+## ANL-01 exact local release/pins satisfied — 2026-11-05
+
+[Exact approval](ANALYTICS_POC_CONTRACT_APPROVAL.md) and [verification](ANALYTICS_POC_RELEASE_VERIFICATION.md) satisfy the old executable gate for local 0.11.0 archive/promotion and independent Analytics pins. No repeated preparation/executable approval. Current checkpoint names the prepared bounded runtime/dashboard package as the sole next increment, pending the SQL/consumer/queue/security/provisioning authority required by the accepted plan. Original gates and historical evidence persist; no existing-stack or production authority follows from release metadata.
+
+## ANL-01 preparation fulfilled — 2026-11-05
+
+[Preparation approval](ANALYTICS_POC_APPROVAL.md) satisfies the old pending domain/preparation gate below. [Verification](ANALYTICS_POC_PREPARATION_VERIFICATION.md) records the isolated exact candidate and pure Analytics rules/ports/tests, not runtime materialization. Current checkpoint names only exact executable acceptance/local release/pins as next, with a concrete review prepared. That separate gate follows the accepted review; do not ask again for preparation authority. After release/pins, runtime SQL/consumer/queue/security/provisioning still needs concrete bounded review. Original M0–M5, owner/field/REAL gates and all historical evidence persist; prior continuation labels are superseded for scheduling.
+
+## TLM-02 scope fulfilled locally — 2026-11-05
+
+[Exact approval](MQTT_POC_OVERLAY_APPROVAL.md) satisfies the historical TLM-02 pending-scope labels below. [Verification](MQTT_POC_OVERLAY_VERIFICATION.md) records implemented finite publisher/Web detail/overlay and generated-only checks. The checkpoint now names ANL-01 isolated candidate/pure-domain preparation as the one next engineering increment, with its concrete review prepared and authorization pending. Do not repeat satisfied TLM approvals. Owner connected functional acceptance, M1/M2/M3, field and REAL/operating gates remain independently open in the existing checklist; production readiness does not block unrelated generated preparation. Historical continuation instructions are superseded for scheduling, with their evidence retained.
+
+## TLM-01 adapter scope fulfilled locally — 2026-11-04
+
+[Adapter approval](MQTT_POC_ADAPTER_APPROVAL.md) satisfies the historical pending runtime gate. [Verification](MQTT_POC_ADAPTER_VERIFICATION.md) records implemented adapters, fresh generated checks and the resolved initial Docker outage. Current checkpoint names TLM-02 as the one next product increment with its bounded review pending scope acceptance. Do not repeat TLM-01 approvals or make production/field operating gates prerequisites for unrelated generated development. Owner functional/M1/M2/M3/field/REAL gates remain independently open; historical evidence below remains intact.
+
+## TLM-01 exact release/pins accepted — 2026-11-01
+
+[Exact acceptance](MQTT_POC_CONTRACT_APPROVAL.md) satisfies the executable gate below for all eight artifacts and local Contracts 0.10.0 promotion/archive plus Telemetry pins. Current checkpoint records actual validation and the next bounded adapter/security/provisioning review. Do not repeat domain/executable acceptance; runtime implementation is not automatically authorized by local release. Historical package/manifest/review bytes remain unchanged.
+
+## TLM-01 scoped preparation approved — 2026-11-01
+
+[Owner approval](MQTT_POC_APPROVAL.md) satisfies the historical domain/scope question below. Isolated Contracts candidate and pure Telemetry domain/ports/tests are authorized; the current checkpoint/evidence records completion. Exact executable acceptance/local release remains the next separate gate; no adapter/provisioning/existing-stack authority is inferred. Keep historical evidence and all original M0–M5/field/REAL gates.
+
+# Current sequencing clarification — 2026-11-01
+
+Use the [original M0–M5 roadmap](../roadmap/MILESTONES.md), [single completion checklist](../roadmap/PROJECT_COMPLETION_CHECKLIST.md) and latest checkpoint header. Current owner request re-anchors delivery to the finite SIMULATED local POC. Field release and real-data/production readiness remain separate requirements with explicit dependencies. Maintenance-first and historical feature/approval continuation instructions below are superseded for scheduling; security rules, actual approvals and unresolved gates persist. Proposed 3B labels and the instruction not to promote ADR 0013 are historical: accepted approval/ADR records already supersede them. Do not repeat satisfied acceptance.
+
+The present request authorizes reconciliation and bounded review preparation, not unreviewed new domain/security/contracts or existing-stack execution. The current checkpoint names one next engineering increment and its exact decision gate. Production facts/OR closure do not block unrelated generated development; actual demo persistence/exposure/privacy controls still apply. Keep one completion tracker and one client register; review packages are decision artifacts, not competing task registers.
+
 # Continuous application development workflow
 
 Effective: 2026-10-27 (America/Chicago). This is the persistent engineering procedure requested by the project owner, not acceptance of proposed domain decisions or permission to deploy. Keep this document and the [checkpoint](DEVELOPMENT_CHECKPOINT.md) together. AEO is paused: do not modify agrosphere-orchestrator source, configuration, databases, approvals, recovery classifications or persisted runs. Product approval evidence must not be inferred from AEO observations.

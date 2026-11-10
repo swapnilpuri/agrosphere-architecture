@@ -1,0 +1,282 @@
+{
+  "observed_at_utc": "2026-11-05T22:17:43.653857+00:00",
+  "kind": "read-only product baseline; excludes AEO/private config",
+  "repositories": {
+    "agrosphere-ai-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "cc92974049a50d64e6a5c1fb06868f01aa7f5def",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "b22e506b9ca965202ee4d41da78c17ad22a56cbb18b0a6bdfc89dea539070698"
+    },
+    "agrosphere-analytics-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "38725317675493237b2769ed38e1840b3991d69e",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M pom.xml\n M src/main/java/com/agrosphere/analytics/SecurityConfiguration.java\n M src/main/resources/application.yaml\n?? docs/\n?? scripts/\n?? src/main/java/com/agrosphere/analytics/AnalyticsMigrationConfiguration.java\n?? src/main/java/com/agrosphere/analytics/AnalyticsRuntime.java\n?? src/main/java/com/agrosphere/analytics/EnvironmentalRuntime.java\n?? src/main/java/com/agrosphere/analytics/GeneratedAnalytics.java\n?? src/main/java/com/agrosphere/analytics/JwtValidationConfiguration.java\n?? src/main/java/com/agrosphere/analytics/OwnedEnvironmentalRebuildMain.java\n?? src/main/java/com/agrosphere/analytics/OwnedRebuildMain.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/CollectionEventJson.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/EnvironmentalConsumer.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/EnvironmentalEventJson.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/messaging/ProductionConsumer.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/EnvironmentalController.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/EnvironmentalProblems.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/ProductionController.java\n?? src/main/java/com/agrosphere/analytics/adapter/in/web/ProductionProblems.java\n?? src/main/java/com/agrosphere/analytics/adapter/out/persistence/EnvironmentalJdbc.java\n?? src/main/java/com/agrosphere/analytics/adapter/out/persistence/ProductionJdbc.java\n?? src/main/java/com/agrosphere/analytics/adapter/out/web/\n?? src/main/java/com/agrosphere/analytics/application/ReadEnvironmentalHistory.java\n?? src/main/java/com/agrosphere/analytics/application/ReadProductionHistory.java\n?? src/main/java/com/agrosphere/analytics/application/port/out/EnvironmentalPorts.java\n?? src/main/java/com/agrosphere/analytics/application/port/out/ProductionPorts.java\n?? src/main/java/com/agrosphere/analytics/domain/EnvironmentalObservation.java\n?? src/main/java/com/agrosphere/analytics/domain/EnvironmentalProjection.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionProjection.java\n?? src/main/java/com/agrosphere/analytics/domain/ProductionRevision.java\n?? src/main/resources/contracts/\n?? src/main/resources/db/migration/V2__production_projection.sql\n?? src/main/resources/db/migration/V3__environmental_history.sql\n?? src/test/java/com/agrosphere/analytics/CollectionEventJsonTest.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalAmqpIT.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalEventJsonTest.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalHttpIT.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalJdbcIT.java\n?? src/test/java/com/agrosphere/analytics/EnvironmentalProjectionTest.java\n?? src/test/java/com/agrosphere/analytics/GeneratedAnalyticsTest.java\n?? src/test/java/com/agrosphere/analytics/ProductionAmqpIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionHttpIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionJdbcIT.java\n?? src/test/java/com/agrosphere/analytics/ProductionProjectionTest.java\n?? src/test/resources/",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": ".gitattributes                                     |  3 ++\n .github/workflows/ci.yml                           |  9 ++++--\n AGENTS.md                                          | 35 ++++++++++++++++++++++\n CHANGELOG.md                                       | 28 +++++++++++++++++\n Dockerfile                                         |  2 +-\n README.md                                          | 26 ++++++++++------\n pom.xml                                            |  4 +--\n .../analytics/SecurityConfiguration.java           | 13 +++++++-\n src/main/resources/application.yaml                | 12 ++++++++\n 9 files changed, 117 insertions(+), 15 deletions(-)",
+        "error": "warning: in the working copy of '.github/workflows/ci.yml', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'Dockerfile', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'pom.xml', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'src/main/java/com/agrosphere/analytics/SecurityConfiguration.java', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'src/main/resources/application.yaml', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "b875774a9490b85aed4bac20b87a2d0b52017a4037a0e35ee926008466cb3fab"
+    },
+    "agrosphere-api-gateway": {
+      "head": {
+        "exit_code": 0,
+        "output": "f559534dc4227b26d067f6e2d89c62046d6999f7",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M AGENTS.md\n M CHANGELOG.md\n M src/main/resources/application.yaml\n M src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "AGENTS.md                                                      | 10 ++++++++++\n CHANGELOG.md                                                   |  8 ++++++++\n src/main/resources/application.yaml                            |  8 ++++++++\n .../java/com/agrosphere/gateway/GatewayIntegrationTest.java    |  9 +++++----\n 4 files changed, 31 insertions(+), 4 deletions(-)",
+        "error": "warning: in the working copy of 'AGENTS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'src/main/resources/application.yaml', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'src/test/java/com/agrosphere/gateway/GatewayIntegrationTest.java', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "cc7236ba91aa004d423dff664c002a6cc632df9042d8d877818e7d5d43d47fd7"
+    },
+    "agrosphere-architecture": {
+      "head": {
+        "exit_code": 0,
+        "output": "8c7e722ba92431a50f8e7c7879b2e42b4e12392e",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/requirements/POC_SCOPE.md\n M docs/requirements/PRODUCT_VISION.md\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/AI_BASELINES_POC_REVIEW.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_ADAPTER_APPROVAL.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_ADAPTER_VERIFICATION.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_CONTRACT_APPROVAL.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_POC_APPROVAL.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_POC_REVIEW.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_BASELINE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_PREPARATION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_RELEASE_BASELINE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_RELEASE_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_RELEASE_VERIFICATION.md\n?? docs/milestones/ANALYTICS_ENVIRONMENT_RUNTIME_BASELINE_2026_11_05.json\n?? docs/milestones/ANALYTICS_ENVIRONMENT_RUNTIME_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_ADAPTER_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_ADMISSION_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_ADMISSION_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_ADMISSION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/ANALYTICS_POC_PREPARATION_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_PREPARATION_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_RELEASE_EVIDENCE_2026_11_05.json\n?? docs/milestones/ANALYTICS_POC_RELEASE_VERIFICATION.md\n?? docs/milestones/ANALYTICS_POC_REVIEW.md\n?? docs/milestones/MQTT_POC_ADAPTER_APPROVAL.md\n?? docs/milestones/MQTT_POC_ADAPTER_EVIDENCE_2026_11_04.json\n?? docs/milestones/MQTT_POC_ADAPTER_VERIFICATION.md\n?? docs/milestones/MQTT_POC_APPROVAL.md\n?? docs/milestones/MQTT_POC_CONTRACT_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_APPROVAL.md\n?? docs/milestones/MQTT_POC_OVERLAY_EVIDENCE_2026_11_05.json\n?? docs/milestones/MQTT_POC_OVERLAY_REVIEW.md\n?? docs/milestones/MQTT_POC_OVERLAY_VERIFICATION.md\n?? docs/milestones/MQTT_POC_PREPARATION_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_RELEASE_EVIDENCE_2026_11_01.json\n?? docs/milestones/MQTT_POC_REVIEW.md\n?? docs/milestones/POC_REANCHOR_EVIDENCE_2026_11_01.json",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "AGENTS.md                                          |  55 +++++\n CHANGELOG.md                                       |  48 +++++\n .../milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md |  54 +++++\n docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 226 +++++++++++++++++++++\n docs/requirements/POC_SCOPE.md                     |   4 +\n docs/requirements/PRODUCT_VISION.md                |   4 +\n docs/roadmap/IMPLEMENTATION_BACKLOG.md             |   4 +\n docs/roadmap/MILESTONES.md                         |  54 +++--\n docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md       | 133 ++++--------\n 9 files changed, 478 insertions(+), 104 deletions(-)",
+        "error": "warning: in the working copy of 'AGENTS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/milestones/DEVELOPMENT_CHECKPOINT.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/roadmap/IMPLEMENTATION_BACKLOG.md', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "9a2911213e735958fd7faf8675a048d65560ba2bf0648dfe836aa1bbeb8c65eb"
+    },
+    "agrosphere-contracts": {
+      "head": {
+        "exit_code": 0,
+        "output": "6461db157213c57ed3448480e2099ef463b7c889",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M openapi/analytics-service.yaml\n M openapi/telemetry-service.yaml\n M scripts/alert_contract_validation.py\n M scripts/alert_privacy_contract_validation.py\n M scripts/crop_health_contract_validation.py\n M scripts/validate.py\n M scripts/workforce_contract_validation.py\n?? docs/analytics-environment-poc/\n?? docs/analytics-poc/\n?? docs/telemetry-poc/\n?? events/telemetry/\n?? examples/analytics/\n?? examples/telemetry/\n?? mqtt/\n?? scripts/analytics_contract_validation.py\n?? scripts/analytics_release_compatibility.py\n?? scripts/build_analytics_contracts.py\n?? scripts/build_environmental_contracts.py\n?? scripts/build_telemetry_contracts.py\n?? scripts/environmental_contract_validation.py\n?? scripts/environmental_release_compatibility.py\n?? scripts/telemetry_contract_validation.py\n?? scripts/telemetry_release_compatibility.py\n?? scripts/test_analytics_contracts.py\n?? scripts/test_analytics_release.py\n?? scripts/test_environmental_contracts.py\n?? scripts/test_environmental_release.py\n?? scripts/test_telemetry_contracts.py",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": ".gitattributes                               |  27 +\n .github/workflows/ci.yml                     |   8 +\n AGENTS.md                                    |  30 +\n CHANGELOG.md                                 |  29 +\n README.md                                    |  24 +\n VERSION                                      |   2 +-\n openapi/analytics-service.yaml               | 925 ++++++++++++++++++++++++++-\n openapi/telemetry-service.yaml               | 452 ++++++++++++-\n scripts/alert_contract_validation.py         |   9 +-\n scripts/alert_privacy_contract_validation.py |   2 +-\n scripts/crop_health_contract_validation.py   |   7 +-\n scripts/validate.py                          |   9 +\n scripts/workforce_contract_validation.py     |   7 +-\n 13 files changed, 1479 insertions(+), 52 deletions(-)",
+        "error": "warning: in the working copy of '.gitattributes', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'scripts/validate.py', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "eb954405cf7e0c87ac2888515cfe6f96debb2be72e9dd8130e0017376a722bc5"
+    },
+    "agrosphere-estate-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "7fdd691431a6962f5ac71fb08e9e3e09380bae00",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "d2f77db2edac39ddbc2f1f3f0b4903794476165f2cfaa4162634f8a67c01c1a0"
+    },
+    "agrosphere-immersive": {
+      "head": {
+        "exit_code": 0,
+        "output": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "17d8c9f8732671b4fbc6b4e10ffccde29fefb6763d9c4490eb1fce8a3965c9b5"
+    },
+    "agrosphere-infrastructure": {
+      "head": {
+        "exit_code": 0,
+        "output": "358e45e2a7d4f1637474503d7f83a3fee77fd99d",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/validate.py\n M scripts/verify_tapping.py\n?? docs/ENVIRONMENTAL_HISTORY.md\n?? docs/TELEMETRY_SIMULATOR.md\n?? scripts/telemetry_simulator.py\n?? scripts/test_telemetry_simulator.py\n?? scripts/verify_analytics.py\n?? scripts/verify_environment_history.py\n?? scripts/verify_telemetry.py\n?? scripts/verify_telemetry_overlay.py\n?? tests/analytics-contracts/\n?? tests/telemetry-contracts/",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": ".gitattributes            |  2 ++\n .github/workflows/ci.yml  |  1 +\n AGENTS.md                 | 25 +++++++++++++++++++++++++\n CHANGELOG.md              | 20 ++++++++++++++++++++\n README.md                 | 15 +++++++++++++++\n scripts/validate.py       |  9 +++++++++\n scripts/verify_tapping.py |  9 ++++++++-\n 7 files changed, 80 insertions(+), 1 deletion(-)",
+        "error": "warning: in the working copy of 'AGENTS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'scripts/validate.py', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'scripts/verify_tapping.py', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "825cb371f24557b1a29b22c38a086b6596cff228005ded77061d7bd5c380e9cb"
+    },
+    "agrosphere-operations-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "cee9bc48062279a39c5683ea0d3b99a963b58f97",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "cf951f6a3cdaced9d625ef82fd49cb35ab2efdb293f112dc0185b9d16d42f839"
+    },
+    "agrosphere-spatial-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "2a7dbda842141fca041510ca79481ea0454eaaf8",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "92dd2cde156e7f3deb2a70e311680773bb21774942cdace01a05e74ed95d49fb"
+    },
+    "agrosphere-telemetry-service": {
+      "head": {
+        "exit_code": 0,
+        "output": "8a3c888dea3e1f3c7a94baf5c55a61285b5bcb7a",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M .gitattributes\n M .github/workflows/ci.yml\n M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M pom.xml\n M src/main/java/com/agrosphere/telemetry/SecurityConfiguration.java\n M src/main/resources/application.yaml\n?? docs/\n?? requirements-test.txt\n?? scripts/\n?? src/main/java/com/agrosphere/telemetry/JwtValidationConfiguration.java\n?? src/main/java/com/agrosphere/telemetry/TelemetryConfiguration.java\n?? src/main/java/com/agrosphere/telemetry/TelemetryRuntime.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/messaging/GeneratedChannel.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/messaging/MqttTelemetry.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/ObservationJson.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryAccess.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryController.java\n?? src/main/java/com/agrosphere/telemetry/adapter/in/web/TelemetryProblems.java\n?? src/main/java/com/agrosphere/telemetry/adapter/out/messaging/\n?? src/main/java/com/agrosphere/telemetry/adapter/out/persistence/JdbcTelemetry.java\n?? src/main/java/com/agrosphere/telemetry/adapter/out/web/\n?? src/main/java/com/agrosphere/telemetry/application/TelemetryIngestion.java\n?? src/main/java/com/agrosphere/telemetry/application/port/out/TelemetryPorts.java\n?? src/main/java/com/agrosphere/telemetry/domain/DeviceRegistration.java\n?? src/main/java/com/agrosphere/telemetry/domain/Observation.java\n?? src/main/java/com/agrosphere/telemetry/domain/ObservationPolicy.java\n?? src/main/resources/contracts/\n?? src/main/resources/db/migration/V2__simulated_telemetry.sql\n?? src/test/java/com/agrosphere/telemetry/ContractPinsTest.java\n?? src/test/java/com/agrosphere/telemetry/ObservationJsonTest.java\n?? src/test/java/com/agrosphere/telemetry/ObservationPolicyTest.java\n?? src/test/java/com/agrosphere/telemetry/TelemetryAdaptersIT.java",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": ".gitattributes                                      |  3 +++\n .github/workflows/ci.yml                            |  8 +++++++-\n AGENTS.md                                           | 15 +++++++++++++++\n CHANGELOG.md                                        | 12 ++++++++++++\n Dockerfile                                          |  2 +-\n README.md                                           | 12 ++++++++++++\n pom.xml                                             | 10 +++++-----\n .../agrosphere/telemetry/SecurityConfiguration.java | 21 ++++++++++++++++++++-\n src/main/resources/application.yaml                 | 20 ++++++++++++++++----\n 9 files changed, 91 insertions(+), 12 deletions(-)",
+        "error": "warning: in the working copy of '.gitattributes', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'Dockerfile', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'pom.xml', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'src/main/resources/application.yaml', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "71118d3e37aea28ea7d6e276c4fc862d6ba532901b9fbbe58150bdfd1170085d"
+    },
+    "agrosphere-web": {
+      "head": {
+        "exit_code": 0,
+        "output": "466eb4c21929b615e83fa37857a17f7a278a51f1",
+        "error": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "output": "M .gitattributes\n M .prettierignore\n M AGENTS.md\n M CHANGELOG.md\n M README.md\n M e2e/administration.spec.ts\n M e2e/alerts.spec.ts\n M e2e/crop-health.spec.ts\n M e2e/fixtures.ts\n M e2e/graphics.spec.ts\n M e2e/workforce.spec.ts\n M package.json\n M playwright.config.ts\n M scripts/check-api.mjs\n M scripts/preview.mjs\n M src/app/app.routes.ts\n M src/app/core/auth/auth.guard.spec.ts\n M src/app/core/auth/auth.guard.ts\n M src/app/core/auth/auth.service.spec.ts\n M src/app/core/auth/auth.service.ts\n M src/app/core/config.ts\n M src/app/features/digital-twin/cesium-viewer.component.ts\n M src/app/features/digital-twin/cesium-viewer.service.ts\n M src/app/features/digital-twin/digital-twin.component.html\n M src/app/features/digital-twin/digital-twin.component.ts\n M src/app/layout/shell.component.html\n M src/styles.css\n?? contracts/analytics.openapi.json\n?? contracts/analytics.release.json\n?? contracts/telemetry.openapi.json\n?? contracts/telemetry.release.json\n?? docs/ENVIRONMENTAL_HISTORY.md\n?? docs/PRODUCTION_HISTORY.md\n?? docs/TELEMETRY.md\n?? docs/analytics-previous-0.11.0/\n?? e2e/environment-fixtures.ts\n?? e2e/environment-live.spec.ts\n?? e2e/environment.spec.ts\n?? e2e/production-fixtures.ts\n?? e2e/production-live.spec.ts\n?? e2e/production.spec.ts\n?? e2e/telemetry-fixtures.ts\n?? e2e/telemetry-graphics.ts\n?? e2e/telemetry-live.spec.ts\n?? e2e/telemetry.spec.ts\n?? scripts/verify-environment-package.py\n?? src/api/analytics.generated.ts\n?? src/api/telemetry.generated.ts\n?? src/app/features/environment-history/\n?? src/app/features/production/\n?? src/app/features/telemetry/",
+        "error": ""
+      },
+      "diff_stat": {
+        "exit_code": 0,
+        "output": ".gitattributes                                     |  8 +++\n .prettierignore                                    |  6 ++\n AGENTS.md                                          | 16 ++++++\n CHANGELOG.md                                       | 16 ++++++\n README.md                                          |  6 ++\n e2e/administration.spec.ts                         | 14 +++--\n e2e/alerts.spec.ts                                 | 10 +++-\n e2e/crop-health.spec.ts                            |  4 +-\n e2e/fixtures.ts                                    | 10 ++--\n e2e/graphics.spec.ts                               | 12 ++++\n e2e/workforce.spec.ts                              |  4 +-\n package.json                                       |  2 +-\n playwright.config.ts                               | 66 ++++++++++++++++++++--\n scripts/check-api.mjs                              | 42 +++++++++++++-\n scripts/preview.mjs                                |  4 +-\n src/app/app.routes.ts                              | 13 +++++\n src/app/core/auth/auth.guard.spec.ts               | 22 ++++++++\n src/app/core/auth/auth.guard.ts                    |  6 +-\n src/app/core/auth/auth.service.spec.ts             | 22 ++++++++\n src/app/core/auth/auth.service.ts                  | 34 +++++++++++\n src/app/core/config.ts                             |  1 +\n .../digital-twin/cesium-viewer.component.ts        | 15 +++++\n .../features/digital-twin/cesium-viewer.service.ts | 22 +++++++-\n .../digital-twin/digital-twin.component.html       | 11 +++-\n .../digital-twin/digital-twin.component.ts         | 26 ++++++++-\n src/app/layout/shell.component.html                | 32 +++++++----\n src/styles.css                                     | 12 +++-\n 27 files changed, 395 insertions(+), 41 deletions(-)",
+        "error": "warning: in the working copy of '.gitattributes', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "staged_stat": {
+        "exit_code": 0,
+        "output": "",
+        "error": ""
+      },
+      "index_sha256": "aef0f783cfb72e5f0df961263d1fd011084ef8e7db55c1bae73aaa7c47ac20c6"
+    }
+  }
+}

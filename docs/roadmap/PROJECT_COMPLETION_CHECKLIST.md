@@ -21,7 +21,7 @@ Reconciled 2026-11-01; consolidated M4 delivery review update 2026-11-05 (Americ
 
 - [x] Existing ANL-01/02 bounded runtime engineering evidence retained; this review freshly corroborated 27 final changed-existing-file hashes, not a full runtime rerun.
 - [x] Consolidated remaining-M4 review prepared; fresh workspace/Contracts checks and two AI foundation tests recorded in [review evidence](../milestones/M4_REVIEW_CHECKS_2026_11_05.json). This checks review readiness only.
-- [ ] Owner approves [D01–D10](../milestones/M4_DELIVERY_PACKAGE.md), including target/provider scope and delegated conforming engineering gates. Do not infer this from the request to prepare the package.
+- [x] Owner approved [D01–D10](../milestones/M4_DELIVERY_PACKAGE.md) on 2026-11-09, including target/provider scope and delegated conforming engineering gates; [actual approval](../milestones/M4_DELIVERY_APPROVAL_2026_11_09.json). Work exclusively on M4; future milestones require an owner prompt.
 - [ ] E01–E06 implemented and verified: versioned Contracts/pins, chronology, dry/wet baselines/anomalies, immutable registry/evaluation, scoped assistant/API/Gateway/Web.
 - [ ] E07–E10 pass with a working end-to-end generated demonstration, real negative authorization and recovery, regression, exact artifact/check report and owned cleanup. Engineering completion requires these results.
 - [ ] Owner reviews demonstration/results/limitations and explicitly accepts or rejects bounded M4. Package approval and engineering PASS do not check this box.

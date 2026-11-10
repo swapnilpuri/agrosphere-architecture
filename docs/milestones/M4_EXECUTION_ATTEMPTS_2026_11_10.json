@@ -1,0 +1,42 @@
+{
+  "attempts": [
+    {
+      "project": "agrosphere-3a-check-a4e3b157",
+      "status": "FAILED",
+      "phase": "retained ANL-01 production-live browser regression before M4 callback",
+      "reason": "Older broad badge locator matched production and environmental badges; scoping corrected without changing product behavior.",
+      "parentRuntimeChecks": "Operations source workflow, broker outage/recovery, Analytics totals/dedup/diagnostics/rebuild passed before browser assertion",
+      "cleanup": {
+        "status": "FAILED",
+        "scope": "SIMULATED owned disposable platform only",
+        "project": "agrosphere-3a-check-a4e3b157",
+        "runId": "b39b4840-f6fb-4d9c-8df5-dce4a1639c73",
+        "analyticsContainerRemoved": true,
+        "projectResourcesRemoved": true
+      }
+    },
+    {
+      "project": "agrosphere-3a-check-3d8d92ab",
+      "status": "FAILED",
+      "phase": "M4 Gateway forecast wait after successful journal/import",
+      "reason": "No successful forecast response before timeout; original wait did not retain HTTP status. Stale parent session is suspected, not proven. Refresh generated sessions without relaxing expiry; add bounded failure diagnostics and batch publication.",
+      "observed": {
+        "sourceRows": 133,
+        "models": 4,
+        "evaluations": 1,
+        "generatedImportAndIdempotentImport": true,
+        "oldImagePublicHashDifference": "main, codec, store and runtime changed after image snapshot; no current-source runtime pass claimed",
+        "dockerBuildReaderWarning": "cp1252 decoding error; helper now explicitly reads UTF-8 with replacement"
+      },
+      "cleanup": {
+        "status": "FAILED",
+        "scope": "M4 newly owned SIMULATED disposable project",
+        "ownerAcceptance": "OPEN",
+        "project": "agrosphere-3a-check-3d8d92ab",
+        "runId": "91d69387-ce89-4c99-a3c2-5170e8bc6b84",
+        "aiOwnedContainersRemoved": true,
+        "projectResourcesRemoved": true
+      }
+    }
+  ]
+}

@@ -1,3 +1,11 @@
+# Current M4 acceptance and prompt handoff - 2026-11-10
+
+[Owner acceptance](../milestones/M4_OWNER_ACCEPTANCE_2026_11_10.md) closes the delivered bounded M4 functional acceptance. Prior OPEN labels below are historical for that package only; separate ANL and other tracked gates persist. [Milestone/phase prompts](prompts/README.md) are ready for owner selection. No next milestone has started.
+
+# M4 engineering handoff — 2026-11-10
+
+The owner's single approved remaining-M4 package is implemented and locally generated-verified; [delivery and actual evidence](../milestones/M4_DELIVERY_VERIFICATION_2026_11_10.md). D07's deterministic provider and D01's bounded dry/wet observed-mass interpretation were explicitly accepted. Owner functional acceptance remains OPEN. This backlog grants no authority to start another milestone: wait for the owner's milestone prompt. Prior pending/preparation/Ollama scheduling labels below are historical within their scope; all original M0–M5/field/REAL requirements remain in the sole checklist.
+
 # Milestone delivery anchor — 2026-11-05
 
 Use the [consolidated remaining-M4 package](../milestones/M4_DELIVERY_PACKAGE.md) as the one proposed delivery review. It covers all remaining M4 capabilities through a working generated demonstration, with explicit bounded yield and deterministic-provider scope decisions. Approval is pending; this file grants no implementation authority. Old priority rows and Ollama expectation below are retained historical requirements; D07 proposes their explicit POC disposition rather than silently treating an LLM as delivered. Existing original-milestone/field/REAL gates remain in the sole completion checklist.

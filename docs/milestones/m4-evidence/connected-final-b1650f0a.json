@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "scope": "M4 newly owned SIMULATED disposable project",
+  "ownerAcceptance": "OPEN",
+  "project": "agrosphere-3a-check-b1650f0a",
+  "runId": "b7e86fdb-f2e1-4228-a3d4-28ef361ddb51",
+  "packagedSourceHashes": {
+    "main.py": "b66913a13aba4d078dcce6b1732872f1c3546ffd13273b3cfded97ef5f2b1b73",
+    "adapters/codec.py": "dadd1d8191d90db10377b0890f67579a4e133bdb92bf2fe47423b56ba55fe0cd",
+    "adapters/store.py": "b9b862360cc3e2d1e26c92b8499f054cb1f920ce21961d780785e766385e2d82",
+    "adapters/runtime.py": "1397eaca0d15eb2789a4f8a9c969a0954904adb6d4ddf646913f3f4b074ed8b1",
+    "adapters/consumer.py": "7dd604ca0b50c255ef977b72452353c02070f909e3d108ec7e31af1f2c6275d3",
+    "domain/baselines.py": "fd6642065b090cd2835056c54ef794f75fe345391c13354c3cc56ae7c4f7852e",
+    "application/assistant.py": "509076dd1bf4b2ecb43c70f38d23583c6ec31df4ab20a0c6854232c75640f529",
+    "sql/m4.sql": "972d3952587f85cc563b4354c4d0247da959431d27bf2c88b002938ef8f336f5",
+    "contracts/RELEASE.json": "6308c61683f25a8b50f66203dd289b9ca52c5c5c2042258a55d44dc1accdd4a3"
+  },
+  "evaluationMetrics": [
+    {
+      "maeKg": "4.000000",
+      "split": "TRAIN",
+      "scored": 28,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "112.000"
+    },
+    {
+      "maeKg": "1.000000",
+      "split": "TRAIN",
+      "scored": 28,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "28.000"
+    },
+    {
+      "maeKg": "0.800000",
+      "split": "TRAIN",
+      "scored": 28,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "22.400"
+    },
+    {
+      "maeKg": "0.200000",
+      "split": "TRAIN",
+      "scored": 28,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "5.600"
+    },
+    {
+      "maeKg": "4.000000",
+      "split": "VALIDATION",
+      "scored": 14,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "56.000"
+    },
+    {
+      "maeKg": "1.000000",
+      "split": "VALIDATION",
+      "scored": 14,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "14.000"
+    },
+    {
+      "maeKg": "0.800000",
+      "split": "VALIDATION",
+      "scored": 14,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "11.200"
+    },
+    {
+      "maeKg": "0.200000",
+      "split": "VALIDATION",
+      "scored": 14,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "2.800"
+    },
+    {
+      "maeKg": "4.714286",
+      "split": "TEST",
+      "scored": 14,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "66.000"
+    },
+    {
+      "maeKg": "1.714286",
+      "split": "TEST",
+      "scored": 14,
+      "target": "WET",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "24.000"
+    },
+    {
+      "maeKg": "0.942857",
+      "split": "TEST",
+      "scored": 14,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "MEAN_7",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "13.200"
+    },
+    {
+      "maeKg": "0.342857",
+      "split": "TEST",
+      "scored": 14,
+      "target": "DRY",
+      "withheld": 0,
+      "algorithm": "LAST_DAY",
+      "withheldReasons": [],
+      "sumAbsoluteErrorKg": "4.800"
+    }
+  ],
+  "anomalyCounts": [
+    {
+      "split": "TRAIN",
+      "recall": null,
+      "target": "WET",
+      "unscored": 0,
+      "precision": null,
+      "trueNegative": 28,
+      "truePositive": 0,
+      "falseNegative": 0,
+      "falsePositive": 0
+    },
+    {
+      "split": "TRAIN",
+      "recall": null,
+      "target": "DRY",
+      "unscored": 0,
+      "precision": null,
+      "trueNegative": 28,
+      "truePositive": 0,
+      "falseNegative": 0,
+      "falsePositive": 0
+    },
+    {
+      "split": "VALIDATION",
+      "recall": null,
+      "target": "WET",
+      "unscored": 0,
+      "precision": null,
+      "trueNegative": 14,
+      "truePositive": 0,
+      "falseNegative": 0,
+      "falsePositive": 0
+    },
+    {
+      "split": "VALIDATION",
+      "recall": null,
+      "target": "DRY",
+      "unscored": 0,
+      "precision": null,
+      "trueNegative": 14,
+      "truePositive": 0,
+      "falseNegative": 0,
+      "falsePositive": 0
+    },
+    {
+      "split": "TEST",
+      "recall": "1.000000",
+      "target": "WET",
+      "unscored": 0,
+      "precision": "1.000000",
+      "trueNegative": 13,
+      "truePositive": 1,
+      "falseNegative": 0,
+      "falsePositive": 0
+    },
+    {
+      "split": "TEST",
+      "recall": "1.000000",
+      "target": "DRY",
+      "unscored": 0,
+      "precision": "1.000000",
+      "trueNegative": 13,
+      "truePositive": 1,
+      "falseNegative": 0,
+      "falsePositive": 0
+    }
+  ],
+  "splitBoundaries": [
+    [
+      "TRAIN",
+      "2026-09-16",
+      "2026-10-13"
+    ],
+    [
+      "VALIDATION",
+      "2026-10-14",
+      "2026-10-27"
+    ],
+    [
+      "TEST",
+      "2026-10-28",
+      "2026-11-10"
+    ]
+  ],
+  "sourceContracts": [
+    [
+      "DrcMeasurementRecorded.schema.json",
+      "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709"
+    ],
+    [
+      "LatexCollectionAdjusted.schema.json",
+      "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1"
+    ],
+    [
+      "LatexCollectionRecorded.schema.json",
+      "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479"
+    ],
+    [
+      "LatexCollectionVoided.schema.json",
+      "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+    ]
+  ],
+  "sourceFacts": 136,
+  "generatedDates": 63,
+  "actualOperationsSourceEvents": 7,
+  "reverseDuplicates": 126,
+  "datasetId": "3e99afd59b24e88c151612c8978192352251df926368a2288db324e40c227472",
+  "evaluationId": "e5baa745100adb17c6ce39e6e310f07798190540e1ceaee2e0fd94d118223723",
+  "meanWetKg": "68.000",
+  "actualWetKg": "82.000",
+  "flaggedTargets": 2,
+  "withheldGenerated": true,
+  "liveReceiptWithheld": true,
+  "immutableRegistry": true,
+  "explicitPauseRecovery": true,
+  "restartStable": true,
+  "realGeneratedWeb": true,
+  "modelEvaluationRead": true,
+  "concurrencyOneEffect": true,
+  "transactionRollback": true,
+  "trustedConflictFrozenRegistry": true,
+  "crossDatabaseDenied": true,
+  "privateBrokerDenials": true,
+  "crossEstateDenied": true,
+  "postCommitAvailability": true,
+  "unconfirmedReceiptWithheld": true,
+  "confirmationRecovery": true,
+  "provider": "DETERMINISTIC_EVIDENCE_V1",
+  "providerSpendUsd": "0",
+  "aiOwnedContainersRemoved": true,
+  "projectResourcesRemoved": true
+}

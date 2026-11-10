@@ -37,6 +37,34 @@
         "aiOwnedContainersRemoved": true,
         "projectResourcesRemoved": true
       }
+    },
+    {
+      "project": "agrosphere-3a-check-26112d13",
+      "status": "PASS",
+      "evidence": "m4-evidence/connected-pass-26112d13.json",
+      "note": "Fresh generated sessions, batching and exact current packaged-source comparison passed; original timeout cause not independently proven."
+    },
+    {
+      "project": "agrosphere-3a-check-b1650f0a",
+      "status": "PASS",
+      "evidence": "m4-evidence/connected-final-b1650f0a.json",
+      "note": "Final seven-table schema with post-commit confirmation, actual withheld/unconfirmed recovery, retained 12 aggregate metrics, readable Web 0.8.0 and Gateway 0.3.0."
+    }
+  ],
+  "additionalChecks": [
+    {
+      "project": "agrosphere-3a-check-e310ac24",
+      "status": "PASS",
+      "evidence": "m4-evidence/nonempty-upgrade-final.json",
+      "scope": "Fresh foundation, nonempty 0001 to 0002 preservation and wrong-target denial/rollback; owned cleanup."
+    },
+    {
+      "scope": "AI independent wheel",
+      "initialFailures": "Sandbox temporary tracker denied; no-build-isolation lacked setuptools backend. Normal isolated build succeeded, final source/SQL/pins verified."
+    },
+    {
+      "scope": "Web final style check",
+      "initialFailure": "New changelog/header and package line endings needed Prettier; corrected and format check passed."
     }
   ]
 }

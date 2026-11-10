@@ -1,0 +1,62 @@
+{
+  "agrosphere-ai-service": {
+    "head": "11e3e0264c7e7b1b81cbb523460445d75b27b0bd",
+    "status": "M .env.example\n M README.md\n M docs/M4_RUNTIME_REVIEW.md\n M src/agrosphere_ai/adapters/store.py\n M src/agrosphere_ai/domain/baselines.py\n M src/agrosphere_ai/sql/m4.sql\n M tests/test_m4_api.py",
+    "diff_stat": ".env.example                          |  6 ++++++\n README.md                             |  4 ++++\n docs/M4_RUNTIME_REVIEW.md             |  4 +++-\n src/agrosphere_ai/adapters/store.py   | 28 ++++++++++++++++++++++------\n src/agrosphere_ai/domain/baselines.py |  4 ++--\n src/agrosphere_ai/sql/m4.sql          | 14 ++++++++++++--\n tests/test_m4_api.py                  | 18 ++++++++++++++++++\n 7 files changed, 67 insertions(+), 11 deletions(-)"
+  },
+  "agrosphere-analytics-service": {
+    "head": "c61af33a4522c327f1f02374ce54473c81456329",
+    "status": "",
+    "diff_stat": ""
+  },
+  "agrosphere-api-gateway": {
+    "head": "b8f6937f2bbd117b08c710d7fe90ed11f3ab8226",
+    "status": "M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M VERSION\n M pom.xml",
+    "diff_stat": "AGENTS.md    | 5 +++++\n CHANGELOG.md | 4 ++++\n Dockerfile   | 2 +-\n README.md    | 4 ++++\n VERSION      | 2 +-\n pom.xml      | 2 +-\n 6 files changed, 16 insertions(+), 3 deletions(-)"
+  },
+  "agrosphere-architecture": {
+    "head": "a0569f1721e3ed66ddb54ca1ac621698748800d6",
+    "status": "M AGENTS.md\n M CHANGELOG.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M4_EXECUTION_ATTEMPTS_2026_11_10.json\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/NEXT_CODEX_PROMPT.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/InitialPrompts.pdf\n?? docs/milestones/M4_DELIVERY_VERIFICATION_2026_11_10.md\n?? docs/milestones/M4_FINAL_EVIDENCE_2026_11_10.json\n?? docs/milestones/M4_GIT_OBSERVATIONS_2026_11_10.json\n?? docs/milestones/M4_OWNER_ACCEPTANCE_2026_11_10.md\n?? docs/milestones/m4-evidence/\n?? docs/roadmap/prompts/",
+    "diff_stat": "AGENTS.md                                          | 10 ++++++\n CHANGELOG.md                                       |  4 +++\n .../milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md |  8 +++++\n docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 42 ++++++++++++++++++++++\n .../M4_EXECUTION_ATTEMPTS_2026_11_10.json          | 28 +++++++++++++++\n docs/roadmap/IMPLEMENTATION_BACKLOG.md             |  8 +++++\n docs/roadmap/MILESTONES.md                         | 10 +++---\n docs/roadmap/NEXT_CODEX_PROMPT.md                  |  6 ++++\n docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md       | 10 +++---\n 9 files changed, 116 insertions(+), 10 deletions(-)"
+  },
+  "agrosphere-contracts": {
+    "head": "c7846584ac938c4f7344f5ed60244fcc888df729",
+    "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md",
+    "diff_stat": "AGENTS.md    | 5 +++++\n CHANGELOG.md | 4 ++++\n README.md    | 4 ++++\n 3 files changed, 13 insertions(+)"
+  },
+  "agrosphere-estate-service": {
+    "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+    "status": "",
+    "diff_stat": ""
+  },
+  "agrosphere-immersive": {
+    "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70",
+    "status": "",
+    "diff_stat": ""
+  },
+  "agrosphere-infrastructure": {
+    "head": "9d9b46b37c02656500ace00a6a1490c0a4964ded",
+    "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/verify_m4.py\n?? scripts/verify_m4_upgrade.py",
+    "diff_stat": "AGENTS.md            |  5 +++\n CHANGELOG.md         |  4 +++\n README.md            |  4 +++\n scripts/verify_m4.py | 97 +++++++++++++++++++++++++++++++++++++++++++++++++---\n 4 files changed, 105 insertions(+), 5 deletions(-)"
+  },
+  "agrosphere-operations-service": {
+    "head": "003afc5a4f5c477ab76c31ae6d88f376290002cd",
+    "status": "M docs/alerts-notifications/prior-ii1-manifest.json\n?? docs/alerts-notifications/fixtures/",
+    "diff_stat": "docs/alerts-notifications/prior-ii1-manifest.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)"
+  },
+  "agrosphere-spatial-service": {
+    "head": "a6db7e446e7088f57b6962231c980100ca89b16a",
+    "status": "",
+    "diff_stat": ""
+  },
+  "agrosphere-telemetry-service": {
+    "head": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf",
+    "status": "",
+    "diff_stat": ""
+  },
+  "agrosphere-web": {
+    "head": "1eec9f8abc2e32e6f376c3596897d30c1491371a",
+    "status": "M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M e2e/m4-live.spec.ts\n M package-lock.json\n M package.json\n M scripts/verify-environment-package.py\n M src/app/features/m4/m4.component.html\n M src/app/features/m4/m4.component.ts\n M src/app/features/m4/m4.store.spec.ts\n M src/app/features/m4/m4.store.ts",
+    "diff_stat": "AGENTS.md                             |  4 +++\n CHANGELOG.md                          |  4 +++\n README.md                             |  4 +++\n VERSION                               |  2 +-\n e2e/m4-live.spec.ts                   | 13 ++++++++++\n package-lock.json                     |  4 +--\n package.json                          |  2 +-\n scripts/verify-environment-package.py |  5 ++++\n src/app/features/m4/m4.component.html | 49 ++++++++++++++++++++++++++++++++++-\n src/app/features/m4/m4.component.ts   | 14 +++++++++-\n src/app/features/m4/m4.store.spec.ts  | 28 ++++++++++++++++++++\n src/app/features/m4/m4.store.ts       | 13 +++++++---\n 12 files changed, 132 insertions(+), 10 deletions(-)"
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "date": "2026-11-10",
+  "timezone": "America/Chicago",
+  "milestone": "M4 only",
+  "engineering_status": "VERIFIED_BOUNDED_SIMULATED_POC",
+  "owner_functional_acceptance": "OPEN",
+  "next_action": "Wait for owner review or next milestone prompt; do not advance automatically.",
+  "approval_package_sha256": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+  "checks": [
+    {
+      "repository": "contracts",
+      "commands": [
+        ".venv/Scripts/python.exe scripts/validate.py",
+        ".venv/Scripts/python.exe -m unittest discover -s scripts -p test_*.py -q",
+        "scripts/build_m4_contracts.py --check"
+      ],
+      "status": "PASS",
+      "tests": 97
+    },
+    {
+      "repository": "ai",
+      "commands": [
+        ".venv/Scripts/python.exe -m pytest -q -p no:cacheprovider",
+        ".venv/Scripts/python.exe -m compileall -q src migrations",
+        "pip wheel . --no-deps --index-url https://pypi.org/simple --wheel-dir target/m4-wheels",
+        "ZIP source/pin/SQL comparison"
+      ],
+      "status": "PASS",
+      "tests": 67
+    },
+    {
+      "repository": "gateway",
+      "commands": [
+        "mvnw.cmd -q verify",
+        "independent Java 25 Docker build/runtime through final fixture"
+      ],
+      "status": "PASS",
+      "junit": {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "jar_class_major": 69
+    },
+    {
+      "repository": "web",
+      "commands": [
+        "npm ci",
+        "npm run lint",
+        "npm run format:check",
+        "npm run typecheck",
+        "npm run api:check",
+        "npm test",
+        "npm run build",
+        "npm run e2e",
+        "npm run e2e:graphics",
+        "owned production-live/m4-live projects",
+        "python scripts/verify-environment-package.py"
+      ],
+      "status": "PASS",
+      "unit": 111,
+      "ui": 36,
+      "graphics": 1,
+      "production_live": 1,
+      "m4_live": 1,
+      "incremental_note": "Within-block cancellation refinement after final connected run separately passed unit/lint/type/build and final public packaging; recorded connected walkthrough has explicit source scope."
+    },
+    {
+      "repository": "infrastructure",
+      "commands": [
+        "python scripts/validate.py",
+        "python -m py_compile scripts/verify_m4.py scripts/verify_m4_upgrade.py scripts/verify_analytics.py",
+        "python scripts/verify_m4.py",
+        "python scripts/verify_m4_upgrade.py"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "a0569f1721e3ed66ddb54ca1ac621698748800d6\n",
+      "status": " M AGENTS.md\n M docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M4_EXECUTION_ATTEMPTS_2026_11_10.json\n M docs/roadmap/IMPLEMENTATION_BACKLOG.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/M4_DELIVERY_VERIFICATION_2026_11_10.md\n?? docs/milestones/M4_FINAL_EVIDENCE_2026_11_10.json\n?? docs/milestones/M4_GIT_OBSERVATIONS_2026_11_10.json\n?? docs/milestones/m4-evidence/\n",
+      "diff_stat": " AGENTS.md                                          |  5 ++++\n .../milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md |  4 +++\n docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 30 ++++++++++++++++++++++\n .../M4_EXECUTION_ATTEMPTS_2026_11_10.json          | 28 ++++++++++++++++++++\n docs/roadmap/IMPLEMENTATION_BACKLOG.md             |  4 +++\n docs/roadmap/MILESTONES.md                         | 10 ++++----\n docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md       |  8 +++---\n 7 files changed, 80 insertions(+), 9 deletions(-)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "963545c625f417856c1938bba9fd1aacb508533c5ecdf6a28495670e8f82d177",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-contracts": {
+      "head": "c7846584ac938c4f7344f5ed60244fcc888df729\n",
+      "status": " M AGENTS.md\n M CHANGELOG.md\n M README.md\n",
+      "diff_stat": " AGENTS.md    | 5 +++++\n CHANGELOG.md | 4 ++++\n README.md    | 4 ++++\n 3 files changed, 13 insertions(+)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "dfbf304d44c6d69b248af60b093b9bd2230408b3ad4aa48804fa27d9f6c1f727",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-ai-service": {
+      "head": "11e3e0264c7e7b1b81cbb523460445d75b27b0bd\n",
+      "status": " M .env.example\n M README.md\n M docs/M4_RUNTIME_REVIEW.md\n M src/agrosphere_ai/adapters/store.py\n M src/agrosphere_ai/domain/baselines.py\n M src/agrosphere_ai/sql/m4.sql\n M tests/test_m4_api.py\n",
+      "diff_stat": " .env.example                          |  6 ++++++\n README.md                             |  4 ++++\n docs/M4_RUNTIME_REVIEW.md             |  4 +++-\n src/agrosphere_ai/adapters/store.py   | 28 ++++++++++++++++++++++------\n src/agrosphere_ai/domain/baselines.py |  4 ++--\n src/agrosphere_ai/sql/m4.sql          | 14 ++++++++++++--\n tests/test_m4_api.py                  | 18 ++++++++++++++++++\n 7 files changed, 67 insertions(+), 11 deletions(-)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "c35e28072686cfa51f604de2b05d594aff7bef670cab6904d66fde1c1f5bb485",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-analytics-service": {
+      "head": "c61af33a4522c327f1f02374ce54473c81456329\n",
+      "status": "",
+      "diff_stat": "",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "7e8287bbb81afa16d0e88e30fd0ff4afcaf5b97287f445311b6f08d1116c2f96",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-api-gateway": {
+      "head": "b8f6937f2bbd117b08c710d7fe90ed11f3ab8226\n",
+      "status": " M AGENTS.md\n M CHANGELOG.md\n M Dockerfile\n M README.md\n M VERSION\n M pom.xml\n",
+      "diff_stat": " AGENTS.md    | 5 +++++\n CHANGELOG.md | 4 ++++\n Dockerfile   | 2 +-\n README.md    | 4 ++++\n VERSION      | 2 +-\n pom.xml      | 2 +-\n 6 files changed, 16 insertions(+), 3 deletions(-)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "96023f8d93f797e8ce062a0a4fe37d3cf516b842bb88c4b0bc099d10ba7e260e",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-web": {
+      "head": "1eec9f8abc2e32e6f376c3596897d30c1491371a\n",
+      "status": " M AGENTS.md\n M CHANGELOG.md\n M README.md\n M VERSION\n M e2e/m4-live.spec.ts\n M package-lock.json\n M package.json\n M scripts/verify-environment-package.py\n M src/app/features/m4/m4.component.html\n M src/app/features/m4/m4.component.ts\n M src/app/features/m4/m4.store.spec.ts\n M src/app/features/m4/m4.store.ts\n",
+      "diff_stat": " AGENTS.md                             |  4 +++\n CHANGELOG.md                          |  4 +++\n README.md                             |  4 +++\n VERSION                               |  2 +-\n e2e/m4-live.spec.ts                   | 13 ++++++++++\n package-lock.json                     |  4 +--\n package.json                          |  2 +-\n scripts/verify-environment-package.py |  5 ++++\n src/app/features/m4/m4.component.html | 49 ++++++++++++++++++++++++++++++++++-\n src/app/features/m4/m4.component.ts   | 14 +++++++++-\n src/app/features/m4/m4.store.spec.ts  | 28 ++++++++++++++++++++\n src/app/features/m4/m4.store.ts       | 13 +++++++---\n 12 files changed, 132 insertions(+), 10 deletions(-)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "71cd73eb66523ae396e9e90b70f0907a9518470f0ffaf73409f4d39695f4dd67",
+      "index_bytes_unchanged": false
+    },
+    "agrosphere-infrastructure": {
+      "head": "9d9b46b37c02656500ace00a6a1490c0a4964ded\n",
+      "status": " M AGENTS.md\n M CHANGELOG.md\n M README.md\n M scripts/verify_m4.py\n?? scripts/verify_m4_upgrade.py\n",
+      "diff_stat": " AGENTS.md            |  5 +++\n CHANGELOG.md         |  4 +++\n README.md            |  4 +++\n scripts/verify_m4.py | 97 +++++++++++++++++++++++++++++++++++++++++++++++++---\n 4 files changed, 105 insertions(+), 5 deletions(-)\n",
+      "staged_stat": "",
+      "head_unchanged": false,
+      "staged_stat_unchanged": true,
+      "index_sha256": "b709076119e654cfbc4b1266c30929229ddd29d8133c126bb694da4372be977b",
+      "index_bytes_unchanged": false
+    }
+  },
+  "git_observation": "All seven baseline HEADs/index bytes advanced, all baseline HEADs remain ancestors, staged diffs unchanged. Agent issued no staging/commit/reset/publication command; cause of advancement not independently established. State left intact; see M4_GIT_OBSERVATIONS_2026_11_10.json.",
+  "historical_coordination_suffixes_preserved": {
+    "agrosphere-architecture/docs/milestones/DEVELOPMENT_CHECKPOINT.md": true,
+    "agrosphere-architecture/docs/milestones/APPLICATION_DEVELOPMENT_WORKFLOW.md": true,
+    "agrosphere-architecture/docs/roadmap/IMPLEMENTATION_BACKLOG.md": true
+  },
+  "contracts_release": "0.13.0",
+  "unchanged_collection_v2_inputs": {
+    "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+  },
+  "prior_release_archive": {
+    "docs/m4/previous-0.12.0/VERSION": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
+    "docs/m4/previous-0.12.0/openapi/ai-service.yaml": "0bc93aa4c50c05c2df65228304f203b7b2c4b738ae6de66fac9560c6e3f66dc9"
+  },
+  "packaged_runtime_source_matches_current": true,
+  "web_public_package_source_matches_current": true,
+  "artifacts": {
+    "ai_wheel": {
+      "path": "agrosphere-ai-service/target/m4-wheels/agrosphere_ai_service-0.2.0-py3-none-any.whl",
+      "sha256": "c2e0df4f1a9e5419e7e026190988ff12878fb9c561e3f3ba9e504f9e227840d6"
+    },
+    "gateway_jar": {
+      "path": "agrosphere-api-gateway/target/agrosphere-api-gateway-0.3.0.jar",
+      "sha256": "b4342ceefe76cad57d87a47aba43706df3b1668b969b1d4f9e86caff0df91b14"
+    },
+    "ai_upgrade_image_id": "sha256:4d26f4600ddaca60cef1a0a90eb1e513a069bc9e4b90f806afd6c83451aa630d",
+    "web_final_image_id": "sha256:8d4e2f75fc636698bdd2dc2f3666f35e96083ece641f6355321dc22525f3f8aa"
+  },
+  "source_sha256": {
+    "agrosphere-ai-service/Dockerfile": "cbe99aff8eabcb8dee4b8fa1cb19fdf05cb23c10983536e3d8844316a6cd0f09",
+    "agrosphere-ai-service/migrations/env.py": "a5d0d5541f573d05bf40943d899256493ef06c9c353764ee66febf443de5856b",
+    "agrosphere-ai-service/migrations/versions/0001_messaging.py": "8a80cfbbcacf7b7de657d9cf2733c8c11a78652a27fca441df3d35006b808dba",
+    "agrosphere-ai-service/migrations/versions/0002_m4.py": "471f91e93a96b0b759ff0d9ca49f5494052114ef4f73fce3505d26a3f28fa98b",
+    "agrosphere-ai-service/pyproject.toml": "90b0679e4e3d411b5efb992aebb15965a615ee95b9c159253293d5b53ef3981f",
+    "agrosphere-ai-service/src/agrosphere_ai/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/cli.py": "5e0300895075e1319dad665dab3472622e940a2c3084b25ba675a484b1a5c1bc",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/codec.py": "dadd1d8191d90db10377b0890f67579a4e133bdb92bf2fe47423b56ba55fe0cd",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/consumer.py": "7dd604ca0b50c255ef977b72452353c02070f909e3d108ec7e31af1f2c6275d3",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/generated_corpus.py": "f3140eb78430d7c4709feedc393245d77a0e9939dc798f933762bc636e6bbd83",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/inbound/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/outbound/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/outbound/README.md": "be65de23ddd4500f1ae691ce2137221f1abf9c85b47410663c7046dc3c1a67d5",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/ownership.py": "de8ee3646c6b40d7d8bed2b67a42275d399c618818399880c15df9c2bcb571ad",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/reference_http.py": "f5dd9d7ef7e516e3daffe1bd7fd3b038c07aabe5724a703d66fe4e1926e00398",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/runtime.py": "1397eaca0d15eb2789a4f8a9c969a0954904adb6d4ddf646913f3f4b074ed8b1",
+    "agrosphere-ai-service/src/agrosphere_ai/adapters/store.py": "b9b862360cc3e2d1e26c92b8499f054cb1f920ce21961d780785e766385e2d82",
+    "agrosphere-ai-service/src/agrosphere_ai/application/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/application/assistant.py": "509076dd1bf4b2ecb43c70f38d23583c6ec31df4ab20a0c6854232c75640f529",
+    "agrosphere-ai-service/src/agrosphere_ai/application/ports/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/application/ports/m4.py": "b27306a7c89a538e1a8e0cb4c6a9a895d756343dc7f4699daa71d7f9da960d05",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/ai-service.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/DrcMeasurementRecorded.example.json": "c024cabadcc8e4461e81ef93b13d4f4e9cf5c8eee88e4fc587ba182d0abe8cf9",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/LatexCollectionRecorded.example.json": "ed7cf9e6995f7f2119d29a4fc3c80005c5ba1199cee1b275adb74c4ab2766b18",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+    "agrosphere-ai-service/src/agrosphere_ai/contracts/RELEASE.json": "6308c61683f25a8b50f66203dd289b9ca52c5c5c2042258a55d44dc1accdd4a3",
+    "agrosphere-ai-service/src/agrosphere_ai/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agrosphere-ai-service/src/agrosphere_ai/domain/baselines.py": "fd6642065b090cd2835056c54ef794f75fe345391c13354c3cc56ae7c4f7852e",
+    "agrosphere-ai-service/src/agrosphere_ai/main.py": "b66913a13aba4d078dcce6b1732872f1c3546ffd13273b3cfded97ef5f2b1b73",
+    "agrosphere-ai-service/src/agrosphere_ai/sql/m4.sql": "972d3952587f85cc563b4354c4d0247da959431d27bf2c88b002938ef8f336f5",
+    "agrosphere-ai-service/tests/test_baselines.py": "2c7e10dd04aca157a3ded2f24dbb0a50d0ac5ed52bbafd56c2cea2760f05acbb",
+    "agrosphere-ai-service/tests/test_codec.py": "35a253ac2c1de437f76311554fc7a210d76f5b103b735cc668369f1eb486e987",
+    "agrosphere-ai-service/tests/test_foundation.py": "c02ebcc1dd7d5f62599fb2129de28b7102bfa458bfec005af24f92e85f5b9d9b",
+    "agrosphere-ai-service/tests/test_guard_consumer.py": "f53e9b977b51fa67df3bdc82a3c97b6941f66ac5512cb1fa09774f1f9786ef5d",
+    "agrosphere-ai-service/tests/test_m4_api.py": "af596f33aba0e522c0ce54a29b38944787ea8929615e77d912f8c8d1e6baa0cc",
+    "agrosphere-api-gateway/Dockerfile": "34fcc631fcc3c2155640f677087386f45e0a12cb1534751bb6f9bbcc38cfec5b",
+    "agrosphere-api-gateway/pom.xml": "c8b9be0a2148514d42144c923e5d97579cced9610c02748c0a590b402d745d1d",
+    "agrosphere-api-gateway/src/main/resources/application.yaml": "230820f316654b82c89b93c58375c5195f4f52ab260f50b215070bc8e7530984",
+    "agrosphere-contracts/docs/m4/ai-service.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+    "agrosphere-contracts/docs/m4/ENGINEERING_REVIEW.md": "44fbe9d82b7e2c09a5fcecb1276e63d7a238a30ddcf15a902fac695d0c6f6410",
+    "agrosphere-contracts/docs/m4/examples/flagged.json": "83369cda4e3a0730fe93a9e981f43404e42c2343d902f5f2cb1d384262b4f69e",
+    "agrosphere-contracts/docs/m4/examples/incomplete_source.json": "0785c63a596595c9fcbb863b9ec7b9f370e02cfb661f88d5ccbdd44ba5dce41e",
+    "agrosphere-contracts/docs/m4/examples/insufficient_history.json": "d78818ebcef486327446148beedd84849bf33456f0064c20b00c188bf98bea25",
+    "agrosphere-contracts/docs/m4/examples/no-label.json": "01169305213ac399125c0082cff0ef9b0a4ee5bd81497a71c682a840a828132d",
+    "agrosphere-contracts/docs/m4/examples/observed-zero.json": "3989ac35b17d3e05d6011eff7d623c0555390c17aa77256131ba2cf4e67437c2",
+    "agrosphere-contracts/docs/m4/examples/pending_drc.json": "d9bf972b38b78c207537c2e70b821bf116e3403e22a2546f68cb397992112a07",
+    "agrosphere-contracts/docs/m4/examples/threshold-equality.json": "ff7265bd7572d7d0879a12a94bf63b3fa63038b78d8427be779f9b76f2c716fb",
+    "agrosphere-contracts/docs/m4/examples/unscored-label.json": "e231dbe5f644588cc467adb96747b1e5905b5e9fe7b958e0c6a08ce0a342d530",
+    "agrosphere-contracts/docs/m4/MANIFEST.json": "a6b4d93666d8e2cdb83c826315edaabe2d48d73fe93ec147c76a8f26f1cd3914",
+    "agrosphere-contracts/docs/m4/RELEASE_0_13_0.json": "9a511342b5807e138b7765a27c2414bffc9eca604e72265fe0ec774ee175f788",
+    "agrosphere-contracts/scripts/build_m4_contracts.py": "8a9db9a7f1564945a4efce6fc9d4844470ab31f0eb9a84c7d7879f8329704026",
+    "agrosphere-contracts/scripts/m4_release_compatibility.py": "5fcaf58a11a587b6fa84d492ad96f2da029677d2e968ce765c8fc077136c7560",
+    "agrosphere-contracts/scripts/test_m4_contracts.py": "8c0f817f28f2faeb02f1a1707f145b0eb46f9c1134fd403891f8257c2e03d0b4",
+    "agrosphere-infrastructure/scripts/verify_analytics.py": "00a6375bc3dcf7a9aa18294dc6eb6b873f560f60f579728d90a54c021a323e9f",
+    "agrosphere-infrastructure/scripts/verify_m4.py": "54e82e020b240da9d9e3538e8778c781d3150b7043bdb425e24a8fef7f96e7c9",
+    "agrosphere-infrastructure/scripts/verify_m4_upgrade.py": "655c168d8adc2fe8cee0d76a501aadd0d948061207c38675cf0baf11bdd5b044",
+    "agrosphere-web/contracts/ai.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+    "agrosphere-web/contracts/ai.release.json": "cbcdb13ca9a388add814bce078fb1f36495ed5f19d6e940cc940284a14acf92e",
+    "agrosphere-web/e2e/m4-live.spec.ts": "8335386d1ddff285b7475ef4df6bf7d2e3a7c802beae8fd1a5bc8d597536ade8",
+    "agrosphere-web/scripts/verify-environment-package.py": "386aa8d4d1c079ede0c407a3954da4138f89a9bcf4aceaed9260ef73b25eb5ab",
+    "agrosphere-web/src/api/ai.generated.ts": "85039a74999db679dd6c059c82a20ed0e580a63c934e4357341dfe1699145938",
+    "agrosphere-web/src/app/features/m4/m4.component.html": "5b8f52559768fda22c80cad85e4ed46d0f7bd3b48fb3eb7236cb69784e93d8cf",
+    "agrosphere-web/src/app/features/m4/m4.component.ts": "b5403d37c92e8bc3c079feae2f22b8e0141494b68507030d1f0b407330d9b9eb",
+    "agrosphere-web/src/app/features/m4/m4.store.spec.ts": "52dcfb2b5bb5dd0032d08556e1d5930d6880037aa05935e0c342feb566b3d7d9",
+    "agrosphere-web/src/app/features/m4/m4.store.ts": "fc623687220c9226b82b7c64f1fe8e7dfb882a7af24e244c7b41cfb599ce8723",
+    "agrosphere-web/src/app/features/production/production.component.html": "38c16ae61b063a56e9c6c3f0f6470b8426c794f00969967da6e72c07eb7beed8",
+    "agrosphere-web/src/app/features/production/production.component.ts": "042fffa3fa8381ae4465496e4251479bd7265376016392652f51c0fd173bfcc1"
+  },
+  "evidence_sha256": {
+    "agrosphere-architecture/docs/milestones/M4_DELIVERY_VERIFICATION_2026_11_10.md": "c92ae09db4455f2d465f39f4e3eaa90912cfaa0694dca7464e8ad7bc39fe057d",
+    "agrosphere-architecture/docs/milestones/M4_DELIVERY_APPROVAL_2026_11_09.json": "542086c7f81e6ce0346b4670dfb4913577097677d9864c5f94ab0560c4693c3a",
+    "agrosphere-architecture/docs/milestones/M4_EXECUTION_ATTEMPTS_2026_11_10.json": "2981c0dc5b4a753757eaf6953d7d16baceb36df2c85ff9b2b7a956662d3d6e8f",
+    "agrosphere-architecture/docs/milestones/M4_GIT_OBSERVATIONS_2026_11_10.json": "911997c1c21b53bc38ace310beb8b4e1871b1850d23b0446a94acec4b35797cc",
+    "agrosphere-architecture/docs/milestones/m4-evidence/analytics-final-b1650f0a.json": "cd9a492397ef7325bfeec21ada8649554c004973e3dae1d47d8f973b9946dd3e",
+    "agrosphere-architecture/docs/milestones/m4-evidence/analytics-regression-pass-26112d13.json": "249606e513147cd8da7480f8b913ff979704150eef0a2126d798f6a3bbd80d25",
+    "agrosphere-architecture/docs/milestones/m4-evidence/connected-final-b1650f0a.json": "358f390046b9224c76620e6ff68c3db2a7f4edddffc16200252a58d61b918748",
+    "agrosphere-architecture/docs/milestones/m4-evidence/connected-pass-26112d13.json": "c3e2d9b0c733923c6c5007772a46c2b4073180ab479fd037ff750b3cc8ed04ac",
+    "agrosphere-architecture/docs/milestones/m4-evidence/m4-final-live.png": "07ca77b05bc9cf643f7615768d31aeb3b6ea12eef193c7bfcb0282909d903924",
+    "agrosphere-architecture/docs/milestones/m4-evidence/m4-generated-live.png": "708310f6b31af5dec983caf399141687b2698bf62d6a76902a578424e2a0808b",
+    "agrosphere-architecture/docs/milestones/m4-evidence/nonempty-upgrade-final.json": "f6e5f33609401f63d3ef8658e20de0e0499f82ffeb8946cb8dad5fabed941532",
+    "agrosphere-architecture/docs/milestones/m4-evidence/npm-development-audit.json": "6caf8fa20dc2df034d31978f9e83779c18d2df218ad4850829061eb89ac01a69",
+    "agrosphere-architecture/docs/milestones/m4-evidence/npm-production-audit.json": "055ec3bea6623f11e47c35be75bf5dbcc993b22568a5bcb17f7b3b30add5b19c",
+    "agrosphere-architecture/docs/milestones/m4-evidence/web-0.8.0-final-packaging.json": "83d3f2de049f99d73fb931cb74f8a1379305cdb1ee8061b860e945db99e49ea0",
+    "agrosphere-architecture/docs/milestones/m4-evidence/web-0.8.0-packaging.json": "1f9ab81cf05418f71468158dff0e75f6d59e59e3af67d4a7d6143dddc4018c64"
+  },
+  "limits": [
+    "Generated observed-mass/availability/labels only; no real yield accuracy or calibrated uncertainty.",
+    "No live LLM; approved deterministic substitution.",
+    "25 moderate existing npm development-tool findings; production-only audit zero; added Python inspection limited to six selected dependencies.",
+    "No hosted CI, reference-device FPS, production security/scale/operating acceptance or REAL enablement.",
+    "Exact image ID retained for separate AI upgrade/packaging run; connected record retains nine actual packaged-source hashes.",
+    "No AEO/private-config/whole-machine attestation; Git preservation assertions limited as explained."
+  ],
+  "foundation_migration_0001_unchanged_from_starting_git_source": true,
+  "final_inspection_at_utc": "2026-11-10T19:41:06.690399+00:00",
+  "final_coordination_links": "PASS",
+  "final_architecture_workspace_validation": {
+    "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+    "exit_code": 0,
+    "result": "PASS after final documentation"
+  },
+  "final_infrastructure_validation": {
+    "command": "python scripts/validate.py; python -m py_compile scripts/verify_m4.py scripts/verify_m4_upgrade.py scripts/verify_analytics.py",
+    "exit_code": 0,
+    "result": "PASS"
+  },
+  "owned_project_resource_absence": [
+    {
+      "project": "agrosphere-3a-check-a4e3b157",
+      "containers_absent": true,
+      "volumes_absent": true,
+      "networks_absent": true
+    },
+    {
+      "project": "agrosphere-3a-check-3d8d92ab",
+      "containers_absent": true,
+      "volumes_absent": true,
+      "networks_absent": true
+    },
+    {
+      "project": "agrosphere-3a-check-26112d13",
+      "containers_absent": true,
+      "volumes_absent": true,
+      "networks_absent": true
+    },
+    {
+      "project": "agrosphere-3a-check-b1650f0a",
+      "containers_absent": true,
+      "volumes_absent": true,
+      "networks_absent": true
+    },
+    {
+      "project": "agrosphere-3a-check-e310ac24",
+      "containers_absent": true,
+      "volumes_absent": true,
+      "networks_absent": true
+    }
+  ],
+  "owned_standalone_ai_containers_absent": true,
+  "public_web_package_removed": true,
+  "cleanup_note": "Only known owned fixture labels/names inspected. Initial exact image tag and three failed-build temp folders were removed with identity/path checks. No unrelated stacks/private configuration inspected."
+}

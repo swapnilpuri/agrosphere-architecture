@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "new owned M4 nonempty foundation upgrade only",
+  "project": "agrosphere-3a-check-e310ac24",
+  "runId": "635d7fbd-08e8-47af-b501-844df6681b69",
+  "imageId": "sha256:4d26f4600ddaca60cef1a0a90eb1e513a069bc9e4b90f806afd6c83451aa630d",
+  "freshFoundation": true,
+  "nonemptyUpgradePreserved": true,
+  "wrongTargetDeniedBeforeMigration": true,
+  "wrongTargetRollback": true,
+  "oldRecordHashes": [
+    "d4b5630dc025d5d73bb5899e33fb4d85",
+    "5e902a97967b0b0db6b7782bec5d98db"
+  ],
+  "additiveTables": 7,
+  "ownedContainerAndVolumesRemoved": true,
+  "ownedNetworkRemoved": true,
+  "ownedImageTagAbsent": true
+}

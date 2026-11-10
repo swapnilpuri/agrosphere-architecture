@@ -1,3 +1,45 @@
+# Current: bounded M4 accepted; milestone/phase prompt library delivered - 2026-11-10
+
+The owner explicitly approved and accepted the delivered bounded M4 scope; see [acceptance record](M4_OWNER_ACCEPTANCE_2026_11_10.md). Engineering completion and owner acceptance are both satisfied for that package, with all reported limitations retained. Earlier OPEN labels below are historical. Separate connected ANL and other milestone/field/production gates remain tracked.
+
+The owner requested detailed milestone and phase prompts like InitialPrompts.pdf. [Prompt library](../roadmap/prompts/README.md) contains M0-M5 complete prompts, seven selectable phase prompts per milestone, and the original increment mapping. The PDF is reference material; none of its historical instructions were executed.
+
+Documentation verification: Architecture validator and full twelve-root workspace audit PASS; new prompt/acceptance local links and code fences PASS; all 42 phase blocks present; approved M4 package SHA-256 unchanged; git diff --check PASS. The first validator invocation used the workspace rather than repository directory and failed to find the script; the corrected repository invocation passed. No application suites were rerun for this documentation-only change. The PDF's text extraction was empty; all 61 pages were visually inspected through rendered sheets.
+
+Next action: wait for the owner's milestone or phase selection. M5 is available but unstarted; no M5 package approval is inferred. A full approved milestone runs its phases autonomously; an explicitly selected individual phase stops at its boundary. Existing repository/data/private-config/Git/REAL/production/AEO exclusions remain.
+
+---
+
+# Current: M4 bounded engineering delivered; owner acceptance OPEN — 2026-11-10
+
+The owner's approved **M4 only** package is implemented and locally generated-verified. [Delivery report, working demo, results and limitations](M4_DELIVERY_VERIFICATION_2026_11_10.md); [final source/artifact/check inventory](M4_FINAL_EVIDENCE_2026_11_10.json); [actual approval](M4_DELIVERY_APPROVAL_2026_11_09.json). Approved package SHA-256 remains `befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d`. Earlier proposed/pending/in-progress scheduling labels below are historical. Preserve all reviewed package/old evidence bytes.
+
+Delivered: independent Contracts 0.13.0, AI 0.2.0, Web 0.8.0 and Gateway 0.3.0; exact dry/wet observed-mass forecasts/comparators, residual anomalies, immutable model/forward-evaluation records, separate generated chronology and conservative post-commit live availability, scoped deterministic evidence assistant/API/UI. Default disabled; no live LLM. Existing ANL-01/02/TLM/Operations features and independent ownership are preserved.
+
+Actual final results: Contracts validator/97 tests; AI **67 tests**, compile and exact independent wheel resources; Web **111 unit**, **36 UI**, **1 software graphics**, retained production-live and real **1 M4 live**; lint/format/type/API/build/locked-install and generated public-source Docker packaging; Gateway **16 tests** and Java 25 image; Infrastructure/Architecture validators. Final new owned project **agrosphere-3a-check-b1650f0a PASS**: 136 minimal facts (including explicit probes), reverse replay, four models, one 63-date evaluation, real signed PKCE/Gateway/Web, scoped denials/privileges, concurrent one-effect/rollback, diagnostic pause/restart and post-commit interruption/confirmation recovery. All owned runtime project resources removed. Separate **agrosphere-3a-check-e310ac24 PASS** proves fresh/nonempty foundation upgrade preservation and wrong-target denial/rollback with complete owned cleanup. [Failures/retries](M4_EXECUTION_ATTEMPTS_2026_11_10.json) remain explicit; overlapping runs are not summed.
+
+Synthetic locked-test MAE, mean versus last-day: wet **4.714286 vs 1.714286 kg**, dry **0.942857 vs 0.342857 kg**. The mean is worse; results are retained. No real plantation accuracy, complete production coverage, calibrated uncertainty, hosted CI, reference-device FPS or production security claim. Full npm audit retains 25 moderate development-tool findings; production-only audit zero. Added Python-package inspection is limited, not a comprehensive audit. Local machine cost is unmetered; provider spend zero.
+
+**Engineering exit E01–E10 is delivered for the approved bounded POC; owner functional/M4 acceptance remains OPEN.** The [sole checklist](../roadmap/PROJECT_COMPLETION_CHECKLIST.md) retains M0/M1/M2/M3/M5, connected ANL/TLM/privacy, Android/offline/sync/English–French and REAL/operating requirements. Do not infer broad scope closure from this package or documentation.
+
+Final Git observation: the seven baseline HEADs/index bytes advanced without any staging/commit/reset/publication command issued by this agent; all baseline HEADs remain ancestors and staged diffs are unchanged. Cause is not independently established; state was left intact. [Read-only observations](M4_GIT_OBSERVATIONS_2026_11_10.json) and current tested-source/pin checks are recorded separately. Do not restore old heads/indexes or infer external publication status.
+
+**Next action: wait for the owner's M4 review or next milestone prompt. Work exclusively on the milestone the owner names; do not automatically start M5 or another track.** No remaining M4 implementation approval needs repeating. No production deployment, Git staging/commit/push/publication, REAL enablement, AEO changes, existing-stack provisioning/data mutation or private-configuration access is authorized. Existing Git work is preserved; final observations record HEAD/staged/index and protected-artifact scope rather than a whole-machine attestation. Historical checkpoint bytes follow unchanged.
+
+---
+
+# In progress: approved M4 runtime and connected verification — 2026-11-10
+
+M4-only owner approval from 2026-11-09 remains active; no new milestone is authorized. E01 baseline/approval and E02 conforming independent Contracts 0.13.0 release/pins are implemented. E03 pure dry/wet forecasts, anomaly and generated forward evaluation implemented. E04–E06 guarded PostgreSQL/broker/API/evidence composer/Gateway/Web implemented; E07–E10 connected proof/recovery/final reporting are still IN PROGRESS. **Do not mark M4 engineering or owner acceptance complete.**
+
+Actual checks so far: Contracts validator and 97 tests PASS after local release/version-guard fixes; AI 65 tests PASS, compile and independent 0.2.0 wheel seven-resource pins/SQL PASS; Web 110 unit tests, lint/format/type/API checks/build and locked npm ci PASS; Gateway Maven verify 16 tests PASS (host Java 27; images retain independent declared JDKs); Architecture workspace and Infrastructure validators PASS. Added Python direct-package PyPI review reports zero version-listed vulnerabilities, with limited audit scope. Web production-only npm audit zero; full audit 25 moderate existing development-tool findings, no forced dependency changes.
+
+[Execution attempts](M4_EXECUTION_ATTEMPTS_2026_11_10.json): first owned run failed a stale broad browser badge locator; second reached 133 minimal source rows/four models/one evaluation then timed out awaiting Gateway forecast. Both owned projects removed. The second image differed from subsequently revised public code; no current-source runtime pass is claimed. Helper UTF-8 decoding, batched replay, fresh generated sessions and exact image-source checks are now in the third run. Current new owned project `agrosphere-3a-check-26112d13` is running `python scripts/verify_m4.py` (tool session 15276); it nests the existing generated ANL-01 checks, which passed before entering M4. Inspect actual completion/cleanup and sanitized target/m4-platform.json before making claims. Product code should remain stable during this run; preserve all existing/private/AEO state.
+
+Next: resolve actual bounded runtime failures within approved scope; finish real registry/replay/privilege/concurrency/rollback/PKCE/browser evidence, sequential Web UI/graphics regression, public-source Web packaging, source/pin/preservation inventory and final checkpoint. Engineering completion remains separate from owner functional acceptance. Once M4 is delivered, stop and wait for the owner's next milestone prompt. All exclusions persist; historical checkpoint bytes follow unchanged.
+
+---
+
 # Active: M4 approved; exclusive milestone delivery — 2026-11-09
 
 Owner approved revision 1 of [M4_DELIVERY_PACKAGE.md](M4_DELIVERY_PACKAGE.md), SHA-256 `befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d`; [actual approval and scope](M4_DELIVERY_APPROVAL_2026_11_09.json). D01–D10 and E01–E10 are authorized, including delegated conforming contract/release/pin/SQL engineering gates. The reviewed package's PROPOSED labels are historical; preserve its exact bytes. Engineering completion and owner functional acceptance remain OPEN.

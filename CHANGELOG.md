@@ -1,3 +1,7 @@
+## 2026-11-10 - M4 owner acceptance and prompt library (unreleased)
+
+Record explicit bounded M4 acceptance separately from engineering evidence. Add M0-M5 complete prompts, 42 phase prompts and 13 increment prompts using the owner's PDF format, with current scope/status and consolidated approval boundaries. Preserve original evidence and historical checkpoint text. Documentation-only change; no new milestone execution.
+
 ## 2026-11-05 — consolidated M4 delivery review (unreleased)
 
 Reconciled original M0–M5 implementation/verification versus owner acceptance; prepared one remaining-M4 decision/design/working-demo package and switched checkpoint/workflow scheduling to milestone delivery. No AI product implementation or owner approval claimed. Existing approvals, dirty work and historical checkpoint preserved; no AEO/deployment/publication/REAL action.

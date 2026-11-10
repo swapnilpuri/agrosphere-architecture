@@ -1,3 +1,11 @@
+## Owner acceptance and milestone/phase prompts - 2026-11-10
+
+[Bounded M4 owner acceptance](M4_OWNER_ACCEPTANCE_2026_11_10.md) supersedes prior OPEN labels for the delivered package only. Use the [prompt library](../roadmap/prompts/README.md): the owner selects a complete milestone or explicitly one phase/increment. Full milestone approval permits autonomous progress through its included phases; individual phase prompts intentionally stop at that phase. Do not add mandatory approval turns between routine engineering phases. No next milestone is selected by prompt preparation.
+
+## M4 engineering delivery and milestone prompt handoff — 2026-11-10
+
+The [approved M4 package](M4_DELIVERY_APPROVAL_2026_11_09.json) has [working bounded implementation/verification](M4_DELIVERY_VERIFICATION_2026_11_10.md), with actual failures/retries and limitations retained. Engineering completion is distinct from OPEN owner functional acceptance. The named-milestone work is now at handoff: wait for the owner's review or next milestone prompt; do not automatically start M5, field work or unrelated closure. Preserve all exclusions and accepted evidence. Earlier in-progress/pending labels below are historical.
+
 ## Owner milestone prompt and exclusive focus — 2026-11-09
 
 The owner approved [remaining-M4 revision 1](M4_DELIVERY_PACKAGE.md); [approval](M4_DELIVERY_APPROVAL_2026_11_09.json) records the exact response/hash. Work exclusively on M4 through its authorized E01–E10 delivery. Routine reversible choices and conforming delegated contract/release/SQL checks do not need another owner turn. Package approval is not engineering completion or owner functional acceptance.

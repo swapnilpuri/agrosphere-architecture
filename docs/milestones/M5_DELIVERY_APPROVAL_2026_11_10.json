@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-10",
+  "owner_response": "Yes approved M5 D01–D10 with VR deferred.",
+  "package": "M5_DELIVERY_PACKAGE.md",
+  "revision": 1,
+  "sha256": "8e5d1571c13863b5e48320d2c870345cc6c5e7032717545441b7e9bbd9d0bb38",
+  "authority": "Desktop-first implementation and included delegated engineering checks approved; physical VR deferred, not passed or removed. No purchases/installations/license acceptance by agent.",
+  "reported_hardware": {
+    "gpu": "RTX 5090",
+    "ram_gb": 64,
+    "source": "owner report, not measured"
+  },
+  "engine": {
+    "root": "C:/Program Files/Epic Games/UE_5.8",
+    "version": "5.8.4-58902052+++UE5+Release-5.8",
+    "cesium": "2.30.0",
+    "plugin_enabled": "owner confirmed"
+  },
+  "owner_functional_acceptance": "OPEN"
+}

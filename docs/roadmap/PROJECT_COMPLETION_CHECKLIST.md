@@ -11,7 +11,7 @@ Reconciled 2026-11-01; bounded M4 engineering delivery update 2026-11-10 (Americ
 | M2 | Functional Cesium/Gateway/details/provenance/admin UI | Named desktop frame/view/asset/memory measurements and reviewed budgets; canonical walkthrough | OPEN; performance PARTIAL; Android gate separate |
 | M3 | Tapping/DRC/WA/II/AN/privacy locally implemented/generated verified; [TLM-01 adapters](../milestones/MQTT_POC_ADAPTER_VERIFICATION.md), exact local Contracts 0.10.0 pins; [approved TLM-02 finite publisher/Web detail/overlay verification](../milestones/MQTT_POC_OVERLAY_VERIFICATION.md) | TLM-01/02 owner connected functional acceptance; actual demo alert controls below; scoped WA/II/AN dispositions; integrated auth/replay/recovery walkthrough | OPEN: owner connected generated and parent-M3 acceptance |
 | M4 | Existing ANL-01/02 engineering preserved; [remaining-M4 bounded implementation/demonstration verified](../milestones/M4_DELIVERY_VERIFICATION_2026_11_10.md), including evaluated dry/wet forecasts/anomalies, immutable registry, conservative post-commit chronology, scoped deterministic assistant/API/UI and owned recovery/cleanup; default disabled | E01–E10 engineering delivered with actual result/limitations record. Owner reviews the bounded POC and existing connected ANL outcome; scientific/REAL/production readiness is not inferred | ACCEPTED 2026-11-10: delivered bounded package; [owner record](../milestones/M4_OWNER_ACCEPTANCE_2026_11_10.md). Separate connected ANL acceptance remains tracked |
-| M5 | Descriptor/toolchain/architecture only | XR-01/02 shared estate, validated editor/plugin, supported VR and comfort/frame evidence; MR feasibility/accuracy | OPEN; desktop alone insufficient |
+| M5 | Descriptor only; [discovery and consolidated review prepared](../milestones/M5_DELIVERY_PACKAGE.md), implementation unstarted | Package approval/toolchain rights/access and named hardware pending; XR-01/02 shared estate, actual editor/package and physical VR/frame/comfort checks plus MR feasibility remain unexecuted | OPEN; desktop alone insufficient |
 
 - [ ] Reproduce full roadmap scenario with exact independent source/pins/images, SIMULATED fixtures, stable UUIDs, WGS84 longitude/latitude, units/times/provenance.
 - [ ] Record negative authorization/isolation, replay/rebuild/recovery and actual performance evidence; unavailable checks remain OPEN.
@@ -63,3 +63,12 @@ Recommended final walkthrough uses a **separately owned disposable connected dem
 - [ ] Obtain actual-data/operational acceptance and separate publication/deployment authority. Local results do not certify hosted CI, production security or deployment.
 
 Track C applies to A/B where actual identities/data/copies/exposure/persistence require it; no blanket production prerequisite. All accepted requirements/approvals remain. AEO, private configuration, existing data, Git indexes/commits/remotes and deployment are outside this increment.
+
+## M5 delivery and acceptance states — 2026-11-10
+
+- [x] Source/API/auth/tool inventory and one consolidated [review](../milestones/M5_DELIVERY_PACKAGE.md) prepared; [actual discovery checks/limits](../milestones/M5_DISCOVERY_RESULTS_2026_11_10.md). This is preparation only.
+- [ ] Owner approves M5 package and supplies licensed toolchain and physical device/runtime access facts.
+- [ ] XR-01 implemented: authenticated generated estate, canonical Web/Unreal UUID/geometry/provenance, navigation, security/error states and actual editor/packaged execution.
+- [ ] XR-02 implemented and physically verified: named headset/runtime/input, measured frames/scale/comfort; MR feasibility evidence.
+- [ ] Reproducible demonstration, independent checks/artifacts, preservation and owned cleanup verified.
+- [ ] Owner explicitly accepts delivered M5 results and limitations.

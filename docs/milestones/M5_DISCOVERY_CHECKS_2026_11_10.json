@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-10",
+  "scope": "M5 discovery; implementation approval pending",
+  "sha256": {
+    "agrosphere-immersive/AgroSphere.uproject": "dc08e581743a18d519a40031d98be1666630997e3cfdc7cf5c417e38d66b4d24",
+    "agrosphere-immersive/toolchain.json": "416c099999c7183451d5e8305a6b1bf3a7608d71102d463d9f94c725cf546806",
+    "agrosphere-contracts/openapi/estate-service.yaml": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-contracts/openapi/spatial-service.yaml": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+    "agrosphere-web/contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-web/contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+    "agrosphere-architecture/docs/milestones/M4_DELIVERY_PACKAGE.md": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+    "agrosphere-architecture/docs/milestones/M5_DELIVERY_PACKAGE.md": "8e5d1571c13863b5e48320d2c870345cc6c5e7032717545441b7e9bbd9d0bb38"
+  },
+  "final_git_observations": {
+    "agrosphere-ai-service": {
+      "status_equal": false,
+      "current_status": "",
+      "head": "951e6213b9d0956b13fddf860ab8bcb04ac66049"
+    },
+    "agrosphere-analytics-service": {
+      "status_equal": true,
+      "current_status": "",
+      "head": "c61af33a4522c327f1f02374ce54473c81456329"
+    },
+    "agrosphere-api-gateway": {
+      "status_equal": false,
+      "current_status": "",
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d"
+    },
+    "agrosphere-contracts": {
+      "status_equal": false,
+      "current_status": "M  AGENTS.md\nM  CHANGELOG.md\nM  README.md",
+      "head": "c7846584ac938c4f7344f5ed60244fcc888df729"
+    },
+    "agrosphere-estate-service": {
+      "status_equal": true,
+      "current_status": "",
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83"
+    },
+    "agrosphere-immersive": {
+      "status_equal": true,
+      "current_status": "",
+      "head": "2bf7663e412f86956dbdb831184f2d0ab1a03c70"
+    },
+    "agrosphere-infrastructure": {
+      "status_equal": false,
+      "current_status": "",
+      "head": "b235cbc3ef3937e3868b0679df77c51f279d7eb7"
+    },
+    "agrosphere-operations-service": {
+      "status_equal": false,
+      "current_status": "",
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2"
+    },
+    "agrosphere-spatial-service": {
+      "status_equal": true,
+      "current_status": "",
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a"
+    },
+    "agrosphere-telemetry-service": {
+      "status_equal": true,
+      "current_status": "",
+      "head": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf"
+    },
+    "agrosphere-web": {
+      "status_equal": false,
+      "current_status": "",
+      "head": "c3dc6a65f01b348a3d52c8222219bce76752e8e2"
+    }
+  },
+  "checks": {
+    "architecture_workspace": "PASS exit 0",
+    "immersive_descriptor": "PASS exit 0; no editor/build",
+    "diff_check": "PASS; line-ending warnings",
+    "review_local_links": "PASS",
+    "api_byte_pins": "PASS",
+    "hardware_inventory": "UNAVAILABLE Access denied",
+    "engine_version": "FAILED missing Build.version",
+    "editor_package_vr": "NOT EXECUTED"
+  },
+  "retries": [
+    "Evidence script default cp1252 failed; explicit UTF-8 corrected reading",
+    "Status preservation assertion failed: external working-tree changes observed; recorded without restoration"
+  ],
+  "resources_created": []
+}

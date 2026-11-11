@@ -1,3 +1,21 @@
+# Current: M5 approved, desktop implementation active — 2026-11-10
+
+Owner approved D01–D10 with VR deferred; [exact response/package hash](M5_DELIVERY_APPROVAL_2026_11_10.json). Prior proposed labels below are historical. Preserve accepted package bytes. Desktop implementation, integration and delegated conforming engineering checks are authorized; do not repeat package approval. Physical VR remains DEFERRED/OPEN, not accepted or completed. Owner functional acceptance remains OPEN.
+
+Installed UE5.8.4 build 58902052 and Cesium2.30.0 descriptors verified; owner confirms plugin enabled, RTX5090 and 64GB RAM. Compiler/editor/package interoperability and measured desktop behavior remain to execute. No new license acceptance, install/purchase, existing-target/private configuration/data/role/credential, REAL, Git publication or AEO authority. Begin independent Immersive source/toolchain validation and exact existing contract review, then owned SIMULATED integration.
+
+---
+
+# Current: M5 discovery and consolidated review ready — 2026-11-10
+
+The owner selected full M5. Authorized discovery and review preparation are complete; [M5 delivery package revision 1](M5_DELIVERY_PACKAGE.md) is PROPOSED, not approved. [Discovery results](M5_DISCOVERY_RESULTS_2026_11_10.md) and [twelve-root baseline](M5_DISCOVERY_BASELINE_2026_11_10.json) record actual source, API pins and tool limitations. Only Architecture documentation changed; Immersive remains descriptor-only. Prior M4 acceptance and all old evidence remain intact below.
+
+M5 engineering: PARTIAL (discovery/review only); implementation NOT STARTED; owner functional acceptance OPEN. UE5.8/Cesium2.30.0 is not locally validated. A UE_5.7 directory lacks Build.version; VS/compiler/SDK directories exist but no build was run. GPU/headset queries returned Access denied; no active OpenXR registry value was observed. Physical hardware/runtime and license rights remain unknown. No fixture, installation, license acceptance, service/config/data mutation or Git publication occurred.
+
+Next owner-selectable prompt: “Approve/revise M5_DELIVERY_PACKAGE.md revision 1 D01–D10; licensed engine/plugin paths and usage rights are [...]; headset/runtime/GPU/operator availability is [...].” Approval enables all included phases and conforming delegated engineering checks without repeated phase prompts. Unavailable toolchain/hardware stays an explicit blocker for its exits; continue independent approved work. No new milestone, purchase, existing-stack/private-config/role/credential/REAL/production/AEO authority.
+
+---
+
 # Current: bounded M4 accepted; milestone/phase prompt library delivered - 2026-11-10
 
 The owner explicitly approved and accepted the delivered bounded M4 scope; see [acceptance record](M4_OWNER_ACCEPTANCE_2026_11_10.md). Engineering completion and owner acceptance are both satisfied for that package, with all reported limitations retained. Earlier OPEN labels below are historical. Separate connected ANL and other milestone/field/production gates remain tracked.

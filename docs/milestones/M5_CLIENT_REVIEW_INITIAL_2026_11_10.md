@@ -1,0 +1,25 @@
+# M5 initial client source review — 2026-11-10
+
+Independent delegated engineering review of implementation in progress. **NOT ACCEPTED for security/geometry completion yet.** This is an initial finding record, not a test result or final judgment on later revisions. Parent implementer received the findings directly. No source edit or runtime request was performed by this reviewer.
+
+Reviewed files: Immersive Source/AgroSphere/EstateSession.cpp/h and EstateGeometry.cpp. Initial observed SHA-256: session `d1d09b75c2330c72d3e9e48966c65db877a7f19ac29766fc65ea2cfc3c3b5997`; geometry `1849b9826851cc5d974712d2da5572dd320d918750e9b9889b33f2806e21c475`. Concurrent implementation means line numbers/hashes must be refreshed before final acceptance.
+
+## Findings requiring resolution
+
+1. **HTTP redirect boundary (high):** Session Http() uses default Unreal HTTP without preventing redirect following. Installed UE5.8 Engine/Source/Runtime/Online/HTTP/Private/Curl/CurlHttp.cpp line 183 sets CURLOPT_FOLLOWLOCATION to 1. A 307/308 redirect from an allowed token endpoint can cause a token/refresh POST body to be forwarded outside the approved loopback boundary. Reject redirects before another request is sent, not by checking final response URL after transmission. Verify both token and API requests using a disposable redirect trap. Initial endpoint validation alone is insufficient.
+2. **Response allocation bound (high):** `Response->GetContent().Num()>10*1024*1024` runs after the full response was buffered. Enforce a receive-time byte ceiling; token/JWKS bodies need a smaller bound. Installed IHttpRequest.h offers response receive streams whose failure aborts the request. Aggregate scene memory ceilings remain separate.
+3. **Reconfiguration token isolation (high):** Configure() replaces Gateway/Issuer without clearing Access, pending requests or protected scene. A previously authenticated token may be sent to the replacement port before reauthentication. Clear session/scene and invalidate generations before accepting changed endpoints. Verify switching endpoints cannot forward prior session tokens or accept late responses.
+4. **Polygon topology (high):** Delaunay constrained triangulation with OddWinding is not a Polygon validity check. An exterior hole ring can become a separately filled island; overlapping/nested holes or overlapping MultiPolygon components need explicit validity rules. Validate ring simplicity, nonzero area, hole containment/nonintersection and polygon relationships before render. Include exterior-hole, overlapping-hole, crossing-ring and overlapping-component negatives. Unreal Delaunay2 documentation warns self-intersecting polygons can produce incomplete output.
+5. **HTTP start failure completion (medium):** ProcessRequest()==false removes the request and sets Status but does not invoke Done. Callers can remain indefinitely in loading/refresh state. Deliver exactly one failure completion, with tests for immediate start failure.
+6. **OIDC claim completeness (medium):** Current ValidateId verifies RS256/signature, issuer, string audience, nonce, expiry and iat. Require nonempty subject, pin subject through refresh, validate nbf when supplied, and honor JWK alg if present. Either support correct aud-array/azp semantics or explicitly reject unsupported multi-audience responses. Test wrong/missing claims and refresh-subject change. Do not certify the custom verifier solely from use of OpenSSL.
+7. **Contract/provenance parsing (medium):** Parse currently ignores missing/malformed sourceReference and does not establish geometryType correspondence. The pinned Feature requires sourceReference as nullable string; do not silently convert invalid provenance data to empty text. Validate required fields used to identify/describe geometry and preserve null distinctly as appropriate.
+
+## Integration obligations not yet visible in reviewed files
+
+- Approved bounded transient retries and Retry-After are absent from the reviewed Get/Http implementation. No authentication-denial retry loop should be introduced.
+- Get only clears on 401/403; ensure the presentation layer hides protected content on other transport failures until revalidation, as required by the approved package.
+- Parse resets vertex Count per feature. Scene aggregation must enforce the approved 10,000 total vertices, 100 features and 10 MiB aggregate decoded scene limits.
+- Callback checks state and optional issuer, binds loopback, and closes after a received callback. Add tests for wrong/replayed state, duplicate parameters, malformed/oversized/partial requests, timeout and occupied port. Do not claim these pass from source inspection.
+- Session lifecycle tests must cover refresh failure, expired access, logout, in-flight completion after Clear and browser IdP session cleanup separately.
+
+This review identifies concrete source defects and required tests; no external service, IdP, database, browser or Unreal runtime was exercised. Findings remain open until the revised exact source and executed verification are reviewed.

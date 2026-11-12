@@ -1,0 +1,14 @@
+{
+  "runId": "dc44e9d18aaa4c2880b13697be0527fb",
+  "reviewedUtc": "2026-11-12T05:42:54.414263+00:00",
+  "reviewer": "Implementation agent sequential review",
+  "sourceSha256": {
+    "agrosphere-web/e2e/poc-close-rendered.spec.ts": "64763c20e866f3d4524571d121fb7e26b0672e76dcd33acb793d2f0e07077de8"
+  },
+  "change": "Record document.hasFocus and visibility each navigation iteration. Any lost focus/visibility fails the foreground criterion. Workload duration, input and thresholds retained.",
+  "timing": "Reviewed before the pending hardware capture. Earlier component checks use the original run8 source snapshot.",
+  "checks": [
+    "lint PASS",
+    "Playwright discovery PASS"
+  ]
+}

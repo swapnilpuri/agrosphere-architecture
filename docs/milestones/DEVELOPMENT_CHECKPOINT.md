@@ -1,3 +1,13 @@
+# POC-CLOSE resumed: native login and canonical rendering observed — 2026-11-12
+
+Existing C01–C07/image/dependency approvals and bounded M4 acceptance remain effective. Run `39166eb7f43c41b68afafa967eef8ac6` was verified active within its fixed lease. Renewed native browser sign-in succeeded: callback returned, native sessionReady became true, and the visible canonical scene rendered 10 meshes/240 illustrative trees. This does not pass the outstanding rendered matrix or performance protocol. Empty-estate helper returned diagnostic PASS; rendered observation remains pending. An initial timing command ran amid scene changes at an observed 2560×1600 window, so it is not compliant performance evidence.
+
+The owner requested temporary generated credentials for manual verification; they were supplied directly, without a durable credential copy. Leave UI input to the owner during this handoff. The existing 45-minute native hold is expected to end around 01:23 America/Chicago; hard runtime expiry remains 2026-11-12T08:10:59.810202+00:00. Verify actual operator/resources before reuse; normal cleanup or exact owned recovery must be verified afterward. No lifetime was renewed.
+
+[Resume review](POC_CLOSE_RESUME_REVIEW_2026_11_12.json) records exact corrected browser harness source, focused formatting/lint PASS and rendered rerun NOT RUN. Corrections cover redirected TMP ownership, observed navigation-name prefixes, canonical estate reselection/block readiness, 20-second action bounds and the existing local-network flag. Original reviewed artifacts remain preserved. Fresh full hardware capture needs enough supervised hold time. POC-CLOSE engineering remains PARTIAL; owner acceptance OPEN.
+
+---
+
 # POC-CLOSE connected components verified; performance/rendered exits in progress — 2026-11-11
 
 Approval C01–C07 and the explicit image/dependency supplements remain active. French portal support and physical VR remain deferred; bounded M4 acceptance is preserved. Final POC-CLOSE owner acceptance remains OPEN.

@@ -1,0 +1,10 @@
+{
+  "runId": "dc44e9d18aaa4c2880b13697be0527fb",
+  "reviewedUtc": "2026-11-12T05:45:45.562237+00:00",
+  "reviewer": "Implementation agent sequential review",
+  "sourceSha256": {
+    "agrosphere-infrastructure/scripts/poc_close_mqtt.py": "63506b16b7ca7a72d0418b7d34be30ff5eaf3e40cc601835dcd82e12b02b197e"
+  },
+  "change": "Construct expected ACL in topic-sorted order to match existing GeneratedChannel TreeMap. Current generated weather781f... and soilc168... topics are already ascending, so active bytes match. Future fixture builder also uses this ordering.",
+  "timing": "Before the new publisher module is imported in the pending environmental stage. Running verify_telemetry code remains its archived run8 snapshot."
+}

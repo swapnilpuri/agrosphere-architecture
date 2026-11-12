@@ -1,0 +1,23 @@
+{
+  "reviewedUtc": "2026-11-12T05:52:12.671343+00:00",
+  "reviewer": "Implementation agent sequential engineering review",
+  "authority": "Approved POC-CLOSE C02 distinct weather/soil E1/B1 devices and C07 reproduced correction/persistence verification",
+  "reproduction": "RegistryMigrationIT fresh DB fails on telemetry_device_estate_id_block_id_key with V1/V2. Combinedrun8 failed on second same-block registry insert.",
+  "priorMigrationSha256": {
+    "V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+    "V2__simulated_telemetry.sql": "b42b936bfa4b74a59c7d9728cd0838cfc41d20fbad24a131c6a43a174c33a0d6"
+  },
+  "newMigrationSha256": "9f65edfc2c91d0191abc39b453e5cc35c5de37602e66ad2bd404152e99369f1c",
+  "sql": "-- Separate generated weather and soil devices can serve the same canonical block.\n-- Device identity, publisher uniqueness and observation scope foreign keys remain enforced.\nALTER TABLE telemetry_device\n    DROP CONSTRAINT telemetry_device_estate_id_block_id_key;\n",
+  "effect": "Permit multiple distinct device IDs/publishers on one block. Retain primary key, unique publisher, composite device/estate/block foreign key, units/provenance checks and runtime privileges. Existing rows and event bytes preserved.",
+  "wire": "Contracts0.10.0 shapes/pins retained. Existing latest query groups all observations bykind/observedAt/UUID.",
+  "verification": [
+    "Fresh database with2same-block devices",
+    "PopulatedV2 upgrade preserving registry/observation/outbox hashes",
+    "Duplicate device/publisher and mismatched scope denied",
+    "Failed-DDL transaction rollback",
+    "Full existing Telemetry integration suite and pinned export validation"
+  ],
+  "targets": "New labeled loopback Testcontainers fixtures and fresh combined fixture only",
+  "reviewTimingLimitation": "Initial before-test preservation check compared Git LF bytes with working-tree CRLF and failed. Corrected comparison against the exact approved discovery hashes passes. Full test execution was already started when the missing review artifact was noticed. This record does not claim its timestamp preceded that execution."
+}

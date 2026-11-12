@@ -1,0 +1,33 @@
+{
+  "dateUtc": "2026-11-12T07:10:06.400584+00:00",
+  "reviewer": "Implementation agent sequential source review; not independent review",
+  "authority": "Existing POC-CLOSE C02/C04/C05/C07 approvals retained",
+  "sourceSha256": {
+    "agrosphere-web\\e2e\\poc-close-rendered.spec.ts": "ea7ebe58f3f9eac761d9efb2122fa052c4c8720dd1126ffcd95fb23eac1fc896"
+  },
+  "changes": [
+    "Validate marked private root and redirected playwright-temp instead of comparing its parent to redirected os.tmpdir",
+    "Navigation names match observed decorative prefix plus text suffix",
+    "Re-select canonical estate after route navigation and await canonical block option",
+    "Bound page actions to 20 seconds",
+    "Use existing LocalNetworkAccessChecks flag on connected browser launch"
+  ],
+  "checks": {
+    "prettier": "PASS",
+    "focusedEslint": "PASS",
+    "renderedRerun": "NOT RUN"
+  },
+  "runtime": {
+    "runId": "39166eb7f43c41b68afafa967eef8ac6",
+    "nativeLogin": "PASS actual browser callback plus sessionReady and visible signed-in estate list",
+    "canonicalScene": "Observed actual rendered 10 block meshes and 240 illustrative trees; native state agrees",
+    "emptyCase": "Diagnostic pass only; actual empty screenshot not yet inspected",
+    "performance": "Incomplete; initial measurement scene changed and resolution observed 2560x1600, so no compliant performance PASS",
+    "userVerification": "Owner requested generated credentials; UI input left to owner"
+  },
+  "limits": [
+    "All original performance thresholds preserved",
+    "Reviewed original packages and prior addenda unchanged",
+    "Full hardware browser capture needs fresh fixture with enough supervised hold time"
+  ]
+}

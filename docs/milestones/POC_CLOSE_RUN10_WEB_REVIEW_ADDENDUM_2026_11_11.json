@@ -1,0 +1,8 @@
+{
+  "runId": "39166eb7f43c41b68afafa967eef8ac6",
+  "reviewedUtc": "2026-11-12T06:16:12.309668+00:00",
+  "reviewer": "Implementation agent sequential engineering review",
+  "sourceSha256": "954375e6a9f20dad2c49628a7db0651c8ec7299ee4efbee285eeb30c61023e10",
+  "change": "Use reduction for maximum over large high-refresh-rate frame arrays. Require nonempty finite samples spanning the ten-minute capture. Record actual wall duration and render timestamp span.",
+  "timing": "Before hardware browser invocation in the pending component stage. Existing workload and budgets retained."
+}

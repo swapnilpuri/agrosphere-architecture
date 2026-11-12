@@ -1,5 +1,9 @@
 # Original M0–M5 roadmap and exit gates
 
+## Dated status correction — 2026-11-11
+
+The owner selected POC-CLOSE discovery and consolidated review; [revision 1](../milestones/POC_CLOSE_DELIVERY_PACKAGE.md) is proposed, with new combined execution pending approval. Existing M5 desktop authority remains active. M5's descriptor-only row below is historical: [desktop handoff](../milestones/M5_DESKTOP_HANDOFF_2026_11_11.md) records implemented/build/package/login/render/picking/logout/outage recovery and MR assessment. Full M5 remains PARTIAL with rendered negatives/races/refresh/rotation/max-scene/input/numerical parity unverified; physical VR explicitly DEFERRED and owner acceptance OPEN. The [existing checklist's dated evidence mapping](PROJECT_COMPLETION_CHECKLIST.md#poc-close-evidence-reconciliation--2026-11-11) controls current capability states. Original requirements and bounded M4 acceptance remain intact. This dated correction supersedes stale scheduling without changing historical reports.
+
 Reconciled 2026-11-01; bounded M4 engineering delivery update 2026-11-10 (America/Chicago). Immediate delivery objective: the original reproducible **SIMULATED local rubber-plantation demonstration**, including Estate/GIS, 3D Web, Operations/IoT, Analytics/AI and the shared Unreal estate/VR prototype. 1A/B/C, 3A/B, WA, II and AN/privacy are increments, not replacement milestones. No percentage or completion date is assigned.
 
 ## Finite POC finish line

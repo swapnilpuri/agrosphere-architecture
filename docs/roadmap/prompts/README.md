@@ -1,5 +1,15 @@
 # AgroSphere milestone and phase prompt library
 
+## Selected scope — 2026-11-11
+
+The owner has selected the complete POC-CLOSE prompt. Discovery and [one consolidated package](../../milestones/POC_CLOSE_DELIVERY_PACKAGE.md) are prepared; combined fixture execution awaits its new scope decision. Earlier “not selected” text below is historical. Existing M5 desktop approval is not repeated; bounded M4 acceptance and physical VR deferral persist. Follow the checkpoint and sole checklist for exact evidence/authority.
+
+## Current next-step recommendation - 2026-11-11
+
+M5's [desktop prototype is delivered](../../milestones/M5_DESKTOP_HANDOFF_2026_11_11.md); full M5 engineering remains PARTIAL with desktop checks open, physical VR deferred and owner acceptance open. The original roadmap ends at M5. The proposed follow-on is [POC-CLOSE: Integrated POC Verification and Acceptance](POC_CLOSE.md), with one complete prompt, seven optional phase prompts and an immediate M5-only verification alternative. It is prepared, not selected or approved. The Android offline/English-French field release remains a separate next feature candidate.
+
+The dated table below describes the library's creation state; current execution/acceptance status comes from the checkpoint and sole checklist.
+
 Prepared 2026-11-10 from the owner's requested format in [InitialPrompts.pdf](../../InitialPrompts.pdf), especially the 3A prompt on pages 9-27 and the 3B prompt on pages 29-59. The PDF is reference material, not a new instruction to execute its historical plans. Its proposed endpoints, entities, roles, Java version and completion claims do not override current source or accepted decisions.
 
 ## How to use

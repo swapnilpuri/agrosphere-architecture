@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-11",
+  "reviewer": "Implementation agent, sequential second review pass; not independent review",
+  "authority": "Approved POC-CLOSE C02/C03/C05/C07 and explicit image/dependency supplements",
+  "sourceSha256": {
+    "agrosphere-infrastructure\\scripts\\poc_close_owner.py": "83387561286d290236175adb46ac95afc7e58667b93d46f835ad84993c1619c7",
+    "agrosphere-infrastructure\\scripts\\poc_close_platform.py": "66dbfcb0447f8f7c69347608158d5abf1d5ef1c7c31ed77a792c186f90a64a5f",
+    "agrosphere-infrastructure\\scripts\\poc_close_faults.py": "b4da3d508ae714ba66158ca79f90a51a23a4fd0d090f92ba6eeec65a0f0cd991",
+    "agrosphere-infrastructure\\scripts\\poc_close_load.py": "18ecedf725e7ced2e46b38d44b331232170b5da8c84571ddfa14ecc88d35eb31",
+    "agrosphere-infrastructure\\scripts\\poc_close_web.py": "4e597b0463c2822fabef6c1b784d7b20c0ac7b94649dd929dfc732dc8002cc24",
+    "agrosphere-infrastructure\\scripts\\verify_poc_close.py": "d2119054a187eb17efc0513bf991cda39464a93feda95aab81464f90cec4172f",
+    "agrosphere-infrastructure\\scripts\\verify_tapping.py": "1e128527186c8ef131831cd43c83056797b94794afccb8d8a5d7f46782576f1b",
+    "agrosphere-infrastructure\\scripts\\verify_workforce.py": "23a818f1c523827ceb9683fb0f7eadc392ac2ac5791fae3a24a7a2fe22e26e47",
+    "agrosphere-infrastructure\\scripts\\verify_analytics.py": "6f4616b1c03a975dbf52a34982262739e562d8b683bcc7db08311cc6ebef5347",
+    "agrosphere-infrastructure\\scripts\\verify_m4.py": "72475d20c0f1fb36afec39fd177c32c701399007888ba1c8e339f5a663fbd669",
+    "agrosphere-infrastructure\\scripts\\verify_telemetry.py": "1195cf44faf0428b65d56a4b1f40c481a2c8e96073169c1cfe7bec92bcaeaffd",
+    "agrosphere-infrastructure\\scripts\\verify_environment_history.py": "7b0955af3131de9949a4a9a0382240ffb400fcc8b8c9930b179be63e1dc3e854",
+    "agrosphere-infrastructure\\scripts\\test_poc_close_owner.py": "eaf360ea685e5d0a32ce7d4d68f55d39399fdf1b22c9013e141380badb546e34",
+    "agrosphere-infrastructure\\scripts\\test_poc_close_faults.py": "a9319869a04712564c44fd40fbdcdb91e5a5e66fe6cf1580b572507e9af80d54",
+    "agrosphere-analytics-service\\src\\main\\java\\com\\agrosphere\\analytics\\GeneratedAnalytics.java": "686aa496332c81946cde5fbb9cac7e0a7bda3089973414abbbfc336a2cc40539",
+    "agrosphere-ai-service\\src\\agrosphere_ai\\adapters\\ownership.py": "84d4375398ec53fe1e0493018cf3514186094525e31845f772ffe36040e8de4d",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateDiagnostics.cpp": "1d4063553dee358799444d96ee7e5fb6aa24f32e45d7393570cc2196e41a89ad",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateViewer.cpp": "e2753901a171348d32f212f2f52b3938f1105decf78464d8aeeffd067e13c7bb",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateViewer.h": "0f998e7f4af0e5abe521d791d59e7ddba70c5dc06a6d7bfa15177dd2672d2c3e",
+    "agrosphere-web\\src\\app\\core\\config.ts": "ef514bcfbaf441c84a6338851fb1f46617fcd37cdbd7b77ade12ad36a4f977cb",
+    "agrosphere-web\\src\\app\\features\\digital-twin\\cesium-viewer.service.ts": "838289400cd82c67f644c4f1d9cf7a8a3e59ab9a4299bee37787942e39c59b8d"
+  },
+  "gates": {
+    "ownership": "New random32 project/custom label; Compose automatic project labels; collision check; owner manifest PID+creation; full resource verification before cleanup; unknown copies/reparse points/retagged images refuse deletion",
+    "lifetime": "No runtime before builds; <=2h, admission stops105min; <=5min per-command/phase supervision and5s hold checks; no unattended deletion promise",
+    "identity": "New owned realm only, signed existing roles/estate claims, native public code/S256 exact49152 redirect; no existing account/config access",
+    "sql": "Existing service-owned migrations unchanged; generated migration/runtime principals only; existing grants/ACLs retained. Environmental runtime receives SELECT on six existing production tables in same Analytics DB for preserved-production reads; no cross-DB, DDL, historical source writes or runtime DELETE expansion",
+    "broker": "Existing bounded queues/event families and separate principals; one-effect dedup/replay and confirmed diagnostics beforeACK retained",
+    "faults": "Two loopback-only adapters to fixed exact owned backend ports; no arbitrary URL, redirect following or payload/query/token logs. Scoped exact route/method faults, bounded delay<=8s and body limits; actual Keycloak remains signer/public issuer",
+    "contracts": "No wire/schema/migration changes; only internal generated project-name admission bound to full canonical run UUID, preserving existing guards andlegacyprofile",
+    "copies": "New marked private temp root, explicit copy inventory, generated client/profile/output paths only; new browser report locations preserve historical screenshots/reports; raw outputs inventoried before cleanup",
+    "native": "Explicit live owned manifest/marker/temp containment and endpoint agreement before diagnostic files/commands; no token export, no default diagnostics. Actual loaded mesh positions exported, not just recomputed DTO values",
+    "web": "Explicit32hex generated flag plus loopback Gateway/IdP origins; read-only actual loaded entity coordinates/frame timestamps/renderer, no session/tokens/drafts. Hook removed on destroy; defaultdisabled",
+    "images": "Available base identity preflight; rewritten FROM recipes pin recorded RepoDigests; standalone containers pinned to recorded image IDs; no implicit base pulls. Declared dependency restoration only per owner supplement",
+    "runtime_networks": "Standalone containers use recorded immutable image IDs and either an exact verified owned container network namespace or network=none; no shared default bridge",
+    "native_client": "Only hold mode launches a new package into a new owned UserDir; exact PID/creation identity/executable hash tracked. This initial connected run uses hold=0 and does not launch native/browser UI."
+  },
+  "checks": {
+    "infrastructure_refusal_fault_tests": 11,
+    "ai_regression": 68,
+    "analytics_verify": 48,
+    "web_unit": 112,
+    "native_automation": 6,
+    "new_windows_package": "PASS"
+  },
+  "limits": [
+    "Runtime test results pending",
+    "Rendered/native/Web performance and maximum-scene exits pending",
+    "Physical VR/French deferred",
+    "No hosted CI or production/REAL/operating certification"
+  ],
+  "reviewedUtc": "2026-11-12T00:01:50.952025+00:00",
+  "revision": "run1",
+  "finalPreflight": {
+    "run": "3efdc4307d3d4cc2a7513070f0d88b51",
+    "result": "PASS",
+    "cleanup": "PASS",
+    "immutableFromDigests": true,
+    "runtimeStarted": false
+  }
+}

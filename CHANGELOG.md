@@ -1,3 +1,11 @@
+## 2026-11-11 - POC-CLOSE consolidated review (unreleased)
+
+Prepare the selected POC-CLOSE discovery baseline and revision-1 scenario/decisions/lifecycle/performance/delegated-gate package. Add capability evidence mapping to the sole checklist and proposed generated WA/II/AN dispositions to the existing client register. Correct stale scheduling through dated notices; preserve reviewed M4/M5 packages/reports and all existing Git work. Preparation only; no combined fixture, product correction or new runtime acceptance.
+
+## 2026-11-11 - Next delivery prompt (unreleased)
+
+Prepare POC-CLOSE integrated verification/acceptance prompt and seven phase prompts after reviewing the M5 desktop handoff. Preserve outstanding desktop/physical VR/owner gates; distinguish the proposed follow-on from the original M0-M5 roadmap and separate field release. Correct the checklist's stale M5 package-approval item without closing verification or owner acceptance. Documentation only; no next-milestone execution.
+
 ## 2026-11-10 - M4 owner acceptance and prompt library (unreleased)
 
 Record explicit bounded M4 acceptance separately from engineering evidence. Add M0-M5 complete prompts, 42 phase prompts and 13 increment prompts using the owner's PDF format, with current scope/status and consolidated approval boundaries. Preserve original evidence and historical checkpoint text. Documentation-only change; no new milestone execution.

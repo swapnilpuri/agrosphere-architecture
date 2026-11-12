@@ -1,0 +1,212 @@
+{
+  "recordedUtc": "2026-11-11T16:08:09.625110+00:00",
+  "kind": "M5 local desktop prototype evidence; full M5 remains partial",
+  "ownerAcceptance": "OPEN",
+  "physicalVr": "DEFERRED",
+  "sourceSha256": {
+    "agrosphere-immersive\\AgroSphere.uproject": "020f1338f793a7af8042143884799386dc12d07a79fc04cb2b423acc1037570b",
+    "agrosphere-immersive\\toolchain.json": "f289f0ad36158fc0ebef4243a17c1f7ce59ffded7441efd5c449b26ce8d04ef3",
+    "agrosphere-immersive\\VERSION": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9",
+    "agrosphere-immersive\\Source\\AgroSphere\\AgroSphere.cpp": "9a897057d6dae2a50937350cf965a110b9d7c24cfb4fda82b28745fb3ec1153d",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateGeometry.cpp": "7d6a27d20f80446caf8be7fd6786f041d390e057be9152fcf9d0b23469265489",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateSecurityTests.cpp": "3553364b8558417f45ed65c7333a8b6d1a882c428f6f240cfa295370ee307424",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateSession.cpp": "75bc13ad6d3e104ae66da16c1d9ad32d356490462ec487da860ebbc82eb1e93b",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateTests.cpp": "68a031bcf957886842aecbb87bd4cf298413b6c98e782b0167be8917df154895",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateViewer.cpp": "7826e522a7b9fecb5069a3bf26ed5bca882f1c2f71b196d52fd7ac2a5967f774",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateGeometry.h": "4a646eb7049990e428c7128929d58b54f6d939fc1d93a8f535f9c5596e3d37f0",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateSession.h": "b257113af1139c11cecc85c56edf612482973b5eda01114361f622af31371b24",
+    "agrosphere-immersive\\Source\\AgroSphere\\EstateViewer.h": "f0aa8163175b5ae6c9589e246a8c6b7f4c07533e06769f2e3f0c9a6792de7075",
+    "agrosphere-immersive\\Source\\AgroSphere.Target.cs": "c2dc9aefbc198f3eb0d7e8d98dd14943612182deae6214c64f7086223a0aa311",
+    "agrosphere-immersive\\Source\\AgroSphereEditor.Target.cs": "0bf678f677a523ed8841913a8e75ad8ea53dc09104c4218c402fb46771233980",
+    "agrosphere-immersive\\Source\\AgroSphere\\AgroSphere.Build.cs": "763b443e4752e65af101c5426b63b9ea9f283f9352894452d25e93111cd7b797",
+    "agrosphere-immersive\\contracts\\estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+    "agrosphere-immersive\\contracts\\RELEASE.json": "60633fb6621ddff3aeca30fe70e753b8c002b1bd562b64fb9a9c6f381b51e630",
+    "agrosphere-immersive\\contracts\\spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74"
+  },
+  "packageSha256": {
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere.exe": "a073345f5d327e4d245fd053d842d7c4258c0d0e31a05193a8f206a636f05fec",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Manifest_DebugFiles_Win64.txt": "2925a48d25ac3a2fcb9f486d78a47b4f69416c0d093b9208f415b87116a84d8c",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Manifest_NonUFSFiles_Win64.txt": "d76b21cf11fe82c71dcaf02fe92e94953fd07854d6e632cb2e85de92eaa76fd9",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Manifest_UFSFiles_Win64.txt": "540f920b193ca1d9b97371a23a438226cf1fea33c9244643446e38981ae83222",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\NOTICES.txt": "ba49ae5586f817b36a2772269f71f899cb1f54b5f2720fad951319edd5e140b8",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\ThirdPartyNotices\\Cesium-LICENSE.txt": "2f28b7257ec775a1eb17c170588c1bc411f2c809096ee8daddbc3c0426ff5908",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\ThirdPartyNotices\\Cesium-ThirdParty.json": "3cc9fe1fe0098b09adc7b9d00dacfffdd72b795893ea73ad271ad34be64eb8b8",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Plugins\\NNE\\NNERuntimeORT\\Binaries\\ThirdParty\\Onnxruntime\\Win64\\onnxruntime.dll": "eacc4d935137d67ab0cc1b896472d1de551dfc6545ed9ad74ab842400272e036",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\DbgHelp\\dbghelp.dll": "441a7ccee2f854352366e783fcb79fe895d09ad4c577689319e1a664f296c4a3",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Windows\\XAudio2_9\\x64\\xaudio2_9redist.dll": "e6ae545b31a5453f1b1002d434cc802a6088cf05c5faa414d7ebe00264161506",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Windows\\WinPixEventRuntime\\x64\\WinPixEventRuntime.dll": "f5f6f69210cc958b92285ff444e2ef48f5c46b4d6470b07960739dbcb6554b54",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_api_dump.dll": "583db3d1acd76363f0f67d9da414dd147ca9ffab4a47824027351b063fe66aea",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_api_dump.json": "9e55221c225dce4b5448bac7dadb7e39fd216f51354dde02e58f950f4a0dd80b",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_crash_diagnostic.dll": "8e080a40ac452c4b249b9060e2f4c208af9159afba9e75e91d1c55d85e387d04",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_crash_diagnostic.json": "578bde354874789671dee1a96468c965619c9f3ba16cfa65f850e81a80674087",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_gfxreconstruct.dll": "780c4bcae69a50e38181edfd20a58780fa02539f4ff302c8c4a0e2899ee7a0cb",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_gfxreconstruct.json": "71d4e243a2af74874f4f61378bdfe3753cb01ce5eb9b98400d83612bf882a815",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_profiles.dll": "9682f7f508855980b9c31147493c962d43a0798c4596870cd7c5dee009859ea2",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_profiles.json": "6095c28691757e083a8c1bef3c69ca76a8b5017e21acaf55d1bc7e82221a0fbe",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_shader_object.dll": "7026da236cecadd40b6a1723d0881349d9471592d98cabd60994f99dc2db3e53",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_shader_object.json": "18ecafc9a65e1b7af8cd0e36dc936026cdb3aed333c4ea5a7c17d6d9465cfaf4",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_synchronization2.dll": "485eb9b7f0320bd1af3af03dbe3a052d6f5e9cda14496bbe1a062d626d501eae",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_synchronization2.json": "a1e980a24be9a16a826b00c27d61b85ee0e2e17226dc9c4e8eec031879e5f26a",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_validation.dll": "27fc6a4ca52244f18337a652db638865abd679f6e1d129bf4770fd3e6c4f1a60",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_validation.json": "5c464b84457776d92a674de506f7b7a489294583a7d7609f78fcc52bc4406d09",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vorbis\\Win64\\VS2015\\libvorbisfile_64.dll": "6d0e4395bc4d0ef501c3f7f7b4e63fa0cf2ab2ca80328560b7cb10e6d5a171cf",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vorbis\\Win64\\VS2015\\libvorbis_64.dll": "b8a3e31a6c2d401809bae7aa0fd29f49c2114eeccfba4dc5c7ac8eddbd4b7a98",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Ogg\\Win64\\VS2015\\libogg_64.dll": "c719a5f165e4afe29e92a7eee9762c2e9f301a177885ab1ab8d2c7f57d4a86bf",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\NVIDIA\\NVaftermath\\Win64\\GFSDK_Aftermath_Lib.x64.dll": "ce49be4194706417ccdc57833aec478faa1e08646157688c879fe616d43abd65",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\MsQuic\\v220\\win64\\msquic.dll": "27c231d80310ea9005a6b0c17054f28887272723477e7292a7f9d63b6d1579ee",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Content\\Paks\\AgroSphere-Windows.pak": "e50baccee33f21e135fb95d000e8a6817c73853472900b33f2c4ef5105407c0a",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Content\\Paks\\AgroSphere-Windows.ucas": "85e32f69f9d9783cbaf930e51cba8220e4dec0cda72759ed7cccd7c7d0ad5ae8",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Content\\Paks\\AgroSphere-Windows.utoc": "3923ecf08663b9e60a0d72b65a3748b82cd0c1fc52cf2aec09b436ac0583a2c5",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Content\\Paks\\global.ucas": "04bdf59c3b242b2dd377a07a57c761360dc672e68d2f547e9b07660ed945b5ea",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Content\\Paks\\global.utoc": "d59b469b7b180db504b1dcea6f845750f1a749a28d4e7a96ca7ec6e3472670eb",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\AgroSphere.exe": "f8a7c086afecc4fa0d449d96462778207128f8fb2ede034818128caa76938034",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\tbb12.dll": "c489b6bd4dd2be18d4f8778e3f86caa7672ec8a206c9a54228b3bb60e2923f76",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\tbbmalloc.dll": "aca208101bba1e440e6fae6580eedd45508ec405c9674063baf7ca23d29316bd",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\DML\\x64\\DirectML.dll": "4e357e48c3fb00e5ac868f2b33ba5576873c013349e2cc1d7a9be0071253ac62",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\D3D12\\x64\\D3D12Core.dll": "f0cbdba3043bc30e2a17dfd7d6c05e61c9c4098eb1d5ee8ccd2ab3f4696e8e20",
+    "agrosphere-immersive\\target\\M5-Windows\\Windows\\AgroSphere\\Binaries\\Win64\\D3D12\\x64\\d3d12SDKLayers.dll": "180a630861dc88d26db517da787009edf75e4c83309b819814b84b86f8db36c1"
+  },
+  "nativeTests": {
+    "succeeded": 5,
+    "failed": 0,
+    "warnings": 0,
+    "report": "agrosphere-immersive/target/automation-handoff/index.json",
+    "reportSha256": "fb0ec9b075241d076ab08b7746421166c7fe4341583afd6b3ba05b24cb660591"
+  },
+  "desktopCapture": {
+    "kind": "desktop wall-frame milliseconds",
+    "samples": 7773,
+    "warmupSeconds": 5,
+    "captureSeconds": 30,
+    "p95Ms": 6.044403,
+    "maxMs": 19.063797,
+    "geometryBlocks": 12,
+    "illustrativeTrees": 288,
+    "width": 1920,
+    "height": 1080,
+    "loginToSceneSeconds": 0.190952,
+    "loadSeconds": 0.097948,
+    "physicalVr": "DEFERRED"
+  },
+  "captureScope": "30-second generated desktop scene, not VR or scientific accuracy",
+  "fixture": {
+    "runId": "3b2a0a2539774456b77e47c1146e57b8",
+    "project": "agrosphere-m5-3b2a0a253977",
+    "status": "PASS",
+    "cleanup": "PASS",
+    "privateFilesRemoved": true,
+    "geometrySha256": "082bc78e1fbeea24e78dc6a05b50f2c764fa9eb06da85b1b75fee7594764dbee",
+    "blockMetadataSha256": "76a3a48c3ff783c549a367abeea54a087763a76ba584416172215a129574d72b",
+    "checks": [
+      "new project health and exact Compose ownership labels",
+      "six existing read operations, 12 canonical UUID/geometry/provenance agreements",
+      "server-side foreign estate/object, missing role, unsigned/missing token and read-only write denials",
+      "owned native public client: exact loopback redirect, S256, no password grant"
+    ]
+  },
+  "repositories": {
+    "agrosphere-architecture": {
+      "head": "66e14cbe8139e78eeba9a6b5650d5d6e58054449",
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/M5_DESKTOP_HANDOFF_2026_11_11.md",
+      "indexSha256": "ed25888ee3c027ed8003dd0ccbd6cbab8c1caeff642e9e7b33b14c1b9fcc0eff"
+    },
+    "agrosphere-contracts": {
+      "head": "b39cd2f7261f491294eb83aea23526d2ce21f549",
+      "status": "",
+      "indexSha256": "06ad14e1807c239d4d53f06efa25006baa5c4724e43075635a86e4d3848e185b"
+    },
+    "agrosphere-infrastructure": {
+      "head": "5dd908435833e2e79022afd9d5b2071177c523bb",
+      "status": "M docs/M5_OWNED_FIXTURE.md\n?? scripts/cleanup_m5.py",
+      "indexSha256": "8fb797c3a22e819a9908397016a2d943a432fa069dccad26c52a513ef931c342"
+    },
+    "agrosphere-api-gateway": {
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d",
+      "status": "",
+      "indexSha256": "9b2ffff6cbd70d1fb6f2ba09c6348cd70c24570a5441dfa513ffe613137c6241"
+    },
+    "agrosphere-estate-service": {
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+      "status": "",
+      "indexSha256": "ab6caede95301e3c632301ad9f69bb2a453585b29954ea6729c5409f91ee8776"
+    },
+    "agrosphere-spatial-service": {
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a",
+      "status": "",
+      "indexSha256": "15b42ee2fc58958d9b0f5c2af7271f91f6e4bba60dd92eb1ab358bbe2155e764"
+    },
+    "agrosphere-operations-service": {
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2",
+      "status": "",
+      "indexSha256": "f6b1bab01d15fcd40fda31ffcd9c8115d58337faf8b786a37de3fb2d453082ae"
+    },
+    "agrosphere-telemetry-service": {
+      "head": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf",
+      "status": "",
+      "indexSha256": "447c0e60cc091eaff6ad14c7cc9e8f586d2fdf26d9aab41bfc6f10605e1b6d28"
+    },
+    "agrosphere-analytics-service": {
+      "head": "c61af33a4522c327f1f02374ce54473c81456329",
+      "status": "",
+      "indexSha256": "7e8287bbb81afa16d0e88e30fd0ff4afcaf5b97287f445311b6f08d1116c2f96"
+    },
+    "agrosphere-ai-service": {
+      "head": "951e6213b9d0956b13fddf860ab8bcb04ac66049",
+      "status": "",
+      "indexSha256": "7612880a9c8e8ec809f1f660bd75990ff9d352ddd638193c77f9b9ec017caa3e"
+    },
+    "agrosphere-web": {
+      "head": "c3dc6a65f01b348a3d52c8222219bce76752e8e2",
+      "status": "",
+      "indexSha256": "19d80e58bd6b4312d6d9c438b9d5fac0f09db7122bd8c6e853baa108e7c9313a"
+    },
+    "agrosphere-immersive": {
+      "head": "833c8948e1d6e566e5de5df6e1876ca7f4fecd73",
+      "status": "M Source/AgroSphere/EstateSession.cpp\n M scripts/run_m5.ps1\n M toolchain.json",
+      "indexSha256": "e2d693f77560090ff2a03b4b087060f4cd178a1394489e747643a2dd04add0da"
+    }
+  },
+  "approvedM5Sha256": "8e5d1571c13863b5e48320d2c870345cc6c5e7032717545441b7e9bbd9d0bb38",
+  "preservedM4Sha256": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+  "gitActionsByAgent": "read-only; no staging/commit/reset/push/publication",
+  "remainingGates": [
+    "physical VR deferred",
+    "owner functional acceptance",
+    "full rendered fault and refresh/revocation/key-rotation matrix",
+    "live stale-response races",
+    "maximum-scale and sustained input assessment",
+    "numerical cross-renderer comparison"
+  ],
+  "supportingArtifactSha256": {
+    "agrosphere-infrastructure/scripts/verify_m5.py": "c894477f252f101f54ad3f7362fdd0a787c504280d356be86d6493de697907c2",
+    "agrosphere-infrastructure/scripts/serve_m5_web.py": "3c196a783f9810bbf469960670869609a64495f33166d2c5184d611ff629a4ad",
+    "agrosphere-infrastructure/scripts/cleanup_m5.py": "4a8476fc04a3455bddfa2ed9762f28822945b8a2e66563fc5c5477382ab16491",
+    "agrosphere-immersive/scripts/run_m5.ps1": "34414c0abbf88321e4340c0edfafd107393803de817c728608a71c63328eb904",
+    "agrosphere-immersive/target/m5-handoff-packaging.log": "a2b296102b6e3e06fa140151f71b69aa62654c9cc27a1bd626bc13d61ab4b10d",
+    "agrosphere-immersive/target/m5-recovery-status-build.log": "b4ce6635eb60c38cd7a247b93e4d9b4c05650e21e6f781b43c2103dd75b79f81",
+    "agrosphere-immersive/target/m5-final-1080p-capture.json": "e6f95fdc1b705f9cb998b3cf285c23630651670c5247232e8d157b56d8e2b4ac",
+    "agrosphere-immersive/target/m5-handoff-recovery.png": "207c8632dcf1ec09b3bf6345db5eac6b8c7d9d343fd043fe4892b0c5bd24563a",
+    "agrosphere-architecture/docs/milestones/M5_CLIENT_REVIEW_FINAL_2026_11_10.md": "229063edac6e9813b5ba177efaed8e4bb5e9c080f59f6d3e6c7cf4f5839f328c",
+    "agrosphere-architecture/docs/milestones/M5_MR_FEASIBILITY_2026_11_10.md": "d64ab46eed539720d9a80b0dbf7dbd00f47b3db3b16e81a6589a6f9af82303ff"
+  },
+  "executedDesktopChecks": [
+    "final standalone browser sign-in and 12-block rendering",
+    "block selection and recorded metadata",
+    "protected scene/details hidden during exact owned Gateway outage",
+    "Gateway restart plus refresh restores estate and signed-in status",
+    "native and browser identity logout; task-owned UI tabs/window closed"
+  ],
+  "previousInterruptedFixture": {
+    "project": "agrosphere-m5-a77d64dd440e",
+    "status": "INTERRUPTED_CLEANED",
+    "cleanup": "PASS",
+    "fourHourBoundExceededWhileVerifierAbsent": true
+  },
+  "checks": {
+    "immersiveDescriptor": "PASS",
+    "infrastructureValidator": "PASS",
+    "pythonSyntax": "PASS",
+    "architectureAndTwelveRootAudit": "PASS",
+    "diffWhitespace": "PASS"
+  }
+}

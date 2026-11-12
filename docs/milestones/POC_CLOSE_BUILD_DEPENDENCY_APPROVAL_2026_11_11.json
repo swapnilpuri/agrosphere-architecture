@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-11",
+  "timezone": "America/Chicago",
+  "owner_response": "Allow declared build dependencies",
+  "authority": "Normal independent builds may restore only dependencies declared by the current POMs, Python pyproject.toml and npm lockfile; preserve their versions. No host tool installation, upgrade, new provider or license acceptance.",
+  "declaredInputSha256": {
+    "agrosphere-estate-service\\pom.xml": "ed175cf27100467570139449ccb03df815db6b33333a3581057bd0239faf6980",
+    "agrosphere-spatial-service\\pom.xml": "090de96f288362fbcdd90dd7e1012a03e56e10979923fb56aaca4d9ad0b39403",
+    "agrosphere-operations-service\\pom.xml": "94876ad39263edaed8f46545639f013690d05735f0bd51e3f8a9c4379a6a702c",
+    "agrosphere-telemetry-service\\pom.xml": "a9af93d66eea8515c0c652f50c65e99c480f6df60cb0e7dfd30225a6974a1824",
+    "agrosphere-analytics-service\\pom.xml": "5c7cf113206802d7f21e454eab166b628be131e05db55df14179eb58378b0cd2",
+    "agrosphere-api-gateway\\pom.xml": "c8b9be0a2148514d42144c923e5d97579cced9610c02748c0a590b402d745d1d",
+    "agrosphere-ai-service\\pyproject.toml": "90b0679e4e3d411b5efb992aebb15965a615ee95b9c159253293d5b53ef3981f",
+    "agrosphere-web\\package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577"
+  }
+}

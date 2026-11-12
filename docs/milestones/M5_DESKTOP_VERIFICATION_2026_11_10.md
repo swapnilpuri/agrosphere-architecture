@@ -1,6 +1,6 @@
 # M5 desktop execution evidence — 2026-11-10
 
-Status: working local desktop prototype; final verification in progress. The owner approved D01–D10 with VR deferred. Package approval is not owner functional acceptance, which remains OPEN. Full M5 is not closed by desktop evidence. Preserve the original approved package bytes and prior M4 acceptance.
+Historical execution record. The [2026-11-11 desktop handoff](M5_DESKTOP_HANDOFF_2026_11_11.md) supersedes pending package/performance/cleanup labels here and records the exact final artifacts. The owner approved D01–D10 with VR deferred; owner functional acceptance remains OPEN. Full M5 is not closed by desktop evidence. Preserve the original approved package bytes and prior M4 acceptance.
 
 ## Delivered implementation
 

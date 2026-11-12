@@ -1,5 +1,20 @@
 # Alerts privacy — client questions and provisional decisions
 
+## POC-CLOSE generated-demo dispositions — 2026-11-11
+
+The owner selected POC-CLOSE discovery/review. The following is one consolidated **PROPOSED** application of existing WA/II/AN gates to [delivery package revision 1](POC_CLOSE_DELIVERY_PACKAGE.md), pending C02–C05 approval. It does not answer real-subject/legal/deployment questions or rewrite PR01–17/WF01–04/OP01–04 below. This remains the sole client decision register. No actual accounts or existing stack are enabled.
+
+| Existing gate | Proposed generated-demo disposition | Remaining actual-subject/production boundary |
+|---|---|---|
+| WA D08 / II D08 / AN D08 workload | One connected story with ten generated blocks, roughly ten records/resource, existing role matrix and separate generated subjects. Correctness checks include two concurrent writers and 20-user M1 query profile; actual role-session totals are recorded, not asserted as plantation workload. Renderer-only100-feature stress never widens AI admission. C04 defines measurement/acceptance, including current polling; five-second promise remains unaccepted. | Actual estate/user/volume/growth/field workload and WF03/04 remain open. Generated observations do not accept deployment capacity. |
+| WA D09 | Invented worker labels/codes/subjects only, no actual person or performance-scoring purpose. Worker-registration UUID and account subject remain distinct. Same existing scoped access/history, memory-only UI and no raw personal event/evidence copies; delete all generated DB/broker/profile/log/export copies at exact owned teardown. | Real workforce purpose/basis/notices/controller/retention/contact facts remain open; no new source-history deletion policy is invented. |
+| II D07 | Invented inspection/incident text/actors only, no actual health/location observation. Preserve source history/authorization and manually justified severity. Bound all raw generated copies by owned teardown; do not shorten accepted source histories or copy report text into shared alert events. | Real-subject/source-report retention/access/legal facts remain open; no real field collection. |
+| AN D07 | Privacy mode default off outside exact newly owned fixture; explicit generated subject allowlist, empty legacy V6 gate and reviewed V7-only path. Preserve PR03/04/06 lifecycle, exact0.9.0 receipt/key/removal/redaction semantics. Exercise own-read isolation/shared ack/history/expiry/no resurrection on approved generated policy fixtures. No actual legal basis/controller/consent answer inferred. | Actual policy/notice/basis/controller/retention, PM/OR and operating-control acceptance remain open. A short fixture cannot certify unattended deletion. |
+| II D08 / AN D08 delivery | Measure source acceptance→API visibility→foreground UI observation separately, preserving polling semantics. Proposed <=35s API-visible→alert UI and <=10s explicit-refresh view require C04 approval; no five-second commit→UI promise. | Field/reconnect/background/offline SLA remains unresolved; a generated foreground test cannot accept it. |
+| PR09/10/11/14 / OP03/04 demo copies | Supervised runtime <=2h with exact owner manifest and recovery preflight; no backups/restores/external collector. Raw generated credentials/DTOs/corpus/logs/profiles/crash exports deleted and per-copy absence verified; sanitized IDs/hashes/results retained. Failed/unknown cleanup blocks demo acceptance. Logical expiry and physical cleanup remain separate. | Existing14/90-day logs,35-day backup and original all-copy/ledger/barrier requirements are unchanged. If backup/restore or an unknown extra copy is included, review it before access/execution. No blanket policy waiver. |
+
+Client answer for this supplement: **PENDING**. C01–C07 acceptance later records the actual owner response/date/exact package hash here or links an immutable approval record. Silence and prompt selection are not acceptance. Original register follows unchanged.
+
 Date: 2026-10-31. Version: `AN_PRIVACY_PROVISIONAL_1`.
 
 ## Authority and use
@@ -116,3 +131,10 @@ Continue device-independent generated tooling and browser-level preparation. Nam
 ## OP04 technical evidence refinement — 2026-11-01
 
 The observer review applies OP04's provisional evidence rule: count watermark-expired copies but report their original eligibility age as UNKNOWN when V7 metadata cannot prove it. Reopening clears original inactive timestamps and later expiry can overwrite the most recent history timestamp; observation time is not a substitute. No new client answer, retention value, role matrix or business policy is inferred. This blocks an on-time deletion claim for those copies and keeps operating gates open while additive deadline metadata is designed/reviewed. The generated-only SQL candidate is not a V8 migration or live collector. Existing PR/WF/OP questions remain in the tables above; no additional questionnaire or user action is introduced.
+
+
+## POC-CLOSE owner decisions accepted — 2026-11-11
+
+Owner response “i approve” accepts revision1 C01–C07, SHA-256 f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e; [exact approval](POC_CLOSE_DELIVERY_APPROVAL_2026_11_11.json). The proposed generated WA/II/AN demo dispositions above are accepted for that scenario only; earlier PENDING labels are historical. French-language support stays deferred. Real-subject/legal/production questions remain open and functional acceptance awaits executed evidence. [Exact reviewed register/checklist/package bytes](poc-close-reviewed-r1/manifest.json) are archived unchanged.
+
+The owner separately allowed the three declared base-image downloads (“Please go-ahead.”) and declared build-dependency restoration (“Allow declared build dependencies”); exact supplements record scope and current input hashes. No host tool installation, upgrade, new provider or license acceptance. This does not change privacy periods, ownership/lifetime gates or rollout authority.

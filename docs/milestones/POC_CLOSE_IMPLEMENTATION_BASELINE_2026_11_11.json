@@ -1,0 +1,77 @@
+{
+  "recordedUtc": "2026-11-11T23:12:57.300125+00:00",
+  "repositories": {
+    "architecture": {
+      "head": "66e14cbe8139e78eeba9a6b5650d5d6e58054449",
+      "status": "M CHANGELOG.md\n M docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/NEXT_CODEX_PROMPT.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n M docs/roadmap/prompts/README.md\n?? docs/milestones/M5_DESKTOP_EVIDENCE_2026_11_11.json\n?? docs/milestones/M5_DESKTOP_HANDOFF_2026_11_11.md\n?? docs/milestones/POC_CLOSE_DELIVERY_APPROVAL_2026_11_11.json\n?? docs/milestones/POC_CLOSE_DELIVERY_MANIFEST_2026_11_11.json\n?? docs/milestones/POC_CLOSE_DELIVERY_PACKAGE.md\n?? docs/milestones/POC_CLOSE_DISCOVERY_2026_11_11.md\n?? docs/milestones/POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json\n?? docs/milestones/POC_CLOSE_FRENCH_DEFERRAL_2026_11_11.md\n?? docs/milestones/POC_CLOSE_REVIEW_VERIFICATION_2026_11_11.json\n?? docs/roadmap/prompts/POC_CLOSE.md",
+      "diffStat": "CHANGELOG.md                                       |  8 ++++\n .../ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md       | 15 +++++++\n docs/milestones/DEVELOPMENT_CHECKPOINT.md          | 38 +++++++++++++++++\n .../M5_DESKTOP_VERIFICATION_2026_11_10.md          |  2 +-\n docs/roadmap/MILESTONES.md                         |  4 ++\n docs/roadmap/NEXT_CODEX_PROMPT.md                  | 16 +++++++-\n docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md       | 48 +++++++++++++++++++++-\n docs/roadmap/prompts/README.md                     | 10 +++++\n 8 files changed, 137 insertions(+), 4 deletions(-)",
+      "indexSha256": "ed25888ee3c027ed8003dd0ccbd6cbab8c1caeff642e9e7b33b14c1b9fcc0eff"
+    },
+    "contracts": {
+      "head": "b39cd2f7261f491294eb83aea23526d2ce21f549",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "06ad14e1807c239d4d53f06efa25006baa5c4724e43075635a86e4d3848e185b"
+    },
+    "infrastructure": {
+      "head": "5dd908435833e2e79022afd9d5b2071177c523bb",
+      "status": "M docs/M5_OWNED_FIXTURE.md\n?? scripts/cleanup_m5.py",
+      "diffStat": "docs/M5_OWNED_FIXTURE.md | 4 ++++\n 1 file changed, 4 insertions(+)",
+      "indexSha256": "8fb797c3a22e819a9908397016a2d943a432fa069dccad26c52a513ef931c342"
+    },
+    "estate-service": {
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "ab6caede95301e3c632301ad9f69bb2a453585b29954ea6729c5409f91ee8776"
+    },
+    "spatial-service": {
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "15b42ee2fc58958d9b0f5c2af7271f91f6e4bba60dd92eb1ab358bbe2155e764"
+    },
+    "operations-service": {
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "f6b1bab01d15fcd40fda31ffcd9c8115d58337faf8b786a37de3fb2d453082ae"
+    },
+    "telemetry-service": {
+      "head": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "447c0e60cc091eaff6ad14c7cc9e8f586d2fdf26d9aab41bfc6f10605e1b6d28"
+    },
+    "analytics-service": {
+      "head": "c61af33a4522c327f1f02374ce54473c81456329",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "7e8287bbb81afa16d0e88e30fd0ff4afcaf5b97287f445311b6f08d1116c2f96"
+    },
+    "ai-service": {
+      "head": "951e6213b9d0956b13fddf860ab8bcb04ac66049",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "7612880a9c8e8ec809f1f660bd75990ff9d352ddd638193c77f9b9ec017caa3e"
+    },
+    "api-gateway": {
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "9b2ffff6cbd70d1fb6f2ba09c6348cd70c24570a5441dfa513ffe613137c6241"
+    },
+    "web": {
+      "head": "c3dc6a65f01b348a3d52c8222219bce76752e8e2",
+      "status": "",
+      "diffStat": "",
+      "indexSha256": "19d80e58bd6b4312d6d9c438b9d5fac0f09db7122bd8c6e853baa108e7c9313a"
+    },
+    "immersive": {
+      "head": "833c8948e1d6e566e5de5df6e1876ca7f4fecd73",
+      "status": "M Source/AgroSphere/EstateSession.cpp\n M scripts/run_m5.ps1\n M toolchain.json",
+      "diffStat": "Source/AgroSphere/EstateSession.cpp | 1 +\n scripts/run_m5.ps1                  | 2 +-\n toolchain.json                      | 6 ++++--\n 3 files changed, 6 insertions(+), 3 deletions(-)",
+      "indexSha256": "e2d693f77560090ff2a03b4b087060f4cd178a1394489e747643a2dd04add0da"
+    }
+  }
+}

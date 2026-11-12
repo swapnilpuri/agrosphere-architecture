@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-11",
+  "timezone": "America/Chicago",
+  "owner_response": "Please go-ahead.",
+  "context": "Response to the pending explicit request for three missing declared Linux/amd64 base images",
+  "images": [
+    "python:3.12-slim",
+    "node:24-alpine",
+    "nginxinc/nginx-unprivileged:1.28-alpine"
+  ],
+  "authority": "Download these declared images; record immutable digests before use. No host install, paid provider or license acceptance. Other package exclusions retained."
+}

@@ -1,3 +1,71 @@
+# POC-CLOSE connected components verified; performance/rendered exits in progress — 2026-11-11
+
+Approval C01–C07 and the explicit image/dependency supplements remain active. French portal support and physical VR remain deferred; bounded M4 acceptance is preserved. Final POC-CLOSE owner acceptance remains OPEN.
+
+Owned run369d5d303b284849a0ca2570c2180e21 passed the same-project canonical Estate/Spatial scope, Operations/Analytics replay/recovery/rebuild/Web, M4 forecasts/anomalies/registry/evidence/Web, workforce/inspection/private-alert lifecycle and MQTT/Telemetry/environmental history/recovery/Web checks. All6,000 measured metadata requests returned200, but p95 **1043.7371ms FAILED** the500ms target. Native r3 launched at1920×1080 but refused the fixture'slocalhost issuer under its unchanged127-only guard; no authenticated rendered/native-performance PASS follows. Exact resources, tracked clients and private copies cleaned PASS. Original failures and stage-specific limits remain in [execution attempts](POC_CLOSE_EXECUTION_ATTEMPTS_2026_11_11.json).
+
+A real20-connection local reproduction found the fixture adapter's default listen backlog5 introduced connection delays:60 samples p95 527.14ms versus20.83ms at backlog64. Only fixture HTTP listener capacity was corrected; the failed platform capture is retained. New run7dc65857445345c1aa621160bf2f5969 is active under the original supervised two-hour lease, with consistent127.0.0.1 issuer, canonical E1 workforce, distinct managers/separate generated policy-aging records, renderer-only empty/no-geometry/max cases and both agreed load profiles/hardware Web captures. [Run6 engineering review](POC_CLOSE_ENGINEERING_REVIEW_RUN6_2026_11_11.json) records exact source/SQL/ownership gates; it is a sequential self-review, not independent review. Do not infer its pending results from run5 or combine separate failed runs into a full PASS.
+
+Current native [r3 artifact manifest](POC_CLOSE_NATIVE_PACKAGE_R3_2026_11_11.json) associates50 package files/notices and six passing NullRHI tests. Original M4/M5 packages/reports remain preserved. Native rendered matrix, maximum input/numerical checks, hardware Web budgets and full capability handoff remain in progress. Earlier checkpoint entries follow unchanged as history.
+
+---
+
+# POC-CLOSE P3/P4 progress and run1 recovery — 2026-11-11
+
+Approval C01–C07 and explicit base-image/build-dependency supplements remain active. [Execution attempts](POC_CLOSE_EXECUTION_ATTEMPTS_2026_11_11.json) retain actual failures/retries. AI68 tests, Analytics48 verify/pins, Web112 unit/build plus36 UI/1 software-graphics, Infrastructure11 ownership/fault tests plus focused M4 callback regression, and native six-test diagnostics build/package checks have passed at their recorded snapshots. Native private-browser follow-up editor rebuild passed after a shared-pointer compilation correction; refreshed native tests/package remain pending. These do not establish rendered/performance or final owner acceptance.
+
+Immutable-FROM seven-image/topology preflight3efdc4307d3d4cc2a7513070f0d88b51 PASS with owned cleanup. First actual connected project75673a0c7613400bb1ba662eacee9ab1 reached canonical signed Estate/Spatial/tapping and Operations→Analytics→real Web production history, then failed before AI on M4 local variable shadowing the injected owner. Its exact resources/private files cleaned PASS; no runtime fixture is left active at this checkpoint. Fix renamed owner_marker and a focused regression now passes. Prepare a fresh run2; do not combine run1 subsections into one connected PASS.
+
+Owned browser TEMP/profile/parent-process tracking and fixture-only native private-browser launch are being completed to keep generated copies out of existing browser profiles. Preserve original M4/M5 package/report bytes, reviewed R1 snapshot, source/contract/migration pins, existing work and all scope exclusions. Earlier checkpoints follow unchanged.
+
+---
+
+# Active: POC-CLOSE approved; P3 implementation — 2026-11-11
+
+Owner response “i approve” accepts revision1 C01–C07, exact SHA-256 f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e. [Approval](POC_CLOSE_DELIVERY_APPROVAL_2026_11_11.json) records authority for autonomous included P3–P7. French-language portal support remains deferred. Earlier pending labels are historical; do not request routine phase approval. Final owner functional acceptance remains OPEN; engineering PARTIAL/in progress. Existing M5 approval, bounded M4 acceptance and physical VR deferral persist.
+
+[Fresh implementation baseline](POC_CLOSE_IMPLEMENTATION_BASELINE_2026_11_11.json) preserves twelve independent roots/current work. Implement/review owned fixture lifecycle/context before runtime; keep exact source/image/SQL/ACL/cleanup gates and <=2h supervised runtime. No installation/license acceptance/provider spend, existing-stack/private-config/REAL/production/AEO or Git mutation/publication authority. Historical checkpoint bytes follow unchanged.
+
+---
+
+# Owner clarification: French portal support deferred — 2026-11-11
+
+The owner asked to leave French-user portal enablement for later. [Exact response and scope interpretation](POC_CLOSE_FRENCH_DEFERRAL_2026_11_11.md) records French-language support as retained but deferred from POC-CLOSE, consistent with revision1 C01. No nationality-based access restriction or language implementation is introduced. Reviewed package/manifest artifacts remain unchanged. This response does not explicitly approve the combined C01–C07 execution package or accept delivered behavior; that decision remains pending. Existing M5 desktop authority and bounded M4 acceptance persist. Earlier checkpoint bytes follow unchanged.
+
+---
+
+# Current: POC-CLOSE selected; consolidated package ready — 2026-11-11
+
+The owner selected the complete POC-CLOSE prompt. P1 discovery and P2 review preparation are delivered in [discovery report](POC_CLOSE_DISCOVERY_2026_11_11.md), [twelve-root/source/pin baseline](POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json), [revision-1 delivery package](POC_CLOSE_DELIVERY_PACKAGE.md) and [exact manifest](POC_CLOSE_DELIVERY_MANIFEST_2026_11_11.json). C01–C07 consolidate bounded product scope, connected fixture/data flow, generated privacy/workload, performance budgets, supervised lifecycle/copies, licenses/cost and delegated engineering gates. Combined execution is PENDING the owner's one concrete package decision; no prior approvals are added together to authorize it.
+
+**POC-CLOSE engineering PARTIAL (preparation only); owner acceptance OPEN.** Existing M5 desktop verification authority remains active without repetition; remaining rendered tests are NOT RUN in this discovery, not blocked by lack of M5 approval. Physical VR remains DEFERRED/OpenXR disabled; MR assessment only. Bounded M4 engineering and explicit 2026-11-10 owner acceptance remain satisfied. Original FR-01 company/Spatial division lifecycle disposition and other retained requirements are explicit in the proposed package and [sole checklist mapping](../roadmap/PROJECT_COMPLETION_CHECKLIST.md#poc-close-evidence-reconciliation--2026-11-11). Generated WA/II/AN dispositions are proposed in the existing client register; real-subject/legal/production facts remain open.
+
+Fresh preparation checks PASS: Architecture validator/twelve-root audit, Infrastructure validator, Immersive descriptor/pins, Contracts compatibility/schema/example validator. Fresh inventory comparison matches M5 18 source/41 package files and M4 71 source/15 evidence files; these associate historical execution, not fresh runtime PASS. Docker default pipe access denied; approved read-only elevated retry reports29.8.2. Actual Spatial toolchain is Java25 despite older Architecture Java21 text; preserve actual independent pins. Existing dirty work and prior M4/M5 package/report bytes are preserved. Final documentation/link/hash/Git checks are recorded in POC_CLOSE_REVIEW_VERIFICATION_2026_11_11.json.
+
+Next: owner approves/revises revision1 C01–C07 (including explicit proposed performance/lifecycle boundaries); record exact response/hash, then execute included P3–P7 autonomously. This asks only for the new combined scope required by section2 of the selected owner prompt, not another M5 approval or final functional acceptance. No combined fixture/product correction/new runtime test has run. No staging/commit/reset/push/publication, installation/license acceptance/purchase/provider spend, private configuration/existing-target/data/role/credential mutation, REAL/production/AEO or field-track work is authorized. Earlier scheduling labels follow as history; all prior checkpoint bytes are preserved.
+
+---
+
+# Current: next-step prompt prepared; M5 verification gaps retained - 2026-11-11
+
+The owner asked whether M5 is done and requested a similar prompt for the next milestone. The [desktop handoff](M5_DESKTOP_HANDOFF_2026_11_11.md) remains authoritative: working prototype delivered, full M5 engineering PARTIAL, physical VR DEFERRED, owner acceptance OPEN. This request is not explicit functional acceptance or a waiver of unverified checks.
+
+Prepared [POC-CLOSE: Integrated POC Verification and Acceptance](../roadmap/prompts/POC_CLOSE.md), a proposed follow-on to the original M0-M5 roadmap, with a complete milestone prompt, seven phase prompts and an immediate already-approved M5-only verification alternative. Scope includes remaining desktop checks and a coherent generated cross-platform demonstration with existing M0-M3/connected ANL gates kept explicit. A new combined execution scope requires one concrete consolidated package; prior M5 approvals need no repetition. Android offline/English-French is a separate next feature candidate.
+
+No follow-on execution or new package is approved by prompt preparation. Wait for owner selection; retain existing M5 authority and all repository/data/private-config/Git/REAL/production/AEO exclusions. Documentation checks: Architecture validator/twelve-root audit and git diff --check PASS; prompt links, nine fenced prompt blocks, seven phases and preserved approved M5 package hash PASS. Initial ad-hoc fence check failed because PowerShell consumed literal backticks; corrected check uses character codes and passed. No application or runtime tests were rerun for prompt preparation. Historical checkpoint content follows unchanged.
+
+---
+
+# M5 desktop prototype delivered; verification gaps retained — 2026-11-11
+
+Owner-approved D01–D10 with physical VR deferred remain authoritative; no repeated implementation approval is needed. [Desktop handoff](M5_DESKTOP_HANDOFF_2026_11_11.md), [exact evidence](M5_DESKTOP_EVIDENCE_2026_11_11.json), [independent review](M5_CLIENT_REVIEW_FINAL_2026_11_10.md) and [MR feasibility](M5_MR_FEASIBILITY_2026_11_10.md) supersede pending implementation/toolchain labels below. Immersive 0.2.0 compiles and packages with installed UE5.8.4/Cesium2.30.0; actual standalone generated login/render/picking/details/logout and owned outage/recovery were exercised. Five final native tests PASS. Actual 1920×1080 capture: p95 6.044403 ms, maximum 19.063797 ms; warm login-to-scene 0.190952 s. See evidence for scope, retries/stalls, cleanup and artifact identities.
+
+**Full M5 engineering remains PARTIAL and owner functional acceptance OPEN.** Physical VR is DEFERRED; full rendered fault/refresh/revocation/key-rotation/race/max-scale/input and numerical cross-renderer exits remain unverified. Matching UUIDs and component tests do not close those gates. MR is assessment-only. Continue only the already authorized M5 verification gaps or the owner's selected review; do not start another milestone. The desktop prototype can be tried using the Immersive README and a fresh owned fixture after teardown.
+
+Original M5/M4 package hashes, prior acceptance/evidence, independent repositories and existing work/data/config/index are preserved. The interrupted old fixture was recovered by exact labels; normal fresh-fixture cleanup is recorded separately. No production, REAL, existing-target/private configuration/account/role/credential changes, Git staging/commit/publication or AEO action is authorized. Historical checkpoints follow unchanged.
+
+---
+
 # Current: M5 approved, desktop implementation active — 2026-11-10
 
 Owner approved D01–D10 with VR deferred; [exact response/package hash](M5_DELIVERY_APPROVAL_2026_11_10.json). Prior proposed labels below are historical. Preserve accepted package bytes. Desktop implementation, integration and delegated conforming engineering checks are authorized; do not repeat package approval. Physical VR remains DEFERRED/OPEN, not accepted or completed. Owner functional acceptance remains OPEN.

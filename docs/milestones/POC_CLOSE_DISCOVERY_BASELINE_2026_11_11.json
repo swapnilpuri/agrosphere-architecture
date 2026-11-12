@@ -1,0 +1,530 @@
+{
+  "recordedUtc": "2026-11-11T17:37:15.387107+00:00",
+  "scope": "Read-only POC-CLOSE discovery; no Orchestrator/private configuration inspection",
+  "repositories": {
+    "architecture": {
+      "head": {
+        "exit": 0,
+        "output": "66e14cbe8139e78eeba9a6b5650d5d6e58054449",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "M CHANGELOG.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md\n M docs/roadmap/NEXT_CODEX_PROMPT.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n M docs/roadmap/prompts/README.md\n?? docs/milestones/M5_DESKTOP_EVIDENCE_2026_11_11.json\n?? docs/milestones/M5_DESKTOP_HANDOFF_2026_11_11.md\n?? docs/roadmap/prompts/POC_CLOSE.md",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "CHANGELOG.md                                         |  4 ++++\n docs/milestones/DEVELOPMENT_CHECKPOINT.md            | 20 ++++++++++++++++++++\n .../milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md |  2 +-\n docs/roadmap/NEXT_CODEX_PROMPT.md                    | 10 +++++++++-\n docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md         |  5 +++--\n docs/roadmap/prompts/README.md                       |  6 ++++++\n 6 files changed, 43 insertions(+), 4 deletions(-)",
+        "error": "warning: in the working copy of 'CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/milestones/DEVELOPMENT_CHECKPOINT.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/roadmap/prompts/README.md', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "ed25888ee3c027ed8003dd0ccbd6cbab8c1caeff642e9e7b33b14c1b9fcc0eff",
+      "version": "0.5.0",
+      "publicBuildMigrationPinHashes": {}
+    },
+    "contracts": {
+      "head": {
+        "exit": 0,
+        "output": "b39cd2f7261f491294eb83aea23526d2ce21f549",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "06ad14e1807c239d4d53f06efa25006baa5c4724e43075635a86e4d3848e185b",
+      "version": "0.13.0",
+      "publicBuildMigrationPinHashes": {}
+    },
+    "infrastructure": {
+      "head": {
+        "exit": 0,
+        "output": "5dd908435833e2e79022afd9d5b2071177c523bb",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "M docs/M5_OWNED_FIXTURE.md\n?? scripts/cleanup_m5.py",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "docs/M5_OWNED_FIXTURE.md | 4 ++++\n 1 file changed, 4 insertions(+)",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "8fb797c3a22e819a9908397016a2d943a432fa069dccad26c52a513ef931c342",
+      "version": "0.3.0",
+      "publicBuildMigrationPinHashes": {
+        "jaeger/Dockerfile": "0516c8335482f2ffc8ff09f88274849a81f5775d711bb73379f0aa974bb2ec6a",
+        "otel/Dockerfile": "ac782f0154c44df579674dbfacaa32f28f5483ea7a7191afe2559dc85092d6ec",
+        "postgres/provision_operations_runtime.sql": "99b0acb78dffb4d273b1cc126840d01a844655b07e4617bc4b82f4353ff32b97",
+        "tests/analytics-contracts/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+        "tests/contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+        "tests/contracts/events/spatial/v1/DigitalTwinAssetRegistered.schema.json": "d46b29fb3171339c986e5e2dee526c080965c1314434a81b6983a0b5a9b0c91b",
+        "tests/contracts/events/spatial/v1/SpatialBoundaryChanged.schema.json": "ee2883c66b3b8606799f73733c14761a0f2c617e22f1e12c2d3c4adfce1b85d7",
+        "tests/contracts/events/spatial/v1/SpatialFeatureCreated.schema.json": "4edd367673b4f8d0c634100265676b36eaed92eb4f1cbe9345202180d120ff4c",
+        "tests/contracts/events/spatial/v1/SpatialFeatureUpdated.schema.json": "d5aff1cb168c96453ef79e329d903b2495d88a3c5c5069dcb673ecacf43f701a",
+        "tests/contracts/events/spatial/v1/SpatialLayerCreated.schema.json": "569fa41811f3728f478ccd7ca4942031b92b03f68303b17ddafcc1bad86dece5",
+        "tests/contracts/events/v2/EstateCreated.schema.json": "9f6d63c477759e2a3a7fcce3a1444febad0cef7e59548c6da7a04c160882d668",
+        "tests/contracts/events/v2/EstateUpdated.schema.json": "f74b3829d2889a363792df10eb3c05dfdfc2b553a75e51a5ec9b20de2e2a46bc",
+        "tests/contracts/events/v2/PlantationBlockCreated.schema.json": "d7a6a5bff8a8c1fc3fa930c044098dbbf0877a944d87109cd25e00417c0cadee",
+        "tests/contracts/events/v2/PlantationBlockUpdated.schema.json": "c99731baf15262ef3ddefac0dc64eacf76bbd1f82c87d12f8cb1077dcbdfcd02",
+        "tests/contracts/manifest.json": "abb17617e0c3520042aa9dd0aac48519adebbeb5eaba1a416d5a2568464941f3",
+        "tests/contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+        "tests/telemetry-contracts/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+        "tests/telemetry-contracts/manifest.json": "3833884e2a1ef41970d515e99632b924b6215bed093501bfad9af4427bc3bd1c"
+      }
+    },
+    "estate-service": {
+      "head": {
+        "exit": 0,
+        "output": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "ab6caede95301e3c632301ad9f69bb2a453585b29954ea6729c5409f91ee8776",
+      "version": "0.2.2",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "ad15820b22c336290b6967160143b82ccd99fb778e3fff377d86bb03f4e04649",
+        "pom.xml": "ed175cf27100467570139449ccb03df815db6b33333a3581057bd0239faf6980",
+        "src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+        "src/main/resources/db/migration/V2__estate_management.sql": "15ea271c075b8846c201fcbd02aa67423bcb2dab6bb62b2abebb9b20651732ea",
+        "src/main/resources/db/migration/V3__outbox_trace_context.sql": "54c2d8f839c42104a770e98acb33726736f19da5150add02fa5e7fa37b9c3c9e",
+        "src/test/resources/contracts/estate-service.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+        "src/test/resources/contracts/events/v2/EstateCreated.schema.json": "9f6d63c477759e2a3a7fcce3a1444febad0cef7e59548c6da7a04c160882d668",
+        "src/test/resources/contracts/events/v2/EstateUpdated.schema.json": "f74b3829d2889a363792df10eb3c05dfdfc2b553a75e51a5ec9b20de2e2a46bc",
+        "src/test/resources/contracts/events/v2/PlantationBlockCreated.schema.json": "d7a6a5bff8a8c1fc3fa930c044098dbbf0877a944d87109cd25e00417c0cadee",
+        "src/test/resources/contracts/events/v2/PlantationBlockUpdated.schema.json": "c99731baf15262ef3ddefac0dc64eacf76bbd1f82c87d12f8cb1077dcbdfcd02"
+      }
+    },
+    "spatial-service": {
+      "head": {
+        "exit": 0,
+        "output": "a6db7e446e7088f57b6962231c980100ca89b16a",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "15b42ee2fc58958d9b0f5c2af7271f91f6e4bba60dd92eb1ab358bbe2155e764",
+      "version": "0.2.1",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "7bbdb13647cd7b1e7c78d50fe053479ad3a848f8f319222c01ae96dbb1157a15",
+        "pom.xml": "090de96f288362fbcdd90dd7e1012a03e56e10979923fb56aaca4d9ad0b39403",
+        "src/main/resources/contracts/events/spatial/v1/DigitalTwinAssetRegistered.schema.json": "d46b29fb3171339c986e5e2dee526c080965c1314434a81b6983a0b5a9b0c91b",
+        "src/main/resources/contracts/events/spatial/v1/SpatialBoundaryChanged.schema.json": "ee2883c66b3b8606799f73733c14761a0f2c617e22f1e12c2d3c4adfce1b85d7",
+        "src/main/resources/contracts/events/spatial/v1/SpatialFeatureCreated.schema.json": "4edd367673b4f8d0c634100265676b36eaed92eb4f1cbe9345202180d120ff4c",
+        "src/main/resources/contracts/events/spatial/v1/SpatialFeatureUpdated.schema.json": "d5aff1cb168c96453ef79e329d903b2495d88a3c5c5069dcb673ecacf43f701a",
+        "src/main/resources/contracts/events/spatial/v1/SpatialLayerCreated.schema.json": "569fa41811f3728f478ccd7ca4942031b92b03f68303b17ddafcc1bad86dece5",
+        "src/main/resources/contracts/events/v2/EstateCreated.schema.json": "9f6d63c477759e2a3a7fcce3a1444febad0cef7e59548c6da7a04c160882d668",
+        "src/main/resources/contracts/events/v2/EstateUpdated.schema.json": "f74b3829d2889a363792df10eb3c05dfdfc2b553a75e51a5ec9b20de2e2a46bc",
+        "src/main/resources/contracts/events/v2/PlantationBlockCreated.schema.json": "d7a6a5bff8a8c1fc3fa930c044098dbbf0877a944d87109cd25e00417c0cadee",
+        "src/main/resources/contracts/events/v2/PlantationBlockUpdated.schema.json": "c99731baf15262ef3ddefac0dc64eacf76bbd1f82c87d12f8cb1077dcbdfcd02",
+        "src/main/resources/contracts/spatial-service.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+        "src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+        "src/main/resources/db/migration/V2__spatial_twin.sql": "a7fdcaced0c9543a4e833ca81b753ee42e7c1bfd3056a30cf6442afc31b132c6",
+        "src/main/resources/db/migration/V3__outbox_trace_context.sql": "54c2d8f839c42104a770e98acb33726736f19da5150add02fa5e7fa37b9c3c9e",
+        "src/test/resources/postgis.sql": "a6f930447ac37ac87795cfa0652ad6d44f6cf683422cb0226f00b181e33fb1bd"
+      }
+    },
+    "operations-service": {
+      "head": {
+        "exit": 0,
+        "output": "fd39b7332b61e153620c53f793a454044c12c9e2",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "f6b1bab01d15fcd40fda31ffcd9c8115d58337faf8b786a37de3fb2d453082ae",
+      "version": "0.2.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "f57cc4944d85b8fada9f25f513b2bb7764d8c7b2afb65bc2570e836cce58b0b0",
+        "docs/alerts-notifications/fixtures/prior-ii1/pom.xml": "dd2a79343c035e1a70be0125864b1506df35670deb203bf9c86cb9966561b6b7",
+        "docs/privacy-maintenance/privacy_observe_candidate.sql": "fa3d306c039fc598dd7e1f3ec75efc5dade1e131a3f62657001f0f7f985168f9",
+        "pom.xml": "94876ad39263edaed8f46545639f013690d05735f0bd51e3f8a9c4379a6a702c",
+        "src/main/resources/contracts/ALERT_RELEASE.json": "da77937fb99e29abf89eba683584025d1125b59f210c3c7e7727d152848a59e8",
+        "src/main/resources/contracts/COLLECTION_RELEASE.json": "ab98682379b5c170a446f353c16e4a627ce396774afe039e4d29d0f15ead5378",
+        "src/main/resources/contracts/CROP_HEALTH_RELEASE.json": "a1b561fa066cc55628e1162e34f254aa073bfbe38f79547e1a766d963edadec5",
+        "src/main/resources/contracts/PRIVACY_RELEASE.json": "ff08cc7781f2f8d3972de0d22d1f26c62e5ac6ef79126823cfb30e7209e90912",
+        "src/main/resources/contracts/WORKFORCE_RELEASE.json": "076e9f5e9eec1b1419e2ec34c96f81bae38f36ecab6dc3f4191be819102a8a77",
+        "src/main/resources/contracts/events/TappingAssignmentCancelled.schema.json": "71b18783088fb9b0c31de3f89ee290b9763a50039cd4264d3289088a6400d3f7",
+        "src/main/resources/contracts/events/TappingAssignmentCreated.schema.json": "13627255d5263816357abdf4ca14b02ee0182df786f89b1cd580a6addbfa3189",
+        "src/main/resources/contracts/events/TappingAssignmentStarted.schema.json": "b187cc74a92c81d4617357b1fecbf55d2b116e410f5ea9fba283239d041c82a0",
+        "src/main/resources/contracts/events/TappingCompleted.schema.json": "5b16dd80b6516087468223bff372c8f6cc5a5a5851c2b27771a16cc2b15b993b",
+        "src/main/resources/contracts/events/TappingMissed.schema.json": "4c4b7695551be1dd685a377447fedec40f3a9d05a903fdc8f10e5793af1244c7",
+        "src/main/resources/contracts/events/TappingScheduleActivated.schema.json": "554f177a23339a491930508b7241220cf6f7ce21ef4f64019ca12a39f435abac",
+        "src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json": "c1b8f700a64d4477ea1d25b27f1463a8082a83af5619dbf68c2efcfe3eeaade7",
+        "src/main/resources/contracts/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json": "57339d13e770fd4e54873ba2e19e31d6b91aba239042df2b604e3cd4311f26c3",
+        "src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionChanged.schema.json": "4276a0cead25cb490f4e21943056751929b3d3348cfa9c643140260b9f0798dd",
+        "src/main/resources/contracts/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json": "38ce1639ef2437238c256e26df5563dfd2b8549aaa639b60f39382007bc03c2c",
+        "src/main/resources/contracts/events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceChanged.schema.json": "2e1f57d724000aa0a4d2bd98f75324dc09410c73984dbfdd4495a3819c4f4881",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerAttendanceRecorded.schema.json": "3148c8c61ff06c07369da553bbf2c746fb12ce5685bed57e5d43e81a606484ac",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationChanged.schema.json": "75e9ce73349642bb75d4cad17973f4717c62290df6adc30aa0188ab4ddfa9791",
+        "src/main/resources/contracts/events/operations/workforce/v1/WorkerRegistrationCreated.schema.json": "34699424c3441a3b97e8d137724ddb42c26485aa62a43a182f0e121da570be67",
+        "src/main/resources/contracts/operations-service.yaml": "f8a862a4f4d1cc397999fc5a47f763a23140eb7d72b38a4e2ec9c036315b71bc",
+        "src/main/resources/contracts/previous-0.5.0/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+        "src/main/resources/contracts/previous-0.6.0/operations-service.yaml": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+        "src/main/resources/contracts/previous-0.7.0/operations-service.yaml": "d93d54a038edfa9e9cdaeb6f089015571ae399855169b1fba4e26388215c8c67",
+        "src/main/resources/contracts/previous-0.8.0/operations-service.yaml": "12daf94f17e8b4fded507c1f9a27a72deb7244c9a8b20013df131e748213e937",
+        "src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+        "src/main/resources/db/migration/V2__rubber_tapping.sql": "f17a05918d5e5540bf1e7c4a2cc88bb7451959198ca48d2e72c111df1cd28306",
+        "src/main/resources/db/migration/V3__latex_collection.sql": "17d87fb1ee9e861f9180b66f0ca668770b6f9a3a68c91a8cf70c3a9181ec245c",
+        "src/main/resources/db/migration/V4__worker_registration_and_attendance.sql": "6c673a34b1d43ae8b856a49b28890ce37fa0e9f691802c384779bb51bd4acab3",
+        "src/main/resources/db/migration/V5__inspections_and_crop_health.sql": "da858633da5434129ce16bc06e16fee723ed061d9ff7ea846dc561c3a024d733",
+        "src/main/resources/db/migration/V6__in_app_crop_health_alerts.sql": "efb3431069c33c0d88f4bf883afc768a82f0a7ca8d993e7cfb89912242e41aef",
+        "src/main/resources/db/migration/V7__alert_privacy_storage.sql": "d3d2596ad926a35de5904c86cbcf7daa6a7a21327b50f70343dc3703ffef83c7"
+      }
+    },
+    "telemetry-service": {
+      "head": {
+        "exit": 0,
+        "output": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "447c0e60cc091eaff6ad14c7cc9e8f586d2fdf26d9aab41bfc6f10605e1b6d28",
+      "version": "0.1.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "642a2707730c53bd09dbc0a18477a3c064e8f7240f104ac190153ead4d1cc9b6",
+        "pom.xml": "a9af93d66eea8515c0c652f50c65e99c480f6df60cb0e7dfd30225a6974a1824",
+        "src/main/resources/contracts/RELEASE.json": "be4cd4065bce3ae8bafc8e4c6204b19ff1803700ae58130e765168e10807bbc1",
+        "src/main/resources/contracts/events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+        "src/main/resources/contracts/mqtt/Observation.schema.json": "bf3a58d8e5929f367a95344fc7a34c4f548ad9c44fc833d7415dbe8e7b44b255",
+        "src/main/resources/contracts/openapi/telemetry-service.yaml": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa",
+        "src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+        "src/main/resources/db/migration/V2__simulated_telemetry.sql": "b42b936bfa4b74a59c7d9728cd0838cfc41d20fbad24a131c6a43a174c33a0d6"
+      }
+    },
+    "analytics-service": {
+      "head": {
+        "exit": 0,
+        "output": "c61af33a4522c327f1f02374ce54473c81456329",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "7e8287bbb81afa16d0e88e30fd0ff4afcaf5b97287f445311b6f08d1116c2f96",
+      "version": "0.1.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "9a71a87ebf0b7ed64dbb951eb17bea26d08b414e044b92398faf9af1f80eed30",
+        "docs/anl01-adapter/V2__production_projection.sql": "200ca65564627d690962b8999e04d3b7e06276c6985fb3160dace47e102c4f8f",
+        "docs/anl02-adapter/V3__environmental_history.sql": "78165fefbd980776ac44cb567e8fb213ac4fdd5ac979a4442e7e2d6d545647a6",
+        "docs/contracts-previous-0.11.0/RELEASE.json": "9a01af5cec2d1124a50bca2f0e3eb42e7ff17e26b0aa07341a7b6c59f001defc",
+        "docs/contracts-previous-0.11.0/openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300",
+        "pom.xml": "5c7cf113206802d7f21e454eab166b628be131e05db55df14179eb58378b0cd2",
+        "src/main/resources/contracts/RELEASE.json": "7ecea4a1ae597cbe64bd24318e17c09a7dd1b7000f210282e437d892b5d61552",
+        "src/main/resources/contracts/events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+        "src/main/resources/contracts/events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+        "src/main/resources/contracts/events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+        "src/main/resources/contracts/openapi/analytics-service.yaml": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432",
+        "src/main/resources/db/migration/V1__messaging_foundation.sql": "a7dcd975d538706cafa027625ed9393a1cc6f3c855f69a3c7fadec851c979220",
+        "src/main/resources/db/migration/V2__production_projection.sql": "200ca65564627d690962b8999e04d3b7e06276c6985fb3160dace47e102c4f8f",
+        "src/main/resources/db/migration/V3__environmental_history.sql": "78165fefbd980776ac44cb567e8fb213ac4fdd5ac979a4442e7e2d6d545647a6"
+      }
+    },
+    "ai-service": {
+      "head": {
+        "exit": 0,
+        "output": "951e6213b9d0956b13fddf860ab8bcb04ac66049",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "7612880a9c8e8ec809f1f660bd75990ff9d352ddd638193c77f9b9ec017caa3e",
+      "version": "0.2.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "cbe99aff8eabcb8dee4b8fa1cb19fdf05cb23c10983536e3d8844316a6cd0f09",
+        "pyproject.toml": "90b0679e4e3d411b5efb992aebb15965a615ee95b9c159253293d5b53ef3981f",
+        "src/agrosphere_ai/contracts/DrcMeasurementRecorded.example.json": "c024cabadcc8e4461e81ef93b13d4f4e9cf5c8eee88e4fc587ba182d0abe8cf9",
+        "src/agrosphere_ai/contracts/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+        "src/agrosphere_ai/contracts/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+        "src/agrosphere_ai/contracts/LatexCollectionRecorded.example.json": "ed7cf9e6995f7f2119d29a4fc3c80005c5ba1199cee1b275adb74c4ab2766b18",
+        "src/agrosphere_ai/contracts/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+        "src/agrosphere_ai/contracts/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+        "src/agrosphere_ai/contracts/RELEASE.json": "6308c61683f25a8b50f66203dd289b9ca52c5c5c2042258a55d44dc1accdd4a3",
+        "src/agrosphere_ai/contracts/ai-service.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+        "src/agrosphere_ai/sql/m4.sql": "972d3952587f85cc563b4354c4d0247da959431d27bf2c88b002938ef8f336f5"
+      }
+    },
+    "api-gateway": {
+      "head": {
+        "exit": 0,
+        "output": "2c87ec7babaacd580f7999a77bbc67de0181558d",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "9b2ffff6cbd70d1fb6f2ba09c6348cd70c24570a5441dfa513ffe613137c6241",
+      "version": "0.3.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "34fcc631fcc3c2155640f677087386f45e0a12cb1534751bb6f9bbcc38cfec5b",
+        "pom.xml": "c8b9be0a2148514d42144c923e5d97579cced9610c02748c0a590b402d745d1d"
+      }
+    },
+    "web": {
+      "head": {
+        "exit": 0,
+        "output": "c3dc6a65f01b348a3d52c8222219bce76752e8e2",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "19d80e58bd6b4312d6d9c438b9d5fac0f09db7122bd8c6e853baa108e7c9313a",
+      "version": "0.8.0",
+      "publicBuildMigrationPinHashes": {
+        "Dockerfile": "7e05c96fd0977baa8e403b7f072c81a8fd1aad74e7b0f5cd5bc163e0c6592632",
+        "contracts/ai.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+        "contracts/ai.release.json": "cbcdb13ca9a388add814bce078fb1f36495ed5f19d6e940cc940284a14acf92e",
+        "contracts/analytics.openapi.json": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432",
+        "contracts/analytics.release.json": "27520e0cd0cc474a476bf7e2041919b0d6786733a436d803d242865a37f3b57e",
+        "contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+        "contracts/operations.openapi.json": "f8a862a4f4d1cc397999fc5a47f763a23140eb7d72b38a4e2ec9c036315b71bc",
+        "contracts/operations.release.json": "53498d5e2caefecf2af54a2ab0671194c235b4e9ab8ae7beb8e1b0c9315355fc",
+        "contracts/previous-0.6.0/operations.openapi.json": "ce0cbf3d16c90335e0bef2f379977f7e5942d501e8f26746fc3068f1c68a6310",
+        "contracts/previous-0.7.0/operations.openapi.json": "d93d54a038edfa9e9cdaeb6f089015571ae399855169b1fba4e26388215c8c67",
+        "contracts/previous-0.8.0/operations.openapi.json": "12daf94f17e8b4fded507c1f9a27a72deb7244c9a8b20013df131e748213e937",
+        "contracts/previous-0.8.0/operations.release.json": "c16d0e3e5623f458b838e5006e629c022c830bbb24f267719daab30e9069b780",
+        "contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+        "contracts/telemetry.openapi.json": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa",
+        "contracts/telemetry.release.json": "32ef4da22938a9d06d9f2c82fec6b8ec2d2a66bca48af8c1aa06339cea1729f6",
+        "package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577",
+        "package.json": "aae59c9d0ce999cf826c37bbecb6c10ed743163ffbecb13b9f86fdb3127bb454"
+      }
+    },
+    "immersive": {
+      "head": {
+        "exit": 0,
+        "output": "833c8948e1d6e566e5de5df6e1876ca7f4fecd73",
+        "error": ""
+      },
+      "status": {
+        "exit": 0,
+        "output": "M Source/AgroSphere/EstateSession.cpp\n M scripts/run_m5.ps1\n M toolchain.json",
+        "error": ""
+      },
+      "diffStat": {
+        "exit": 0,
+        "output": "Source/AgroSphere/EstateSession.cpp | 1 +\n scripts/run_m5.ps1                  | 2 +-\n toolchain.json                      | 6 ++++--\n 3 files changed, 6 insertions(+), 3 deletions(-)",
+        "error": "warning: in the working copy of 'Source/AgroSphere/EstateSession.cpp', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'toolchain.json', CRLF will be replaced by LF the next time Git touches it"
+      },
+      "stagedStat": {
+        "exit": 0,
+        "output": "",
+        "error": ""
+      },
+      "indexSha256": "e2d693f77560090ff2a03b4b087060f4cd178a1394489e747643a2dd04add0da",
+      "version": "0.2.0",
+      "publicBuildMigrationPinHashes": {
+        "contracts/RELEASE.json": "60633fb6621ddff3aeca30fe70e753b8c002b1bd562b64fb9a9c6f381b51e630",
+        "contracts/estate.openapi.json": "2e7a0b028d91f9f2996289955d52d84e14d65e813582ade46772e59cd504a060",
+        "contracts/spatial.openapi.json": "ca853e9ff9e8f8b752854ceaaf001622490b2a089478757320c356d15b301f74",
+        "toolchain.json": "f289f0ad36158fc0ebef4243a17c1f7ce59ffded7441efd5c449b26ce8d04ef3"
+      }
+    }
+  },
+  "protected": {
+    "M5_DELIVERY_PACKAGE.md": "8e5d1571c13863b5e48320d2c870345cc6c5e7032717545441b7e9bbd9d0bb38",
+    "M5_DELIVERY_APPROVAL_2026_11_10.json": "1652c01107254153374d25c98c745334cb36aed71de765052c94e809ecc7e9d9",
+    "M5_DESKTOP_HANDOFF_2026_11_11.md": "c60c720c8e74cfadcd8e7f84116536a9d3b455baba59001b754af145f116e99b",
+    "M5_DESKTOP_EVIDENCE_2026_11_11.json": "b1f47679efb6cd869db01e2df23b80f07e1590d982b09a126a467c9fff0e5a03",
+    "M5_CLIENT_REVIEW_FINAL_2026_11_10.md": "229063edac6e9813b5ba177efaed8e4bb5e9c080f59f6d3e6c7cf4f5839f328c",
+    "M5_MR_FEASIBILITY_2026_11_10.md": "d64ab46eed539720d9a80b0dbf7dbd00f47b3db3b16e81a6589a6f9af82303ff",
+    "M4_DELIVERY_PACKAGE.md": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+    "M4_DELIVERY_VERIFICATION_2026_11_10.md": "c92ae09db4455f2d465f39f4e3eaa90912cfaa0694dca7464e8ad7bc39fe057d",
+    "M4_FINAL_EVIDENCE_2026_11_10.json": "9f02813d561df75464dd3f320cef51ca3bc320cd6cc97cb59e28e6efac5fb656",
+    "M4_OWNER_ACCEPTANCE_2026_11_10.md": "27084edfbf043199e36bd56e76c28d860e8262ad35080abd02977fad78181c3f"
+  },
+  "historicalComparisons": {
+    "M5_DESKTOP_EVIDENCE_2026_11_11.json:sourceSha256": {
+      "matched": 18,
+      "missing": [],
+      "different": []
+    },
+    "M5_DESKTOP_EVIDENCE_2026_11_11.json:packageSha256": {
+      "matched": 41,
+      "missing": [],
+      "different": []
+    },
+    "M4_FINAL_EVIDENCE_2026_11_10.json:source_sha256": {
+      "matched": 71,
+      "missing": [],
+      "different": []
+    },
+    "M4_FINAL_EVIDENCE_2026_11_10.json:evidence_sha256": {
+      "matched": 15,
+      "missing": [],
+      "different": []
+    }
+  },
+  "currentMigrationFiles": {
+    "architecture": [],
+    "contracts": [],
+    "infrastructure": [],
+    "estate-service": [
+      "src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "src/main/resources/db/migration/V2__estate_management.sql",
+      "src/main/resources/db/migration/V3__outbox_trace_context.sql"
+    ],
+    "spatial-service": [
+      "src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "src/main/resources/db/migration/V2__spatial_twin.sql",
+      "src/main/resources/db/migration/V3__outbox_trace_context.sql"
+    ],
+    "operations-service": [
+      "src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "src/main/resources/db/migration/V2__rubber_tapping.sql",
+      "src/main/resources/db/migration/V3__latex_collection.sql",
+      "src/main/resources/db/migration/V4__worker_registration_and_attendance.sql",
+      "src/main/resources/db/migration/V5__inspections_and_crop_health.sql",
+      "src/main/resources/db/migration/V6__in_app_crop_health_alerts.sql",
+      "src/main/resources/db/migration/V7__alert_privacy_storage.sql"
+    ],
+    "telemetry-service": [
+      "src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "src/main/resources/db/migration/V2__simulated_telemetry.sql"
+    ],
+    "analytics-service": [
+      "src/main/resources/db/migration/V1__messaging_foundation.sql",
+      "src/main/resources/db/migration/V2__production_projection.sql",
+      "src/main/resources/db/migration/V3__environmental_history.sql"
+    ],
+    "ai-service": [
+      "src/agrosphere_ai/sql/m4.sql"
+    ],
+    "api-gateway": [],
+    "web": [],
+    "immersive": []
+  }
+}

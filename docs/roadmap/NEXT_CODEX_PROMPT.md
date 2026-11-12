@@ -1,4 +1,18 @@
-# Current prompt selection - 2026-11-10
+# Current POC-CLOSE decision — 2026-11-11
+
+The owner selected full POC-CLOSE. [Revision1 C01–C07](../milestones/POC_CLOSE_DELIVERY_PACKAGE.md) and its [exact manifest](../milestones/POC_CLOSE_DELIVERY_MANIFEST_2026_11_11.json) are ready for the one new combined-scope decision. Preparation is PARTIAL engineering; no combined execution/owner acceptance inferred. Existing M5 desktop approval and bounded M4 acceptance persist; physical VR remains deferred. On approval proceed autonomously P3–P7; do not start another feature track. Earlier recommendations follow as history.
+
+---
+
+# Current prompt selection - 2026-11-11
+
+M5's desktop prototype is delivered, but its [handoff](../milestones/M5_DESKTOP_HANDOFF_2026_11_11.md) retains desktop verification gaps, deferred physical VR and open owner acceptance. The owner asked for next steps and a similar next-milestone prompt; this is not acceptance or execution authorization.
+
+Recommended follow-on: [POC-CLOSE - Integrated POC Verification and Acceptance](prompts/POC_CLOSE.md). Copy its complete prompt to select discovery and one consolidated review, followed by autonomous implementation/verification after approval. Seven phase prompts and an M5-only continuation alternative are included. The original M0-M5 numbering is unchanged. Android offline/English-French field release is the next separate feature candidate.
+
+---
+
+# Historical prompt selection - 2026-11-10
 
 Bounded M4 is [owner accepted](../milestones/M4_OWNER_ACCEPTANCE_2026_11_10.md). Choose a complete milestone, individual phase or increment from the [prompt library](prompts/README.md). [M5](prompts/M5.md) is the next original-roadmap implementation candidate; it is not selected or approved yet. The older 1B prompt below is retained as history, not current scheduling.
 

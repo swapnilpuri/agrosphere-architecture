@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-11",
+  "scope": "POC-CLOSE P3 component preparation; no service fixture yet",
+  "results": [
+    {
+      "command": "AI pytest full (normal access, owned basetemp)",
+      "result": "PASS",
+      "tests": 68
+    },
+    {
+      "command": "Analytics mvnw.cmd -q verify",
+      "result": "PASS",
+      "tests": 48
+    },
+    {
+      "command": "Analytics validate_contract_pins.py --jar target/agrosphere-analytics-service-0.1.0.jar",
+      "result": "PASS"
+    },
+    {
+      "command": "Infrastructure unittest test_poc_close_*.py",
+      "result": "PASS",
+      "tests": 11
+    },
+    {
+      "command": "Web lint/typecheck",
+      "result": "PASS"
+    },
+    {
+      "command": "Unreal editor build (installed UE5.8.4)",
+      "result": "PASS"
+    },
+    {
+      "command": "Unreal NullRHI automation (new target/poc-close-automation)",
+      "result": "PASS",
+      "tests": 6,
+      "limit": "No rendered requirement closed"
+    },
+    {
+      "command": "Unreal Windows BuildCookRun new target/POC-CLOSE-Windows",
+      "result": "PASS",
+      "limit": "Package not yet rendered against connected fixture"
+    },
+    {
+      "command": "Independent seven-image build/config preflight da450b1612a14b648601162d74dc21d7",
+      "result": "PASS",
+      "cleanup": "PASS",
+      "limit": "Services not started; later immutable-FROM enhancement still to verify"
+    },
+    {
+      "command": "Web npm test and build after guarded loaded-entity diagnostics",
+      "result": "PASS",
+      "tests": 112
+    },
+    {
+      "command": "Web sequential UI/graphics, fresh port/traces off",
+      "result": "PASS",
+      "ui": 36,
+      "softwareGraphics": 1,
+      "report": "agrosphere-web/target/poc-close-ui-d4b7855f595942eebb032ae391fe3c58",
+      "browserTempCleanup": "PASS"
+    },
+    {
+      "command": "Infrastructure final immutable-FROM preflight3efdc4307d3d4cc2a7513070f0d88b51",
+      "result": "PASS",
+      "cleanup": "PASS",
+      "servicesStarted": false
+    },
+    {
+      "command": "Connected run75673a0c7613400bb1ba662eacee9ab1",
+      "result": "FAILED",
+      "passedBeforeFailure": [
+        "base signed PKCE/Gateway/tapping/outbox",
+        "10 canonical Estate/Spatial geometry and scope denials",
+        "7-source Operations/Analytics history, replay, recovery, real Web"
+      ],
+      "failure": "UnboundLocalError: local M4 owner marker shadowed injected lifecycle owner before AI stage",
+      "fix": "Renamed owner_marker; dedicated callback regression PASS",
+      "cleanup": "PASS",
+      "nativeLaunched": false
+    },
+    {
+      "command": "Native fixture-private browser editor build",
+      "result": "FAILED_THEN_PASS",
+      "failure": "TSharedPtr passed where TSharedRef required",
+      "fix": "ToSharedRef; fixed editor build PASS",
+      "limit": "Rebuilt native tests/package pending"
+    },
+    {
+      "command": "Connected run00d05d301d2d456db7c042ec3da23336",
+      "result": "FAILED",
+      "passedBeforeFailure": [
+        "same canonical/API/Operations/Analytics/Web stages as run1"
+      ],
+      "failure": "AI migration rejected; fixture still emitted legacy3h lease while new POC guard permits2h maximum. Guard2h rejection is independently covered by AI regression. Clamp AI/Analytics child leases to parent expiry; added sanitized migration diagnostics for next run.",
+      "cleanup": "PASS",
+      "nativeLaunched": false
+    },
+    {
+      "command": "Native private-browser follow-up automation-r2",
+      "result": "PASS",
+      "tests": 6,
+      "limit": "NullRHI, not rendered"
+    },
+    {
+      "command": "Connected run33aa12fb57204e2494fd1c028038fc67",
+      "result": "FAILED",
+      "failure": "300s Compose startup subprocess timeout before health/AI; exact original cause unestablished. No performance/AI/TLM PASS.",
+      "cleanup": "PASS",
+      "privateCopiesRemoved": true,
+      "fix": "Periodic CLI heartbeat/ownership checks and exact child-tree termination; sanitized timeout output now retained."
+    },
+    {
+      "command": "GPU Process Memory counter-path and Edge version read",
+      "result": "PASS on permitted default-access retry",
+      "edgeVersion": "157.0.4341.46",
+      "counters": [
+        "Shared Usage",
+        "Dedicated Usage"
+      ],
+      "limit": "No process-memory samples measured yet; earlier elevated command never executed because automatic approval review timed out."
+    },
+    {
+      "command": "Connected run b4cdd58f1a644f46b7e1490df3ebcd26",
+      "result": "FAILED",
+      "passedBeforeFailure": [
+        "canonical signed scope",
+        "Operations/Analytics replay/recovery/Web",
+        "M4 forecasts/anomalies/registry/evidence/recovery/Web"
+      ],
+      "failure": "ConnectionResetError at workforce PATCH; shared fault adapter lacked PATCH dispatch. Fixed with explicit forwarding and real loopback regression.",
+      "cleanup": "PASS",
+      "nativeLaunched": false
+    },
+    {
+      "command": "Native automation-r3 and Windows-r3 build/cook/stage/archive",
+      "result": "PASS",
+      "tests": 6,
+      "limit": "NullRHI logic tests; rendered checks pending"
+    },
+    {
+      "command": "Infrastructure ownership/fault/hooks regression",
+      "result": "PASS",
+      "tests": 14,
+      "limit": "Wrong first invocation from repository root caused import errors; corrected script-directory invocation passed."
+    },
+    {
+      "command": "Connected run369d5d303b284849a0ca2570c2180e21",
+      "result": "COMPONENT_PASS_FULL_SCOPE_PARTIAL",
+      "components": [
+        "Operations/Analytics",
+        "M4",
+        "WA/II/privacy lifecycle",
+        "MQTT/Telemetry/environment history/recovery/Web"
+      ],
+      "m1": {
+        "requests": 6000,
+        "all200": true,
+        "p95Ms": 1043.737100000726,
+        "result": "FAILED"
+      },
+      "native": "FAILED_FIXTURE_WIRING:localhost issuer refused by127-only client; zero-scene diagnostic confirms1920x1080 only. No nativeperformance/auth PASS.",
+      "cleanup": "PASS",
+      "privateCopiesRemoved": true
+    },
+    {
+      "command": "Local real HTTP adapter20-connection queue experiment",
+      "result": "REPRODUCED_FIXTURE_DEFECT",
+      "backlog5P95Ms": 527.1433000016259,
+      "backlog64P95Ms": 20.825600004172884,
+      "samplesEach": 60,
+      "limit": "Not a platform performance PASS"
+    },
+    {
+      "command": "Web new rendered capture lint/test discovery",
+      "result": "PASS",
+      "limit": "Runtime not run; standalone tsc check unsupported by current declared Node typing setup, no package added."
+    }
+  ],
+  "retainedFailures": [
+    "AI new ownership-profile test rejected old guard; fixed with run-bound profile",
+    "Analytics new ownership-profile test rejected old guard; fixed",
+    "Sandbox pytest/temp/unittest permission errors; normal-access retries passed",
+    "Sandbox Unreal build failed before log; installed-toolchain retry passed",
+    "Sandbox Web esbuild spawn EPERM; normal-access retry underway",
+    "Preflight a65a11993b2f49bc9e5a095385959e54 missing Python base; cleanup PASS, no runtime",
+    "Preflight20691d85e16f4024aeb8103d181882d5 offline Maven missing declared Spring Boot4.0.9; cleanup PASS",
+    "Preflight5892ead29ef149029e0d2ef12d0a743a retained public offline-build failure; cleanup PASS",
+    "Preflight15092c0d4dee428a9182d73b37cc23f9 completed images then config failed; cleanup PASS",
+    "Preflight33e894c416d041a6a36f8ac58950b9ab config child environment omitted Windows Docker plugin variables; cleanup PASS; corrected"
+  ],
+  "approvals": [
+    "POC_CLOSE_DELIVERY_APPROVAL_2026_11_11.json",
+    "POC_CLOSE_IMAGE_DOWNLOAD_APPROVAL_2026_11_11.json",
+    "POC_CLOSE_BUILD_DEPENDENCY_APPROVAL_2026_11_11.json"
+  ],
+  "current": "Run5 cleaned PASS. Run6 exact engineering review prepared; integrated renderer/native/performance exits remain partial."
+}

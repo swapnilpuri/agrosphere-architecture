@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-11",
+  "timezone": "America/Chicago",
+  "owner_response": "i approve",
+  "package": "POC_CLOSE_DELIVERY_PACKAGE.md",
+  "revision": 1,
+  "sha256": "f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e",
+  "decisions": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+  ],
+  "condition": "French-language portal support remains deferred per POC_CLOSE_FRENCH_DEFERRAL_2026_11_11.md",
+  "authority": "Autonomous included P3-P7; existing M5 desktop approval retained; not final owner functional acceptance",
+  "owner_functional_acceptance": "OPEN"
+}

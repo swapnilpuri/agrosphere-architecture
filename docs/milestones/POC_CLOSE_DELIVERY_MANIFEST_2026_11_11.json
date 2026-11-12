@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-11",
+  "timezone": "America/Chicago",
+  "revision": 1,
+  "status": "PROPOSED_NOT_APPROVED",
+  "package": "POC_CLOSE_DELIVERY_PACKAGE.md",
+  "packageSha256": "f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e",
+  "decisions": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+  ],
+  "artifacts": {
+    "docs/milestones/POC_CLOSE_DELIVERY_PACKAGE.md": "f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e",
+    "docs/milestones/POC_CLOSE_DISCOVERY_2026_11_11.md": "57558d120f7d04a53176b3db22038de24aa684682bac777cdf9a4c48d750c116",
+    "docs/milestones/POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json": "dd535838010c9c7cc0a928cadeea8d2840f0f6f12871283ed2695a841f1f3783",
+    "docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md": "e6d72a1aaa588961ffbe922d32c78e039f0ce12916c5732be12b6807a931a88a",
+    "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": "c59ed2c5f4297b3a4d714e2ec683e67d22339c9d55b67946d75a477062d6814d"
+  },
+  "authority": "Discovery and review preparation selected; combined execution pending. Existing M5 desktop approval unchanged; bounded M4 accepted; physical VR deferred."
+}

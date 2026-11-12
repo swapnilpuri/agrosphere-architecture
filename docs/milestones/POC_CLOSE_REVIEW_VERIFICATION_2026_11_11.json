@@ -1,0 +1,170 @@
+{
+  "recordedUtc": "2026-11-11T17:46:41.061819+00:00",
+  "timezone": "America/Chicago",
+  "scope": "POC-CLOSE preparation; no combined runtime execution",
+  "checks": {
+    "preserved:M5_DELIVERY_PACKAGE.md": true,
+    "preserved:M5_DELIVERY_APPROVAL_2026_11_10.json": true,
+    "preserved:M5_DESKTOP_HANDOFF_2026_11_11.md": true,
+    "preserved:M5_DESKTOP_EVIDENCE_2026_11_11.json": true,
+    "preserved:M5_CLIENT_REVIEW_FINAL_2026_11_10.md": true,
+    "preserved:M5_MR_FEASIBILITY_2026_11_10.md": true,
+    "preserved:M4_DELIVERY_PACKAGE.md": true,
+    "preserved:M4_DELIVERY_VERIFICATION_2026_11_10.md": true,
+    "preserved:M4_FINAL_EVIDENCE_2026_11_10.json": true,
+    "preserved:M4_OWNER_ACCEPTANCE_2026_11_10.md": true,
+    "manifest:docs/milestones/POC_CLOSE_DELIVERY_PACKAGE.md": true,
+    "manifest:docs/milestones/POC_CLOSE_DISCOVERY_2026_11_11.md": true,
+    "manifest:docs/milestones/POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json": true,
+    "manifest:docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md": true,
+    "manifest:docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md": true,
+    "localLinks": true,
+    "allPublicBuildMigrationPinsUnchanged": true,
+    "headIndexAndNonArchitectureStatusUnchanged": true,
+    "protectedArtifactsUnchanged": true,
+    "finalArchitectureWorkspaceValidator": true,
+    "diffWhitespace": true
+  },
+  "repositories": {
+    "architecture": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": false,
+      "status": "M CHANGELOG.md\n M docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md\n M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/M5_DESKTOP_VERIFICATION_2026_11_10.md\n M docs/roadmap/MILESTONES.md\n M docs/roadmap/NEXT_CODEX_PROMPT.md\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n M docs/roadmap/prompts/README.md\n?? docs/milestones/M5_DESKTOP_EVIDENCE_2026_11_11.json\n?? docs/milestones/M5_DESKTOP_HANDOFF_2026_11_11.md\n?? docs/milestones/POC_CLOSE_DELIVERY_MANIFEST_2026_11_11.json\n?? docs/milestones/POC_CLOSE_DELIVERY_PACKAGE.md\n?? docs/milestones/POC_CLOSE_DISCOVERY_2026_11_11.md\n?? docs/milestones/POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json\n?? docs/roadmap/prompts/POC_CLOSE.md",
+      "head": "66e14cbe8139e78eeba9a6b5650d5d6e58054449"
+    },
+    "contracts": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "b39cd2f7261f491294eb83aea23526d2ce21f549"
+    },
+    "infrastructure": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "M docs/M5_OWNED_FIXTURE.md\n?? scripts/cleanup_m5.py",
+      "head": "5dd908435833e2e79022afd9d5b2071177c523bb"
+    },
+    "estate-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83"
+    },
+    "spatial-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a"
+    },
+    "operations-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2"
+    },
+    "telemetry-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "53ab1f2344bed14d80e4df0c885fe1ad9a0207cf"
+    },
+    "analytics-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "c61af33a4522c327f1f02374ce54473c81456329"
+    },
+    "ai-service": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "951e6213b9d0956b13fddf860ab8bcb04ac66049"
+    },
+    "api-gateway": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d"
+    },
+    "web": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "",
+      "head": "c3dc6a65f01b348a3d52c8222219bce76752e8e2"
+    },
+    "immersive": {
+      "headUnchanged": true,
+      "indexUnchanged": true,
+      "statusUnchanged": true,
+      "status": "M Source/AgroSphere/EstateSession.cpp\n M scripts/run_m5.ps1\n M toolchain.json",
+      "head": "833c8948e1d6e566e5de5df6e1876ca7f4fecd73"
+    }
+  },
+  "commands": [
+    {
+      "root": "architecture",
+      "command": "python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+      "result": "PASS before edits and final rerun after edits"
+    },
+    {
+      "root": "infrastructure",
+      "command": "python scripts/validate.py",
+      "result": "PASS"
+    },
+    {
+      "root": "immersive",
+      "command": "python scripts/validate.py",
+      "result": "PASS descriptor/pins only"
+    },
+    {
+      "root": "contracts",
+      "command": ".venv\\Scripts\\python.exe scripts/validate.py",
+      "result": "PASS"
+    },
+    {
+      "root": "workspace",
+      "command": "docker version --format {{.Server.Version}}",
+      "result": "Initial sandbox access denied; read-only elevated retry PASS:29.8.2"
+    },
+    {
+      "root": "architecture",
+      "command": "git --no-optional-locks diff --check",
+      "result": "PASS; existing CRLF normalization warnings, no whitespace errors"
+    }
+  ],
+  "notRun": [
+    "combined fixture",
+    "M5 rendered matrix",
+    "domain/API/migration/native/browser suites",
+    "performance",
+    "hosted CI"
+  ],
+  "approval": "PENDING C01-C07; existing M5 authority retained",
+  "packageSha256": "f74da3d941471329078fe96da76c622ded38766abb91780577969fe360bccb1e",
+  "changedByThisTask": [
+    "CHANGELOG.md",
+    "docs/milestones/DEVELOPMENT_CHECKPOINT.md",
+    "docs/milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md",
+    "docs/roadmap/MILESTONES.md",
+    "docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md",
+    "docs/roadmap/NEXT_CODEX_PROMPT.md",
+    "docs/roadmap/prompts/README.md",
+    "docs/milestones/POC_CLOSE_DELIVERY_PACKAGE.md",
+    "docs/milestones/POC_CLOSE_DELIVERY_MANIFEST_2026_11_11.json",
+    "docs/milestones/POC_CLOSE_DISCOVERY_2026_11_11.md",
+    "docs/milestones/POC_CLOSE_DISCOVERY_BASELINE_2026_11_11.json",
+    "docs/milestones/POC_CLOSE_REVIEW_VERIFICATION_2026_11_11.json"
+  ],
+  "existingWorkPreserved": "M5_DESKTOP_VERIFICATION and other baseline dirty/untracked files are prior work, not changes by this task."
+}

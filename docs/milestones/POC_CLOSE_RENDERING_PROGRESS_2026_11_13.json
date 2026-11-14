@@ -1,0 +1,186 @@
+{
+  "dateUtc": "2026-11-13T06:53:14.640487+00:00",
+  "review": "Sequential implementation-agent instrumentation/harness review; not independent",
+  "ownerClarification": "Error on opening Digital Twin, after choosing 2D/3D",
+  "productFix": "UNRESOLVED; no demonstrated root cause or correction",
+  "sourceSha256": {
+    "agrosphere-web/src/app/features/digital-twin/cesium-viewer.service.ts": "c78bbb6f2dac07d4d16e0478ebc6fa8b8848b0e36943957694b9e3908b1047b3",
+    "agrosphere-web/e2e/digital-twin-rendering.spec.ts": "d1985d478433980186f6ce5ac414496a498cd0ad904f67a7f31e41a1c3921e9a",
+    "agrosphere-web/playwright.config.ts": "0db9d44b450caf0967e66c1da38797e9668ed159b8d9be38f9a8522f8386f2c0",
+    "agrosphere-web/package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577",
+    "agrosphere-web/package.json": "aae59c9d0ce999cf826c37bbecb6c10ed743163ffbecb13b9f86fdb3127bb454",
+    "agrosphere-web/public/config.json": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4"
+  },
+  "repositories": {
+    "agrosphere-ai-service": {
+      "head": "885ec363b9d3f55a0e98ba9c89be3992edeeedd5",
+      "indexSha256": "523c46497853ef952f125b85ade5a5908ddc5e43bb6c77777e26871637f00f83",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-analytics-service": {
+      "head": "2024cca2cd010b50ee575a0a903f0f7d6775da53",
+      "indexSha256": "d2e873af731409222c36adc632399c0bf4b21404bdc619c8f5fb56dc83e70d57",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-api-gateway": {
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d",
+      "indexSha256": "9b2ffff6cbd70d1fb6f2ba09c6348cd70c24570a5441dfa513ffe613137c6241",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-architecture": {
+      "head": "13429308e8d1704cb5de79d0e85600f846f196e5",
+      "indexSha256": "9e68e0fdafe816cbbd913b53768c99a60d435a7228aee6fadee1b39495b42ed4",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": "M docs/milestones/DEVELOPMENT_CHECKPOINT.md\n M docs/milestones/POC_CLOSE_EXECUTION_ATTEMPTS_2026_11_11.json\n M docs/roadmap/PROJECT_COMPLETION_CHECKLIST.md\n?? docs/milestones/POC_CLOSE_RENDERING_RESUME_2026_11_12.json\n?? docs/milestones/POC_CLOSE_RENDERING_RESUME_2026_11_12.md"
+    },
+    "agrosphere-contracts": {
+      "head": "b39cd2f7261f491294eb83aea23526d2ce21f549",
+      "indexSha256": "06ad14e1807c239d4d53f06efa25006baa5c4724e43075635a86e4d3848e185b",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-estate-service": {
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+      "indexSha256": "ab6caede95301e3c632301ad9f69bb2a453585b29954ea6729c5409f91ee8776",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-immersive": {
+      "head": "431f8c345b1623a78a9de75c16486dc3c6f2ec7d",
+      "indexSha256": "eeef9901dcd47c0284cd37c6f5eda734f6f71fab1380145eb92bebda7d31a547",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-infrastructure": {
+      "head": "1606be529839dc97ac639e7e769cef1a5bbfb1bf",
+      "indexSha256": "bb906169e3f2f154314322995ec6aefd57fec1948b2a49509e8a80a2c2e49d64",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-operations-service": {
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2",
+      "indexSha256": "f6b1bab01d15fcd40fda31ffcd9c8115d58337faf8b786a37de3fb2d453082ae",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-spatial-service": {
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a",
+      "indexSha256": "15b42ee2fc58958d9b0f5c2af7271f91f6e4bba60dd92eb1ab358bbe2155e764",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-telemetry-service": {
+      "head": "d236dde26e7cee6ec970e82ec480a2eb37547ec6",
+      "indexSha256": "f16efad5e34e88340be7e59318e4538432a0fc379c1af999014599da9e070812",
+      "rawIndexHashMatchesPrior": true,
+      "cachedDiffAgainstHead": "",
+      "status": ""
+    },
+    "agrosphere-web": {
+      "head": "7977b6e2c107405459c1b06f50e361ff8b2a70f9",
+      "indexSha256": "34cbfa60d21a4ca302658ce392719d71dee9dab675e703bbd59662c60f728546",
+      "rawIndexHashMatchesPrior": false,
+      "cachedDiffAgainstHead": "",
+      "status": "M playwright.config.ts\n M src/app/features/digital-twin/cesium-viewer.service.ts\n?? e2e/digital-twin-rendering.spec.ts"
+    }
+  },
+  "indexLimitation": "Web raw index hash differs after dependency/lockfile timestamp refresh and ordinary git status; cached diff is empty. No staged-content changes or index restoration performed. Other raw index hashes match prior evidence.",
+  "runs": [
+    {
+      "runId": "39166eb7f43c41b68afafa967eef8ac6",
+      "result": "Original exact recovery PASS after owner deletion",
+      "cleanup": "PASS",
+      "privateCopiesRemoved": true,
+      "resources": {
+        "container": [],
+        "volume": [],
+        "network": []
+      },
+      "historicalMissedLifetimeRetained": true
+    },
+    {
+      "runId": "769c0ce7a13643d0a64a75e19d1a77f2",
+      "result": "PASS bounded generated hardware smoke; no reported-error reproduction or performance acceptance",
+      "tests": 1,
+      "hardware": "ANGLE Intel Graphics D3D11; not NVIDIA reference capture",
+      "canvas": {
+        "width": 1077,
+        "height": 620
+      },
+      "scope": [
+        "initial3D",
+        "3D-2D-3D",
+        "2D focus",
+        "rapid custom mode/focus/resize",
+        "route leave/re-entry"
+      ],
+      "renderErrors": 0,
+      "cleanup": "PASS",
+      "review": {
+        "kind": "Sequential instrumentation/harness review; no product fix",
+        "sourceSha256": {
+          "src/app/features/digital-twin/cesium-viewer.service.ts": "c78bbb6f2dac07d4d16e0478ebc6fa8b8848b0e36943957694b9e3908b1047b3",
+          "e2e/digital-twin-rendering.spec.ts": "8e889f192806a55765ff78a7fb9e685901d8739505b9cad4a30d8483dfe9cdc6",
+          "playwright.config.ts": "0db9d44b450caf0967e66c1da38797e9668ed159b8d9be38f9a8522f8386f2c0"
+        },
+        "scope": "mocked generated API and identity; actual installed Edge/WebGL; no existing stack credentials; no provider; 120s test bound, owned client/process/TMP and exact cleanup"
+      }
+    },
+    {
+      "runId": "8d4b7d52fe7246aa8fdbc881e978896e",
+      "result": "FAILED test harness; hidden role selector excluded deliberately hidden target, then manually stopped exact owned browser tree",
+      "limits": "Northern samples only, native 2D fixed wait still MORPHING; wrong southern/origin route pattern. Do not claim these cases passed.",
+      "renderErrorsInRetainedNorthSamples": 0,
+      "cleanup": "BLOCKED",
+      "resources": {
+        "container": [],
+        "volume": [],
+        "network": []
+      },
+      "review": {
+        "kind": "Sequential instrumentation/harness review; no product fix",
+        "sourceSha256": {
+          "src/app/features/digital-twin/cesium-viewer.service.ts": "c78bbb6f2dac07d4d16e0478ebc6fa8b8848b0e36943957694b9e3908b1047b3",
+          "e2e/digital-twin-rendering.spec.ts": "1ea7bed72893b892b73b0bee6c23c4f14a56bdb5127e15aca88a08c774be4e6e",
+          "playwright.config.ts": "0db9d44b450caf0967e66c1da38797e9668ed159b8d9be38f9a8522f8386f2c0"
+        },
+        "scope": "mocked generated API and identity; actual installed Edge/WebGL; no existing stack credentials; no provider; 120s test bound, owned client/process/TMP and exact cleanup"
+      },
+      "blocker": "WinError5 deleting generated Edge-profile LOCK; owner plans system restart later"
+    }
+  ],
+  "checks": {
+    "lint": "PASS after restoration",
+    "typecheck": "PASS after restoration",
+    "format": "PASS",
+    "api": "PASS",
+    "unit": "112 PASS, repeated after dependency restoration",
+    "build": "PASS, repeated after restoration; existing CommonJS warnings",
+    "npmCi": "FAILED EPERM active owner ng serve binary lock; owner server preserved",
+    "restoration": "npm install --ignore-scripts --no-audit --no-fund exit0; exact original lockfile bytes restored from newline-only normalization; parsed identities unchanged",
+    "remainingDependencyArtifacts": "Four ignored stale native-binary directories remain held by owner ng serve; clean ci pending after restart",
+    "architecture": "PASS: python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+    "diffCheck": "PASS final Web and Architecture; final Web format check PASS; cached Web diff empty"
+  },
+  "pending": [
+    "Corrected expanded browser suite NOT RUN; complete-mode polling, early opening toggles, correct feature route, hidden-role selectors and failure layout restoration prepared",
+    "Reported Cesium invalid-frustum reproduction/fix/regression",
+    "Broad UI/graphics suites, Docker Web packaging, connected corrected browser suite and native negative/auth/race/maximum/numerical/performance matrix"
+  ],
+  "runtimeBoundary": "No new fixture until private-copy recovery passes after owner restart; no lease extended",
+  "computerUse": "Native pipe unavailable after retries/reset; no UI action performed",
+  "preservation": "No Git staging/commit/reset/push; dependency versions/configuration/accepted package bytes unchanged; no production/REAL/existing-stack credential/data mutation; AEO untouched"
+}

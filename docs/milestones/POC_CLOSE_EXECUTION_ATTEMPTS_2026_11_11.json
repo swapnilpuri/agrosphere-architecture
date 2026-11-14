@@ -256,6 +256,74 @@
       "command": "Infrastructure ownership/fault/hooks/PUBACK/simulator regression",
       "result": "PASS",
       "tests": 25
+    },
+    {
+      "command": "2026-11-12 resume expired run39166eb7f43c41b68afafa967eef8ac6 exact recovery and source investigation",
+      "result": "RECOVERY_BLOCKED_PRIVATE_COPIES",
+      "passed": [
+        "operator PID/start identity absent",
+        "owned containers/volumes/networks absent after exact cleanup",
+        "run image tags absent",
+        "five recorded client identities absent",
+        "twelve independent clean Git baselines; AEO excluded"
+      ],
+      "failure": "Windows WinError5 at generated Edge-profile LOCK; direct deletion and explicit-owner ACL repair denied. Private root remains.",
+      "lifetime": "MISSED after operator loss; original expiry not extended",
+      "digitalTwin": "UNRESOLVED; source inspected and synthetic CPU sequence did not reproduce owner error; no product correction/browser runtime",
+      "evidence": "POC_CLOSE_RENDERING_RESUME_2026_11_12.md"
+    },
+    {
+      "command": "2026-11-13 original run39166 exact recovery after owner deletion",
+      "result": "PASS",
+      "cleanup": "PASS",
+      "privateCopiesRemoved": true,
+      "limit": "Historical lifetime miss retained"
+    },
+    {
+      "command": "Hardware browser769c0ce7a13643d0a64a75e19d1a77f2",
+      "result": "PASS_BOUNDED_SMOKE",
+      "tests": 1,
+      "cleanup": "PASS",
+      "limit": "Intel hardware/mocked generated API; no reported-error/performance acceptance"
+    },
+    {
+      "command": "Expanded browser8d4b7d52fe7246aa8fdbc881e978896e",
+      "result": "FAILED_HARNESS_CLEANUP_BLOCKED",
+      "failure": "Hidden-selector timeout; manual owned-tree stop; profile LOCK WinError5. Revised suite NOT RUN.",
+      "ownerResponse": "System restart later",
+      "evidence": "POC_CLOSE_RENDERING_PROGRESS_2026_11_13.md"
+    },
+    {
+      "command": "Web diagnostic independent checks and dependency restoration",
+      "result": "PARTIAL",
+      "passed": [
+        "lint",
+        "format",
+        "typecheck",
+        "API",
+        "112unit",
+        "build",
+        "exact lockfile restored"
+      ],
+      "failed": "npm ci active ng serve binary lock; install restoration exit0, clean ci pending"
+    },
+    {
+      "command": "2026-11-13 Columbus/2D focus red-green and morph lifecycle correction",
+      "result": "SOURCE_UNIT_PASS_BROWSER_PENDING",
+      "red": "Two actual-installed-camera coordinate regressions failed before correction",
+      "green": "3focused and115full unit PASS, lint/type/format/API/build/diff PASS",
+      "retainedTestFailures": "Initial test typing and partial-module-mock hoisted import failures corrected; no global mock in final suite",
+      "limits": "No actual browser run after source fix; existing profile cleanup/restart blocked. Original invalid-frustum error UNRESOLVED; provider fallback unchanged.",
+      "evidence": "POC_CLOSE_COLUMBUS_FOCUS_2026_11_13.json"
+    },
+    {
+      "command": "2026-11-13 owner rejected mode-view regression; replacement source/unit validation",
+      "result": "SOURCE_UNIT_PASS_VISUAL_PENDING",
+      "failure": "Earlier unconditional morphComplete overhead focus flattened perceived3D/Columbus views; previous tests missed orientation/unsolicited flights",
+      "replacement": "Remove automatic post-mode focus, queue only requested focus during morph; oblique Columbus focus aimed at centre",
+      "checks": "3focused,115fullunit, lint/type/format/build/diff PASS",
+      "limit": "Browser NOT RUN; existing profile cleanup/restart pending. Original frustum error remains unresolved.",
+      "evidence": "POC_CLOSE_MODE_VIEW_CORRECTION_2026_11_13.json"
     }
   ],
   "retainedFailures": [
@@ -275,5 +343,5 @@
     "POC_CLOSE_IMAGE_DOWNLOAD_APPROVAL_2026_11_11.json",
     "POC_CLOSE_BUILD_DEPENDENCY_APPROVAL_2026_11_11.json"
   ],
-  "current": "Run9 and protocol probe cleaned. Run10 reviewed with protocol-level denial assertion and bounded foreground navigation/selection."
+  "current": "2026-11-13 latest: owner rejected prior focus fix mode-view regression. Replacement removes unsolicited overhead zoom and uses oblique Columbus target focus;115unit/build/static PASS, visual checks pending existing8d4b7d52 cleanup/restart. Original frustum error/remaining POC-CLOSE exits unresolved."
 }

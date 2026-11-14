@@ -1,3 +1,19 @@
+## Mode-view regression disposition - 2026-11-13
+
+[Owner regression and replacement](../milestones/POC_CLOSE_MODE_VIEW_CORRECTION_2026_11_13.json): preceding Columbus focus patch caused unwanted overhead views; owner did not accept it. Replacement removes unsolicited mode-change flights and adds oblique Columbus target focus. Source/CPU regressions and115unit/build/static checks **PASS**; actual mode appearance/free navigation/picking **NOT RUN**, pending existing restart/private-copy cleanup. Original frustum error **UNRESOLVED**. No whole-POC requirement or owner acceptance is closed.
+
+## Columbus selected-field focus correction - 2026-11-13
+
+[Scoped correction](../milestones/POC_CLOSE_COLUMBUS_FOCUS_2026_11_13.json): projected Columbus/2D focus and morph-complete current selection **SOURCE/UNIT VERIFIED**, full115unit/build/static checks PASS. Actual post-fix WebGL/interaction **NOT RUN**, awaiting existing private-profile cleanup/restart. Original reported invalid-frustum defect **UNRESOLVED**; imagery fallback reason not diagnosed. No broader row or acceptance exit is closed. Existing POC-CLOSE PARTIAL/owner acceptance OPEN persists.
+
+## POC-CLOSE latest runtime state - 2026-11-13 restart handoff
+
+[Current evidence](../milestones/POC_CLOSE_RENDERING_PROGRESS_2026_11_13.md): original run39166 recovery **PASS**; generated run769c0ce bounded hardware smoke/cleanup **PASS**, not reported-defect/reference-performance acceptance. Expanded run8d4b7d52 harness **FAILED**, private cleanup **BLOCKED** pending owner restart; no active recorded client/Docker resource. Root cause/fix **UNRESOLVED**, revised expanded browser and remaining matrix **NOT RUN**. Historical row evidence retains its scope. Whole POC engineering **PARTIAL**, functional acceptance **OPEN**.
+
+## POC-CLOSE latest execution status — 2026-11-12 rendering resume
+
+[Resume evidence and blocker](../milestones/POC_CLOSE_RENDERING_RESUME_2026_11_12.md): expired run39166eb7f43c41b68afafa967eef8ac6 has no remaining owned Docker resources/run image tags or active recorded clients, but Windows-protected generated private-profile files prevent complete teardown. Cleanup **BLOCKED**, interrupted supervision/lifetime **FAILED**, new runtime verification **NOT RUN**. Digital Twin rendering defect **UNRESOLVED**; source hypotheses and CPU-only exploration do not close any rendered requirement. Verify private-copy removal and exact recovery before a fresh fixture. Existing approvals and prior passing/failing evidence retain their scopes. Whole POC engineering **PARTIAL**, owner functional acceptance **OPEN**; all outstanding negative/security/coordinates/performance exits remain open.
+
 # AgroSphere completion and acceptance checklist
 
 Reconciled 2026-11-01; bounded M4 engineering delivery update 2026-11-10 (America/Chicago). [M0â€“M5 roadmap](MILESTONES.md) defines the finite original SIMULATED local POC and increment criteria. This is the single completion tracker; [checkpoint](../milestones/DEVELOPMENT_CHECKPOINT.md) owns next action/authority; original reports retain evidence; the [client register](../milestones/ALERTS_NOTIFICATIONS_CLIENT_DECISIONS.md) alone owns answers. Checked means only the stated implementation/evidence exists, never parent milestone or owner acceptance. No percentage or date promised.

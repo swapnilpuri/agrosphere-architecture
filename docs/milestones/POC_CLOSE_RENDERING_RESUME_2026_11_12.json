@@ -1,0 +1,149 @@
+{
+  "dateUtc": "2026-11-12T15:39:59.281329+00:00",
+  "authority": "POC-CLOSE C01-C07 and latest owner continuation; no renewed approval requested",
+  "repositories": {
+    "agrosphere-ai-service": {
+      "head": "885ec363b9d3f55a0e98ba9c89be3992edeeedd5",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "523c46497853ef952f125b85ade5a5908ddc5e43bb6c77777e26871637f00f83"
+    },
+    "agrosphere-analytics-service": {
+      "head": "2024cca2cd010b50ee575a0a903f0f7d6775da53",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "d2e873af731409222c36adc632399c0bf4b21404bdc619c8f5fb56dc83e70d57"
+    },
+    "agrosphere-api-gateway": {
+      "head": "2c87ec7babaacd580f7999a77bbc67de0181558d",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "9b2ffff6cbd70d1fb6f2ba09c6348cd70c24570a5441dfa513ffe613137c6241"
+    },
+    "agrosphere-architecture": {
+      "head": "13429308e8d1704cb5de79d0e85600f846f196e5",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "9e68e0fdafe816cbbd913b53768c99a60d435a7228aee6fadee1b39495b42ed4"
+    },
+    "agrosphere-contracts": {
+      "head": "b39cd2f7261f491294eb83aea23526d2ce21f549",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "06ad14e1807c239d4d53f06efa25006baa5c4724e43075635a86e4d3848e185b"
+    },
+    "agrosphere-estate-service": {
+      "head": "fc096a9840d3bd80370c62d7bcecc36c33a36c83",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "ab6caede95301e3c632301ad9f69bb2a453585b29954ea6729c5409f91ee8776"
+    },
+    "agrosphere-immersive": {
+      "head": "431f8c345b1623a78a9de75c16486dc3c6f2ec7d",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "eeef9901dcd47c0284cd37c6f5eda734f6f71fab1380145eb92bebda7d31a547"
+    },
+    "agrosphere-infrastructure": {
+      "head": "1606be529839dc97ac639e7e769cef1a5bbfb1bf",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "bb906169e3f2f154314322995ec6aefd57fec1948b2a49509e8a80a2c2e49d64"
+    },
+    "agrosphere-operations-service": {
+      "head": "fd39b7332b61e153620c53f793a454044c12c9e2",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "f6b1bab01d15fcd40fda31ffcd9c8115d58337faf8b786a37de3fb2d453082ae"
+    },
+    "agrosphere-spatial-service": {
+      "head": "a6db7e446e7088f57b6962231c980100ca89b16a",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "15b42ee2fc58958d9b0f5c2af7271f91f6e4bba60dd92eb1ab358bbe2155e764"
+    },
+    "agrosphere-telemetry-service": {
+      "head": "d236dde26e7cee6ec970e82ec480a2eb37547ec6",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "f16efad5e34e88340be7e59318e4538432a0fc379c1af999014599da9e070812"
+    },
+    "agrosphere-web": {
+      "head": "7977b6e2c107405459c1b06f50e361ff8b2a70f9",
+      "statusBeforeDocumentation": "",
+      "indexSha256": "b5d3b9f884d6add7f53a425b562eff7c0f0d45f90b7e69c95af4183a1f7999de"
+    }
+  },
+  "sourceSha256": {
+    "agrosphere-web/src/app/features/digital-twin/cesium-viewer.service.ts": "838289400cd82c67f644c4f1d9cf7a8a3e59ab9a4299bee37787942e39c59b8d",
+    "agrosphere-web/src/app/features/digital-twin/cesium-viewer.component.ts": "a1e55df8b573566103a3312552e8d60b48875b1cc38928ead61de0cc1c419481",
+    "agrosphere-web/e2e/graphics.spec.ts": "c3a7adb0e630746b0b40c9839b57034097c61ac585df16c39a17a666a821d074",
+    "agrosphere-web/e2e/poc-close-rendered.spec.ts": "ea7ebe58f3f9eac761d9efb2122fa052c4c8720dd1126ffcd95fb23eac1fc896",
+    "agrosphere-web/package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577",
+    "agrosphere-web/node_modules/@cesium/core/Source/OrthographicOffCenterFrustum.js": "5c058724e1a1b533029f89d54d2066b12fda8e652b6e18b026154c6d645c766d",
+    "agrosphere-web/node_modules/@cesium/engine/Source/Scene/Camera.js": "4a117617a25546620fd042fa808bdfcc4962560ab5e3f26a2bca5729a1a13a19",
+    "agrosphere-web/node_modules/@cesium/engine/Source/Scene/SceneTransitioner.js": "746ec8d2fcc48799612ffc53120abd6f22860bed600f6e1808786912fcf1d35f",
+    "agrosphere-web/node_modules/@cesium/engine/Source/Scene/CameraFlightPath.js": "22720664e33bfab47d233dbc045fff913ba5d110656333a56d604da5e8dc1090"
+  },
+  "recovery": {
+    "runId": "39166eb7f43c41b68afafa967eef8ac6",
+    "operatorActive": false,
+    "resources": {
+      "container": [],
+      "volume": [],
+      "network": []
+    },
+    "remainingImageTags": [],
+    "clients": [
+      {
+        "pid": 59964,
+        "recordedIdentityStillActive": false,
+        "kind": "owned-playwright-parent"
+      },
+      {
+        "pid": 50456,
+        "recordedIdentityStillActive": false,
+        "kind": "owned-playwright-parent"
+      },
+      {
+        "pid": 49192,
+        "recordedIdentityStillActive": false,
+        "kind": "owned-playwright-parent"
+      },
+      {
+        "pid": 38452,
+        "recordedIdentityStillActive": false,
+        "kind": "owned-playwright-parent"
+      },
+      {
+        "pid": 20216,
+        "recordedIdentityStillActive": false,
+        "kind": "native-owned-rendered-client"
+      }
+    ],
+    "privateDirectoryExists": true,
+    "cleanup": "BLOCKED",
+    "reason": "Windows Access Denied deleting Edge-created generated LOCK; direct PowerShell deletion and ACL restoration also denied. No fresh fixture started."
+  },
+  "digitalTwin": {
+    "status": "UNRESOLVED; no product correction made",
+    "ownerEnvironmentReproduced": false,
+    "browserWebGLExecuted": false,
+    "sourceInvestigation": [
+      "bounds() treats getRectangleCameraCoordinates output as ECEF for every mode; installed Camera.js returns map-projected coordinates in SCENE2D. This is an observed mode-specific focus defect, not established causality for the reported frustum failure.",
+      "mode() invokes animated morphs directly; lifecycle currently has no application morphStart/morphComplete coordination. Installed transitioner cancels flights in its user-input completion handler; automatic mode calls need actual timing reproduction.",
+      "Installed Camera.js returns undefined for rectangle coordinates during MORPHING and ignores flyTo during MORPHING. This limits but does not prove absence of selection/load races.",
+      "Installed OrthographicOffCenterFrustum throws the reported error when left > right; equal bounds and NaN are different cases.",
+      "Existing graphics test toggles modes without asserting completed target mode or continued frames. It is insufficient regression evidence for this report."
+    ],
+    "cpuProbe": "Exploratory actual-installed Camera/SceneTransitioner/TweenCollection without browser or WebGL under Web target/digital-twin-investigation. No reported error reproduced in tested sequence. Synthetic scene timing is not rendered evidence.",
+    "pending": [
+      "Initial 3D and owner-reported error reproduction",
+      "3D/2D round-trip and rapid mode changes, custom and native mode picker",
+      "Concurrent flights/selection/estate geometry, zero-size/hidden/resize and empty/degenerate geometry",
+      "Focused regression and actual WebGL rendered continuation, picking, overlays, route remount",
+      "All remaining approved connected/native/security/coordinates/performance protocols"
+    ]
+  },
+  "checks": {
+    "gitBaseline": "PASS twelve independent clean roots before documentation; AEO excluded",
+    "exactRecovery": "PARTIAL: Docker resources/run image tags removed and recorded clients stopped; private copies remain; lifetime missed after operator loss",
+    "architectureValidation": "PASS: python scripts/validate.py --workspace C:\\Projects\\agrosphere; 12-root/layout/ADR/YAML/secret-pattern checks",
+    "diffCheck": "PASS: git diff --check in Architecture",
+    "preservation": "PASS: all twelve Git index hashes unchanged; eleven non-Architecture statuses unchanged; inspected Web source/dependency hashes unchanged"
+  },
+  "limits": [
+    "No fresh fixture, endpoint, browser profile or native window used after expired-run inspection",
+    "No product code, public/config.json, dependency, migration, index or accepted package changed",
+    "Prior failed metadata/hardware captures and later scoped results retained; no full connected PASS or owner acceptance claimed"
+  ]
+}

@@ -1,3 +1,35 @@
+# POC-CLOSE mode-view regression corrected in source; visual checks pending - 2026-11-13
+
+Owner rejected prior focus correction:3D/Columbus appeared2D. [Replacement evidence](POC_CLOSE_MODE_VIEW_CORRECTION_2026_11_13.json) acknowledges the mistake: unconditional post-morph overhead field zoom. Removed automatic refocus on ordinary mode changes; preserve native3D pose, queue only focus requested during morph, and aim explicit Columbus focus obliquely at field centre. Actual CPU-camera pitch/ground-intersection and mode-pose regressions plus full115unit/lint/type/format/build PASS. Post-fix browser/interaction NOT RUN; existing run8d4b7d52 private-profile/restart cleanup blocker remains.
+
+Prior focus unit results are historical, not rendered acceptance. Original invalid-frustum error UNRESOLVED. No new fixture/provider/dependency/config/Git/AEO action. Latest [progress/restart handoff](POC_CLOSE_RENDERING_PROGRESS_2026_11_13.md) keeps exact cleanup and remaining matrix. POC-CLOSE PARTIAL, owner acceptance OPEN.
+
+---
+
+# POC-CLOSE Columbus focus correction; browser verification pending - 2026-11-13
+
+[Exact source/test evidence](POC_CLOSE_COLUMBUS_FOCUS_2026_11_13.json) records a demonstrated focus defect: Columbus/2D projected camera coordinates were treated as ECEF. Corrected map-coordinate handling, previous-flight cancellation and latest-selection focus after both mode controls, with listener teardown. Three focused regressions and full115unit/lint/type/format/API/build PASS. Actual post-fix browser verification NOT RUN: existing run8d4b7d52 protected profile/restart cleanup remains blocked. Original invalid-frustum error remains UNRESOLVED; do not claim it fixed by this correction.
+
+Imagery fallback is a separate configured-provider error path; no provider/configuration change or external call. Latest [restart handoff](POC_CLOSE_RENDERING_PROGRESS_2026_11_13.md#later-columbus-focus-correction---2026-11-13) retains cleanup/dependency/test/resume steps. No fresh fixture before cleanup PASS. Existing approvals/deferrals persist; POC-CLOSE PARTIAL, owner acceptance OPEN.
+
+---
+
+# POC-CLOSE restart handoff - 2026-11-13
+
+[Latest progress](POC_CLOSE_RENDERING_PROGRESS_2026_11_13.md) and [source/run/check evidence](POC_CLOSE_RENDERING_PROGRESS_2026_11_13.json) supersede old scheduling. Original run39166 cleanup PASS; browser-only run769c0ce bounded hardware smoke/cleanup PASS. Expanded run8d4b7d52 harness hidden-selector timeout, manual exact browser-tree stop, protected profile blocks private cleanup. No active recorded client/Docker resource; owner plans restart later. Require exact private absence/recovery PASS before a fresh fixture.
+
+Digital Twin root cause/fix UNRESOLVED. Opening2D/3D clarified; gated diagnostics/revised reproduction scaffold prepared, revised expanded suite NOT RUN. Web lint/format/type/API/112unit/build PASS; clean npm ci failed on active owner ng serve lock. Tree restored with exact original lockfile/no version change; clean ci pending after restart. Remaining connected/native/performance/numerical/security exits open. Existing approvals/deferrals persist; POC-CLOSE PARTIAL, owner acceptance OPEN.
+
+---
+
+# POC-CLOSE rendering resume: expired fixture cleanup blocked — 2026-11-12
+
+Latest [resume report](POC_CLOSE_RENDERING_RESUME_2026_11_12.md) and [source/recovery evidence](POC_CLOSE_RENDERING_RESUME_2026_11_12.json) supersede prior active-run scheduling. At 15:32 UTC the run39166eb7f43c41b68afafa967eef8ac6 operator was absent and its lease expired. Exact recovery removed all owned Docker resources and run image tags; recorded clients are absent. Windows denies deletion/ACL repair of generated Edge-profile LOCK files, so private copies remain and cleanup is BLOCKED. Lifetime was missed after operator loss. Owner assistance was requested for the exact generated folder; verify absence and finish recovery before a fresh fixture.
+
+Digital Twin root cause remains UNRESOLVED. Installed Cesium source and lifecycle/callers were inspected; a CPU-only synthetic camera sequence did not reproduce the reported failure. Mode-specific coordinate handling and morph/flight lifecycle remain hypotheses requiring browser evidence. No speculative product fix or new rendered/performance PASS is claimed. Existing approvals and historical results remain effective in their exact scopes; POC-CLOSE PARTIAL, final owner acceptance OPEN. Complete the requested actual reproduction/fix and remaining approved matrix after cleanup.
+
+---
+
 # POC-CLOSE resumed: native login and canonical rendering observed — 2026-11-12
 
 Existing C01–C07/image/dependency approvals and bounded M4 acceptance remain effective. Run `39166eb7f43c41b68afafa967eef8ac6` was verified active within its fixed lease. Renewed native browser sign-in succeeded: callback returned, native sessionReady became true, and the visible canonical scene rendered 10 meshes/240 illustrative trees. This does not pass the outstanding rendered matrix or performance protocol. Empty-estate helper returned diagnostic PASS; rendered observation remains pending. An initial timing command ran amid scene changes at an observed 2560×1600 window, so it is not compliant performance evidence.

@@ -1,0 +1,45 @@
+{
+  "dateUtc": "2026-11-13T07:13:43.877967+00:00",
+  "authority": "Existing POC-CLOSE C07 reproduced in-scope correction and latest owner regression report",
+  "review": "Sequential implementation-agent source/test review, not independent",
+  "ownerRegression": "2D appearance in3D/Columbus after prior focus correction; previous manual3D globe navigation was better",
+  "previousCorrection": "POC_CLOSE_COLUMBUS_FOCUS_2026_11_13.json; retain historical115unit PASS but owner reports rendered regression; not accepted",
+  "cause": "Prior morphComplete listener unconditionally called field/estate focus. bounds() forced pitch -pi/2 for all modes, replacing native mode views with close overhead views. Previous coordinate-only checks missed orientation and unsolicited flights.",
+  "changes": [
+    "Remove unconditional morphComplete field/estate focus; ordinary mode switches leave native camera pose/frustum intact",
+    "Replay only latest focus explicitly requested via bounds()/fly()/reset() during MORPHING; clear queued focus on geometry generation change and destroy",
+    "Preserve projected-coordinate fix for2D/Columbus and prior3D ECEF/terrain clearance",
+    "Columbus focus uses pitch -pi/4 and southward camera offset so actual ground intersection remains field centre;2D stays overhead",
+    "Gated diagnostic/browser scaffold now checks ground-centre and camera pitch instead of assuming camera must sit directly above field"
+  ],
+  "sourceSha256": {
+    "src/app/features/digital-twin/cesium-viewer.service.ts": "4c215f21e36ab391516c9a5b771f160dbcf32d1012d5a7832843b0569d6cff79",
+    "src/app/features/digital-twin/cesium-viewer.service.spec.ts": "4097379c5038ade9e1c5e107dfa0c3d225bd1c91c5fb858a4dc384abf7035dc4",
+    "e2e/digital-twin-rendering.spec.ts": "0e96b6ae2fdd8954813ca412580ed0472f7024b16447498cee6cd6f4713216af",
+    "README.md": "588a239ec16c4ed1fdcf7fdce915479e1adeaf21dc04ab610af4a6b2ff4bb678",
+    "CHANGELOG.md": "ae0689deb2a5872f173a5b2e2ff053fc9702d1136dd07dbe0e02ddf86e0a5e7a",
+    "package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577",
+    "public/config.json": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4"
+  },
+  "priorServiceSha256": "47187710c75a5b618c8eadb388d8f4a7d075991ba9c5bf026e5f8ec8ddac7a42",
+  "checks": {
+    "focused": "3PASS using actual installed Cesium Camera/projection/events",
+    "fullUnit": "115PASS across25files",
+    "orientation": "Actual CPU camera setView confirms Columbus pitch -pi/4 and direction-ray intersection at intended projected field centre",
+    "modePreservation": "Event test confirms selected field alone creates no flight after ordinary3D morph and leaves native perspective-frustum object and pose unchanged",
+    "queuedFocus": "During MORPHING no flight; only latest requested bounds replayed after completion; listeners removed on destroy",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "format": "PASS",
+    "build": "PASS; existing CommonJS warnings",
+    "diff": "Final Web/Architecture PASS; Web cached diff empty",
+    "architecture": "PASS: python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+    "browser": "NOT RUN; existing protected owned profile cleanup and owner planned restart still pending"
+  },
+  "limits": [
+    "Owner-rendered regression acknowledged; revised correction is source/CPU-unit validated only, not visually accepted",
+    "Original invalid-frustum error still not reproduced or claimed fixed",
+    "Broader connected/native/performance/picking/overlay/resize/race rendered exits remain open",
+    "No new fixture, external provider call, dependency/version/config/Git/AEO mutation; no owner process stopped"
+  ]
+}

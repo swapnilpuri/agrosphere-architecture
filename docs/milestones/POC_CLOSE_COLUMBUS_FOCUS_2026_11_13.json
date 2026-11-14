@@ -1,0 +1,53 @@
+{
+  "dateUtc": "2026-11-13T07:03:44.394618+00:00",
+  "authority": "Existing POC-CLOSE C07 demonstrated in-scope correction; latest owner Columbus-view report",
+  "review": "Sequential installed-source and correction review by implementation agent, not independent",
+  "ownerReport": "Columbus view selected field out of focus; Imagery unavailable / ellipsoid fallback / four spatial features",
+  "reproduction": "CPU-only actual installed Cesium Camera/GeographicProjection in Columbus and 2D, generated bounds35,-15,35.02,-14.99; browser NOT RUN",
+  "rootCause": "getRectangleCameraCoordinates returns projected positions in Columbus/2D; previous bounds() treated every result as ECEF and let flyTo convert it again. Mode morphs also did not restore the latest selection.",
+  "fix": [
+    "Preserve projected destinations and use convert:false in Columbus/2D; maintain500 minimum height/extent",
+    "Retain original ECEF/terrain-clearance behavior in3D and convert:true",
+    "Cancel previous flight at morphStart and refocus current canonical selection, otherwise estate/reset, at morphComplete for both controls",
+    "Remove all lifecycle listeners on destroy"
+  ],
+  "sourceSha256": {
+    "src/app/features/digital-twin/cesium-viewer.service.ts": "47187710c75a5b618c8eadb388d8f4a7d075991ba9c5bf026e5f8ec8ddac7a42",
+    "src/app/features/digital-twin/cesium-viewer.service.spec.ts": "64d11ca097f962450121047425b7c3923e99aae05e31dfaecdadd570217de6c3",
+    "e2e/digital-twin-rendering.spec.ts": "2432dc3190756ec59f068cc4f1357d71c41bc883234e43fc5d6b68f25dff4346",
+    "README.md": "e3c4ffcf887d3f162d442dd2656e09eec4d59ef4ba5040db1468e3f2e04abf84",
+    "CHANGELOG.md": "5b70b7d2bfa377a1d9c8d77de2c630898d138622b5e2cdc79f19770f15579890",
+    "package-lock.json": "bb262689a674bd724c40e9352cab83675326b4ff167320b11f1ac8c033f95577",
+    "public/config.json": "ebd7afc22568295bd331ebea5d2e0fd54c2243353f0ea58b24bfb22d85d9dcd4"
+  },
+  "priorServiceSha256": "c78bbb6f2dac07d4d16e0478ebc6fa8b8848b0e36943957694b9e3908b1047b3",
+  "checks": {
+    "redRegression": "Both Columbus/2D coordinate tests failed against previous service; target mismatch recorded. Initial test typing corrected before valid red results.",
+    "focusedGreen": "3PASS including actual Cesium events/latest-selection/listener teardown",
+    "fullUnit": "115PASS across25files",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "format": "PASS",
+    "api": "PASS",
+    "build": "PASS after final helper refactor; existing CommonJS warnings",
+    "diffCheck": "Final Web/Architecture PASS; Web cached diff empty",
+    "architecture": "PASS: python scripts/validate.py --workspace C:\\Projects\\agrosphere",
+    "browser": "NOT RUN: pending owned-profile cleanup and owner planned restart",
+    "npmCi": "Previously FAILED due owner ng serve binary lock; dependency restoration PASS with unchanged exact lockfile; clean ci pending"
+  },
+  "testHarnessFailureRetained": "Initial partial Cesium module mock passed focused suite but failed combined Angular test build twice through hoisted import initialization. Removed global mock; lifecycle helper uses actual Camera/events and lightweight Viewer seam. Final full suite115PASS.",
+  "preservation": {
+    "dependencyVersionsUnchanged": true,
+    "publicConfigHashMatchesEarlierObservation": true,
+    "cachedDiffEmpty": true,
+    "existingRuntimeNotOperated": true,
+    "noNewFixtureOrProviderCalls": true
+  },
+  "limits": [
+    "Columbus/2D focus correction source/unit verified; actual loaded browser rendering/picking not verified after this change",
+    "Original right-must-be-greater-than-left error remains UNRESOLVED and is not claimed fixed",
+    "No imagery source/config change; fallback is triggered by provider.errorEvent, removes imagery, and feature count is only loaded records",
+    "Existing run8d4b7d52 protected private-profile cleanup blocker persists; no browser fixture started",
+    "All remaining original connected/native/performance/coordinate/security acceptance exits remain open"
+  ]
+}
